@@ -5,12 +5,12 @@ Vic Community's Engine is a fork of Katerina Engine, which is a fork of the Proj
 Join us on [discord](https://discord.gg/3WNyk7SWvf).
 
 ## How to install and play
-- [Download the latest release here](https://github.com/Nivaturimika/Katerina-Engine/releases)
+- [Download the latest release here](https://github.com/Valerus9/VCE/releases)
 - Extract the archive and move the executable files and the assets folder into your main Victoria 2 directory. In other words, **KatEngine.exe should end up in the same folder as v2game.exe**.
 - IF YOU INSTALLED A PREVIOUS DEMO OR RELEASE: I suggest that you delete it and the old assets folder before copying over the new one, as an extra precaution.
 - Start the game by running KatEngine_Launcher.exe.
 - Mods may or may not run with more or less problems (see the October update and the compatibility patches channel in the discord for more information about particular mods).
-- Read up the [User and multiplayer guide](https://github.com/Nivaturimika/Katerina-Engine/blob/main/docs/user_guide.md) for further information and troubleshooting
+- Read up the [User and multiplayer guide](https://github.com/Valerus9/VCE/blob/main/docs/user_guide.md) for further information and troubleshooting
 
 ## Interested in contributing?
 
