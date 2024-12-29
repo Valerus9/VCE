@@ -1,4 +1,4 @@
-# Vic Community's Engine
+# Victoria Community's Engine
 
 Vic Community's Engine is a fork of Katerina Engine, which is a fork of the Project Alice codebase (an open source "retro clone" of Victoria 2). But more geared towards a purist audience. If you do prefer a "different" flavour of Victoria 2, feel free to checkout [Project Alice](https://github.com/schombert/Project-Alice/) too!
 
