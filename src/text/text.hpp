@@ -6,7 +6,7 @@
 #include <string>
 #include <string_view>
 
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "gui_graphics.hpp"
 #include "nations.hpp"
 #include "unordered_dense.h"

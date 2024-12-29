@@ -1,7 +1,7 @@
 #pragma once
 
 #include "container_types.hpp"
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "economy.hpp"
 
 namespace economy_factory {

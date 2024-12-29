@@ -1,7 +1,7 @@
 #pragma once
 
 #include <vector>
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 
 namespace sys {
 	struct state; // this is here simply to declare the state struct in a very general location

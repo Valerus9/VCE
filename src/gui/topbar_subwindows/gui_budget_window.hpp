@@ -3,7 +3,7 @@
 #include "color.hpp"
 #include "commands.hpp"
 #include "culture.hpp"
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "gui_common_elements.hpp"
 #include "gui_element_types.hpp"
 #include "nations.hpp"

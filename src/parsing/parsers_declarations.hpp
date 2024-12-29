@@ -2856,11 +2856,11 @@ namespace parsers {
 	float parse_constant(std::string_view value, int32_t line, error_handler& err, trigger_building_context& context);
 }
 
-#include "parser_defs_generated.hpp"
-#include "tutorial_parser_defs_generated.hpp"
-#include "news_parser_defs_generated.hpp"
-#include "gui_parser_defs_generated.hpp"
-#include "trigger_parser_defs_generated.hpp"
-#include "effect_parser_defs_generated.hpp"
-#include "save_parser_defs_generated.hpp"
-#include "game_rules_parser_defs_generated.hpp"
+#include "parser_defs.hpp"
+#include "tutorial_parser_defs.hpp"
+#include "news_parser_defs.hpp"
+#include "gui_parser_defs.hpp"
+#include "trigger_parser_defs.hpp"
+#include "effect_parser_defs.hpp"
+#include "save_parser_defs.hpp"
+#include "game_rules_parser_defs.hpp"

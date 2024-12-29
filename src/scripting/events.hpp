@@ -1,6 +1,6 @@
 #pragma once
 
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "script_constants.hpp"
 #include "container_types.hpp"
 

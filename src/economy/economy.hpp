@@ -1,7 +1,7 @@
 #pragma once
 
 #include "container_types.hpp"
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 
 namespace economy {
 	// Demand more for construction than required (won't affect the intaken goods daily)

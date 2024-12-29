@@ -2,7 +2,7 @@
 
 #include "gui_element_types.hpp"
 #include "pdqsort.h"
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "gui_graphics.hpp"
 #include "gui_element_base.hpp"
 #include "opengl_wrapper.hpp"

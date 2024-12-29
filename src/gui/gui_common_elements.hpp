@@ -1,6 +1,6 @@
 #pragma once
 
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "demographics.hpp"
 #include "economy.hpp"
 #include "economy_factory.hpp"

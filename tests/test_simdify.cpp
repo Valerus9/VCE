@@ -5,7 +5,7 @@
 #include <catch2/matchers/catch_matchers_floating_point.hpp>
 
 #include "system_state.hpp"
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 
 // Old approach
 void populate_ln_en_lx_1(sys::state& state, dcon::nation_id n,

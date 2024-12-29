@@ -1,5 +1,5 @@
 #pragma once
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "common_types.hpp"
 #include "events.hpp"
 #include "diplomatic_messages.hpp"

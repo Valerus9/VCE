@@ -5,7 +5,7 @@
 #include <catch2/matchers/catch_matchers_floating_point.hpp>
 
 #include "demographics.hpp"
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "system_state.hpp"
 #include "prng.hpp"
 #include "province_templates.hpp"

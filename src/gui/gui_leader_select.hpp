@@ -1,5 +1,5 @@
 #pragma once
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "commands.hpp"
 #include "gui_common_elements.hpp"
 #include "prng.hpp"

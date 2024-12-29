@@ -1,6 +1,6 @@
 #pragma once
 
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "constants.hpp"
 
 namespace province {

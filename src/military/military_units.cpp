@@ -1,5 +1,5 @@
 #include "military_templates.hpp"
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "prng.hpp"
 #include "effects.hpp"
 #include "events.hpp"

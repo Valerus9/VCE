@@ -1,7 +1,7 @@
 #include "color.hpp"
 #include "demographics.hpp"
 #include "system_state.hpp"
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "province.hpp"
 #include "nations.hpp"
 #include "economy_factory.hpp"

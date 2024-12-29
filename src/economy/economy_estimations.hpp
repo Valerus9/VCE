@@ -1,7 +1,7 @@
 #pragma once
 
 #include "container_types.hpp"
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 
 namespace economy_estimations {
 	float estimate_gold_income(sys::state& state, dcon::nation_id n);

@@ -1,5 +1,5 @@
 #pragma once
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "date_interface.hpp"
 #include "constants.hpp"
 

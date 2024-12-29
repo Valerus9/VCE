@@ -1,4 +1,4 @@
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "system_state.hpp"
 #include "ai.hpp"
 #include "demographics.hpp"

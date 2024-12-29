@@ -1,6 +1,6 @@
 #pragma once
 
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "gui_common_elements.hpp"
 #include "gui_element_types.hpp"
 

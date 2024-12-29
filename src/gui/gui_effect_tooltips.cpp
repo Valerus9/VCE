@@ -1,6 +1,6 @@
 #include "system_state.hpp"
 #include "gui_effect_tooltips.hpp"
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "gui_event.hpp"
 #include "gui_modifier_tooltips.hpp"
 #include "gui_trigger_tooltips.hpp"

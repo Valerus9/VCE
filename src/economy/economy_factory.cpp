@@ -1,7 +1,7 @@
 #include "system_state.hpp"
 #include "economy_factory.hpp"
 #include "demographics.hpp"
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "ai.hpp"
 #include "prng.hpp"
 #include "math_fns.hpp"

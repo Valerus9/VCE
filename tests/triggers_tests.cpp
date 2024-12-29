@@ -3,7 +3,7 @@
 #include "parsers.hpp"
 #include "simple_fs.hpp"
 #include "constants.hpp"
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "economy.hpp"
 #include "container_types.hpp"
 #include "system_state.hpp"

@@ -8,7 +8,7 @@
 
 #include "window.hpp"
 #include "constants.hpp"
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "gui_graphics.hpp"
 #include "game_scene.hpp"
 #include "simple_fs.hpp"
@@ -367,7 +367,7 @@ namespace sys {
 		};
 		bool fow_enabled = true;
 		map_label_mode map_label = map_label_mode::cubic;
-		uint8_t antialias_level = 4;
+		uint8_t antialias_level = 16;
 		float gaussianblur_level = 1.f;
 		float gamma = 1.f;
 		bool railroads_enabled = true;

@@ -1,4 +1,4 @@
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "system_state.hpp"
 #include "serialization.hpp"
 #include <ctime>

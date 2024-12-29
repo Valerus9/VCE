@@ -1,7 +1,7 @@
 #pragma once
 
 #include "container_types.hpp"
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 
 namespace economy_rgo {
 	float rgo_effective_size(sys::state const& state, dcon::nation_id n, dcon::province_id p, dcon::commodity_id c);

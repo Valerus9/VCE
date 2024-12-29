@@ -3,7 +3,7 @@
 #include <vector>
 #include <array>
 #include "constants.hpp"
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "unordered_dense.h"
 #include "container_types.hpp"
 #include "constants.hpp"

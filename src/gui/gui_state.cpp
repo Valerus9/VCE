@@ -3,7 +3,7 @@
 #include <thread>
 
 #include "system_state.hpp"
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "constants.hpp"
 #include "opengl_wrapper.hpp"
 #include "prng.hpp"

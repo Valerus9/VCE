@@ -338,7 +338,7 @@ target_precompile_headers(KatEngine
 	PRIVATE [["simple_fs.hpp"]]
 	PRIVATE [["constants.hpp"]]
 	PRIVATE [["unordered_dense.h"]]
-	PRIVATE [["dcon_generated.hpp"]]
+	PRIVATE [["dcon.hpp"]]
 	PRIVATE [["container_types.hpp"]]
 	PRIVATE [["parsers_declarations.hpp"]]
 	PRIVATE [["cyto_any.hpp"]]

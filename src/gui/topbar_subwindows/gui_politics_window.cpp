@@ -1,5 +1,5 @@
 #include "system_state.hpp"
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "nations.hpp"
 #include "common_types.hpp"
 #include "prng.hpp"

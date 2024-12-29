@@ -3,7 +3,7 @@
 #include <stdint.h>
 #include <cstring>
 
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "bytecode_defs.hpp"
 
 namespace effect {

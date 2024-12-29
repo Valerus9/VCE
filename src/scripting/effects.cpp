@@ -1,6 +1,6 @@
 #include "system_state.hpp"
 #include "effects.hpp"
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "nations.hpp"
 #include "ai.hpp"
 #include "demographics.hpp"

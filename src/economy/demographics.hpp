@@ -1,5 +1,5 @@
 #pragma once
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "container_types.hpp"
 #include "system_state.hpp"
 

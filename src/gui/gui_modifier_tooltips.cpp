@@ -1,5 +1,5 @@
 #include "gui_modifier_tooltips.hpp"
-#include "dcon_generated.hpp"
+#include "dcon.hpp"
 #include "demographics.hpp"
 #include "system_state.hpp"
 #include "script_constants.hpp"
