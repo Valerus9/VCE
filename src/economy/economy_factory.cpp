@@ -599,6 +599,10 @@ namespace economy_factory {
 	*/
 	float total_employed_factory_production(sys::state& state, dcon::factory_id f, dcon::nation_id n, dcon::state_instance_id sid, dcon::province_id p) {
 		auto const ft = state.world.factory_get_building_type(f);
+
+		auto const employment = state.world.factory_get_primary_employment(f) + state.world.factory_get_secondary_employment(f);
+		auto const max_employment = ft.get_base_workforce() * state.world.factory_get_level(f);
+		auto const employment_percentage = std::min(employment / float(std::max(max_employment,1)),1.0f);
 		// Inputs
 		auto const min_input_available = factory_min_input_available(state, n, ft);
 		auto const min_efficiency_input_available = factory_min_efficiency_input_available(state, n, ft);
@@ -610,7 +614,8 @@ namespace economy_factory {
 			* (0.75f + 0.25f * min_efficiency_input_available)
 			* throughput_multiplier
 			* output_multiplier
-			* min_input_available;
+			* min_input_available
+			* employment_percentage;
 	}
 	
 	void update_single_factory_consumption(sys::state& state, dcon::factory_id f, dcon::nation_id n, dcon::province_id p, dcon::state_instance_id si, float mobilization_impact, float expected_min_wage, bool occupied) {
