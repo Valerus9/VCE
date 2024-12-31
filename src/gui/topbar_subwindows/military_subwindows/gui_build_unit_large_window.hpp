@@ -66,7 +66,7 @@ namespace ui {
 		void on_update(sys::state& state) noexcept override {
 			auto content = retrieve<buildable_unit_entry_info>(state, parent);
 			color = sys::pack_color(255, 255, 255);
-			if(is_navy == false && std::max(state.defines.alice_full_reinforce, state.world.pop_get_size(content.pop_info) / state.defines.pop_size_per_regiment) < 1.f) {
+			if(is_navy == false && std::max(state.defines.vce_full_reinforce, state.world.pop_get_size(content.pop_info) / state.defines.pop_size_per_regiment) < 1.f) {
 				color = sys::pack_color(255, 196, 196);
 				if(state.user_settings.color_blind_mode == sys::color_blind_mode::deutan || state.user_settings.color_blind_mode == sys::color_blind_mode::protan) {
 					color = sys::pack_color(255, 100, 255); //remap to blue
@@ -105,7 +105,7 @@ namespace ui {
 
 			text::add_line(state, contents, "military_build_unit_tooltip", text::variable_type::name, state.military_definitions.unit_base_definitions[utid].name, text::variable_type::loc, p);
 			if(is_navy) {
-				//Any key starting with 'alice' has been added in \assets\alice.csv
+				//Any key starting with 'vce' has been added in \assets\vce.csv
 				text::add_line(state, contents, "unit_max_speed", text::variable_type::x, text::format_float(state.world.nation_get_unit_stats(state.local_player_nation, utid).maximum_speed, 2));
 				text::add_line(state, contents, "unit_attack", text::variable_type::x, text::format_float(state.world.nation_get_unit_stats(state.local_player_nation, utid).attack_or_gun_power, 2));
 				if(state.world.nation_get_unit_stats(state.local_player_nation, utid).siege_or_torpedo_attack > 0) {
@@ -120,7 +120,7 @@ namespace ui {
 				text::add_line(state, contents, "unit_supply_load", text::variable_type::x, state.military_definitions.unit_base_definitions[utid].supply_consumption_score);
 			} else {
 				buildable_unit_entry_info info = retrieve< buildable_unit_entry_info>(state, parent);
-				if(std::max(state.defines.alice_full_reinforce, state.world.pop_get_size(info.pop_info) / state.defines.pop_size_per_regiment) < 1.f) {
+				if(std::max(state.defines.vce_full_reinforce, state.world.pop_get_size(info.pop_info) / state.defines.pop_size_per_regiment) < 1.f) {
 					text::add_line(state, contents, "understaffed_regiment", text::variable_type::value, text::format_wholenum(int32_t(state.world.pop_get_size(info.pop_info))));
 				}
 
@@ -252,7 +252,7 @@ namespace ui {
 			dcon::province_id p = retrieve<dcon::province_id>(state, parent);
 			if(is_navy) {
 				text::add_line(state, contents, "military_build_unit_tooltip", text::variable_type::name, state.military_definitions.unit_base_definitions[utid].name, text::variable_type::loc, state.world.province_get_name(p));
-				//Any key starting with 'alice' has been added in \assets\alice.csv
+				//Any key starting with 'vce' has been added in \assets\vce.csv
 				text::add_line(state, contents, "unit_max_speed", text::variable_type::x, text::format_float(state.world.nation_get_unit_stats(state.local_player_nation, utid).maximum_speed, 2));
 				text::add_line(state, contents, "unit_attack", text::variable_type::x, text::format_float(state.world.nation_get_unit_stats(state.local_player_nation, utid).attack_or_gun_power, 2));
 				text::add_line(state, contents, "unit_hull", text::variable_type::x, text::format_float(state.world.nation_get_unit_stats(state.local_player_nation, utid).defence_or_hull, 2));
@@ -636,14 +636,14 @@ namespace ui {
 					// pass 1 - put fully staffed regiments first
 					row_contents.push_back(group_info);
 					for(auto bu : list_of_possible_units) {
-						if(bu.continent == con && std::max(state.defines.alice_full_reinforce, state.world.pop_get_size(bu.pop_info) / state.defines.pop_size_per_regiment) >= 1.f) {
+						if(bu.continent == con && std::max(state.defines.vce_full_reinforce, state.world.pop_get_size(bu.pop_info) / state.defines.pop_size_per_regiment) >= 1.f) {
 						bu.continent = dcon::modifier_id{};
 							row_contents.push_back(bu);
 						}
 					}
 					// pass 2 - put the understaffed regiments AFTER
 					for(auto bu : list_of_possible_units) {
-						if(bu.continent == con && std::max(state.defines.alice_full_reinforce, state.world.pop_get_size(bu.pop_info) / state.defines.pop_size_per_regiment) < 1.f) {
+						if(bu.continent == con && std::max(state.defines.vce_full_reinforce, state.world.pop_get_size(bu.pop_info) / state.defines.pop_size_per_regiment) < 1.f) {
 						bu.continent = dcon::modifier_id{};
 							row_contents.push_back(bu);
 						}

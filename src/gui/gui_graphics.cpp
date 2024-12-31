@@ -54,8 +54,8 @@ namespace ui {
 		{
 			// first, load in special mod gfx
 			// TODO put this in a better location
-			auto all_alice_files = list_files(assets, NATIVE(".gfx"));
-			for(auto& file : all_alice_files) {
+			auto all_vce_files = list_files(assets, NATIVE(".gfx"));
+			for(auto& file : all_vce_files) {
 				if(auto ofile = open_file(file); ofile) {
 					auto content = view_contents(*ofile);
 					err.file_name = text::native_to_utf8(get_full_name(*ofile));
@@ -88,8 +88,8 @@ namespace ui {
 		{
 			// first, load in special mod gui
 			// TODO put this in a better location
-			auto all_alice_gui_files = list_files(assets, NATIVE(".gui"));
-			for(auto& file : all_alice_gui_files) {
+			auto all_vce_gui_files = list_files(assets, NATIVE(".gui"));
+			for(auto& file : all_vce_gui_files) {
 				if(auto ofile = open_file(file); ofile) {
 					auto content = view_contents(*ofile);
 					err.file_name = text::native_to_utf8(get_full_name(*ofile));

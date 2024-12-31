@@ -35,7 +35,7 @@ endif()
 
 add_compile_options("$<$<CXX_COMPILER_ID:MSVC>:/utf-8>")
 
-list(APPEND ALICE_CORE_SOURCES_LIST
+list(APPEND vce_CORE_SOURCES_LIST
 	"${PROJECT_SOURCE_DIR}/src/ai/ai.cpp"
 	"${PROJECT_SOURCE_DIR}/src/common_types/common_types.cpp"
 	"${PROJECT_SOURCE_DIR}/src/common_types/blake2.cpp"
@@ -119,14 +119,14 @@ list(APPEND ALICE_CORE_SOURCES_LIST
 	"${PROJECT_SOURCE_DIR}/src/gamestate/game_scene.cpp"
 )
 if(WIN32)
-	list(APPEND ALICE_CORE_SOURCES_LIST
+	list(APPEND vce_CORE_SOURCES_LIST
 		"${PROJECT_SOURCE_DIR}/src/filesystem/simple_fs_win.cpp"
 		"${PROJECT_SOURCE_DIR}/src/window/window_win.cpp"
 		"${PROJECT_SOURCE_DIR}/src/sound/sound_win.cpp"
 		"${PROJECT_SOURCE_DIR}/src/graphics/opengl_wrapper_win.cpp"
 	)
 else()
-	list(APPEND ALICE_CORE_SOURCES_LIST
+	list(APPEND vce_CORE_SOURCES_LIST
 		"${PROJECT_SOURCE_DIR}/src/filesystem/simple_fs_nix.cpp"
 		"${PROJECT_SOURCE_DIR}/src/window/window_nix.cpp"
 		"${PROJECT_SOURCE_DIR}/src/sound/sound_nix.cpp"
@@ -136,13 +136,13 @@ endif()
 
 if(WIN32)
 	add_executable(VicCEngine WIN32
-		${ALICE_CORE_SOURCES_LIST}
+		${vce_CORE_SOURCES_LIST}
 		"${PROJECT_SOURCE_DIR}/src/entry_point_win.cpp"
 		"${PROJECT_SOURCE_DIR}/src/VicCEngine.rc"
 		${ASSET_FILES})
 else()
 	add_executable(VicCEngine WIN32
-		${ALICE_CORE_SOURCES_LIST}
+		${vce_CORE_SOURCES_LIST}
 		"${PROJECT_SOURCE_DIR}/src/entry_point_nix.cpp"
 		${ASSET_FILES})
 endif()

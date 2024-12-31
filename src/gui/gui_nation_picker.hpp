@@ -133,7 +133,7 @@ namespace ui {
 	class lobby_save_game_listbox : public listbox_element_base<lobby_save_game_row, std::shared_ptr<save_item>> {
 	protected:
 		std::string_view get_row_element_name() override {
-			return "alice_savegameentry";
+			return "vce_savegameentry";
 		}
 
 		void update_save_list(sys::state& state) noexcept;
@@ -336,7 +336,7 @@ namespace ui {
 
 	class lobby_readme_text : public scrollable_text {
 		void populate_layout(sys::state& state, text::endless_layout& contents) noexcept {
-			text::add_line(state, contents, "alice_readme");
+			text::add_line(state, contents, "vce_readme");
 			text::add_line_break_to_layout(state, contents);
 			text::add_line(state, contents, "gc_desc");
 		}

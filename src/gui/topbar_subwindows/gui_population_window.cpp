@@ -362,7 +362,7 @@ namespace ui {
 			active_modifiers_description(state, contents, owner, 15, sys::national_mod_offsets::non_accepted_pop_consciousness_modifier,
 				false);
 		}
-		text::add_line(state, contents, "alice_con_decay_description", text::variable_type::x, text::fp_three_places{ state.world.pop_get_consciousness(ids) * 0.01f });
+		text::add_line(state, contents, "vce_con_decay_description", text::variable_type::x, text::fp_three_places{ state.world.pop_get_consciousness(ids) * 0.01f });
 	}
 
 	void describe_mil(sys::state& state, text::columnar_layout& contents, dcon::pop_id ids) {
@@ -389,7 +389,7 @@ namespace ui {
 		auto spending_level = state.world.nation_get_spending_level(owner);
 		auto overseas_mil = 0.f;
 		if(province::is_overseas(state, loc)) {
-			overseas_mil = 2.f * state.defines.alice_overseas_mil * (0.5f - (o_spending * spending_level));
+			overseas_mil = 2.f * state.defines.vce_overseas_mil * (0.5f - (o_spending * spending_level));
 		}
 
 		float pmod = state.world.province_get_modifier_values(loc, sys::provincial_mod_offsets::pop_militancy_modifier);
@@ -490,7 +490,7 @@ namespace ui {
 		}
 
 		auto box = text::open_layout_box(contents);
-		text::localised_format_box(state, contents, box, "alice_overseas_mil_description");
+		text::localised_format_box(state, contents, box, "vce_overseas_mil_description");
 		text::add_space_to_layout_box(state, contents, box);
 		if(overseas_mil <= 0) {
 			text::add_to_layout_box(state, contents, box, text::fp_two_places{ overseas_mil }, text::text_color::green);
@@ -500,7 +500,7 @@ namespace ui {
 		}
 		text::close_layout_box(contents, box);
 
-		text::add_line(state, contents, "alice_mil_decay_description", text::variable_type::x, text::fp_three_places{ state.world.pop_get_militancy(ids) * 0.01f });
+		text::add_line(state, contents, "vce_mil_decay_description", text::variable_type::x, text::fp_three_places{ state.world.pop_get_militancy(ids) * 0.01f });
 	}
 
 	void describe_lit(sys::state& state, text::columnar_layout& contents, dcon::pop_id ids) {

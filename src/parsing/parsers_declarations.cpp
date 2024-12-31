@@ -3241,7 +3241,7 @@ namespace parsers {
 		if(last_option_added < sys::max_event_options) {
 			options[last_option_added] = value;
 			if(!value.name && !value.effect) {
-				options[last_option_added].name = text::find_or_add_key(context.outer_context.state, "alice_option_no_name", true);
+				options[last_option_added].name = text::find_or_add_key(context.outer_context.state, "vce_option_no_name", true);
 				err.accumulated_warnings += "Event with an option with no name (" + err.file_name + " line " + std::to_string(line) + ")\n";
 			}
 			++last_option_added;

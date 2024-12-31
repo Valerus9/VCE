@@ -1,6 +1,6 @@
 guiTypes = {
 	windowType = {
-		name = "alice_menubar"
+		name = "vce_menubar"
 		backGround = ""
 		position = { 0 0 }	
 		size = { 100 100 }

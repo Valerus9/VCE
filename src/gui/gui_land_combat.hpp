@@ -918,7 +918,7 @@ namespace ui {
 				text::add_to_substitution_map(sub, text::variable_type::type, state.military_definitions.unit_base_definitions[utid].name);
 			text::add_to_substitution_map(sub, text::variable_type::organisation, text::fp_two_places{ state.world.regiment_get_org(reg) });
 			text::add_to_substitution_map(sub, text::variable_type::strength, text::fp_two_places{ state.world.regiment_get_strength(reg) });
-				text::localised_format_box(state, contents, box, "alice_regiment_battle_info", sub);
+				text::localised_format_box(state, contents, box, "vce_regiment_battle_info", sub);
 				text::close_layout_box(contents, box);
 
 				if(state.world.nation_get_unit_stats(n, utid).reconnaissance_or_fire_range > 0) {

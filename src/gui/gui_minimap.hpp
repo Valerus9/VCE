@@ -136,7 +136,7 @@ struct notify_template_select {};
 	class macro_builder_template_listbox : public listbox_element_base<macro_builder_template_entry, uint32_t> {
 		protected:
 		std::string_view get_row_element_name() override {
-			return "alice_macro_builder_template_entry";
+			return "vce_macro_builder_template_entry";
 		}
 		public:
 		void on_create(sys::state& state) noexcept override {
@@ -207,7 +207,7 @@ struct notify_template_select {};
 	class macro_builder_unit_listbox : public listbox_element_base<macro_builder_unit_entry, dcon::unit_type_id> {
 		protected:
 		std::string_view get_row_element_name() override {
-			return "alice_macro_builder_unit_entry";
+			return "vce_macro_builder_unit_entry";
 		}
 		public:
 		void on_update(sys::state& state) noexcept override {
@@ -723,7 +723,7 @@ struct notify_macro_toggle_is_land {};
 		public:
 		void button_action(sys::state& state) noexcept override {
 			if(!state.ui_state.macro_builder_window) {
-				auto window = make_element_by_type<macro_builder_window>(state, "alice_macro_builder");
+				auto window = make_element_by_type<macro_builder_window>(state, "vce_macro_builder");
 				state.ui_state.macro_builder_window = window.get();
 				state.ui_state.root->add_child_to_front(std::move(window));
 			} else if(state.ui_state.macro_builder_window->is_visible()) {
@@ -867,7 +867,7 @@ struct notify_macro_toggle_is_land {};
 		public:
 		void button_action(sys::state& state) noexcept override {
 			if(!state.ui_state.main_menu) {
-				auto window = make_element_by_type<main_menu_window>(state, "alice_main_menu");
+				auto window = make_element_by_type<main_menu_window>(state, "vce_main_menu");
 				state.ui_state.main_menu = window.get();
 				state.ui_state.root->add_child_to_front(std::move(window));
 			} else if(state.ui_state.main_menu->is_visible()) {

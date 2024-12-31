@@ -1389,7 +1389,7 @@ namespace ui {
 		if(auto mid = state.world.national_focus_get_modifier(content);  mid) {
 			modifier_description(state, contents, mid, 15);
 		}
-		text::add_line(state, contents, "alice_nf_controls");
+		text::add_line(state, contents, "vce_nf_controls");
 	}
 //	};
 
@@ -1432,8 +1432,8 @@ namespace ui {
 			auto total = state.world.state_instance_get_demographics(content, demographics::to_key(state, pt));
 			auto employed = state.world.state_instance_get_demographics(content, demographics::to_employment_key(state, pt));
 			auto unemployed = total - employed;
-			text::add_line(state, contents, "alice_factory_worker_1", text::variable_type::x, text::pretty_integer{ int32_t(employed) });
-			text::add_line(state, contents, "alice_factory_worker_2", text::variable_type::x, text::pretty_integer{ int32_t(unemployed) });
+			text::add_line(state, contents, "vce_factory_worker_1", text::variable_type::x, text::pretty_integer{ int32_t(employed) });
+			text::add_line(state, contents, "vce_factory_worker_2", text::variable_type::x, text::pretty_integer{ int32_t(unemployed) });
 		}
 	}
 //	};

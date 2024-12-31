@@ -26,7 +26,7 @@ Then simply click on the `VicCEngine_Launcher` executable.
 
 - `VicCEngine`: The main game executable, do not open it directly.
 - `VicCEngine_Launcher`: The game launcher, you need to create/recreate scenarios for each change you do to the mods.
-- `dbg_alice`: A small debug utility to help track down errors, optional and it's fine if you don't have it.
+- `dbg_vce`: A small debug utility to help track down errors, optional and it's fine if you don't have it.
 - `readme OR ELSE.txt`: Contains relevant information, again, optional and it's fine if you don't have it.
 - `assets`: Folder NEEDED for VicCEngine to work properly.
 

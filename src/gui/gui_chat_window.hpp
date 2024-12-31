@@ -267,7 +267,7 @@ namespace ui {
 		public:
 		void on_create(sys::state& state) noexcept override {
 			button_element_base::on_create(state);
-			set_button_text(state, text::produce_simple_string(state, "alice_lobby_back"));
+			set_button_text(state, text::produce_simple_string(state, "vce_lobby_back"));
 		}
 		void on_update(sys::state& state) noexcept override {
 			disabled = state.current_scene.is_lobby;
@@ -281,10 +281,10 @@ namespace ui {
 		}
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
 			if(state.current_scene.is_lobby) {
-				text::add_line(state, contents, "alice_lobby_back_tt_1");
+				text::add_line(state, contents, "vce_lobby_back_tt_1");
 			}
 			if(state.network_mode == sys::network_mode_type::client) {
-				text::add_line(state, contents, "alice_lobby_back_tt_2");
+				text::add_line(state, contents, "vce_lobby_back_tt_2");
 			}
 		}
 	};

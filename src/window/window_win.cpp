@@ -365,7 +365,7 @@ namespace window {
 		wcex.lpszMenuName = NULL;
 		wcex.hCursor = LoadCursor(NULL, IDC_ARROW);
 		wcex.hIcon = (HICON)LoadImage(GetModuleHandleW(nullptr), MAKEINTRESOURCE(IDI_ICON1), IMAGE_ICON, GetSystemMetrics(SM_CXICON), GetSystemMetrics(SM_CYICON), 0);
-		wcex.lpszClassName = L"project_alice_class";
+		wcex.lpszClassName = L"project_vce_class";
 		if(RegisterClassExW(&wcex) == 0) {
 			window::emit_error_message("Unable to register window class", true);
 		}
@@ -374,7 +374,7 @@ namespace window {
 			? (WS_VISIBLE | WS_CAPTION | WS_MINIMIZEBOX | WS_THICKFRAME | WS_MAXIMIZEBOX | WS_SYSMENU | WS_CLIPCHILDREN | WS_CLIPSIBLINGS)
 			: WS_VISIBLE | WS_BORDER | WS_POPUP | WS_CLIPCHILDREN | WS_CLIPSIBLINGS;
 
-		game_state.win_ptr->hwnd = CreateWindowExW(0, L"project_alice_class", L"Kat's PA Engine", win32Style, CW_USEDEFAULT, CW_USEDEFAULT, 0, 0, NULL, NULL, GetModuleHandleW(NULL), &game_state);
+		game_state.win_ptr->hwnd = CreateWindowExW(0, L"project_vce_class", L"Kat's PA Engine", win32Style, CW_USEDEFAULT, CW_USEDEFAULT, 0, 0, NULL, NULL, GetModuleHandleW(NULL), &game_state);
 		if(!game_state.win_ptr->hwnd)
 			return;
 

@@ -4471,7 +4471,7 @@ namespace ai {
 			}
 
 			auto sdist = province::sorting_distance(state, location, p);
-			if(sdist > state.defines.alice_ai_gather_radius) {
+			if(sdist > state.defines.vce_ai_gather_radius) {
 				continue;
 			}
 
@@ -4868,7 +4868,7 @@ namespace ai {
 			// remove subsequent targets that are too close
 			if(is_at_war) {
 				for(uint32_t j = i + 1; j < psize; ++j) {
-					if(province::sorting_distance(state, potential_targets[j].location, potential_targets[i].location) < state.defines.alice_ai_attack_target_radius) {
+					if(province::sorting_distance(state, potential_targets[j].location, potential_targets[i].location) < state.defines.vce_ai_attack_target_radius) {
 						potential_targets[j].location = dcon::province_id{};
 					}
 				}

@@ -415,7 +415,7 @@ namespace ui {
 					if(!client.send_buffer.empty()) {
 						text::substitution_map sub;
 						text::add_to_substitution_map(sub, text::variable_type::playername, client.playing_as);
-						text::localised_format_box(state, contents, box, std::string_view("alice_play_pending_client"), sub);
+						text::localised_format_box(state, contents, box, std::string_view("vce_play_pending_client"), sub);
 					}
 				}
 			}
@@ -518,7 +518,7 @@ namespace ui {
 		} else if(name == "play_button") {
 			return make_element_by_type<start_game_button>(state, id);
 		} else if(name == "chatlog") {
-			auto ptr = make_element_by_type<lobby_readme_text>(state, state.ui_state.defs_by_name.find(state.lookup_key("alice_readme_text"))->second.definition);
+			auto ptr = make_element_by_type<lobby_readme_text>(state, state.ui_state.defs_by_name.find(state.lookup_key("vce_readme_text"))->second.definition);
 			add_child_to_front(std::move(ptr));
 			return make_element_by_type<invisible_element>(state, id);
 		} else if(name == "frontend_chat_bg") {

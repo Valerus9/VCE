@@ -916,13 +916,13 @@ chat_player_kick;$playername$ rúgott
 chat_player_switch;$playername$ a $country$ lehetőséget választotta
 chat_player_oos;$playername$ OOS-t kapott!
 save_progress;A folyamat mentése $érték$
-alice_play_pending_client;$playername$ még nincs kész
-alice_stockpile_button_0_0;"A nemzeti készletek az Ön szokásos gazdasági-üzleti tevékenységeinek fűszereként funkcionálnak, ahol az emberek azt látják, hogy a ""Ggreen"" W vonalak felfelé, a ""Rred"" W vonalak pedig lefelé haladnak, a szokásos módon én nem vagyok vonaldiagram, így többnyire észrevétlen marad :)"
-alice_stockpile_button_1_0;Ha 10-szer kattintasz, semmit nem kapsz cserébe, csak bízz bennem, ne kattints rám... ?ROR MÝS?W
-alice_stockpile_button_1_1;Értem, nos, most nem mondok semmit, mert tudom, hogy addig fogsz kattintgatni, amíg nem mondok egy „Másképpen” párbeszédet, és ez egyszerűen unalmas.
-alice_stockpile_button_1_2;Rendben, nem tudlak abbahagyni, talán így lesz?
-alice_stockpile_button_2_0;Én egy lélektelen gomb vagyok, lépj tovább
-alice_stockpile_button_3_0;Barátokkal játszunk, nem? ?RWELL SOK SZERENCSÉT SZÜKSÉGE LESZ?W
+vce_play_pending_client;$playername$ még nincs kész
+vce_stockpile_button_0_0;"A nemzeti készletek az Ön szokásos gazdasági-üzleti tevékenységeinek fűszereként funkcionálnak, ahol az emberek azt látják, hogy a ""Ggreen"" W vonalak felfelé, a ""Rred"" W vonalak pedig lefelé haladnak, a szokásos módon én nem vagyok vonaldiagram, így többnyire észrevétlen marad :)"
+vce_stockpile_button_1_0;Ha 10-szer kattintasz, semmit nem kapsz cserébe, csak bízz bennem, ne kattints rám... ?ROR MÝS?W
+vce_stockpile_button_1_1;Értem, nos, most nem mondok semmit, mert tudom, hogy addig fogsz kattintgatni, amíg nem mondok egy „Másképpen” párbeszédet, és ez egyszerűen unalmas.
+vce_stockpile_button_1_2;Rendben, nem tudlak abbahagyni, talán így lesz?
+vce_stockpile_button_2_0;Én egy lélektelen gomb vagyok, lépj tovább
+vce_stockpile_button_3_0;Barátokkal játszunk, nem? ?RWELL SOK SZERENCSÉT SZÜKSÉGE LESZ?W
 a_alert_reb;Egy vagy több szfératagunknak van aktív lázadója:
 event_auto;Automatikusan válassza ezt a lehetőséget a munkamenet hátralévő részében.
 event_taken_auto;Ez az opció automatikusan megtörténik a következő napon: ?Y$date$?W.
@@ -979,23 +979,23 @@ close_and_del;Gyár bezárása és törlése
 cb_conditions_header;Használat feltételei:
 as_a_vassal;vazallusként
 change_state_name_to;módosítsa az állam nevét $text$-ra
-alice_join_crisis_offer;$ACTOR$ a következőket adja nekünk, ha csatlakozunk az ő oldalukhoz a jelenlegi válságban:
-alice_unit_disable_rebel_hunt;Hagyd abba a lázadókra való vadászatot
-alice_regiment_battle_info;$név$ ?Y$típus$?!\nSzervezet: ?Y$szervezet$?W\nErősség: ?Y$erő$?W
+vce_join_crisis_offer;$ACTOR$ a következőket adja nekünk, ha csatlakozunk az ő oldalukhoz a jelenlegi válságban:
+vce_unit_disable_rebel_hunt;Hagyd abba a lázadókra való vadászatot
+vce_regiment_battle_info;$név$ ?Y$típus$?!\nSzervezet: ?Y$szervezet$?W\nErősség: ?Y$erő$?W
 understaffed_regiment;?REz az ezred létszámhiányos és csak $value$ katonái lesznek!?W
 tech_queue_explain;Nyomja meg az ?YSHIFT?W billentyűt a sorhoz való hozzáadáshoz, a ?Yjobb gombbal kattintson a?W-re az eltávolításhoz
-alice_province_building_build;?YSHIFT?W a teljes ?Gstate?W-ra építeni.\n?YSHIFT-Kattintson jobb gombbal?W a teljes ?Gcountry?W-re építeni.
+vce_province_building_build;?YSHIFT?W a teljes ?Gstate?W-ra építeni.\n?YSHIFT-Kattintson jobb gombbal?W a teljes ?Gcountry?W-re építeni.
 commodity_shortage;?Rhiány van ebből az áruból
 commodity_surplus;?Gebből az áruból többlet van
-alice_trade_flow_produced;?Hazai termelés:
-alice_trade_flow_consumed;?Hazai fogyasztás:
-alice_trade_flow_label;Piaci áttekintés:
-alice_trade_flow_piechart_producers;Producerek
-alice_trade_flow_piechart_consumers;Fogyasztók
-alice_trade_flow_piechart_workforce;Befektetők
-alice_diplo_release_subject;Kiadás tárgya
-alice_diplo_release_subject_desc;Kiadja az egyik alanyunkat, így többé nem témánk, a szövetségeket külön kell felbontani
-alice_diplo_release_subject_0;A mi témánk
+vce_trade_flow_produced;?Hazai termelés:
+vce_trade_flow_consumed;?Hazai fogyasztás:
+vce_trade_flow_label;Piaci áttekintés:
+vce_trade_flow_piechart_producers;Producerek
+vce_trade_flow_piechart_consumers;Fogyasztók
+vce_trade_flow_piechart_workforce;Befektetők
+vce_diplo_release_subject;Kiadás tárgya
+vce_diplo_release_subject_desc;Kiadja az egyik alanyunkat, így többé nem témánk, a szövetségeket külön kell felbontani
+vce_diplo_release_subject_0;A mi témánk
 kill_leader;Öld meg a vezetőt
 annex_null;gazdátlanná válik
 meets_the_conditions_of;feltételeinek megfelel
@@ -1020,77 +1020,77 @@ filter_enemies;Szűrés olyan nemzetek szerint, amelyek vagy ?Ellenségek vagy h
 filter_sphere;Szűrés a ?Befolyási övezetünkben?!.\n?Jobb gombbal?! szűrni azokat a nemzeteket, amelyekre hatással vagyunk, de nem a mi szféránkon.
 filter_neighbors;Szűrés nemzetek szerint, amelyeken osztozunk ?Yhatár?! with.\n?Yjobb gombbal?! nemzetek szerint szűrni osztozunk egy ?Yhatáron?! és nem ?Yvasals?!.
 filter_best_guess;Szűrés ?Ybest guess?! relevancia szerint ide tartozik az összes ?Yallies?!, ?Yenemies?!, ?Ysphereling?! és nemzetek közös ?Yhatár?! val vel.
-alice_warn_war_ends_for_us;?REz véget vet a háborúnak mindenki számára a mi oldalunkon?!.
-alice_invention_chance;Az esély ennek a ?Találmány?! a következő:
+vce_warn_war_ends_for_us;?REz véget vet a háborúnak mindenki számára a mi oldalunkon?!.
+vce_invention_chance;Az esély ennek a ?Találmány?! a következő:
 is_primary_culture;?Y$NAME$?! az elsődleges kultúra.
 is_primary_religion;?Y$NAME$?! az elsődleges vallás.
 tt_can_use_nation;A hadicél használatához szükséges feltételek:
 et_on_add;Ennek a hadicélnak a háborúhoz való hozzáadásának hatásai:
 et_on_po_accepted;Az ezzel a hadicéllal tett békeajánlat elfogadásának következményei:
-alice_no_possible_units;Egyetlen lehetséges egységet sem lehet építeni, és nincsenek is építés alatt.
-alice_debt_spending;Adósságköltés engedélyezése/letiltása
-alice_loan_size;Jelenlegi maximális hitelünk $x$. Az ennél nagyobb adósság csődöt fog okozni
-alice_currently_bankrupt;Csődben vagyunk ($x$-ig)
-alice_no_loans_possible;Jelenleg nem áll módunkban hitelt felvenni
-alice_rf_demands_enforced_trigger;A lázadók csak akkor érvényesítik követeléseiket, ha:
-alice_rf_demands_enforced_effect;Amint a lázadók érvényesítik követeléseiket, a következő hatást alkalmazzák:
-alice_rf_siege_won_trigger;Ha egy lázadó nyer egy ostromot, a következőket kell ellenőrizni, például a fővárosban, $x$-ban:
-alice_rf_siege_won_effect;És ha a fentiek mindegyike igaz, akkor a következő hatások érvényesek, például a nagybetűvel $x$:
+vce_no_possible_units;Egyetlen lehetséges egységet sem lehet építeni, és nincsenek is építés alatt.
+vce_debt_spending;Adósságköltés engedélyezése/letiltása
+vce_loan_size;Jelenlegi maximális hitelünk $x$. Az ennél nagyobb adósság csődöt fog okozni
+vce_currently_bankrupt;Csődben vagyunk ($x$-ig)
+vce_no_loans_possible;Jelenleg nem áll módunkban hitelt felvenni
+vce_rf_demands_enforced_trigger;A lázadók csak akkor érvényesítik követeléseiket, ha:
+vce_rf_demands_enforced_effect;Amint a lázadók érvényesítik követeléseiket, a következő hatást alkalmazzák:
+vce_rf_siege_won_trigger;Ha egy lázadó nyer egy ostromot, a következőket kell ellenőrizni, például a fővárosban, $x$-ban:
+vce_rf_siege_won_effect;És ha a fentiek mindegyike igaz, akkor a következő hatások érvényesek, például a nagybetűvel $x$:
 may_month_name;Lehet
-alice_ca_cant_influence;Jelenleg nem tudjuk növelni vagy csökkenteni más nemzetek véleményét
-alice_gp_status_regain_expiration;Ha nem leszünk ?Y$x$?W vagy magasabb rangúak, akkor ?Y$dátum?W-ig elveszítjük a ?Ynagy teljesítmény?W státuszt?
-alice_mil_decay_description;Természetes bomlás ?G-$x$
-alice_con_decay_description;Természetes bomlás ?R-$x$
+vce_ca_cant_influence;Jelenleg nem tudjuk növelni vagy csökkenteni más nemzetek véleményét
+vce_gp_status_regain_expiration;Ha nem leszünk ?Y$x$?W vagy magasabb rangúak, akkor ?Y$dátum?W-ig elveszítjük a ?Ynagy teljesítmény?W státuszt?
+vce_mil_decay_description;Természetes bomlás ?G-$x$
+vce_con_decay_description;Természetes bomlás ?R-$x$
 x_from_y;$x$ $y$-tól
 reinforce_rate;Ez az ezred havonta akár $x$ katonát is megerősíthet.
 reinforce_rate_none;Ezt az ezredet jelenleg nem lehet megerősíteni.
 domestic_investment_pops;Vannak $x$ tőkéseink, akiknek közvetve nagylelkű adományokat tudunk adni
 domestic_investment_needs;Minden nap $x$-ra van szükségük, hogy kielégítsék fényűző életmódjukat
-alice_budget_scaled_inc;Jövedelem: ?G$érték$
-alice_budget_scaled_1;Szegény adó: ?G$érték$
-alice_budget_scaled_2;Közepes adó: ?G$érték$
-alice_budget_scaled_3;Gazdag adó: ?G$érték$
-alice_budget_scaled_4;Tarifák: ?G$érték$
-alice_budget_scaled_exp;Költségek: ?R$érték$
-alice_budget_scaled_5;A hadsereg karbantartása: ?R$érték$
-alice_budget_scaled_6;Haditengerészeti karbantartás: ?R$érték$
-alice_budget_scaled_7;Konstrukció: ?R$érték$
-alice_budget_scaled_8;Iskolai végzettség: ?R$érték$
-alice_budget_scaled_9;Adminisztráció: ?R$érték$
-alice_budget_scaled_10;Szociális kiadások: ?R$érték$
-alice_budget_scaled_11;Katonai kiadások: ?R$érték$
-alice_budget_scaled_12;Belföldi befektetések: ?R$érték$
-alice_budget_scaled_13;Tengerentúli kiadások: ?R$value$
-alice_budget_scaled_14;Készletfeltöltés: ?R$érték$
-alice_budget_scaled_15;Háborús támogatások: ?R$érték$
-alice_budget_scaled_16;Diplomáciai érdek: ?G$érték$
-alice_budget_scaled_17;Aranytermelés: ?G$érték$
-alice_budget_scaled_net;Nettó bevétel: ?Y$value$
-alice_budget_setting_percent;Ýllítsa be: $perc$.
-alice_spending_land_construction;Teleképítés $név$-ban: ?R$költség$?W
-alice_spending_naval_construction;Haditengerészeti építés $név$-ban: ?R$költség$?W
-alice_spending_building_construction;Épületépítés $name$-ban: ?R$költség$?W
-alice_spending_factory_construction;Gyári építés $név$-ban: ?R$költség$?W
-alice_spending_unit;Az egységre költött teljes összeg $name$-ban: ?R$cost$?W
-alice_spending_unit_1;Az egységre költött teljes összeg: ?R$költség$?W
-alice_spending_total;?Összesen elköltött:?W
-alice_spending_commodity;?R$cost$?W – $need$ szükséges $name$ ($val$)
-alice_spending_commodity_2;?R$cost$?W - $need$ vásárlása $name$ ($érték$ x egységnél). Haladás: $x$/$y$
-alice_recommended_build;?GEzt a gyárat ajánlott megépíteni?W
-alice_factory_bonus;?Y$x$?W bónuszt kapunk, ha:
-alice_factory_inputs;Szükséges bemenetek:
-alice_factory_input_item;?R$cost$?W – $need$ szükséges $name$ ($val$)
-alice_factory_base_workforce;Alapmunkaerő ?Y$x$?W
-alice_factory_total_bonus;Ez körülbelül ?Y$x$?W
-alice_slider_controls;?YBal kattintás?W az ?Y$érték$ értékkel történő növeléshez?W\n?YSHIFT-Bal kattintás?W ?Y$x$-val történő növeléshez?W\n?YSHIFT-Jobb-kattintás?W a maximális érték növeléséhez
-alice_slider_controls_2;?YBal kattintás?W ?Y$érték$-val csökkentéséhez?W\n?YSHIFT-Bal kattintás?W ?Y$x$-val csökkentéséhez
+vce_budget_scaled_inc;Jövedelem: ?G$érték$
+vce_budget_scaled_1;Szegény adó: ?G$érték$
+vce_budget_scaled_2;Közepes adó: ?G$érték$
+vce_budget_scaled_3;Gazdag adó: ?G$érték$
+vce_budget_scaled_4;Tarifák: ?G$érték$
+vce_budget_scaled_exp;Költségek: ?R$érték$
+vce_budget_scaled_5;A hadsereg karbantartása: ?R$érték$
+vce_budget_scaled_6;Haditengerészeti karbantartás: ?R$érték$
+vce_budget_scaled_7;Konstrukció: ?R$érték$
+vce_budget_scaled_8;Iskolai végzettség: ?R$érték$
+vce_budget_scaled_9;Adminisztráció: ?R$érték$
+vce_budget_scaled_10;Szociális kiadások: ?R$érték$
+vce_budget_scaled_11;Katonai kiadások: ?R$érték$
+vce_budget_scaled_12;Belföldi befektetések: ?R$érték$
+vce_budget_scaled_13;Tengerentúli kiadások: ?R$value$
+vce_budget_scaled_14;Készletfeltöltés: ?R$érték$
+vce_budget_scaled_15;Háborús támogatások: ?R$érték$
+vce_budget_scaled_16;Diplomáciai érdek: ?G$érték$
+vce_budget_scaled_17;Aranytermelés: ?G$érték$
+vce_budget_scaled_net;Nettó bevétel: ?Y$value$
+vce_budget_setting_percent;Ýllítsa be: $perc$.
+vce_spending_land_construction;Teleképítés $név$-ban: ?R$költség$?W
+vce_spending_naval_construction;Haditengerészeti építés $név$-ban: ?R$költség$?W
+vce_spending_building_construction;Épületépítés $name$-ban: ?R$költség$?W
+vce_spending_factory_construction;Gyári építés $név$-ban: ?R$költség$?W
+vce_spending_unit;Az egységre költött teljes összeg $name$-ban: ?R$cost$?W
+vce_spending_unit_1;Az egységre költött teljes összeg: ?R$költség$?W
+vce_spending_total;?Összesen elköltött:?W
+vce_spending_commodity;?R$cost$?W – $need$ szükséges $name$ ($val$)
+vce_spending_commodity_2;?R$cost$?W - $need$ vásárlása $name$ ($érték$ x egységnél). Haladás: $x$/$y$
+vce_recommended_build;?GEzt a gyárat ajánlott megépíteni?W
+vce_factory_bonus;?Y$x$?W bónuszt kapunk, ha:
+vce_factory_inputs;Szükséges bemenetek:
+vce_factory_input_item;?R$cost$?W – $need$ szükséges $name$ ($val$)
+vce_factory_base_workforce;Alapmunkaerő ?Y$x$?W
+vce_factory_total_bonus;Ez körülbelül ?Y$x$?W
+vce_slider_controls;?YBal kattintás?W az ?Y$érték$ értékkel történő növeléshez?W\n?YSHIFT-Bal kattintás?W ?Y$x$-val történő növeléshez?W\n?YSHIFT-Jobb-kattintás?W a maximális érték növeléséhez
+vce_slider_controls_2;?YBal kattintás?W ?Y$érték$-val csökkentéséhez?W\n?YSHIFT-Bal kattintás?W ?Y$x$-val csökkentéséhez
 explain_colonial_points;A másodlagos és nagyhatalmak gyarmati pontokat halmoznak fel.
-alice_lobby_back;Vissza az előcsarnokba
-alice_lobby_back_tt_1;Már a kibaszott előcsarnokban vagy
-alice_lobby_back_tt_2;Csak a házigazda mehet vissza az előcsarnokba
+vce_lobby_back;Vissza az előcsarnokba
+vce_lobby_back_tt_1;Már a kibaszott előcsarnokban vagy
+vce_lobby_back_tt_2;Csak a házigazda mehet vissza az előcsarnokba
 reopen_with_tab;Ezt az ablakot újra megnyithatja az ?YTAB?W segítségével
-alice_topbar_tab_1;Nyissa meg vagy zárja be ezt a lapot
-alice_topbar_tab_2;Nyissa meg vagy zárja be a népesség lapot
+vce_topbar_tab_1;Nyissa meg vagy zárja be ezt a lapot
+vce_topbar_tab_2;Nyissa meg vagy zárja be a népesség lapot
 colonial_points_from_technology;A technológiákból:
 colonial_points_from_naval_bases;Haditengerészeti bázisokról:
 colonial_points_from_ships;Hajókról:
@@ -1104,13 +1104,13 @@ domestic_investment_label;Belföldi befektetés:
 modifier_min_domestic_investment;Minimális hazai beruházási ráta
 modifier_max_domestic_investment;Max hazai beruházási ráta
 mouse_left_click_mode_label;Kattintson a felfüggesztés feloldására
-alice_supply_limit_desc;Ellátási korlát: $x$
-alice_factory_worker_1;Alkalmazott: ?G$x$?W
-alice_factory_worker_2;Munkanélküli: ?R$x$?W
-alice_rgo_unemployment_country_alert;A következő államokban vannak munkanélküli RGO-k:
+vce_supply_limit_desc;Ellátási korlát: $x$
+vce_factory_worker_1;Alkalmazott: ?G$x$?W
+vce_factory_worker_2;Munkanélküli: ?R$x$?W
+vce_rgo_unemployment_country_alert;A következő államokban vannak munkanélküli RGO-k:
 pop_promote_info_on_sel_2;$val$ várható változás a $who$-ban a $where$-ban a következő hónapban.
-alice_readme;?GÜdvözlünk a Kat's PA Engine-ben!?W\nA Kat's PA Engine a kedvenc viktoriánus kori videojátékod emulációja (nem szimulátora!), más szóval néhány mechanikát módosítunk, hogy az újabb játékosok számára könnyebben érthető legyen. a világ dinamikusabbá és szórakoztatóbbá tétele, a régi hibák kijavítása (például válságok esetén) és új életminőségi funkciók bevezetése.\n?GÚj funkciók!?W\n?YGlobe?W: ?Sokan szeretik?W, ?Rhated? W egyesek, kapcsolják ki, ha zavar!\n?YTech queue:?W SHIFT-Kattintson a jobb gombbal, hogy technológiákat adjon a tech sorhoz! (Jobb kattintás a sorból való kilépéshez)\n?YHazai befektetés:?W Ahelyett, hogy egyedi projektekre fektetne be, tegye meg egy lépésben\n?YTeljesítmény:?W A másodpercenkénti ketyegés (nem FPS) legalább x10-szer gyorsabb\n? YLinter:?W Lefedettségi hibákat és figyelmeztetéseket kaphat a modjaiban, könnyen elkaphatja a hibákat és az elírási hibákat\n?YMakróépítő:?W Építhet különböző összetételű egységeket makrókészítőnkkel\n?Y11 új térképmódjai:?W Vallás, erőd, foglalkoztatás, stb\n?YBuild az egész országban:?W SHIFT Kattintson a jobb gombbal az egész országban való építkezéshez!\n?GControls:?W\n?YTAB?W: Csevegőablak megnyitása\n?YESC?W: Nyissa meg a főmenüt és beállítások menü\n?YTilde (`)?W vagy ?YTilde (~)?W: Nyissa meg a konzolt\n?Élvezzétek a játékot! =^w^=?W
-alice_nf_controls;?Ybal gombbal?W kijelöléséhez vagy cseréjéhez\n?Yjobb gombbal?W eltávolításához
+vce_readme;?GÜdvözlünk a Kat's PA Engine-ben!?W\nA Kat's PA Engine a kedvenc viktoriánus kori videojátékod emulációja (nem szimulátora!), más szóval néhány mechanikát módosítunk, hogy az újabb játékosok számára könnyebben érthető legyen. a világ dinamikusabbá és szórakoztatóbbá tétele, a régi hibák kijavítása (például válságok esetén) és új életminőségi funkciók bevezetése.\n?GÚj funkciók!?W\n?YGlobe?W: ?Sokan szeretik?W, ?Rhated? W egyesek, kapcsolják ki, ha zavar!\n?YTech queue:?W SHIFT-Kattintson a jobb gombbal, hogy technológiákat adjon a tech sorhoz! (Jobb kattintás a sorból való kilépéshez)\n?YHazai befektetés:?W Ahelyett, hogy egyedi projektekre fektetne be, tegye meg egy lépésben\n?YTeljesítmény:?W A másodpercenkénti ketyegés (nem FPS) legalább x10-szer gyorsabb\n? YLinter:?W Lefedettségi hibákat és figyelmeztetéseket kaphat a modjaiban, könnyen elkaphatja a hibákat és az elírási hibákat\n?YMakróépítő:?W Építhet különböző összetételű egységeket makrókészítőnkkel\n?Y11 új térképmódjai:?W Vallás, erőd, foglalkoztatás, stb\n?YBuild az egész országban:?W SHIFT Kattintson a jobb gombbal az egész országban való építkezéshez!\n?GControls:?W\n?YTAB?W: Csevegőablak megnyitása\n?YESC?W: Nyissa meg a főmenüt és beállítások menü\n?YTilde (`)?W vagy ?YTilde (~)?W: Nyissa meg a konzolt\n?Élvezzétek a játékot! =^w^=?W
+vce_nf_controls;?Ybal gombbal?W kijelöléséhez vagy cseréjéhez\n?Yjobb gombbal?W eltávolításához
 unit_controls_tooltip_1;?YBal kattintás?W kijelölés (minden más kijelölésének törlése)\n?YSHIFT-Bal kattintás?W hozzáadás a kijelöléshez
 unit_controls_tooltip_2;?Y jobb gombbal kattintson egy tartományra? R részleges visszavonulás (? Kerékpározás/forgás? W) tartományba
 unit_control_group_tooltip;Nyomja meg az ?YCTRL-1?W - ?YCTRL-9?W gombot az egység vezérlőcsoporthoz való hozzárendeléséhez, illetve hozzárendelésének megszüntetéséhez, majd nyomja meg az ?Y1?W - ?Y9?W gombot a kiválasztásához.
@@ -1119,76 +1119,76 @@ demobilize;Leszerelés
 mobilize;Mobilizálni
 cb_creation_detail_none;Kérjük, válasszon egy casus bellit, hogy elkezdhesse a gyártást $country$ ellenében.
 cb_creation_detail;Készíthetünk casus bellit $ország$ ellen ?Y$type$?W indoklással. Ez a folyamat nagyjából ?Y$napot$?W eltarthat, és a felfedezésből eredő lehetséges költségek ?R$badboy$?W hírhedtséget okoznak nekünk.
-alice_mob_controls;?Yjobb gombbal?W az újramobilizáláshoz
-alice_mw_create_1;Ýltalános hozzáadása
-alice_mw_create_2;Add hozzá admirálist
-alice_mw_create_lpb;?YVezetői pont?
-alice_mw_create_lp;?R$x$?W ?Yleadership pont?W kell hozzá
-alice_mw_controls_1;?YJobb kattintás?W létrehozhat? Gall?W lehetséges tábornokként
-alice_mw_controls_2;?YJobb kattintás?W létrehozhat? Gall?W lehetséges admirálisként
-alice_daily_leadership_tt;A $poptype$ ?G$value$?W vezetőpontot biztosít (?Y$töredék$?W a populációból, ?Y$optimális$?W az optimális). Az extra vezetői pontokat automatikusan új tábornokok létrehozására fordítjuk.
+vce_mob_controls;?Yjobb gombbal?W az újramobilizáláshoz
+vce_mw_create_1;Ýltalános hozzáadása
+vce_mw_create_2;Add hozzá admirálist
+vce_mw_create_lpb;?YVezetői pont?
+vce_mw_create_lp;?R$x$?W ?Yleadership pont?W kell hozzá
+vce_mw_controls_1;?YJobb kattintás?W létrehozhat? Gall?W lehetséges tábornokként
+vce_mw_controls_2;?YJobb kattintás?W létrehozhat? Gall?W lehetséges admirálisként
+vce_daily_leadership_tt;A $poptype$ ?G$value$?W vezetőpontot biztosít (?Y$töredék$?W a populációból, ?Y$optimális$?W az optimális). Az extra vezetői pontokat automatikusan új tábornokok létrehozására fordítjuk.
 unit_current_supply;Ez az egység ?Y$val$%?W-ot kapott az elmúlt napon szükséges készletekből.\nA jelenlegi fogyasztási mennyiségünkből a következő volt:
 unit_current_supply_high;$mi $: ?Y$val$?W/?Y$value$?! ?l(?W?G$összesen$%?W?l kereslet kielégítése)
 unit_current_supply_mid;$mi $: ?Y$val$?!/?Y$value$?! ?l(?O$összesen$%?W?l kereslet kielégítése)
 unit_current_supply_low;$mi $: ?Y$val$?!/?Y$value$?! ?l(?R$összesen$%?W?l kereslet kielégítése)
-alice_crisis_inactive;Jelenleg nincs aktív válság
-alice_crisis_finding_attacker;Támadó keresése a jelenlegi válságra
-alice_crisis_finding_defender;Védőt találni a jelenlegi válságra
-alice_crisis_heating_up;A válság felmelegszik, jelenleg ?R$hőmérséklet$?W
-alice_last_crisis;A legutóbbi válság $date$-ban következett be (a válságok között $time$ hónapos lehűlés van)
-alice_crisis_par_1;?RAttackers?W:
-alice_crisis_par_2;?BDefenders?W:
-alice_crisis_par_3;?YCsak érdekel (nincs oldal)?W:
-alice_commodity_cprice;Jelenlegi ára: $x $
-alice_commodity_cost;Költség: $x $
-alice_commodity_eprice;Érvényes ár: $x$
-alice_trade_top_producers;Legjobb ?Y$érték$?W gyártók:
-alice_trade_no_producers;?Senki sem gyártja ezt az árut?W
-alice_political_party_trigger;Csak ?Y$date_long_0$?W és ?Y$date_long_1$?W között érhető el, és teljesíti a következő triggert:
-alice_political_party_no_trigger;Csak ?Y$date_long_0$?W és ?Y$date_long_1$?W között érhető el
-alice_ai_decision;Az AI esélye, hogy ezt a döntést választja, a következőktől függ:
-alice_mobilized_is_ai_controlled;Függetlenül attól, hogy a mozgósított egységek automatikusan mesterséges intelligencia által irányítottakká válnak
-alice_ai_controlled_unit;Engedélyezi/letiltja az egység mesterséges intelligenciájú vezérlését, az egység:\n- Automatikusan megerősíti a frontvonalakat\n- Automatikusan ostromolja, amikor biztonságosan megteheti\n- Lázadókra vadászik\n- Védelmi pozíciót alakít ki azokkal a nemzetekkel szemben, amelyeket valószínűleg megtámadunk. (ezt a mesterséges intelligencia dönti el, és csak békeidőben)\nHa azt szeretné, hogy ez az egység egy adott nemzetet vagy régiót célozzon meg, először vigye közel ahhoz a régióhoz vagy nemzethez, majd kapcsolja be az AI-vezérlést – mert az AI felülírja az összes parancsot, amíg újra ki nem kapcsolja
-alice_navy_allocation_tt;Az ?Y$curr$?W hajókkal ?Y$tot$?W összteljesítményt halmozunk fel, ami ?Y$req$?W-t igényel flottánk számára. Az egyes haditengerészeti flották fogyasztásának részletes összefoglalása:
-alice_navy_allocation_2;$name$: ?Y$value$?W (?Y$perc$?W)
-alice_wg_condition_1;Védőként nincs status quo
-alice_wg_condition_2;Háborúban áll velünk
-alice_wg_condition_3;Egyedi hadicél (nem egy másik hadicél másolata)
-alice_wg_condition_4;Nem ugyanazon az oldalon, mint mi
-alice_wg_condition_5;Kielégíti a hadicél kiváltó okait
-alice_wg_condition_6;Elég dzsingoizmus ($need$ kell, $értéke$ van)
-alice_wg_condition_7;Konstruálható hadicél
-alice_tt_wg_infamy_limit;?REz a hadicél túllépi a hírhedt határt?W
-alice_wg_usage_trigger;Csak akkor használható, ha a következő trigger teljesül:
+vce_crisis_inactive;Jelenleg nincs aktív válság
+vce_crisis_finding_attacker;Támadó keresése a jelenlegi válságra
+vce_crisis_finding_defender;Védőt találni a jelenlegi válságra
+vce_crisis_heating_up;A válság felmelegszik, jelenleg ?R$hőmérséklet$?W
+vce_last_crisis;A legutóbbi válság $date$-ban következett be (a válságok között $time$ hónapos lehűlés van)
+vce_crisis_par_1;?RAttackers?W:
+vce_crisis_par_2;?BDefenders?W:
+vce_crisis_par_3;?YCsak érdekel (nincs oldal)?W:
+vce_commodity_cprice;Jelenlegi ára: $x $
+vce_commodity_cost;Költség: $x $
+vce_commodity_eprice;Érvényes ár: $x$
+vce_trade_top_producers;Legjobb ?Y$érték$?W gyártók:
+vce_trade_no_producers;?Senki sem gyártja ezt az árut?W
+vce_political_party_trigger;Csak ?Y$date_long_0$?W és ?Y$date_long_1$?W között érhető el, és teljesíti a következő triggert:
+vce_political_party_no_trigger;Csak ?Y$date_long_0$?W és ?Y$date_long_1$?W között érhető el
+vce_ai_decision;Az AI esélye, hogy ezt a döntést választja, a következőktől függ:
+vce_mobilized_is_ai_controlled;Függetlenül attól, hogy a mozgósított egységek automatikusan mesterséges intelligencia által irányítottakká válnak
+vce_ai_controlled_unit;Engedélyezi/letiltja az egység mesterséges intelligenciájú vezérlését, az egység:\n- Automatikusan megerősíti a frontvonalakat\n- Automatikusan ostromolja, amikor biztonságosan megteheti\n- Lázadókra vadászik\n- Védelmi pozíciót alakít ki azokkal a nemzetekkel szemben, amelyeket valószínűleg megtámadunk. (ezt a mesterséges intelligencia dönti el, és csak békeidőben)\nHa azt szeretné, hogy ez az egység egy adott nemzetet vagy régiót célozzon meg, először vigye közel ahhoz a régióhoz vagy nemzethez, majd kapcsolja be az AI-vezérlést – mert az AI felülírja az összes parancsot, amíg újra ki nem kapcsolja
+vce_navy_allocation_tt;Az ?Y$curr$?W hajókkal ?Y$tot$?W összteljesítményt halmozunk fel, ami ?Y$req$?W-t igényel flottánk számára. Az egyes haditengerészeti flották fogyasztásának részletes összefoglalása:
+vce_navy_allocation_2;$name$: ?Y$value$?W (?Y$perc$?W)
+vce_wg_condition_1;Védőként nincs status quo
+vce_wg_condition_2;Háborúban áll velünk
+vce_wg_condition_3;Egyedi hadicél (nem egy másik hadicél másolata)
+vce_wg_condition_4;Nem ugyanazon az oldalon, mint mi
+vce_wg_condition_5;Kielégíti a hadicél kiváltó okait
+vce_wg_condition_6;Elég dzsingoizmus ($need$ kell, $értéke$ van)
+vce_wg_condition_7;Konstruálható hadicél
+vce_tt_wg_infamy_limit;?REz a hadicél túllépi a hírhedt határt?W
+vce_wg_usage_trigger;Csak akkor használható, ha a következő trigger teljesül:
 province_id;Tartomány Id
 nation_tag;Nemzet címke
 rgo_trade_prod_1;RGO mezőgazdasági termelés: $x$ ($y$)
 rgo_trade_prod_2;RGO bányászati ​​termelés: $x$ ($y$)
 rgo_trade_prod_3;RGO pénzverés gyártás: $x$ ($y$)
-alice_artisan_trade_prod;Kézműves gyártás: $x$ ($y$)
-alice_factory_trade_prod;Gyári gyártás: $x$ ($y$)
-alice_all_trade_prod;Teljes termelés: $x $
-alice_interested_in_alliance;(Csak mesterséges intelligencia nemzetekre vonatkozik) Jelölje meg, hogy szövetségre vagyunk kíváncsiak ezzel az országgal, és azonnal elfogadjuk a szövetségi ajánlatokat
-alice_merge_rally_point_why;A gyülekezési pontok összevonása elavult, a gyülekezési pontok mostantól automatikusan egyesülnek
-alice_mvcap_1;A fővárost ebbe a tartományba költözteti
-alice_mvcap_2;Nincs folyamatos válság
-alice_mvcap_3;Békében
-alice_mvcap_4;Már nem a főváros
-alice_mvcap_5;Nem gyarmati
-alice_mvcap_6;Ugyanazon a kontinensen, mint a jelenlegi főváros
-alice_mvcap_7;Domináns elfogadott kultúra
-alice_mvcap_8;Ezt a tartományt nem ostromolják
-alice_mvcap_9;A jelenlegi fővárost nem ostromolják
-alice_mvcap_10;Az Ön tulajdonában van
-alice_mvcap_11;Te irányítod
-alice_mvcap_12;A tulajdonos magja
-alice_pnt_pops;?YNépesség:?! $x$
-alice_pnt_rpops;?Gazdag rétegek:?! $x$ ($y$)
-alice_pnt_mpops;?YKözépső rétegek:?! $x$ ($y$)
-alice_pnt_ppops;?YSzegény réteg:?! $x$ ($y$)
-alice_pnt_culture;?YKultúra:?! $x$
-alice_pnt_religion;?Y Vallás:?! $x$
-alice_pnt_dominant_religion;?YDománs vallás:?! $x$
-alice_pnt_dominant_ideology;?YDománs ideológia:?! $x$
+vce_artisan_trade_prod;Kézműves gyártás: $x$ ($y$)
+vce_factory_trade_prod;Gyári gyártás: $x$ ($y$)
+vce_all_trade_prod;Teljes termelés: $x $
+vce_interested_in_alliance;(Csak mesterséges intelligencia nemzetekre vonatkozik) Jelölje meg, hogy szövetségre vagyunk kíváncsiak ezzel az országgal, és azonnal elfogadjuk a szövetségi ajánlatokat
+vce_merge_rally_point_why;A gyülekezési pontok összevonása elavult, a gyülekezési pontok mostantól automatikusan egyesülnek
+vce_mvcap_1;A fővárost ebbe a tartományba költözteti
+vce_mvcap_2;Nincs folyamatos válság
+vce_mvcap_3;Békében
+vce_mvcap_4;Már nem a főváros
+vce_mvcap_5;Nem gyarmati
+vce_mvcap_6;Ugyanazon a kontinensen, mint a jelenlegi főváros
+vce_mvcap_7;Domináns elfogadott kultúra
+vce_mvcap_8;Ezt a tartományt nem ostromolják
+vce_mvcap_9;A jelenlegi fővárost nem ostromolják
+vce_mvcap_10;Az Ön tulajdonában van
+vce_mvcap_11;Te irányítod
+vce_mvcap_12;A tulajdonos magja
+vce_pnt_pops;?YNépesség:?! $x$
+vce_pnt_rpops;?Gazdag rétegek:?! $x$ ($y$)
+vce_pnt_mpops;?YKözépső rétegek:?! $x$ ($y$)
+vce_pnt_ppops;?YSzegény réteg:?! $x$ ($y$)
+vce_pnt_culture;?YKultúra:?! $x$
+vce_pnt_religion;?Y Vallás:?! $x$
+vce_pnt_dominant_religion;?YDománs vallás:?! $x$
+vce_pnt_dominant_ideology;?YDománs ideológia:?! $x$
 ledger_ppp_gdp;GDP (PPP)
 ledger_ppp_gdp_per_capita;1 millió főre jutó GDP (PPP).

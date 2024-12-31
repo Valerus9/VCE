@@ -18,7 +18,7 @@ list(APPEND TESTS_CORE_SOURCES_LIST
 if(WIN32)
 add_executable(tests_project
 	${TESTS_CORE_SOURCES_LIST}
-	${ALICE_CORE_SOURCES_LIST}
+	${vce_CORE_SOURCES_LIST}
 	
 	"${PROJECT_SOURCE_DIR}/src/map/map_state.cpp"
 	"${PROJECT_SOURCE_DIR}/src/map/map_data_loading.cpp"
@@ -29,7 +29,7 @@ add_executable(tests_project
 else()
 add_executable(tests_project
 	${TESTS_CORE_SOURCES_LIST}
-	${ALICE_CORE_SOURCES_LIST}
+	${vce_CORE_SOURCES_LIST}
 
 	"${PROJECT_SOURCE_DIR}/src/map/map_state.cpp"
 	"${PROJECT_SOURCE_DIR}/src/map/map_data_loading.cpp"
@@ -63,7 +63,7 @@ add_dependencies(tests_project GENERATE_TEST_PARSERS)
 add_dependencies(tests_project GENERATE_PARSERS)
 add_dependencies(tests_project GENERATE_CONTAINER ParserGenerator)
 
-target_compile_definitions(tests_project PUBLIC ALICE_NO_ENTRY_POINT)
+target_compile_definitions(tests_project PUBLIC vce_NO_ENTRY_POINT)
 #target_precompile_headers(tests_project REUSE_FROM VicCEngine)
 
 list(APPEND CMAKE_MODULE_PATH ${catch2_SOURCE_DIR}/contrib)

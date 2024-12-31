@@ -1970,7 +1970,7 @@ int WINAPI wWinMain(
 	wcex.hbrBackground = NULL;
 	wcex.lpszMenuName = NULL;
 	wcex.hCursor = LoadCursor(NULL, IDC_ARROW);
-	wcex.lpszClassName = NATIVE("alice_launcher_class");
+	wcex.lpszClassName = NATIVE("vce_launcher_class");
 
 	if(RegisterClassEx(&wcex) == 0) {
 		window::emit_error_message("Unable to register window class", true);
@@ -1991,7 +1991,7 @@ int WINAPI wWinMain(
 
 	launcher::m_hwnd = CreateWindowEx(
 		0,
-		L"alice_launcher_class",
+		L"vce_launcher_class",
 		L"Launch Kat's PA Engine",
 		WS_VISIBLE | WS_CAPTION | WS_MINIMIZEBOX | WS_THICKFRAME | WS_SYSMENU | WS_CLIPCHILDREN | WS_CLIPSIBLINGS,
 		CW_USEDEFAULT,

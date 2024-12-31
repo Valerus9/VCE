@@ -78,21 +78,21 @@ namespace ui {
 		window_element_base::on_create(state);
 		xy_pair cur_pos{0, 0};
 		{
-			auto ptr = make_element_by_type<message_lr_button<false>>(state, "alice_left_right_button");
+			auto ptr = make_element_by_type<message_lr_button<false>>(state, "vce_left_right_button");
 			cur_pos.x = base_data.size.x - (ptr->base_data.size.x * 2);
 			cur_pos.y = ptr->base_data.size.y * 1;
 			ptr->base_data.position = cur_pos;
 			add_child_to_front(std::move(ptr));
 		}
 		{
-			auto ptr = make_element_by_type<message_count_text>(state, "alice_page_count");
+			auto ptr = make_element_by_type<message_count_text>(state, "vce_page_count");
 			cur_pos.x -= ptr->base_data.size.x;
 			ptr->base_data.position = cur_pos;
 			count_text = static_cast<simple_text_element_base*>(ptr.get());
 			add_child_to_front(std::move(ptr));
 		}
 		{
-			auto ptr = make_element_by_type<message_lr_button<true>>(state, "alice_left_right_button");
+			auto ptr = make_element_by_type<message_lr_button<true>>(state, "vce_left_right_button");
 			cur_pos.x -= ptr->base_data.size.x;
 			ptr->base_data.position = cur_pos;
 			add_child_to_front(std::move(ptr));

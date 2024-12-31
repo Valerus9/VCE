@@ -267,7 +267,7 @@ struct message_setting_changed_notification { };
 	class message_settings_listbox : public listbox_element_base<message_settings_item, int32_t> {
 		protected:
 		std::string_view get_row_element_name() override {
-			return "alice_message_setting_item";
+			return "vce_message_setting_item";
 		}
 
 		public:

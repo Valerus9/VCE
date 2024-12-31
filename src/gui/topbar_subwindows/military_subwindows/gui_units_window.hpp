@@ -547,7 +547,7 @@ namespace ui {
 			if(disarmed) {
 				text::localised_format_box(state, contents, box, std::string_view("cantbuild_forcedisarm"));
 			} else if(no_possible_units) {
-				text::localised_format_box(state, contents, box, std::string_view("alice_no_possible_units"));
+				text::localised_format_box(state, contents, box, std::string_view("vce_no_possible_units"));
 			} else {
 				if constexpr(std::is_same_v<T, dcon::army_id>) {
 					text::localised_format_box(state, contents, box, std::string_view("military_build_army_tooltip"));

@@ -13,13 +13,13 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_alice_left_right"
+		name = "GFX_vce_left_right"
 		texturefile = "gfx\\interface\\toggle_default.tga"
 		noOfFrames = 2
 	}
 
 	textSpriteType = {
-		name = "GFX_alice_odds"
+		name = "GFX_vce_odds"
 		texturefile = "assets\\odds_icon.dds"
 	}
 
@@ -30,33 +30,33 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_alice_unit_frames"
+		name = "GFX_vce_unit_frames"
 		texturefile = "assets\\unitframes.png"
 		noOfFrames = 5
 	}
 	spriteType = {
-		name = "GFX_alice_small_unit_frames"
+		name = "GFX_vce_small_unit_frames"
 		texturefile = "assets\\small_uframes.png"
 		noOfFrames = 5
 	}
 	spriteType = {
-		name = "GFX_alice_unit_left_edge"
+		name = "GFX_vce_unit_left_edge"
 		texturefile = "assets\\unitleftedges.png"
 		noOfFrames = 5
 	}
 	spriteType = {
-		name = "GFX_alice_unit_right_edge"
+		name = "GFX_vce_unit_right_edge"
 		texturefile = "assets\\unitrightedge.png"
 		noOfFrames = 1
 	}
 	progressbartype = {
-		name = "GFX_alice_org_bar"
+		name = "GFX_vce_org_bar"
 		textureFile1 = "assets\\orgbar_top.png"
 		textureFile2 = "assets\\orgbar_bottom.png"
 		size = { 51 4 }
 	}
 	spriteType = {
-		name = "GFX_alice_unit_status"
+		name = "GFX_vce_unit_status"
 		texturefile = "assets\\unitstatus.png"
 		noOfFrames = 8
 	}
@@ -72,54 +72,54 @@ spriteTypes = {
 		size = { 64 11 }
 	}
 	spriteType = {
-		name = "GFX_alice_battle_caps"
+		name = "GFX_vce_battle_caps"
 		texturefile = "assets\\battle_ends.png"
 		noOfFrames = 2
 	}
 	progressbartype = {
-		name = "GFX_alice_battle_bar"
+		name = "GFX_vce_battle_bar"
 		textureFile1 = "assets\\battle_blue.png"
 		textureFile2 = "assets\\battle_red.png"
 		size = { 86 15 }
 	}
 	spriteType = {
-		name = "GFX_alice_expanded_port"
+		name = "GFX_vce_expanded_port"
 		texturefile = "assets\\port_ex.png"
 		noOfFrames = 5
 	}
 	spriteType = {
-		name = "GFX_alice_small_port_expanded"
+		name = "GFX_vce_small_port_expanded"
 		texturefile = "assets\\port_small.png"
 		noOfFrames = 5
 	}
 	spriteType = {
-		name = "GFX_alice_small_port_icon"
+		name = "GFX_vce_small_port_icon"
 		texturefile = "assets\\port_small_nc.png"
 		noOfFrames = 5
 	}
 	spriteType = {
-		name = "GFX_alice_port_levels"
+		name = "GFX_vce_port_levels"
 		texturefile = "assets\\port_bars.png"
 		noOfFrames = 5
 	}
 	spriteType = {
-		name = "GFX_alice_port"
+		name = "GFX_vce_port"
 		texturefile = "assets\\port_empty.png"
 		noOfFrames = 5
 	}
 	corneredTileSpriteType = {
-		name = "GFX_alice_panel_bg"
+		name = "GFX_vce_panel_bg"
 		size = { 32 32 }
 		texturefile = "assets\\new_panel_bg.png"
 		borderSize = { 8 8 }
 	}
 	maskedShieldType = {
-		name = "GFX_alice_unit_flag"
+		name = "GFX_vce_unit_flag"
 		textureFile1 = "assets\\unit_flag_overlay.png"
 		textureFile2 = "assets\\unit_flag_mask.png"
 	}
 	spriteType = {
-		name = "GFX_alice_unit_select_leader"
+		name = "GFX_vce_unit_select_leader"
 		texturefile = "assets\\leader_select_replacement.png"
 		noOfFrames = 1
 	}
@@ -129,62 +129,62 @@ spriteTypes = {
 		noOfFrames = 1
 	}
 	spriteType = {
-		name = "GFX_alice_naval_combat_bg"
+		name = "GFX_vce_naval_combat_bg"
 		texturefile = "assets\\naval_combat_bg_2.png"
 		noOfFrames = 1
 	}
 	spriteType = {
-		name = "GFX_alice_message_type"
+		name = "GFX_vce_message_type"
 		texturefile = "assets\\message_disp_options.png"
 		noOfFrames = 5
 	}
 	spriteType = {
-		name = "GFX_alice_event_auto"
+		name = "GFX_vce_event_auto"
 		texturefile = "assets\\event_auto.png"
 		noOfFrames = 1
 	}
 	spriteType = {
-		name = "GFX_alice_election_event_auto"
+		name = "GFX_vce_election_event_auto"
 		texturefile = "assets\\election_event_auto.png"
 		noOfFrames = 1
 	}
 	spriteType = {
-		name = "GFX_alice_frontend_campaign_entry"
-		texturefile = "assets\\alice_save_entry.png"
+		name = "GFX_vce_frontend_campaign_entry"
+		texturefile = "assets\\vce_save_entry.png"
 		noOfFrames = 2
 	}
 	spriteType = {
-		name = "GFX_alice_map_fort"
+		name = "GFX_vce_map_fort"
 		texturefile = "assets\\small_fort.dds"
 		noOfFrames = 1
 	}
 	spriteType = {
-		name = "GFX_alice_map_rail"
+		name = "GFX_vce_map_rail"
 		texturefile = "assets\\small_rail.dds"
 		noOfFrames = 1
 	}
 	spriteType = {
-		name = "GFX_alice_map_bank"
+		name = "GFX_vce_map_bank"
 		texturefile = "assets\\small_bank.dds"
 		noOfFrames = 1
 	}
 	spriteType = {
-		name = "GFX_alice_map_university"
+		name = "GFX_vce_map_university"
 		texturefile = "assets\\small_university.dds"
 		noOfFrames = 1
 	}
 	spriteType = {
-		name = "GFX_alice_map_rail_2"
+		name = "GFX_vce_map_rail_2"
 		texturefile = "assets\\sm_gold_train.png"
 		noOfFrames = 1
 	}
 	spriteType = {
-		name = "GFX_alice_map_fort_2"
+		name = "GFX_vce_map_fort_2"
 		texturefile = "assets\\sm_gold_cannon.png"
 		noOfFrames = 1
 	}
 	spriteType = {
-		name = "GFX_alice_map_dots"
+		name = "GFX_vce_map_dots"
 		texturefile = "assets\\gold_dot_strip.png"
 		noOfFrames = 6
 	}
@@ -196,13 +196,13 @@ spriteTypes = {
 		size = { 180 30 }
 	}
 	spriteType = {
-		name = "GFX_alice_white_rectangle"
-		texturefile = "assets\\alice_ws.png"
+		name = "GFX_vce_white_rectangle"
+		texturefile = "assets\\vce_ws.png"
 		noOfFrames = 1
 	}
 	spriteType = {
-		name = "GFX_alice_striped_rectangle"
-		texturefile = "assets\\alice_ds.png"
+		name = "GFX_vce_striped_rectangle"
+		texturefile = "assets\\vce_ds.png"
 		noOfFrames = 1
 	}
 

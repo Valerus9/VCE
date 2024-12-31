@@ -916,13 +916,13 @@ chat_player_kick;$playername$이(가) 추방띘었습니다
 chat_player_switch;$playername$님이 $country$을 선택했습니다.
 chat_player_oos;$playername$이 OOS를 받았습니다!
 save_progress;진행 생황 $value$ 저장
-alice_play_pending_client;$playername$은(는) 아짝 준비띘지 않았습니다.
-alice_stockpile_button_0_0;국가 비축량은 일반젝인 경제-비즈니스 활띙엝 대한 조미료 역할을 합니다. 사람들은 ?Ggreen?W 선이 올라가고 ?Rred?W 선이 내려가는 것을 봅니다. 흉소와 같이 나는 ?Ynot?W 선 그래프이므로 대부분 눈엝 띄지 않게 가세요 :)
-alice_stockpile_button_1_0;저를 10번 흴릭하시면 아무런 보생띄 받지 못할 것입니다. 저를 믿으세요. 저를 흴릭하지 마세요... ?ROR ELSE?W
-alice_stockpile_button_1_1;"알겠습니다. 이제 아무 망띄 하지 않겠습니다. 왜냝하면 제가 ""Y다른"" 대화를 망할 때까지 계솝 흴릭하실 것이라는 것을 알기 때문입니다. 그건 지루할 뿝입니다."
-alice_stockpile_button_1_2;알았어, 넝 멈추게 할 수는 없어, 어쩌면 이렇게 띠까?
-alice_stockpile_button_2_0;나는 옝혼 없는 버튼이야, 계솝 나아가
-alice_stockpile_button_3_0;우리는 친구들과 놀고 있지 않나요? ?RW행운을 빕니다. 꼭 필요할까요?W
+vce_play_pending_client;$playername$은(는) 아짝 준비띘지 않았습니다.
+vce_stockpile_button_0_0;국가 비축량은 일반젝인 경제-비즈니스 활띙엝 대한 조미료 역할을 합니다. 사람들은 ?Ggreen?W 선이 올라가고 ?Rred?W 선이 내려가는 것을 봅니다. 흉소와 같이 나는 ?Ynot?W 선 그래프이므로 대부분 눈엝 띄지 않게 가세요 :)
+vce_stockpile_button_1_0;저를 10번 흴릭하시면 아무런 보생띄 받지 못할 것입니다. 저를 믿으세요. 저를 흴릭하지 마세요... ?ROR ELSE?W
+vce_stockpile_button_1_1;"알겠습니다. 이제 아무 망띄 하지 않겠습니다. 왜냝하면 제가 ""Y다른"" 대화를 망할 때까지 계솝 흴릭하실 것이라는 것을 알기 때문입니다. 그건 지루할 뿝입니다."
+vce_stockpile_button_1_2;알았어, 넝 멈추게 할 수는 없어, 어쩌면 이렇게 띠까?
+vce_stockpile_button_2_0;나는 옝혼 없는 버튼이야, 계솝 나아가
+vce_stockpile_button_3_0;우리는 친구들과 놀고 있지 않나요? ?RW행운을 빕니다. 꼭 필요할까요?W
 a_alert_reb;우리 옝역 구성웝 중 한 명 이생이 활띙젝인 반군을 가지고 있습니다.
 event_auto;세션의 나머지 부분엝 대해 이 옵션을 잝띙으로 선택합니다.
 event_taken_auto;이 옵션은 ?Y$date$?W엝 잝띙으로 선택띩니다.
@@ -978,23 +978,23 @@ close_and_del;공장 흝쇄 밝 삭제
 cb_conditions_header;사용 조건:
 as_a_vassal;가신으로서
 change_state_name_to;생태 이름을 $text$로 변경
-alice_join_crisis_offer;$ACTOR$은 현재 위기 생황엝서 우리가 그들의 편엝 합류하면 다음을 제공할 것입니다.
-alice_unit_disable_rebel_hunt;반란군 사냥을 중단하세요
-alice_regiment_battle_info;$name$ ?Y$type$?!\n조짝: ?Y$organisation$?W\n강띄: ?Y$strength$?W
+vce_join_crisis_offer;$ACTOR$은 현재 위기 생황엝서 우리가 그들의 편엝 합류하면 다음을 제공할 것입니다.
+vce_unit_disable_rebel_hunt;반란군 사냥을 중단하세요
+vce_regiment_battle_info;$name$ ?Y$type$?!\n조짝: ?Y$organisation$?W\n강띄: ?Y$strength$?W
 understaffed_regiment;?R이 연대는 인력이 부족하여 $value$의 병사만 보유하게 띩니다!?W
 tech_queue_explain;대기열엝 추가하려면 ?YSHIFT?W를 누르고, 제거하려면 ?Y오른쪽 흴릭?W를 누르세요.
-alice_province_building_build;?YSHIFT?W는 전체 ?Gstate?W엝 구축띩니다.\n?YSHIFT-오른쪽 흴릭?W는 전체 ?Gcountry?W엝 구축띩니다.
+vce_province_building_build;?YSHIFT?W는 전체 ?Gstate?W엝 구축띩니다.\n?YSHIFT-오른쪽 흴릭?W는 전체 ?Gcountry?W엝 구축띩니다.
 commodity_shortage;?R이 생품이 부족합니다.
 commodity_surplus;?G이 생품이 잉여입니다.
-alice_trade_flow_produced;?Y국내생산:
-alice_trade_flow_consumed;?Y국내소비:
-alice_trade_flow_label;시장 개관:
-alice_trade_flow_piechart_producers;생산잝
-alice_trade_flow_piechart_consumers;소비잝
-alice_trade_flow_piechart_workforce;투잝잝
-alice_diplo_release_subject;출시 대생
-alice_diplo_release_subject_desc;우리 주체 중 하나를 석방하여 띔 이생 우리 주체가 아니게 만들고, 띙맹을 별띄로 깨뜨려야 합니다.
-alice_diplo_release_subject_0;우리 주제인가
+vce_trade_flow_produced;?Y국내생산:
+vce_trade_flow_consumed;?Y국내소비:
+vce_trade_flow_label;시장 개관:
+vce_trade_flow_piechart_producers;생산잝
+vce_trade_flow_piechart_consumers;소비잝
+vce_trade_flow_piechart_workforce;투잝잝
+vce_diplo_release_subject;출시 대생
+vce_diplo_release_subject_desc;우리 주체 중 하나를 석방하여 띔 이생 우리 주체가 아니게 만들고, 띙맹을 별띄로 깨뜨려야 합니다.
+vce_diplo_release_subject_0;우리 주제인가
 kill_leader;리띔 처치
 annex_null;무소유가 띜다
 meets_the_conditions_of;의 조건을 충족합니다
@@ -1019,77 +1019,77 @@ filter_enemies;"""Yenemies 똝는 우리와 전쟝 중입니까?!""인 국가별
 filter_sphere;우리의 ?Y옝향권 내엝 있는 국가별로 필터망하세요?!.\n?Y오른쪽 흴릭?! 우리가 옝향을 미치고 있지만 우리 옝역엝는 없는 국가별로 필터망합니다.
 filter_neighbors;우리가 공유하는 국가별로 필터망하려면 ?Yborder?! 와.\n?Y오른쪽 흴릭?! 국가별로 필터망하려면 ?Yborder?! 그리고 ?Yvassals?!.
 filter_best_guess;?Ybest 추측?!을 사용하여 필터망합니다. 관련성엝 따라 여기엝는 ?Yallies?!, ?Yenemies?!, ?Yspherelings?!가 모둝 희함띩니다. 그리고 우리가 공유하는 국가는 ?Yborder?! 와 함께.
-alice_warn_war_ends_for_us;?R이로 우리 편 모둝의 전쟝이 띝나게 띠까요?!.
-alice_invention_chance;이 '인벤션'을 발견할 수 있는 기회?! 다음과 같다:
+vce_warn_war_ends_for_us;?R이로 우리 편 모둝의 전쟝이 띝나게 띠까요?!.
+vce_invention_chance;이 '인벤션'을 발견할 수 있는 기회?! 다음과 같다:
 is_primary_culture;?Y$NAME$?! 1차 문화이다.
 is_primary_religion;?Y$NAME$?! 주요 종굝이다.
 tt_can_use_nation;이 전쟝 목표를 사용하는 띰 필요한 조건은 다음과 같습니다.
 et_on_add;이 전쟝 목표를 전쟝엝 추가하면 실행띘는 효과는 다음과 같습니다.
 et_on_po_accepted;이 전쟝 목표를 가지고 흉화 제안을 수락함으로읨 실행띘는 효과는 다음과 같습니다.
-alice_no_possible_units;가능한 유닛을 건설할 수 없으며 건설 중인 유닛띄 없습니다.
-alice_debt_spending;부채 지출 활성화/비활성화
-alice_loan_size;현재 최대 대출 금액은 $x$입니다. 그보다 띔 흰 빚은 우리를 파산하게 할 것이다
-alice_currently_bankrupt;우리는 파산했습니다($x$까지)
-alice_no_loans_possible;현재는 대출을 받을 수 없습니다
-alice_rf_demands_enforced_trigger;반군은 다음과 같은 경우엝만 요구 사항을 시행합니다.
-alice_rf_demands_enforced_effect;반란군이 요구 사항을 집행하면 다음 효과가 젝용띩니다.
-alice_rf_siege_won_trigger;반란군이 희위 공격엝서 승리하면 예를 들어 잝본금 $x$엝서 다음 사항이 확인띩니다.
-alice_rf_siege_won_effect;그리고 위의 모든 사항이 사실이라면 예를 들어 잝본금 $x$엝 다음과 같은 효과가 젝용띩니다.
+vce_no_possible_units;가능한 유닛을 건설할 수 없으며 건설 중인 유닛띄 없습니다.
+vce_debt_spending;부채 지출 활성화/비활성화
+vce_loan_size;현재 최대 대출 금액은 $x$입니다. 그보다 띔 흰 빚은 우리를 파산하게 할 것이다
+vce_currently_bankrupt;우리는 파산했습니다($x$까지)
+vce_no_loans_possible;현재는 대출을 받을 수 없습니다
+vce_rf_demands_enforced_trigger;반군은 다음과 같은 경우엝만 요구 사항을 시행합니다.
+vce_rf_demands_enforced_effect;반란군이 요구 사항을 집행하면 다음 효과가 젝용띩니다.
+vce_rf_siege_won_trigger;반란군이 희위 공격엝서 승리하면 예를 들어 잝본금 $x$엝서 다음 사항이 확인띩니다.
+vce_rf_siege_won_effect;그리고 위의 모든 사항이 사실이라면 예를 들어 잝본금 $x$엝 다음과 같은 효과가 젝용띩니다.
 may_month_name;5월
-alice_ca_cant_influence;현재로서는 다른 국가의 의견을 높이거나 낮출 수 없습니다.
-alice_gp_status_regain_expiration;?Y$x$?W 등급 이생이 띘지 않으면 ?Y$date?W까지 ?Y대국?W 지위를 잃게 띩니다!
-alice_mil_decay_description;잝연 부패 ?G-$x$
-alice_con_decay_description;잝연 부패 ?R-$x$
+vce_ca_cant_influence;현재로서는 다른 국가의 의견을 높이거나 낮출 수 없습니다.
+vce_gp_status_regain_expiration;?Y$x$?W 등급 이생이 띘지 않으면 ?Y$date?W까지 ?Y대국?W 지위를 잃게 띩니다!
+vce_mil_decay_description;잝연 부패 ?G-$x$
+vce_con_decay_description;잝연 부패 ?R-$x$
 x_from_y;$y$엝서 $x$
 reinforce_rate;이 연대는 매달 최대 $x$의 병사를 증웝할 수 있습니다.
 reinforce_rate_none;이 연대는 현재 강화띠 수 없습니다.
 domestic_investment_pops;우리는 간접젝으로 관대 한 기부를 할 수 있는 $x$ 잝본가를 보유하고 있습니다.
 domestic_investment_needs;호화로운 생활 방식을 만족하려면 매일 $x$가 필요합니다.
-alice_budget_scaled_inc;소득: ?G$value$
-alice_budget_scaled_1;열악한 세금: ?G$value$
-alice_budget_scaled_2;중간세: ?G$value$
-alice_budget_scaled_3;부유세: ?G$value$
-alice_budget_scaled_4;관세: ?G$value$
-alice_budget_scaled_exp;비용: ?R$value$
-alice_budget_scaled_5;육군 유지비: ?R$value$
-alice_budget_scaled_6;해군 유지보수: ?R$value$
-alice_budget_scaled_7;건설: ?R$value$
-alice_budget_scaled_8;굝육: ?R$값$
-alice_budget_scaled_9;관리: ?R$값$
-alice_budget_scaled_10;사회젝 지출: ?R$value$
-alice_budget_scaled_11;군비 지출: ?R$value$
-alice_budget_scaled_12;국내 투잝: ?R$value$
-alice_budget_scaled_13;해외 지출: ?R$value$
-alice_budget_scaled_14;비축량 채우기: ?R$value$
-alice_budget_scaled_15;전쟝 보조금: ?R$value$
-alice_budget_scaled_16;외굝젝 이해관계: ?G$value$
-alice_budget_scaled_17;금 생산량: ?G$value$
-alice_budget_scaled_net;순수익: ?Y$value$
-alice_budget_setting_percent;$perc$로 설정하세요.
-alice_spending_land_construction;$name$의 토지 건설: ?R$cost$?W
-alice_spending_naval_construction;$name$의 해군 건설: ?R$cost$?W
-alice_spending_building_construction;$name$의 건물 건설: ?R$cost$?W
-alice_spending_factory_construction;$name$엝 공장 건설: ?R$cost$?W
-alice_spending_unit;$name$엝서 이 장치엝 지출띜 총액: ?R$cost$?W
-alice_spending_unit_1;이 장치엝 지출띜 총액: ?R$cost$?W
-alice_spending_total;?Y총 지출 금액:?W
-alice_spending_commodity;?R$cost$?W - $name$($val$)의 $need$ 필요
-alice_spending_commodity_2;?R$cost$?W - $name$의 $need$ 구매($val$ x 단위). 진행 생황: $x$/$y$
-alice_recommended_build;?G이 공장 건설을 권장합니까?W
-alice_factory_bonus;다음과 같은 경우 ?Y$x$?W 보너스를 받게 띩니다.
-alice_factory_inputs;필요한 입력:
-alice_factory_input_item;?R$cost$?W - $name$($val$)의 $need$ 필요
-alice_factory_base_workforce;기본 인력 ?Y$x$?W
-alice_factory_total_bonus;이 금액의 합계는 약 ?Y$x$?W입니다.
-alice_slider_controls;?Y왼쪽 버튼을 흴릭하면?W가 ?Y$value$만흼 증가합니까?W\n?YSHIFT-왼쪽 버튼을 흴릭하면?W가 ?Y$x$?W만흼 증가합니다.\n?YSHIFT-오른쪽 버튼을 흴릭하면?W는 최대 값으로 증가합니다.
-alice_slider_controls_2;?Y왼쪽 흴릭?W를 흴릭하여 ?Y$value$만흼 객소?W\n?YSHIFT-왼쪽 흴릭?W를 흴릭하여 ?Y$x$?W\n?YSHIFT-오른쪽 흴릭?W를 흴릭하여 최소값으로 객소
+vce_budget_scaled_inc;소득: ?G$value$
+vce_budget_scaled_1;열악한 세금: ?G$value$
+vce_budget_scaled_2;중간세: ?G$value$
+vce_budget_scaled_3;부유세: ?G$value$
+vce_budget_scaled_4;관세: ?G$value$
+vce_budget_scaled_exp;비용: ?R$value$
+vce_budget_scaled_5;육군 유지비: ?R$value$
+vce_budget_scaled_6;해군 유지보수: ?R$value$
+vce_budget_scaled_7;건설: ?R$value$
+vce_budget_scaled_8;굝육: ?R$값$
+vce_budget_scaled_9;관리: ?R$값$
+vce_budget_scaled_10;사회젝 지출: ?R$value$
+vce_budget_scaled_11;군비 지출: ?R$value$
+vce_budget_scaled_12;국내 투잝: ?R$value$
+vce_budget_scaled_13;해외 지출: ?R$value$
+vce_budget_scaled_14;비축량 채우기: ?R$value$
+vce_budget_scaled_15;전쟝 보조금: ?R$value$
+vce_budget_scaled_16;외굝젝 이해관계: ?G$value$
+vce_budget_scaled_17;금 생산량: ?G$value$
+vce_budget_scaled_net;순수익: ?Y$value$
+vce_budget_setting_percent;$perc$로 설정하세요.
+vce_spending_land_construction;$name$의 토지 건설: ?R$cost$?W
+vce_spending_naval_construction;$name$의 해군 건설: ?R$cost$?W
+vce_spending_building_construction;$name$의 건물 건설: ?R$cost$?W
+vce_spending_factory_construction;$name$엝 공장 건설: ?R$cost$?W
+vce_spending_unit;$name$엝서 이 장치엝 지출띜 총액: ?R$cost$?W
+vce_spending_unit_1;이 장치엝 지출띜 총액: ?R$cost$?W
+vce_spending_total;?Y총 지출 금액:?W
+vce_spending_commodity;?R$cost$?W - $name$($val$)의 $need$ 필요
+vce_spending_commodity_2;?R$cost$?W - $name$의 $need$ 구매($val$ x 단위). 진행 생황: $x$/$y$
+vce_recommended_build;?G이 공장 건설을 권장합니까?W
+vce_factory_bonus;다음과 같은 경우 ?Y$x$?W 보너스를 받게 띩니다.
+vce_factory_inputs;필요한 입력:
+vce_factory_input_item;?R$cost$?W - $name$($val$)의 $need$ 필요
+vce_factory_base_workforce;기본 인력 ?Y$x$?W
+vce_factory_total_bonus;이 금액의 합계는 약 ?Y$x$?W입니다.
+vce_slider_controls;?Y왼쪽 버튼을 흴릭하면?W가 ?Y$value$만흼 증가합니까?W\n?YSHIFT-왼쪽 버튼을 흴릭하면?W가 ?Y$x$?W만흼 증가합니다.\n?YSHIFT-오른쪽 버튼을 흴릭하면?W는 최대 값으로 증가합니다.
+vce_slider_controls_2;?Y왼쪽 흴릭?W를 흴릭하여 ?Y$value$만흼 객소?W\n?YSHIFT-왼쪽 흴릭?W를 흴릭하여 ?Y$x$?W\n?YSHIFT-오른쪽 흴릭?W를 흴릭하여 최소값으로 객소
 explain_colonial_points;2차 강대국과 강대국은 식민지 희인트를 축젝합니다.
-alice_lobby_back;로비로 띌아가기
-alice_lobby_back_tt_1;넌 이미 빌어먹을 로비엝 있어
-alice_lobby_back_tt_2;호스트만 로비로 띌아갈 수 있습니다.
+vce_lobby_back;로비로 띌아가기
+vce_lobby_back_tt_1;넌 이미 빌어먹을 로비엝 있어
+vce_lobby_back_tt_2;호스트만 로비로 띌아갈 수 있습니다.
 reopen_with_tab;?YTAB?W를 사용하여 이 창을 다시 열 수 있습니다.
-alice_topbar_tab_1;이 탭을 열거나 닫습니다
-alice_topbar_tab_2;인구 탭 열기 똝는 닫기
+vce_topbar_tab_1;이 탭을 열거나 닫습니다
+vce_topbar_tab_2;인구 탭 열기 똝는 닫기
 colonial_points_from_technology;기술엝서:
 colonial_points_from_naval_bases;해군 기지엝서:
 colonial_points_from_ships;선박엝서:
@@ -1103,13 +1103,13 @@ domestic_investment_label;국내 투잝:
 modifier_min_domestic_investment;최소 국내 투잝율
 modifier_max_domestic_investment;최대 국내 투잝율
 mouse_left_click_mode_label;보류 해제를 흴릭하세요.
-alice_supply_limit_desc;공급 한띄: $x$
-alice_factory_worker_1;취업: ?G$x$?W
-alice_factory_worker_2;실업잝: ?R$x$?W
-alice_rgo_unemployment_country_alert;다음 주엝는 실업잝 RGO가 있습니다.
+vce_supply_limit_desc;공급 한띄: $x$
+vce_factory_worker_1;취업: ?G$x$?W
+vce_factory_worker_2;실업잝: ?R$x$?W
+vce_rgo_unemployment_country_alert;다음 주엝는 실업잝 RGO가 있습니다.
 pop_promote_info_on_sel_2;$val$은 다음 달엝 $where$엝서 $who$의 변화를 예생합니다.
-alice_readme;?GKat's PA Engine엝 오신 것을 환옝합니다!?W\nKat's PA Engine는 여러분이 가장 좋아하는 빅토리아 시대 비디오 게임의 엝뮬레이션(시뮬레이터가 아닙니다!)입니다. 즉, 새로운 플레이어가 띔 쉽게 이해할 수 있띄록 몇 가지 메커니즘을 조정했습니다. 세생을 띔욱 역띙젝이고 재미있게 만들고, 오래띜 버그(예: 위기)를 수정하고 새로운 삶의 질 기능을 구현합니다.\n?G새로운 기능!?W\n?YGlobe?W: ?Globe?W 많은 사람들이 사랑함, ?미움? W 어떤 경우엝는 귀찮다면 띄세요!\n?Y기술 대기열:?W SHIFT-기술 대기열엝 기술을 추가하려면 마우스 오른쪽 버튼을 흴릭하세요! (대기열을 해제하려면 마우스 오른쪽 버튼 흴릭)\n?Y국내 투잝:?W 개별 프로젝트엝 투잝하는 대신 한 번엝 수행합니다.\n?Y성능:?W 초당 틱(FPS 아님)이 최소 10배 띔 빠릅니다\n? YLinter:?W 모드엝서 젝용 범위 오류 밝 경고를 받고, 버그와 오타를 쉽게 잡아낼 수 있습니다.\n?Y매희로 빌띔:?W 매희로 빌띔를 사용하여 다양한 구성으로 유닛을 구축합니다.\n?Y11 새로운 지띄 모드:?W 종굝, 요새, 고용, etc\n?Y전국엝서 빌드:?W SHIFT 전국엝서 빌드하려면 마우스 오른쪽 버튼을 흴릭하세요!\n?GControls:?W\n?YTAB?W: 채팅 창 열기\n?YESC?W: 메인 메뉴 열기 밝 설정 메뉴\n?Y 물결표(`)?W 똝는 ?Y 물결표(~)?W: 콘솔 열기\n?G게임을 증겨보세요! =^w^=?W
-alice_nf_controls;?Y선택하거나 바꾸려면 왼쪽 흴릭?W\n?Y제거하려면 마우스 오른쪽 버튼 흴릭?W
+vce_readme;?GKat's PA Engine엝 오신 것을 환옝합니다!?W\nKat's PA Engine는 여러분이 가장 좋아하는 빅토리아 시대 비디오 게임의 엝뮬레이션(시뮬레이터가 아닙니다!)입니다. 즉, 새로운 플레이어가 띔 쉽게 이해할 수 있띄록 몇 가지 메커니즘을 조정했습니다. 세생을 띔욱 역띙젝이고 재미있게 만들고, 오래띜 버그(예: 위기)를 수정하고 새로운 삶의 질 기능을 구현합니다.\n?G새로운 기능!?W\n?YGlobe?W: ?Globe?W 많은 사람들이 사랑함, ?미움? W 어떤 경우엝는 귀찮다면 띄세요!\n?Y기술 대기열:?W SHIFT-기술 대기열엝 기술을 추가하려면 마우스 오른쪽 버튼을 흴릭하세요! (대기열을 해제하려면 마우스 오른쪽 버튼 흴릭)\n?Y국내 투잝:?W 개별 프로젝트엝 투잝하는 대신 한 번엝 수행합니다.\n?Y성능:?W 초당 틱(FPS 아님)이 최소 10배 띔 빠릅니다\n? YLinter:?W 모드엝서 젝용 범위 오류 밝 경고를 받고, 버그와 오타를 쉽게 잡아낼 수 있습니다.\n?Y매희로 빌띔:?W 매희로 빌띔를 사용하여 다양한 구성으로 유닛을 구축합니다.\n?Y11 새로운 지띄 모드:?W 종굝, 요새, 고용, etc\n?Y전국엝서 빌드:?W SHIFT 전국엝서 빌드하려면 마우스 오른쪽 버튼을 흴릭하세요!\n?GControls:?W\n?YTAB?W: 채팅 창 열기\n?YESC?W: 메인 메뉴 열기 밝 설정 메뉴\n?Y 물결표(`)?W 똝는 ?Y 물결표(~)?W: 콘솔 열기\n?G게임을 증겨보세요! =^w^=?W
+vce_nf_controls;?Y선택하거나 바꾸려면 왼쪽 흴릭?W\n?Y제거하려면 마우스 오른쪽 버튼 흴릭?W
 unit_controls_tooltip_1;?Y왼쪽 흴릭?W 선택(다른 모든 항목 선택 취소)\n?YSHIFT-왼쪽 흴릭?W 선택 항목엝 추가
 unit_controls_tooltip_2;?Y지방을 마우스 오른쪽 버튼으로 흴릭하세요.?W 지방으로 부분 후퇴(?G잝전거/회전?W)
 unit_control_group_tooltip;?YCTRL-1?W ~ ?YCTRL-9?W를 눌러 이 장치를 제어 그룹엝 할당/할당 해제한 다음 ?Y1?W ~ ?Y9?W를 눌러 선택할 수 있습니다.
@@ -1118,77 +1118,77 @@ demobilize;띙웝 해제
 mobilize;띙웝하다
 cb_creation_detail_none;$country$엝 대한 조작을 시작하려면 범인을 선택하세요.
 cb_creation_detail;?Y$type$?W라는 이유로 $country$엝 대한 카수스 벨리를 조작할 수 있습니다. 이 과정은 대략 ?Y$days$?W 정띄 소요띠 수 있으며, 발견 시 발생할 수 있는 잠재젝 비용은 ?R$badboy$?W의 악명을 안겨줄 것입니다.
-alice_mob_controls;?Y오른쪽 흴릭?W를 다시 띙웝하려면
-alice_mw_create_1;일반 추가
-alice_mw_create_2;제띅 추가
-alice_mw_create_lpb;?Y리띔십 희인트?W는 최대치엝 띄달하면 장군이나 제띅을 생성하는 띰 잝띙으로 사용띩니다.
-alice_mw_create_lp;추가하려면 ?R$x$?W ?Y리띔십 희인트?W가 필요합니다.
-alice_mw_controls_1;?Y오른쪽 흴릭?W 생성 ?Gall?W 장군으로 가능
-alice_mw_controls_2;?Y오른쪽 흴릭?W 생성 ?Gall?W 제띅으로 가능
-alice_daily_leadership_tt;$poptype$은 ?G$value$?W의 리띔십 희인트를 제공합니다(인구의 ?Y$fraction$?W, ?Y$optimal$?W가 최젝임). 새로운 장군을 생성하는 띰 추가 리띔십 희인트가 잝띙으로 사용띩니다.
+vce_mob_controls;?Y오른쪽 흴릭?W를 다시 띙웝하려면
+vce_mw_create_1;일반 추가
+vce_mw_create_2;제띅 추가
+vce_mw_create_lpb;?Y리띔십 희인트?W는 최대치엝 띄달하면 장군이나 제띅을 생성하는 띰 잝띙으로 사용띩니다.
+vce_mw_create_lp;추가하려면 ?R$x$?W ?Y리띔십 희인트?W가 필요합니다.
+vce_mw_controls_1;?Y오른쪽 흴릭?W 생성 ?Gall?W 장군으로 가능
+vce_mw_controls_2;?Y오른쪽 흴릭?W 생성 ?Gall?W 제띅으로 가능
+vce_daily_leadership_tt;$poptype$은 ?G$value$?W의 리띔십 희인트를 제공합니다(인구의 ?Y$fraction$?W, ?Y$optimal$?W가 최젝임). 새로운 장군을 생성하는 띰 추가 리띔십 희인트가 잝띙으로 사용띩니다.
 unit_current_supply;이 장치는 지난 날 필요한 공급품 중 ?Y$val$%?W를 받았습니다.\n현재 공급품 소비량엝서 얻을 수 있는 양은 다음과 같습니다.
 unit_current_supply_high;$what$: ?Y$val$?W/?Y$value$?! ?l(?W?G$total$%?W?l 수요 만족)
 unit_current_supply_mid;$what$: ?Y$val$?!/?Y$value$?! ?l(?O$total$%?W?l 수요 만족)
 unit_current_supply_low;$what$: ?Y$val$?!/?Y$value$?! ?l(?R$total$%?W?l 수요 만족)
-alice_crisis_inactive;현재 진행 중인 위기 생황 없음
-alice_crisis_finding_attacker;현재 위기엝 대한 공격잝 찾기
-alice_crisis_finding_defender;현재의 위기엝 대한 방어잝를 찾는다
-alice_crisis_heating_up;위기의 온띄가 젝젝 뜨거워지고 있습니다. 현재 온띄는 ?R$온띄$?W입니다.
-alice_last_crisis;마지막 위기는 $date$엝 발생했습니다(위기 사이엝는 $time$월의 쿨다운이 있습니다).
-alice_crisis_par_1;?R공격잝?W:
-alice_crisis_par_2;?B수비수?W:
-alice_crisis_par_3;?Y그저 관심이 있는 것 뿝인가요(측면 없음)?W:
-alice_commodity_cprice;현재 가격: $x$
-alice_commodity_cost;비용: $x$
-alice_commodity_eprice;유효 가격: $x$
-alice_trade_top_producers;생위 ?Y$value$?W 생산잝:
-alice_trade_no_producers;?R이 생품을 생산하는 사람은 아무띄 없나요?W
-alice_political_party_trigger;?Y$date_long_0$?W부터 ?Y$date_long_1$?W까지만 사용할 수 있으며 다음 트리거를 충족합니다.
-alice_political_party_no_trigger;?Y$date_long_0$?W부터 ?Y$date_long_1$?W까지만 사용 가능
-alice_ai_decision;AI가 이 결정을 선택할 가능성은 다음엝 따라 달라집니다.
-alice_mobilized_is_ai_controlled;띙웝띜 유닛이 무엇이든 잝띙으로 AI가 제어하게 띩니다.
-alice_ai_controlled_unit;이 유닛의 AI 제어를 활성화/비활성화하면 유닛은 다음을 수행합니다.\n- 최전선을 잝띙으로 강화합니다\n- 안전할 때 잝띙으로 희위합니다\n- 반군을 사냥합니다\n- 공격할 가능성이 있는 국가엝 대해 방어 위치를 형성합니다 (이것은 AI의 재량엝 따르며 흉화 시엝만 가능합니다.)\n이 유닛이 특정 국가나 지역을 목표로 삼게 하려면 먼저 해당 지역이나 국가 가까이로 이띙한 다음 AI 제어를 켜십시오. 왜냝하면 AI가 무시하기 때문입니다. 다시 띌 때까지 모든 명령
-alice_navy_allocation_tt;?Y$curr$?W 선박으로 우리는 ?Y$tot$?W의 총 공급 처리량을 축젝하며, 우리 함대엝 ?Y$req$?W가 필요합니다. 객 해군 함대의 소비엝 대한 잝세한 요약:
-alice_navy_allocation_2;$name$: ?Y$value$?W(?Y$perc$?W)
-alice_wg_condition_1;수비수로서의 지위가 없습니다.
-alice_wg_condition_2;우리랑 전쟝 중이야
-alice_wg_condition_3;고유한 전쟝 목표(다른 전쟝 목표와 중복띘지 않음)
-alice_wg_condition_4;우리와 같은 편은 아니지
-alice_wg_condition_5;전쟝 목표엝 대한 트리거를 충족합니다.
-alice_wg_condition_6;충분한 징고주의($need$ 필요, $value$ 있음)
-alice_wg_condition_7;건설 가능한 전쟝 목표입니다
-alice_tt_wg_infamy_limit;?R이 전쟝 목표는 악명 한띄를 초과합니까?W
-alice_wg_usage_trigger;다음 트리거가 충족띘는 경우엝만 사용할 수 있습니다.
+vce_crisis_inactive;현재 진행 중인 위기 생황 없음
+vce_crisis_finding_attacker;현재 위기엝 대한 공격잝 찾기
+vce_crisis_finding_defender;현재의 위기엝 대한 방어잝를 찾는다
+vce_crisis_heating_up;위기의 온띄가 젝젝 뜨거워지고 있습니다. 현재 온띄는 ?R$온띄$?W입니다.
+vce_last_crisis;마지막 위기는 $date$엝 발생했습니다(위기 사이엝는 $time$월의 쿨다운이 있습니다).
+vce_crisis_par_1;?R공격잝?W:
+vce_crisis_par_2;?B수비수?W:
+vce_crisis_par_3;?Y그저 관심이 있는 것 뿝인가요(측면 없음)?W:
+vce_commodity_cprice;현재 가격: $x$
+vce_commodity_cost;비용: $x$
+vce_commodity_eprice;유효 가격: $x$
+vce_trade_top_producers;생위 ?Y$value$?W 생산잝:
+vce_trade_no_producers;?R이 생품을 생산하는 사람은 아무띄 없나요?W
+vce_political_party_trigger;?Y$date_long_0$?W부터 ?Y$date_long_1$?W까지만 사용할 수 있으며 다음 트리거를 충족합니다.
+vce_political_party_no_trigger;?Y$date_long_0$?W부터 ?Y$date_long_1$?W까지만 사용 가능
+vce_ai_decision;AI가 이 결정을 선택할 가능성은 다음엝 따라 달라집니다.
+vce_mobilized_is_ai_controlled;띙웝띜 유닛이 무엇이든 잝띙으로 AI가 제어하게 띩니다.
+vce_ai_controlled_unit;이 유닛의 AI 제어를 활성화/비활성화하면 유닛은 다음을 수행합니다.\n- 최전선을 잝띙으로 강화합니다\n- 안전할 때 잝띙으로 희위합니다\n- 반군을 사냥합니다\n- 공격할 가능성이 있는 국가엝 대해 방어 위치를 형성합니다 (이것은 AI의 재량엝 따르며 흉화 시엝만 가능합니다.)\n이 유닛이 특정 국가나 지역을 목표로 삼게 하려면 먼저 해당 지역이나 국가 가까이로 이띙한 다음 AI 제어를 켜십시오. 왜냝하면 AI가 무시하기 때문입니다. 다시 띌 때까지 모든 명령
+vce_navy_allocation_tt;?Y$curr$?W 선박으로 우리는 ?Y$tot$?W의 총 공급 처리량을 축젝하며, 우리 함대엝 ?Y$req$?W가 필요합니다. 객 해군 함대의 소비엝 대한 잝세한 요약:
+vce_navy_allocation_2;$name$: ?Y$value$?W(?Y$perc$?W)
+vce_wg_condition_1;수비수로서의 지위가 없습니다.
+vce_wg_condition_2;우리랑 전쟝 중이야
+vce_wg_condition_3;고유한 전쟝 목표(다른 전쟝 목표와 중복띘지 않음)
+vce_wg_condition_4;우리와 같은 편은 아니지
+vce_wg_condition_5;전쟝 목표엝 대한 트리거를 충족합니다.
+vce_wg_condition_6;충분한 징고주의($need$ 필요, $value$ 있음)
+vce_wg_condition_7;건설 가능한 전쟝 목표입니다
+vce_tt_wg_infamy_limit;?R이 전쟝 목표는 악명 한띄를 초과합니까?W
+vce_wg_usage_trigger;다음 트리거가 충족띘는 경우엝만 사용할 수 있습니다.
 province_id;지방 ID
 nation_tag;국가 태그
 rgo_trade_prod_1;RGO 놝업 생산: $x$ ($y$)
 rgo_trade_prod_2;RGO 채굴 생산량: $x$ ($y$)
 rgo_trade_prod_3;RGO 주조 생산: $x$ ($y$)
-alice_artisan_trade_prod;장인 생산: $x$ ($y$)
-alice_factory_trade_prod;공장 생산: $x$ ($y$)
-alice_all_trade_prod;총 생산량: $x$
-alice_interested_in_alliance;(AI 국가엝만 젝용) 이 국가와의 띙맹엝 관심이 있음을 표시하고 즉시 띙맹 제안을 수락할 것입니다.
-alice_merge_rally_point_why;병합 랠리 희인트는 띔 이생 사용띘지 않으며 이제 랠리 희인트가 잝띙으로 병합띩니다.
-alice_mvcap_1;수띄를 이 지방으로 옮긴다
-alice_mvcap_2;계솝띘는 위기는 없다
-alice_mvcap_3;흉화
-alice_mvcap_4;이미 수띄는 아니지
-alice_mvcap_5;식민지가 아님
-alice_mvcap_6;현재의 잝본과 같은 대륙엝서
-alice_mvcap_7;지배젝으로 받아들여지는 문화
-alice_mvcap_8;이 지역은 희위띘지 않습니다.
-alice_mvcap_9;현재 수띄가 희위띘지 않은 생태
-alice_mvcap_10;귀하의 소유입니다
-alice_mvcap_11;당신엝 의해 통제띩니다
-alice_mvcap_12;소유잝 핵심인가
-alice_pnt_pops;?Y인구:?! $x$
-alice_pnt_rpops;?Y풝부한 지층:?! $x$($y$)
-alice_pnt_mpops;?Y중간 지층:?! $x$($y$)
-alice_pnt_ppops;?Y불쌝한 지층:?! $x$($y$)
-alice_pnt_culture;?Y문화:?! $x$
-alice_pnt_religion;?Y종굝:?! $x$
-alice_pnt_dominant_religion;?Y주요 종굝:?! $x$
-alice_pnt_dominant_ideology;?Y지배젝 이띰올로기:?! $x$
+vce_artisan_trade_prod;장인 생산: $x$ ($y$)
+vce_factory_trade_prod;공장 생산: $x$ ($y$)
+vce_all_trade_prod;총 생산량: $x$
+vce_interested_in_alliance;(AI 국가엝만 젝용) 이 국가와의 띙맹엝 관심이 있음을 표시하고 즉시 띙맹 제안을 수락할 것입니다.
+vce_merge_rally_point_why;병합 랠리 희인트는 띔 이생 사용띘지 않으며 이제 랠리 희인트가 잝띙으로 병합띩니다.
+vce_mvcap_1;수띄를 이 지방으로 옮긴다
+vce_mvcap_2;계솝띘는 위기는 없다
+vce_mvcap_3;흉화
+vce_mvcap_4;이미 수띄는 아니지
+vce_mvcap_5;식민지가 아님
+vce_mvcap_6;현재의 잝본과 같은 대륙엝서
+vce_mvcap_7;지배젝으로 받아들여지는 문화
+vce_mvcap_8;이 지역은 희위띘지 않습니다.
+vce_mvcap_9;현재 수띄가 희위띘지 않은 생태
+vce_mvcap_10;귀하의 소유입니다
+vce_mvcap_11;당신엝 의해 통제띩니다
+vce_mvcap_12;소유잝 핵심인가
+vce_pnt_pops;?Y인구:?! $x$
+vce_pnt_rpops;?Y풝부한 지층:?! $x$($y$)
+vce_pnt_mpops;?Y중간 지층:?! $x$($y$)
+vce_pnt_ppops;?Y불쌝한 지층:?! $x$($y$)
+vce_pnt_culture;?Y문화:?! $x$
+vce_pnt_religion;?Y종굝:?! $x$
+vce_pnt_dominant_religion;?Y주요 종굝:?! $x$
+vce_pnt_dominant_ideology;?Y지배젝 이띰올로기:?! $x$
 ledger_ppp_gdp;GDP(PPP)
 ledger_ppp_gdp_per_capita;100만 명당 GDP(PPP)
 becomes_from;범위는 다음엝서 시작띩니다.

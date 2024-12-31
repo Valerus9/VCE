@@ -220,7 +220,7 @@ namespace map {
 		} else {
 			auto root = simple_fs::get_root(context.state.common_fs);
 			auto map_dir = simple_fs::open_directory(root, NATIVE("map"));
-			auto terrain_file = open_file(map_dir, NATIVE("alice_terrain.png"));
+			auto terrain_file = open_file(map_dir, NATIVE("vce_terrain.png"));
 			terrain_id_map.resize(size_x * size_y, uint8_t(255));
 
 			ogl::image terrain_data;
@@ -413,7 +413,7 @@ namespace map {
 		auto map_dir = simple_fs::open_directory(root, NATIVE("map"));
 
 		// Load the province map
-		auto provinces_png = simple_fs::open_file(map_dir, NATIVE("alice_provinces.png"));
+		auto provinces_png = simple_fs::open_file(map_dir, NATIVE("vce_provinces.png"));
 		ogl::image provinces_image;
 		if(provinces_png) {
 			provinces_image = ogl::load_stb_image(*provinces_png);
@@ -443,7 +443,7 @@ namespace map {
 			auto size = glm::ivec2(size_x, size_y);
 			river_data = load_bmp(context, NATIVE("rivers.bmp"), size, 255);
 		} else {
-			auto river_file = simple_fs::open_file(map_dir, NATIVE("alice_rivers.png"));
+			auto river_file = simple_fs::open_file(map_dir, NATIVE("vce_rivers.png"));
 			river_data.resize(size_x * size_y, uint8_t(255));
 
 			ogl::image river_image_data;

@@ -379,7 +379,7 @@ namespace ui {
 
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
 			if(auto content = retrieve<dcon::invention_id>(state, parent); content) {
-				text::add_line(state, contents, "alice_invention_chance");
+				text::add_line(state, contents, "vce_invention_chance");
 				auto mod_k = state.world.invention_get_chance(content);
 				additive_value_modifier_description(state, contents, mod_k, trigger::to_generic(state.local_player_nation), trigger::to_generic(state.local_player_nation), 0);
 			}

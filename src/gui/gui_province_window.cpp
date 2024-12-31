@@ -193,7 +193,7 @@ namespace ui {
 		if(auto mid = state.world.national_focus_get_modifier(content);  mid) {
 			modifier_description(state, contents, mid, 15);
 		}
-		text::add_line(state, contents, "alice_nf_controls");
+		text::add_line(state, contents, "vce_nf_controls");
 	}
 
 	void province_modifier_icon::update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept {
@@ -370,7 +370,7 @@ namespace ui {
 			text::add_line_with_condition(state, contents, "fort_build_tt_3", (max_local_lvl - current_lvl - min_build > 0), text::variable_type::x, int64_t(current_lvl), text::variable_type::n, int64_t(min_build), text::variable_type::y, int64_t(max_local_lvl));
 		}
 		modifier_description(state, contents, state.world.province_building_type_get_province_modifier(type));
-		text::add_line(state, contents, "alice_province_building_build");
+		text::add_line(state, contents, "vce_province_building_build");
 	}
 
 	void province_building_progress::update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept {

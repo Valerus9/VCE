@@ -273,7 +273,7 @@ namespace ui {
 	std::unique_ptr<element_base> trade_flow_price_graph_window::make_child(sys::state& state, std::string_view name, dcon::gui_def_id id) noexcept {
 		if(name == "current_price_label") {
 			auto ptr = make_element_by_type<simple_text_element_base>(state, id);
-			ptr->set_text(state, text::produce_simple_string(state, "alice_trade_flow_label"));
+			ptr->set_text(state, text::produce_simple_string(state, "vce_trade_flow_label"));
 			ptr->base_data.size.x *= 2; // Nudge
 			return ptr;
 		} else if(name == "current_price_value"
@@ -291,7 +291,7 @@ namespace ui {
 				pc_elm->base_data.position.x += ov_elm->base_data.position.x;
 				pc_elm->base_data.position.y += ov_elm->base_data.position.y;
 				auto lg_elm = make_element_by_type<simple_text_element_base>(state, id);
-				lg_elm->set_text(state, text::produce_simple_string(state, "alice_trade_flow_piechart_producers"));
+				lg_elm->set_text(state, text::produce_simple_string(state, "vce_trade_flow_piechart_producers"));
 				lg_elm->base_data.position.x = ptr->base_data.position.x;
 				lg_elm->base_data.position.y = ptr->base_data.position.y - 8;
 				add_child_to_front(std::move(lg_elm));
@@ -306,7 +306,7 @@ namespace ui {
 				pc_elm->base_data.position.x += ov_elm->base_data.position.x;
 				pc_elm->base_data.position.y += ov_elm->base_data.position.y;
 				auto lg_elm = make_element_by_type<simple_text_element_base>(state, id);
-				lg_elm->set_text(state, text::produce_simple_string(state, "alice_trade_flow_piechart_consumers"));
+				lg_elm->set_text(state, text::produce_simple_string(state, "vce_trade_flow_piechart_consumers"));
 				lg_elm->base_data.position.x = ptr->base_data.position.x + (ov_elm->base_data.size.x + 20) * 1;
 				lg_elm->base_data.position.y = ptr->base_data.position.y - 8;
 				add_child_to_front(std::move(lg_elm));
@@ -321,7 +321,7 @@ namespace ui {
 				pc_elm->base_data.position.x += ov_elm->base_data.position.x;
 				pc_elm->base_data.position.y += ov_elm->base_data.position.y;
 				auto lg_elm = make_element_by_type<simple_text_element_base>(state, id);
-				lg_elm->set_text(state, text::produce_simple_string(state, "alice_trade_flow_piechart_workforce"));
+				lg_elm->set_text(state, text::produce_simple_string(state, "vce_trade_flow_piechart_workforce"));
 				lg_elm->base_data.position.x = ptr->base_data.position.x + (ov_elm->base_data.size.x + 20) * 2;
 				lg_elm->base_data.position.y = ptr->base_data.position.y - 8;
 				add_child_to_front(std::move(lg_elm));
@@ -345,11 +345,11 @@ namespace ui {
 			return make_element_by_type<commodity_image>(state, id);
 		} else if(name == "header_produced_by") {
 			auto ptr = make_element_by_type<single_multiline_text_element_base>(state, id);
-			ptr->text_id = text::find_or_add_key(state, "alice_trade_flow_produced", true);
+			ptr->text_id = text::find_or_add_key(state, "vce_trade_flow_produced", true);
 			return ptr;
 		} else if(name == "header_used_by") {
 			auto ptr = make_element_by_type<single_multiline_text_element_base>(state, id);
-			ptr->text_id = text::find_or_add_key(state, "alice_trade_flow_consumed", true);
+			ptr->text_id = text::find_or_add_key(state, "vce_trade_flow_consumed", true);
 			return ptr;
 		} else if(name == "header_may_be_used_by") {
 			auto ptr = make_element_by_type<single_multiline_text_element_base>(state, id);
@@ -490,9 +490,9 @@ namespace ui {
 			} else if(sat >= 1.f) {
 				text::add_line(state, contents, "commodity_surplus");
 			}
-			text::add_line(state, contents, "alice_commodity_cprice", text::variable_type::x, text::format_money(state.world.commodity_get_current_price(com)));
-			text::add_line(state, contents, "alice_commodity_cost", text::variable_type::x, text::format_money(state.world.commodity_get_cost(com)));
-			text::add_line(state, contents, "alice_commodity_eprice", text::variable_type::x, text::format_money(economy::commodity_effective_price(state, state.local_player_nation, com)));
+			text::add_line(state, contents, "vce_commodity_cprice", text::variable_type::x, text::format_money(state.world.commodity_get_current_price(com)));
+			text::add_line(state, contents, "vce_commodity_cost", text::variable_type::x, text::format_money(state.world.commodity_get_cost(com)));
+			text::add_line(state, contents, "vce_commodity_eprice", text::variable_type::x, text::format_money(economy::commodity_effective_price(state, state.local_player_nation, com)));
 			text::add_line_break_to_layout(state, contents);
 		}
 		text::add_line(state, contents, "trade_commodity_report_1", text::variable_type::x, text::fp_one_place{ state.world.commodity_get_total_real_demand(com) });
@@ -520,7 +520,7 @@ namespace ui {
 				auto box = text::open_layout_box(contents, 0);
 				text::substitution_map sub{};
 				text::add_to_substitution_map(sub, text::variable_type::value, std::min(int32_t(state.defines.great_nations_count), int32_t(producers.size())));
-				text::localised_format_box(state, contents, box, "alice_trade_top_producers", sub);
+				text::localised_format_box(state, contents, box, "vce_trade_top_producers", sub);
 				text::close_layout_box(contents, box);
 			}
 			for(uint32_t i = 0; i < producers.size() && i < state.defines.great_nations_count; ++i) {
@@ -566,20 +566,20 @@ namespace ui {
 				}
 			}
 			if(a_total > 0.f) {
-				text::add_line(state, contents, "alice_artisan_trade_prod",
+				text::add_line(state, contents, "vce_artisan_trade_prod",
 				text::variable_type::x, text::fp_one_place{ a_total },
 				text::variable_type::y, text::fp_percentage{ a_total / total });
 				text::add_line(state, contents, "w_artisan_profit", text::variable_type::x, text::fp_one_place{ economy::base_artisan_profit(state, state.local_player_nation, com) * economy::artisan_scale_limit(state, state.local_player_nation, com) });
 				text::add_line(state, contents, "w_artisan_distribution", text::variable_type::x, text::fp_one_place{ economy::get_artisan_distribution_slow(state, state.local_player_nation, com) * 100.f });
 			}
 			if(f_total > 0.f) {
-				text::add_line(state, contents, "alice_factory_trade_prod",
+				text::add_line(state, contents, "vce_factory_trade_prod",
 				text::variable_type::x, text::fp_one_place{ f_total },
 				text::variable_type::y, text::fp_percentage{ f_total / total });
 			}
-			text::add_line(state, contents, "alice_all_trade_prod", text::variable_type::x, text::fp_one_place{ total });
+			text::add_line(state, contents, "vce_all_trade_prod", text::variable_type::x, text::fp_one_place{ total });
 		} else {
-			text::add_line(state, contents, "alice_trade_no_producers");
+			text::add_line(state, contents, "vce_trade_no_producers");
 		}
 	}
 

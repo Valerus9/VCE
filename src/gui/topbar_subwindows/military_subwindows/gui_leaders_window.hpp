@@ -295,9 +295,9 @@ namespace ui {
 			auto lp = state.world.nation_get_leadership_points(state.local_player_nation);
 			int32_t count = int32_t(lp / state.defines.leader_recruit_cost);
 			if(B) {
-				set_button_text(state, text::produce_simple_string(state, "alice_mw_create_1") + " (" + std::to_string(count) + ")");
+				set_button_text(state, text::produce_simple_string(state, "vce_mw_create_1") + " (" + std::to_string(count) + ")");
 			} else {
-				set_button_text(state, text::produce_simple_string(state, "alice_mw_create_2") + " (" + std::to_string(count) + ")");
+				set_button_text(state, text::produce_simple_string(state, "vce_mw_create_2") + " (" + std::to_string(count) + ")");
 			}
 		}
 		void button_action(sys::state& state) noexcept override {
@@ -315,12 +315,12 @@ namespace ui {
 			return tooltip_behavior::tooltip;
 		}
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
-			text::add_line(state, contents, "alice_mw_create_lp", text::variable_type::x, text::fp_two_places{ state.defines.leader_recruit_cost });
-			text::add_line(state, contents, "alice_mw_create_lpb");
+			text::add_line(state, contents, "vce_mw_create_lp", text::variable_type::x, text::fp_two_places{ state.defines.leader_recruit_cost });
+			text::add_line(state, contents, "vce_mw_create_lpb");
 			if(B) {
-				text::add_line(state, contents, "alice_mw_controls_1");
+				text::add_line(state, contents, "vce_mw_controls_1");
 			} else {
-				text::add_line(state, contents, "alice_mw_controls_2");
+				text::add_line(state, contents, "vce_mw_controls_2");
 			}
 		}
 	};

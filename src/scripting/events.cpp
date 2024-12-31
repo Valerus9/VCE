@@ -476,7 +476,7 @@ namespace event {
 	}
 
 	void update_future_events(sys::state& state) {
-		for(uint32_t i = 0; i < uint32_t(state.defines.alice_max_event_iterations); i++) {
+		for(uint32_t i = 0; i < uint32_t(state.defines.vce_max_event_iterations); i++) {
 			bool fired_n = false;
 			uint32_t n_n_events = uint32_t(state.future_n_event.size());
 			for(int32_t j = int32_t(n_n_events - 1); j >= 0; j--) {
