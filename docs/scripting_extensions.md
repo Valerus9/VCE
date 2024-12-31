@@ -297,11 +297,11 @@ custom_tooltip = {
 - **Scopes**: Any
 - **Comments**: Like `any_country`, but truly applies to EVERY country, even those who do not exist.
 
-### `has_global_flag = katerina_engine`
+### `has_global_flag = vic_community_engine`
 
 - **Version**: 0.1.0
 - **Scopes**: Any
-- **Comments**: True if playing on Kat's PA Engine, False if not
+- **Comments**: True if playing on Victoria Community's Engine, False if not
 
 ### `all_war_countries = { ... }`
 

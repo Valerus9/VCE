@@ -4205,7 +4205,7 @@ namespace parsers {
 	}
 	void trigger_body::has_global_flag(association_type a, std::string_view value, error_handler& err, int32_t line,
 		trigger_building_context& context) {
-		if(context.outer_context.use_extensions && is_fixed_token_ci(value.data(), value.data() + value.length(), "katerina_engine")) {
+		if(context.outer_context.use_extensions && is_fixed_token_ci(value.data(), value.data() + value.length(), "vic_community_engine")) {
 			context.compiled_trigger.push_back(uint16_t(trigger::always | trigger::no_payload | association_to_bool_code(a, true)));
 		} else {
 			context.compiled_trigger.push_back(uint16_t(trigger::has_global_flag | association_to_bool_code(a)));
