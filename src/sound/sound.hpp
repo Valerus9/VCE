@@ -79,7 +79,7 @@ namespace sound {
 	audio_instance& get_accept_sound(sys::state& state);
 	audio_instance& get_diplomatic_request_sound(sys::state& state);
 	audio_instance& get_chat_message_sound(sys::state& state);
-	//alice
+	//vce
 	audio_instance& get_console_open_sound(sys::state& state);
 	audio_instance& get_console_close_sound(sys::state& state);
 	audio_instance& get_event_sound(sys::state& state);

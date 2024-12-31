@@ -8,7 +8,7 @@ namespace ui {
 
 	void show_main_menu_nation_picker(sys::state& state) {
 		if(!state.ui_state.r_main_menu) {
-			auto new_mm = make_element_by_type<restricted_main_menu_window>(state, "alice_main_menu");
+			auto new_mm = make_element_by_type<restricted_main_menu_window>(state, "vce_main_menu");
 			state.ui_state.r_main_menu = new_mm.get();
 			state.ui_state.nation_picker->add_child_to_front(std::move(new_mm));
 		} else {
@@ -19,7 +19,7 @@ namespace ui {
 
 	void show_main_menu_nation_basic(sys::state& state) {
 		if(!state.ui_state.main_menu) {
-			auto new_mm = make_element_by_type<main_menu_window>(state, "alice_main_menu");
+			auto new_mm = make_element_by_type<main_menu_window>(state, "vce_main_menu");
 			state.ui_state.main_menu = new_mm.get();
 			state.ui_state.root->add_child_to_front(std::move(new_mm));
 		} else {
@@ -740,7 +740,7 @@ void projection_mode_right::on_update(sys::state& state) noexcept { }
 		auto n = retrieve<dcon::nation_id>(state, parent);
 		auto box = text::open_layout_box(contents, 0);
 		float v = float(stored_value) / 128.f;
-	text::localised_single_sub_box(state, contents, box, "alice_budget_setting_percent", text::variable_type::perc, text::fp_percentage{ v });
+	text::localised_single_sub_box(state, contents, box, "vce_budget_setting_percent", text::variable_type::perc, text::fp_percentage{ v });
 		text::close_layout_box(contents, box);
 	}
 	//
@@ -754,7 +754,7 @@ void projection_mode_right::on_update(sys::state& state) noexcept { }
 		auto n = retrieve<dcon::nation_id>(state, parent);
 		auto box = text::open_layout_box(contents, 0);
 		float v = float(stored_value) / 128.f;
-	text::localised_single_sub_box(state, contents, box, "alice_budget_setting_percent", text::variable_type::perc, text::fp_percentage{ v });
+	text::localised_single_sub_box(state, contents, box, "vce_budget_setting_percent", text::variable_type::perc, text::fp_percentage{ v });
 		text::close_layout_box(contents, box);
 	}
 	//
@@ -768,7 +768,7 @@ void projection_mode_right::on_update(sys::state& state) noexcept { }
 		auto n = retrieve<dcon::nation_id>(state, parent);
 		auto box = text::open_layout_box(contents, 0);
 		float v = float(stored_value) / 128.f;
-	text::localised_single_sub_box(state, contents, box, "alice_budget_setting_percent", text::variable_type::perc, text::fp_percentage{ v });
+	text::localised_single_sub_box(state, contents, box, "vce_budget_setting_percent", text::variable_type::perc, text::fp_percentage{ v });
 		text::close_layout_box(contents, box);
 	}
 	//
@@ -782,7 +782,7 @@ void projection_mode_right::on_update(sys::state& state) noexcept { }
 		auto n = retrieve<dcon::nation_id>(state, parent);
 		auto box = text::open_layout_box(contents, 0);
 		float v = float(stored_value) / 128.f;
-	text::localised_single_sub_box(state, contents, box, "alice_budget_setting_percent", text::variable_type::perc, text::fp_percentage{ v });
+	text::localised_single_sub_box(state, contents, box, "vce_budget_setting_percent", text::variable_type::perc, text::fp_percentage{ v });
 		text::close_layout_box(contents, box);
 	}
 

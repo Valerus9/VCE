@@ -135,19 +135,19 @@ namespace ui {
 	class national_event_listbox : public base_event_option_listbox {
 		protected:
 		std::string_view get_row_element_name() override {
-			return "alice_nation_event_button";
+			return "vce_nation_event_button";
 		}
 	};
 	class provincial_event_listbox : public base_event_option_listbox {
 		protected:
 		std::string_view get_row_element_name() override {
-			return "alice_prov_event_button";
+			return "vce_prov_event_button";
 		}
 	};
 	class national_election_event_listbox : public base_event_option_listbox {
 		protected:
 		std::string_view get_row_element_name() override {
-			return "alice_election_event_button";
+			return "vce_election_event_button";
 		}
 	};
 	class base_event_window : public window_element_base {

@@ -596,7 +596,7 @@ struct notify_setting_update { };
 		void on_create(sys::state& state) noexcept override {
 			window_element_base::on_create(state);
 
-			auto m = make_element_by_type<message_settings_window>(state, "alice_message_settings");
+			auto m = make_element_by_type<message_settings_window>(state, "vce_message_settings");
 			message_settings_menu = m.get();
 			m->set_visible(state, false);
 			state.ui_state.root->add_child_to_front(std::move(m));

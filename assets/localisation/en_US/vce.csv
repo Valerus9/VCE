@@ -916,13 +916,13 @@ chat_player_kick;$playername$ was kicked
 chat_player_switch;$playername$ has choosen $country$
 chat_player_oos;$playername$ has OOSed!
 save_progress;Save progress $value$
-alice_play_pending_client;$playername$ is not ready yet
-alice_stockpile_button_0_0;National stockpiles function as a condiment to your usual economic-business activities, where people see ?Ggreen?W lines go up, and ?Rred?W lines go down, as per usual I'm ?Ynot?W a line graph so I mostly go unnoticed :)
-alice_stockpile_button_1_0;If you click me 10 times you will receive nothing in return, just trust me, don't click me... ?ROR ELSE?W
-alice_stockpile_button_1_1;I see, well now I'm not gonna say anything because I know you will keep clicking until I say a ?Ydifferent?W dialogue and that's just boring
-alice_stockpile_button_1_2;Alright I can't make you stop, perhaps this will?
-alice_stockpile_button_2_0;I'm a souless button, move on
-alice_stockpile_button_3_0;Playing with friends aren't we? ?RWELL GOOD LUCK YOU WILL NEED IT?W
+vce_play_pending_client;$playername$ is not ready yet
+vce_stockpile_button_0_0;National stockpiles function as a condiment to your usual economic-business activities, where people see ?Ggreen?W lines go up, and ?Rred?W lines go down, as per usual I'm ?Ynot?W a line graph so I mostly go unnoticed :)
+vce_stockpile_button_1_0;If you click me 10 times you will receive nothing in return, just trust me, don't click me... ?ROR ELSE?W
+vce_stockpile_button_1_1;I see, well now I'm not gonna say anything because I know you will keep clicking until I say a ?Ydifferent?W dialogue and that's just boring
+vce_stockpile_button_1_2;Alright I can't make you stop, perhaps this will?
+vce_stockpile_button_2_0;I'm a souless button, move on
+vce_stockpile_button_3_0;Playing with friends aren't we? ?RWELL GOOD LUCK YOU WILL NEED IT?W
 a_alert_reb;One or more of our sphere members has active rebels:
 event_auto;Automatically choose this option for the remainder of the session.
 event_taken_auto;This option will automatically be taken on ?Y$date$?W.
@@ -979,23 +979,23 @@ close_and_del;Close & Delete Factory
 cb_conditions_header;Conditions to use:
 as_a_vassal;as a vassal
 change_state_name_to;change state name to $text$
-alice_join_crisis_offer;$ACTOR$ will give us the following if we join their side in the current crisis:
-alice_unit_disable_rebel_hunt;Stop hunting rebels
-alice_regiment_battle_info;$name$ ?Y$type$?!\nOrganisation: ?Y$organisation$?W\nStrength: ?Y$strength$?W
+vce_join_crisis_offer;$ACTOR$ will give us the following if we join their side in the current crisis:
+vce_unit_disable_rebel_hunt;Stop hunting rebels
+vce_regiment_battle_info;$name$ ?Y$type$?!\nOrganisation: ?Y$organisation$?W\nStrength: ?Y$strength$?W
 understaffed_regiment;?RThis regiment is understaffed and will only have $value$ soldiers!?W
 tech_queue_explain;Press ?YSHIFT?W to add to queue, ?YRight-click?W to remove
-alice_province_building_build;?YSHIFT?W to build on the entire ?Gstate?W.\n?YSHIFT-Right-click?W to build on the entire ?Gcountry?W.
+vce_province_building_build;?YSHIFT?W to build on the entire ?Gstate?W.\n?YSHIFT-Right-click?W to build on the entire ?Gcountry?W.
 commodity_shortage;?RThere is a shortage of this commodity
 commodity_surplus;?GThere is a surplus of this commodity
-alice_trade_flow_produced;?YDomestic production:
-alice_trade_flow_consumed;?YDomestic consumption:
-alice_trade_flow_label;Market overview:
-alice_trade_flow_piechart_producers;Producers
-alice_trade_flow_piechart_consumers;Consumers
-alice_trade_flow_piechart_workforce;Investors
-alice_diplo_release_subject;Release subject
-alice_diplo_release_subject_desc;Releases one of our subjects, making them no longer our subject, alliances need to be broken separatedly
-alice_diplo_release_subject_0;Is our subject
+vce_trade_flow_produced;?YDomestic production:
+vce_trade_flow_consumed;?YDomestic consumption:
+vce_trade_flow_label;Market overview:
+vce_trade_flow_piechart_producers;Producers
+vce_trade_flow_piechart_consumers;Consumers
+vce_trade_flow_piechart_workforce;Investors
+vce_diplo_release_subject;Release subject
+vce_diplo_release_subject_desc;Releases one of our subjects, making them no longer our subject, alliances need to be broken separatedly
+vce_diplo_release_subject_0;Is our subject
 kill_leader;Kill leader
 annex_null;becomes unowned
 meets_the_conditions_of;meets the conditions of 
@@ -1020,77 +1020,77 @@ filter_enemies;Filter by nations that are either ?Yenemies or at war with us?!.
 filter_sphere;Filter by nations that are within our ?Ysphere of influence?!.\n?YRight-click?! to filter by nations which we are influencing but not on our sphere.
 filter_neighbors;Filter by nations we share a ?Yborder?! with.\n?YRight-click?! to filter by nations we share a ?Yborder?! and are not ?Yvassals?!.
 filter_best_guess;Filter using a ?Ybest guess?! by relevancy, this includes all ?Yallies?!, ?Yenemies?!, ?Yspherelings?! and nations we share a ?Yborder?! with.
-alice_warn_war_ends_for_us;?RThis will end the war for everyone on our side?!.
-alice_invention_chance;The chance of discovering this ?Yinvention?! are as follows:
+vce_warn_war_ends_for_us;?RThis will end the war for everyone on our side?!.
+vce_invention_chance;The chance of discovering this ?Yinvention?! are as follows:
 is_primary_culture;?Y$NAME$?! is the primary culture.
 is_primary_religion;?Y$NAME$?! is the primary religion.
 tt_can_use_nation;The conditions needed to allow the use of this wargoal:
 et_on_add;The effects executed from adding this wargoal to a war:
 et_on_po_accepted;The effects executed from accepting a peace offer with this wargoal:
-alice_no_possible_units;No possible units can be built, and no units are in construction.
-alice_debt_spending;Enable/disable debt spending
-alice_loan_size;Our current maximum loan is $x$. Debt greater than that will cause us to go bankrupt
-alice_currently_bankrupt;We are bankrupt (until $x$)
-alice_no_loans_possible;We are currently unable to take loans
-alice_rf_demands_enforced_trigger;The rebels will only enforce their demands if:
-alice_rf_demands_enforced_effect;Once the rebels enforce their demands they will apply the following effect:
-alice_rf_siege_won_trigger;If a rebel wins a siege, the following is checked for, for example in your capital $x$:
-alice_rf_siege_won_effect;And if all of the above was true, the following effects apply, for example in your capital $x$:
+vce_no_possible_units;No possible units can be built, and no units are in construction.
+vce_debt_spending;Enable/disable debt spending
+vce_loan_size;Our current maximum loan is $x$. Debt greater than that will cause us to go bankrupt
+vce_currently_bankrupt;We are bankrupt (until $x$)
+vce_no_loans_possible;We are currently unable to take loans
+vce_rf_demands_enforced_trigger;The rebels will only enforce their demands if:
+vce_rf_demands_enforced_effect;Once the rebels enforce their demands they will apply the following effect:
+vce_rf_siege_won_trigger;If a rebel wins a siege, the following is checked for, for example in your capital $x$:
+vce_rf_siege_won_effect;And if all of the above was true, the following effects apply, for example in your capital $x$:
 may_month_name;May
-alice_ca_cant_influence;We currently are unable to increase or decrease the opinion of other nations at the moment
-alice_gp_status_regain_expiration;If we don't become rank ?Y$x$?W or higher, we will lose ?Ygreat power?W status by ?Y$date$?W!
-alice_mil_decay_description;Natural decay ?G-$x$
-alice_con_decay_description;Natural decay ?R-$x$
+vce_ca_cant_influence;We currently are unable to increase or decrease the opinion of other nations at the moment
+vce_gp_status_regain_expiration;If we don't become rank ?Y$x$?W or higher, we will lose ?Ygreat power?W status by ?Y$date$?W!
+vce_mil_decay_description;Natural decay ?G-$x$
+vce_con_decay_description;Natural decay ?R-$x$
 x_from_y;$x$ from $y$
 reinforce_rate;This regiment can reinforce up to $x$ soldiers per month.
 reinforce_rate_none;This regiment can't currently be reinforced.
 domestic_investment_pops;We have $x$ capitalists we can indirectly give generous donations to
 domestic_investment_needs;They require $x$ each day to satisfy their luxurious lifestyle
-alice_budget_scaled_inc;Income: ?G$value$
-alice_budget_scaled_1;Poor tax: ?G$value$
-alice_budget_scaled_2;Middle tax: ?G$value$
-alice_budget_scaled_3;Rich tax: ?G$value$
-alice_budget_scaled_4;Tariffs: ?G$value$
-alice_budget_scaled_exp;Expenses: ?R$value$
-alice_budget_scaled_5;Army maintanance: ?R$value$
-alice_budget_scaled_6;Navy maintanance: ?R$value$
-alice_budget_scaled_7;Construction: ?R$value$
-alice_budget_scaled_8;Education: ?R$value$
-alice_budget_scaled_9;Administration: ?R$value$
-alice_budget_scaled_10;Social spending: ?R$value$
-alice_budget_scaled_11;Military spending: ?R$value$
-alice_budget_scaled_12;Domestic investments: ?R$value$
-alice_budget_scaled_13;Overseas spending: ?R$value$
-alice_budget_scaled_14;Stockpile filling: ?R$value$
-alice_budget_scaled_15;War subsidies: ?R$value$
-alice_budget_scaled_16;Diplomatic interest: ?G$value$
-alice_budget_scaled_17;Gold production: ?G$value$
-alice_budget_scaled_net;Net revenue: ?Y$value$
-alice_budget_setting_percent;Set at $perc$.
-alice_spending_land_construction;Land construction in $name$: ?R$cost$?W
-alice_spending_naval_construction;Naval construction in $name$: ?R$cost$?W
-alice_spending_building_construction;Building construction in $name$: ?R$cost$?W
-alice_spending_factory_construction;Factory construction in $name$: ?R$cost$?W
-alice_spending_unit;Total spent on this unit in $name$: ?R$cost$?W
-alice_spending_unit_1;Total spent on this unit: ?R$cost$?W
-alice_spending_total;?YTotal spent:?W
-alice_spending_commodity;?R$cost$?W - Needs $need$ of $name$ ($val$)
-alice_spending_commodity_2;?R$cost$?W - Buying $need$ of $name$ (at $val$ x unit). Progress: $x$/$y$
-alice_recommended_build;?GThis factory is recommended to be built?W
-alice_factory_bonus;We will receive a ?Y$x$?W bonus if:
-alice_factory_inputs;Inputs required:
-alice_factory_input_item;?R$cost$?W - Needs $need$ of $name$ ($val$)
-alice_factory_base_workforce;Base workforce ?Y$x$?W
-alice_factory_total_bonus;This sums to about ?Y$x$?W
-alice_slider_controls;?YLeft-Click?W to increment by ?Y$value$?W\n?YSHIFT-Left-Click?W to increment by ?Y$x$?W\n?YSHIFT-Right-Click?W to increment to maximum
-alice_slider_controls_2;?YLeft-Click?W to decrement by ?Y$value$?W\n?YSHIFT-Left-Click?W to decrement by ?Y$x$?W\n?YSHIFT-Right-Click?W to decrement to minimum
+vce_budget_scaled_inc;Income: ?G$value$
+vce_budget_scaled_1;Poor tax: ?G$value$
+vce_budget_scaled_2;Middle tax: ?G$value$
+vce_budget_scaled_3;Rich tax: ?G$value$
+vce_budget_scaled_4;Tariffs: ?G$value$
+vce_budget_scaled_exp;Expenses: ?R$value$
+vce_budget_scaled_5;Army maintanance: ?R$value$
+vce_budget_scaled_6;Navy maintanance: ?R$value$
+vce_budget_scaled_7;Construction: ?R$value$
+vce_budget_scaled_8;Education: ?R$value$
+vce_budget_scaled_9;Administration: ?R$value$
+vce_budget_scaled_10;Social spending: ?R$value$
+vce_budget_scaled_11;Military spending: ?R$value$
+vce_budget_scaled_12;Domestic investments: ?R$value$
+vce_budget_scaled_13;Overseas spending: ?R$value$
+vce_budget_scaled_14;Stockpile filling: ?R$value$
+vce_budget_scaled_15;War subsidies: ?R$value$
+vce_budget_scaled_16;Diplomatic interest: ?G$value$
+vce_budget_scaled_17;Gold production: ?G$value$
+vce_budget_scaled_net;Net revenue: ?Y$value$
+vce_budget_setting_percent;Set at $perc$.
+vce_spending_land_construction;Land construction in $name$: ?R$cost$?W
+vce_spending_naval_construction;Naval construction in $name$: ?R$cost$?W
+vce_spending_building_construction;Building construction in $name$: ?R$cost$?W
+vce_spending_factory_construction;Factory construction in $name$: ?R$cost$?W
+vce_spending_unit;Total spent on this unit in $name$: ?R$cost$?W
+vce_spending_unit_1;Total spent on this unit: ?R$cost$?W
+vce_spending_total;?YTotal spent:?W
+vce_spending_commodity;?R$cost$?W - Needs $need$ of $name$ ($val$)
+vce_spending_commodity_2;?R$cost$?W - Buying $need$ of $name$ (at $val$ x unit). Progress: $x$/$y$
+vce_recommended_build;?GThis factory is recommended to be built?W
+vce_factory_bonus;We will receive a ?Y$x$?W bonus if:
+vce_factory_inputs;Inputs required:
+vce_factory_input_item;?R$cost$?W - Needs $need$ of $name$ ($val$)
+vce_factory_base_workforce;Base workforce ?Y$x$?W
+vce_factory_total_bonus;This sums to about ?Y$x$?W
+vce_slider_controls;?YLeft-Click?W to increment by ?Y$value$?W\n?YSHIFT-Left-Click?W to increment by ?Y$x$?W\n?YSHIFT-Right-Click?W to increment to maximum
+vce_slider_controls_2;?YLeft-Click?W to decrement by ?Y$value$?W\n?YSHIFT-Left-Click?W to decrement by ?Y$x$?W\n?YSHIFT-Right-Click?W to decrement to minimum
 explain_colonial_points;Secondary and Great Powers accumulate colonial points.
-alice_lobby_back;Back to lobby
-alice_lobby_back_tt_1;You're already in the fucking lobby
-alice_lobby_back_tt_2;Only the host may go back to lobby
+vce_lobby_back;Back to lobby
+vce_lobby_back_tt_1;You're already in the fucking lobby
+vce_lobby_back_tt_2;Only the host may go back to lobby
 reopen_with_tab;You can reopen this window with ?YTAB?W
-alice_topbar_tab_1;Open or close this tab
-alice_topbar_tab_2;Open or close the population tab
+vce_topbar_tab_1;Open or close this tab
+vce_topbar_tab_2;Open or close the population tab
 colonial_points_from_technology;From technologies:
 colonial_points_from_naval_bases;From naval bases:
 colonial_points_from_ships;From ships:
@@ -1104,13 +1104,13 @@ domestic_investment_label;Domestic investment:
 modifier_min_domestic_investment;Min domestic investment rate
 modifier_max_domestic_investment;Max domestic investment rate
 mouse_left_click_mode_label;Hold mouse click
-alice_supply_limit_desc;Supply limit: $x$
-alice_factory_worker_1;Employed: ?G$x$?W
-alice_factory_worker_2;Unemployed: ?R$x$?W
-alice_rgo_unemployment_country_alert;The following states have unemployed RGOs:
+vce_supply_limit_desc;Supply limit: $x$
+vce_factory_worker_1;Employed: ?G$x$?W
+vce_factory_worker_2;Unemployed: ?R$x$?W
+vce_rgo_unemployment_country_alert;The following states have unemployed RGOs:
 pop_promote_info_on_sel_2;$val$ expected change of $who$ in $where$ over the next month.
-alice_readme;?GWelcome to Kat's PA Engine!?W\nKat's PA Engine is an emulation (not a simulator!) of your favourite victorian-era video game, in other words, we tweak some mechanics to make it easier to understand for newer players, while also making the world more dynamic and entertaining, fixing old bugs (such as with crises) and implementing new quality of life features.\n?GNew features!?W\n?YGlobe?W: ?GLoved?W by many, ?Rhated?W by some, turn it off if it bothers you!\n?YTech queue:?W SHIFT-Right click to add technologies to the tech queue! (Right click to unqueue)\n?YDomestic investment:?W Instead of investing on individual projects, do it in one go\n?YPerformance:?W The ticks per second (not FPS) are atleast, x10 times faster\n?YLinter:?W Get coverage errors and warnings in your mods, catch bugs and typos easily\n?YMacro builder:?W Build units with varying compositions using our macro builder\n?Y11 new mapmodes:?W Religion, fort, employment, etc\n?YBuild in entire country:?W SHIFT Right-click to build in the entire country!\n?GControls:?W\n?YTAB?W: Open chat window\n?YESC?W: Open main menu and settings menu\n?YTilde (`)?W or ?YTilde (~)?W: Open console\n?GEnjoy the game! =^w^=?W
-alice_nf_controls;?YLeft-click?W to select or replace\n?YRight-click?W to remove
+vce_readme;?GWelcome to Kat's PA Engine!?W\nKat's PA Engine is an emulation (not a simulator!) of your favourite victorian-era video game, in other words, we tweak some mechanics to make it easier to understand for newer players, while also making the world more dynamic and entertaining, fixing old bugs (such as with crises) and implementing new quality of life features.\n?GNew features!?W\n?YGlobe?W: ?GLoved?W by many, ?Rhated?W by some, turn it off if it bothers you!\n?YTech queue:?W SHIFT-Right click to add technologies to the tech queue! (Right click to unqueue)\n?YDomestic investment:?W Instead of investing on individual projects, do it in one go\n?YPerformance:?W The ticks per second (not FPS) are atleast, x10 times faster\n?YLinter:?W Get coverage errors and warnings in your mods, catch bugs and typos easily\n?YMacro builder:?W Build units with varying compositions using our macro builder\n?Y11 new mapmodes:?W Religion, fort, employment, etc\n?YBuild in entire country:?W SHIFT Right-click to build in the entire country!\n?GControls:?W\n?YTAB?W: Open chat window\n?YESC?W: Open main menu and settings menu\n?YTilde (`)?W or ?YTilde (~)?W: Open console\n?GEnjoy the game! =^w^=?W
+vce_nf_controls;?YLeft-click?W to select or replace\n?YRight-click?W to remove
 unit_controls_tooltip_1;?YLeft-click?W select (deselecting everything else)\n?YSHIFT-Left-click?W add to selection
 unit_controls_tooltip_2;?YRight-click on a province?W partial retreat (?Gcycling/rotation?W) to province
 unit_control_group_tooltip;Press ?YCTRL-1?W thru ?YCTRL-9?W to assign/unassign this unit to a control group, which you can then press ?Y1?W thru ?Y9?W to select
@@ -1119,76 +1119,76 @@ demobilize;Demobilize
 mobilize;Mobilize
 cb_creation_detail_none;Please select a casus belli to start fabricating against $country$.
 cb_creation_detail;We can fabricate a ?Y$type$?W casus belli against $country$. This process may take ?Y$days$?W days, and the potential costs from being discovered will give us ?R$badboy$?W infamy.
-alice_mob_controls;?YRight-click?! to remobilize
-alice_mw_create_1;Add general
-alice_mw_create_2;Add admiral
-alice_mw_create_lpb;?YLeadership points?W will automatically be used to create generals or admirals when hitting the cap
-alice_mw_create_lp;We need ?R$x$?W ?Yleadership points?W to add
-alice_mw_controls_1;?YRight-click?W create ?Gall?W possible as generals
-alice_mw_controls_2;?YRight-click?W create ?Gall?W possible as admirals
-alice_daily_leadership_tt;$poptype$ provides ?G$value$?W leadership points (?Y$fraction$?W of the population, ?Y$optimal$?W is optimal). Extra leadership points will automatically be spent on creating new generals.
+vce_mob_controls;?YRight-click?! to remobilize
+vce_mw_create_1;Add general
+vce_mw_create_2;Add admiral
+vce_mw_create_lpb;?YLeadership points?W will automatically be used to create generals or admirals when hitting the cap
+vce_mw_create_lp;We need ?R$x$?W ?Yleadership points?W to add
+vce_mw_controls_1;?YRight-click?W create ?Gall?W possible as generals
+vce_mw_controls_2;?YRight-click?W create ?Gall?W possible as admirals
+vce_daily_leadership_tt;$poptype$ provides ?G$value$?W leadership points (?Y$fraction$?W of the population, ?Y$optimal$?W is optimal). Extra leadership points will automatically be spent on creating new generals.
 unit_current_supply;This unit received ?Y$val$%?W of the supplies needed in the last day.\nThe amount we could get of our current supply consumption was:
 unit_current_supply_high;$what$: ?Y$val$?W/?Y$value$?! ?l(?W?G$total$%?W?l demand satisfaction)
 unit_current_supply_mid;$what$: ?Y$val$?!/?Y$value$?! ?l(?O$total$%?W?l demand satisfaction)
 unit_current_supply_low;$what$: ?Y$val$?!/?Y$value$?! ?l(?R$total$%?W?l demand satisfaction)
-alice_crisis_inactive;No current active crisis
-alice_crisis_finding_attacker;Finding an attacker for the current crisis
-alice_crisis_finding_defender;Finding a defender for the current crisis
-alice_crisis_heating_up;Crisis is heating up in temperature, currently at ?R$temperature$?W
-alice_last_crisis;Last crisis ocurred in $date$ (there is a $time$ month cooldown between crises)
-alice_crisis_par_1;?RAttackers?W:
-alice_crisis_par_2;?BDefenders?W:
-alice_crisis_par_3;?YMerely interested (no side)?W:
-alice_commodity_cprice;Current price: $x$
-alice_commodity_cost;Cost: $x$
-alice_commodity_eprice;Effective price: $x$
-alice_trade_top_producers;Top ?Y$value$?W producers:
-alice_trade_no_producers;?RNobody is producing this commodity?W
-alice_political_party_trigger;Only available from ?Y$date_long_0$?W to ?Y$date_long_1$?W, and satisfying the following trigger:
-alice_political_party_no_trigger;Only available from ?Y$date_long_0$?W to ?Y$date_long_1$?W
-alice_ai_decision;AI's chance of choosing this decision will depend on:
-alice_mobilized_is_ai_controlled;Whetever mobilized units will automatically become AI controlled
-alice_ai_controlled_unit;Enable/Disable AI control of this unit, the unit will:\n- Automatically reinforce frontlines\n- Automatically siege when it's safe to do so\n- Hunt rebels\n- Form a defensive position against nations we're likely to attack (this is at the AI's discretion, and only at peace time)\nIf you want to make this unit target a specific nation or region, first move it close to that region or nation, then turn on AI control - because the AI will override all of your commands until you turn it off again
-alice_navy_allocation_tt;With ?Y$curr$?W ships, we accumulate a total supply throughput of ?Y$tot$?W, requiring ?Y$req$?W for our fleets. A detailed summary of the consumption of each naval fleet:
-alice_navy_allocation_2;$name$: ?Y$value$?W (?Y$perc$?W)
-alice_wg_condition_1;Does not have status quo as a defender
-alice_wg_condition_2;Is in a war with us
-alice_wg_condition_3;Unique wargoal (isn't a duplicate of another wargoal)
-alice_wg_condition_4;Not on the same side as us
-alice_wg_condition_5;Satisfies triggers for wargoal
-alice_wg_condition_6;Enough jingoism (needs $need$, has $value$)
-alice_wg_condition_7;Is constructable wargoal
-alice_tt_wg_infamy_limit;?RThis wargoal will exceed the infamy limit?W
-alice_wg_usage_trigger;Can only use if the following trigger is satisfied:
+vce_crisis_inactive;No current active crisis
+vce_crisis_finding_attacker;Finding an attacker for the current crisis
+vce_crisis_finding_defender;Finding a defender for the current crisis
+vce_crisis_heating_up;Crisis is heating up in temperature, currently at ?R$temperature$?W
+vce_last_crisis;Last crisis ocurred in $date$ (there is a $time$ month cooldown between crises)
+vce_crisis_par_1;?RAttackers?W:
+vce_crisis_par_2;?BDefenders?W:
+vce_crisis_par_3;?YMerely interested (no side)?W:
+vce_commodity_cprice;Current price: $x$
+vce_commodity_cost;Cost: $x$
+vce_commodity_eprice;Effective price: $x$
+vce_trade_top_producers;Top ?Y$value$?W producers:
+vce_trade_no_producers;?RNobody is producing this commodity?W
+vce_political_party_trigger;Only available from ?Y$date_long_0$?W to ?Y$date_long_1$?W, and satisfying the following trigger:
+vce_political_party_no_trigger;Only available from ?Y$date_long_0$?W to ?Y$date_long_1$?W
+vce_ai_decision;AI's chance of choosing this decision will depend on:
+vce_mobilized_is_ai_controlled;Whetever mobilized units will automatically become AI controlled
+vce_ai_controlled_unit;Enable/Disable AI control of this unit, the unit will:\n- Automatically reinforce frontlines\n- Automatically siege when it's safe to do so\n- Hunt rebels\n- Form a defensive position against nations we're likely to attack (this is at the AI's discretion, and only at peace time)\nIf you want to make this unit target a specific nation or region, first move it close to that region or nation, then turn on AI control - because the AI will override all of your commands until you turn it off again
+vce_navy_allocation_tt;With ?Y$curr$?W ships, we accumulate a total supply throughput of ?Y$tot$?W, requiring ?Y$req$?W for our fleets. A detailed summary of the consumption of each naval fleet:
+vce_navy_allocation_2;$name$: ?Y$value$?W (?Y$perc$?W)
+vce_wg_condition_1;Does not have status quo as a defender
+vce_wg_condition_2;Is in a war with us
+vce_wg_condition_3;Unique wargoal (isn't a duplicate of another wargoal)
+vce_wg_condition_4;Not on the same side as us
+vce_wg_condition_5;Satisfies triggers for wargoal
+vce_wg_condition_6;Enough jingoism (needs $need$, has $value$)
+vce_wg_condition_7;Is constructable wargoal
+vce_tt_wg_infamy_limit;?RThis wargoal will exceed the infamy limit?W
+vce_wg_usage_trigger;Can only use if the following trigger is satisfied:
 province_id;Province Id
 nation_tag;Nation tag
 rgo_trade_prod_1;RGO Farming Production: $x$ ($y$)
 rgo_trade_prod_2;RGO Mining Production: $x$ ($y$)
 rgo_trade_prod_3;RGO Minting Production: $x$ ($y$)
-alice_artisan_trade_prod;Artisan Production: $x$ ($y$)
-alice_factory_trade_prod;Factory Production: $x$ ($y$)
-alice_all_trade_prod;Total Production: $x$
-alice_interested_in_alliance;(Only applies to AI nations) Mark that we're interested in an alliance with this country, and will immediately accept alliance offers
-alice_merge_rally_point_why;Merge rally points are deprecated, rally points will now automatically merge
-alice_mvcap_1;Moves the capital to this province
-alice_mvcap_2;No ongoing crisis
-alice_mvcap_3;At peace
-alice_mvcap_4;Not the capital already
-alice_mvcap_5;Not colonial
-alice_mvcap_6;On the same continent as current capital
-alice_mvcap_7;Dominant accepted culture
-alice_mvcap_8;This province is not being sieged
-alice_mvcap_9;The current capital not being sieged
-alice_mvcap_10;Is owned by you
-alice_mvcap_11;Is controlled by you
-alice_mvcap_12;Is owner core
-alice_pnt_pops;?YPopulation:?! $x$
-alice_pnt_rpops;?YRich strata:?! $x$ ($y$)
-alice_pnt_mpops;?YMiddle strata:?! $x$ ($y$)
-alice_pnt_ppops;?YPoor strata:?! $x$ ($y$)
-alice_pnt_culture;?YCulture:?! $x$
-alice_pnt_religion;?YReligion:?! $x$
-alice_pnt_dominant_religion;?YDominant religion:?! $x$
-alice_pnt_dominant_ideology;?YDominant Ideology:?! $x$
+vce_artisan_trade_prod;Artisan Production: $x$ ($y$)
+vce_factory_trade_prod;Factory Production: $x$ ($y$)
+vce_all_trade_prod;Total Production: $x$
+vce_interested_in_alliance;(Only applies to AI nations) Mark that we're interested in an alliance with this country, and will immediately accept alliance offers
+vce_merge_rally_point_why;Merge rally points are deprecated, rally points will now automatically merge
+vce_mvcap_1;Moves the capital to this province
+vce_mvcap_2;No ongoing crisis
+vce_mvcap_3;At peace
+vce_mvcap_4;Not the capital already
+vce_mvcap_5;Not colonial
+vce_mvcap_6;On the same continent as current capital
+vce_mvcap_7;Dominant accepted culture
+vce_mvcap_8;This province is not being sieged
+vce_mvcap_9;The current capital not being sieged
+vce_mvcap_10;Is owned by you
+vce_mvcap_11;Is controlled by you
+vce_mvcap_12;Is owner core
+vce_pnt_pops;?YPopulation:?! $x$
+vce_pnt_rpops;?YRich strata:?! $x$ ($y$)
+vce_pnt_mpops;?YMiddle strata:?! $x$ ($y$)
+vce_pnt_ppops;?YPoor strata:?! $x$ ($y$)
+vce_pnt_culture;?YCulture:?! $x$
+vce_pnt_religion;?YReligion:?! $x$
+vce_pnt_dominant_religion;?YDominant religion:?! $x$
+vce_pnt_dominant_ideology;?YDominant Ideology:?! $x$
 ledger_ppp_gdp;GDP(PPP)
 ledger_ppp_gdp_per_capita;GDP(PPP) per 1m people

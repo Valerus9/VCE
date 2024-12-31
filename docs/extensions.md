@@ -8,7 +8,7 @@ This document covers modding extensions that have been added to Kat's PA Engine 
 
 In Victoria 2, a trigger condition such as as `prestige = 5` will trigger when the nation's prestige is greater than or equal to 5. If you want to test whether the value is less than 5, you would have to bury it inside a `NOT` scope. And testing for exact equality would be even more complicated. To simplify things, we support replacing the `=` with one of the following tokens: `==`, `!=`, `<`, `>`, `<=`, `>=`. `==` tests for exact equality, `!=` for inequality, and the rest have their ordinary meanings. We also support replacing `=` with `!=` in most situations. For example, `tag != USA` is the same as `NOT = { tag = USA }`.
 
-Additionally, any effect scope can have a limit, in the original, `THIS`, `TAG`, `FROM`, `overlord`, `capital_scope` and `any_greater_power` couldn't reliably have a `limit = { ... }` defined within them. However KatEngine supports defining limits for any of them.
+Additionally, any effect scope can have a limit, in the original, `THIS`, `TAG`, `FROM`, `overlord`, `capital_scope` and `any_greater_power` couldn't reliably have a `limit = { ... }` defined within them. However VicCEngine supports defining limits for any of them.
 
 Also, province scopes will not crash the game, take for example:
 
@@ -272,13 +272,13 @@ These `else_if` statments are chained together, if the first runs, the second wi
 It is now possible to add new controls (such as buttons, text labels, and so on) to an existing window control without modifying the original file. To add new controls to a window simply define additional top level controls like the example below:
 ```
 	guiButtonType = {
-		name = "alice_move_capital"
+		name = "vce_move_capital"
 		extends = "province_view_header"
 		position = { x= 180 y = 3 }
 		quadTextureSprite = "GFX_move_capital"	
 	}
 ```
-This control will then automatically be inserted into the window named `province_view_header` when it is created. This allows you to extend a window defined in a `.gui` file without editing that file. The example above comes from `alice.gui` and is used to add a button to a window defined in `province_interface.gui` without editing that file. You mod can thus define a new `.gui` file, add new controls there, and have them show up in existing windows without interfering with another mod that also wants to add controls to that window (because now both mods don't have to make changes to the *same* `.gui` file).
+This control will then automatically be inserted into the window named `province_view_header` when it is created. This allows you to extend a window defined in a `.gui` file without editing that file. The example above comes from `vce.gui` and is used to add a button to a window defined in `province_interface.gui` without editing that file. You mod can thus define a new `.gui` file, add new controls there, and have them show up in existing windows without interfering with another mod that also wants to add controls to that window (because now both mods don't have to make changes to the *same* `.gui` file).
 
 ### Scriptable buttons
 
@@ -349,50 +349,50 @@ Laying out elements in the GUI can be a tedious process, while a WYSWYG editor w
 
 ### New defines
 
-KatEngine adds a handful of new defines:
+VicCEngine adds a handful of new defines:
 
 - `factories_per_state`: Factories allowed per state, default 8
-- `alice_speed_1`: Speed 1 in miliseconds
-- `alice_speed_2`: Same as above but with speed 2
-- `alice_speed_3`: Same as above but with speed 3
-- `alice_speed_4`: Same as above but with speed 4
-- `alice_ai_gather_radius`: Radius AI will use to gather nearby armies to make deathstacks
-- `alice_ai_threat_radius`: Radius AI will scan for threats
-- `alice_ai_threat_overestimate`: Overestimate AI opponents (higher values leads to camping)
-- `alice_ai_attack_target_radius`: Radius AI will perform attacks
-- `alice_full_reinforce`: 1 = Normal vanilla behaviour, 0 = Understaffed armies are allowed
-- `alice_ai_offensive_strength_overestimate`: Overestimate strength of an offensive oppontent (makes AI less aggressive)
-- `alice_lf_needs_scale`: Scale multiplier for life needs
-- `alice_ev_needs_scale`: Scale multiplier for everyday needs
-- `alice_lx_needs_scale`: Scale multiplier for luxury needs
-- `alice_max_event_iterations`: The maximun number of iterations that are possible within recursive events, by default this will be `8`, so you can only recursively fire events `8` levels deep. If modders wish to increase their "recursiveness" they may uppen this value up to whatever they wish.
-- `alice_needs_scaling_factor`: Scale factor multiplier for all needs
-- `alice_base_rgo_employment_bonus`: Additional rgo size of the main rgo.
-- `alice_base_rgo_efficiency_bonus`: Additional rgo efficiency of the main rgo.
-- `alice_factory_per_level_employment`: Unused.
-- `alice_domestic_investment_multiplier`: Unused.
-- `alice_rgo_boost`: Unused.
-- `alice_inputs_base_factor_artisans`: Unused.
-- `alice_output_base_factor_artisans`: See above.
-- `alice_inputs_base_factor`: See above, for factories.
-- `alice_rgo_overhire_multiplier`: Overhire multiplier for RGOs.
-- `alice_rgo_production_scale_neg_delta`: Scale delta for RGO production.
-- `alice_invest_capitalist`: % of total budget that capitalists will invest in the private investment pool
-- `alice_invest_aristocrat`: See above.
-- `alice_needs_lf_spend`: % of total budget dedicated to life needs
-- `alice_needs_ev_spend`: See above, but everyday needs
-- `alice_needs_lx_spend`: See above, but luxury needs
-- `alice_sat_delay_factor`: Satisfaction delay factor
-- `alice_need_drift_speed`: Drift speed of need weights for POPs
-- `alice_disable_divergent_any_country_effect`: On events, `any_country = { ... }` refers to any country, including non-existant and the one scoped, in decisions, `any_country = { ... }` refers only to existing nations and not the one on scope. Set 0 to keep this behaviour, set 1 to use a universal `any_country = { ... }` that scopes existing countries including the currently scoped nation.
-- `alice_unciv_civ_forbid_war`: Forbids AI civilized nations from aiding AI uncivilized ones except via scripted events
-- `alice_ideology_base_change_rate`: Base change rate for ideology for pops.
-- `alice_nurture_religion_assimilation`: Whetever religion assimilation should also convert pops or not (0 = yes, 1 = no).
-- `alice_surrender_on_cores_lost`: Does nothing, AI always surrenders when all their cores are taken
-- `alice_artificial_gp_limitant`: Limit the number of GP allies the AI can have.
-- `alice_rename_dont_use_localisation`: Keys specified on `change_region_name` or `change_province_name` will be treated as CSV keys, otherwise they will define in-line.
-- `alice_spherelings_only_ally_sphere`: Spherelings will only ally their spherelord.
-- `alice_overseas_mil`: Militancy increase in overseas provinces when overseas maintenance is at zero.
+- `vce_speed_1`: Speed 1 in miliseconds
+- `vce_speed_2`: Same as above but with speed 2
+- `vce_speed_3`: Same as above but with speed 3
+- `vce_speed_4`: Same as above but with speed 4
+- `vce_ai_gather_radius`: Radius AI will use to gather nearby armies to make deathstacks
+- `vce_ai_threat_radius`: Radius AI will scan for threats
+- `vce_ai_threat_overestimate`: Overestimate AI opponents (higher values leads to camping)
+- `vce_ai_attack_target_radius`: Radius AI will perform attacks
+- `vce_full_reinforce`: 1 = Normal vanilla behaviour, 0 = Understaffed armies are allowed
+- `vce_ai_offensive_strength_overestimate`: Overestimate strength of an offensive oppontent (makes AI less aggressive)
+- `vce_lf_needs_scale`: Scale multiplier for life needs
+- `vce_ev_needs_scale`: Scale multiplier for everyday needs
+- `vce_lx_needs_scale`: Scale multiplier for luxury needs
+- `vce_max_event_iterations`: The maximun number of iterations that are possible within recursive events, by default this will be `8`, so you can only recursively fire events `8` levels deep. If modders wish to increase their "recursiveness" they may uppen this value up to whatever they wish.
+- `vce_needs_scaling_factor`: Scale factor multiplier for all needs
+- `vce_base_rgo_employment_bonus`: Additional rgo size of the main rgo.
+- `vce_base_rgo_efficiency_bonus`: Additional rgo efficiency of the main rgo.
+- `vce_factory_per_level_employment`: Unused.
+- `vce_domestic_investment_multiplier`: Unused.
+- `vce_rgo_boost`: Unused.
+- `vce_inputs_base_factor_artisans`: Unused.
+- `vce_output_base_factor_artisans`: See above.
+- `vce_inputs_base_factor`: See above, for factories.
+- `vce_rgo_overhire_multiplier`: Overhire multiplier for RGOs.
+- `vce_rgo_production_scale_neg_delta`: Scale delta for RGO production.
+- `vce_invest_capitalist`: % of total budget that capitalists will invest in the private investment pool
+- `vce_invest_aristocrat`: See above.
+- `vce_needs_lf_spend`: % of total budget dedicated to life needs
+- `vce_needs_ev_spend`: See above, but everyday needs
+- `vce_needs_lx_spend`: See above, but luxury needs
+- `vce_sat_delay_factor`: Satisfaction delay factor
+- `vce_need_drift_speed`: Drift speed of need weights for POPs
+- `vce_disable_divergent_any_country_effect`: On events, `any_country = { ... }` refers to any country, including non-existant and the one scoped, in decisions, `any_country = { ... }` refers only to existing nations and not the one on scope. Set 0 to keep this behaviour, set 1 to use a universal `any_country = { ... }` that scopes existing countries including the currently scoped nation.
+- `vce_unciv_civ_forbid_war`: Forbids AI civilized nations from aiding AI uncivilized ones except via scripted events
+- `vce_ideology_base_change_rate`: Base change rate for ideology for pops.
+- `vce_nurture_religion_assimilation`: Whetever religion assimilation should also convert pops or not (0 = yes, 1 = no).
+- `vce_surrender_on_cores_lost`: Does nothing, AI always surrenders when all their cores are taken
+- `vce_artificial_gp_limitant`: Limit the number of GP allies the AI can have.
+- `vce_rename_dont_use_localisation`: Keys specified on `change_region_name` or `change_province_name` will be treated as CSV keys, otherwise they will define in-line.
+- `vce_spherelings_only_ally_sphere`: Spherelings will only ally their spherelord.
+- `vce_overseas_mil`: Militancy increase in overseas provinces when overseas maintenance is at zero.
 - `ke_needs_scaling_factor`: Scaling factor for needs
 
 ### Support for reforms based on party issues
@@ -482,7 +482,7 @@ province-id;size;culture;religion;pop-type;rebel-faction(optional)
 
 This allows for higher volume of data, while keeping it readable, editable and most importantly: able to be edited on your favourite office spreadsheet program.
 
-Using this in your mod is simple, create a file ending with `.csv`, like, `Africa.csv`, KatEngine will load it *alongside* other files, even `.txt` files, if you want to mix them you absolutely can, just bear in mind that every file in the `history/pops/yyyy.mm.dd` is loaded, so be aware of that.
+Using this in your mod is simple, create a file ending with `.csv`, like, `Africa.csv`, VicCEngine will load it *alongside* other files, even `.txt` files, if you want to mix them you absolutely can, just bear in mind that every file in the `history/pops/yyyy.mm.dd` is loaded, so be aware of that.
 
 ### Dense CSV province history
 
@@ -706,7 +706,7 @@ Whereas delayed events are of the form:
 
 Note that `days` can be anything from `0`, to negative numbers or even positive ones, but negative/zero numbers get treated as what's known an immediate-delayed event. The event isn't executed until the entire effect block has been executed first.
 
-Knowing if an event will loop back into itself would require solving the halting problem, or doing some smart static analysis. Hence, the only protection against an event causing a crash is `alice_max_event_iterations`, defining how much "depth" an event will be evaluated for.
+Knowing if an event will loop back into itself would require solving the halting problem, or doing some smart static analysis. Hence, the only protection against an event causing a crash is `vce_max_event_iterations`, defining how much "depth" an event will be evaluated for.
 
 Immediate events get evaluated on the immediate context. This can lead to crashes (on both the original and here) if not used carefully.
 

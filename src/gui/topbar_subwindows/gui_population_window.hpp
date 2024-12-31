@@ -923,7 +923,7 @@ namespace ui {
 			if(auto mid = state.world.national_focus_get_modifier(content);  mid) {
 				modifier_description(state, contents, mid, 15);
 			}
-			text::add_line(state, contents, "alice_nf_controls");
+			text::add_line(state, contents, "vce_nf_controls");
 		}
 	};
 

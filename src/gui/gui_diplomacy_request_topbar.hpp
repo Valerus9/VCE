@@ -118,7 +118,7 @@ namespace ui {
 
 	class diplomatic_message_topbar_listbox : public overlapping_listbox_element_base<diplomatic_message_topbar_entry_window, diplomatic_message::message> {
 		std::string_view get_row_element_name() override {
-			return "alice_diplomessageicon_entry_window";
+			return "vce_diplomessageicon_entry_window";
 		}
 	public:
 		std::vector< diplomatic_message::message> messages;

@@ -276,7 +276,7 @@ namespace ui {
 	};
 	class nc_defender_combat_modifiers : public overlapping_listbox_element_base<lc_modifier, lc_modifier_data> {
 		std::string_view get_row_element_name() override {
-			return "alice_combat_modifier";
+			return "vce_combat_modifier";
 		}
 		void update_subwindow(sys::state& state, lc_modifier& subwindow, lc_modifier_data content) override {
 			subwindow.data = content;
@@ -307,7 +307,7 @@ namespace ui {
 	};
 	class nc_attacker_combat_modifiers : public overlapping_listbox_element_base<lc_modifier, lc_modifier_data> {
 		std::string_view get_row_element_name() override {
-			return "alice_combat_modifier";
+			return "vce_combat_modifier";
 		}
 		void update_subwindow(sys::state& state, lc_modifier& subwindow, lc_modifier_data content) override {
 			subwindow.data = content;

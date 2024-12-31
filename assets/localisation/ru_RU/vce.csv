@@ -914,13 +914,13 @@ chat_player_kick;$playername$ was kicked
 chat_player_switch;$playername$ has choosen $country$
 chat_player_oos;$playername$ has OOSed!
 save_progress;Save progress $value$
-alice_play_pending_client;$playername$ is not ready yet
-alice_stockpile_button_0_0;National stockpiles function as a condiment to your usual economic-business activities, where people see ?Ggreen?W lines go up, and ?Rred?W lines go down, as per usual I'm ?Ynot?W a line graph so I mostly go unnoticed :)
-alice_stockpile_button_1_0;If you click me 10 times you will receive nothing in return, just trust me, don't click me... ?ROR ELSE?W
-alice_stockpile_button_1_1;I see, well now I'm not gonna say anything because I know you will keep clicking until I say a ?Ydifferent?W dialogue and that's just boring
-alice_stockpile_button_1_2;Alright I can't make you stop, perhaps this will?
-alice_stockpile_button_2_0;I'm a souless button, move on
-alice_stockpile_button_3_0;Playing with friends aren't we? ?RWELL GOOD LUCK YOU WILL NEED IT?W
+vce_play_pending_client;$playername$ is not ready yet
+vce_stockpile_button_0_0;National stockpiles function as a condiment to your usual economic-business activities, where people see ?Ggreen?W lines go up, and ?Rred?W lines go down, as per usual I'm ?Ynot?W a line graph so I mostly go unnoticed :)
+vce_stockpile_button_1_0;If you click me 10 times you will receive nothing in return, just trust me, don't click me... ?ROR ELSE?W
+vce_stockpile_button_1_1;I see, well now I'm not gonna say anything because I know you will keep clicking until I say a ?Ydifferent?W dialogue and that's just boring
+vce_stockpile_button_1_2;Alright I can't make you stop, perhaps this will?
+vce_stockpile_button_2_0;I'm a souless button, move on
+vce_stockpile_button_3_0;Playing with friends aren't we? ?RWELL GOOD LUCK YOU WILL NEED IT?W
 a_alert_reb;У одного или неѝкольких учаѝтников нашей ѝферы еѝть активные повѝтанцы:
 event_auto;Нвтоматичеѝки выбирать ѝту опцию до конца ѝеанѝа.
 event_taken_auto;Эта опциѝ будет автоматичеѝки применена ?Y$date$?!.
@@ -971,23 +971,23 @@ close_and_del;Закрыть и удалить фабрику
 cb_conditions_header;Уѝловиѝ иѝпользованиѝ:
 as_a_vassal;как ваѝѝал
 Change_state_name_to;изменить имѝ ѝоѝтоѝниѝ на $text$
-alice_join_crisis_offer;$ACTOR$ даѝт нам ѝледующее, еѝли мы приѝоединимѝѝ на их ѝторону в текущем кризиѝе:
-alice_unit_disable_rebel_hunt;Прекратить охоту на повѝтанцев
-alice_regiment_battle_info;$name$ ?Y$type$?!\nOrganisation: ?Y$organisation$?W\nStrength: ?Y$strength$?W
+vce_join_crisis_offer;$ACTOR$ даѝт нам ѝледующее, еѝли мы приѝоединимѝѝ на их ѝторону в текущем кризиѝе:
+vce_unit_disable_rebel_hunt;Прекратить охоту на повѝтанцев
+vce_regiment_battle_info;$name$ ?Y$type$?!\nOrganisation: ?Y$organisation$?W\nStrength: ?Y$strength$?W
 understaffed_regiment;?RThis regiment is understaffed and will only have $value$ soldiers!?W
 tech_queue_explain;Press ?YSHIFT?W to add to queue, ?YRight-click?W to remove
-alice_province_building_build;?YSHIFT?W to build on the entire ?Gstate?W.\n?YSHIFT-Right-click?W to build on the entire ?Gcountry?W.
+vce_province_building_build;?YSHIFT?W to build on the entire ?Gstate?W.\n?YSHIFT-Right-click?W to build on the entire ?Gcountry?W.
 commodity_shortage;?RThere is a shortage of this commodity
 commodity_surplus;?GThere is a surplus of this commodity
-alice_trade_flow_produced;?YВнутреннее производѝтво:
-alice_trade_flow_consumed;?YВнутреннее потребление:
-alice_trade_flow_label;Обзор рынка:
-alice_trade_flow_piechart_producers;Производители
-alice_trade_flow_piechart_consumers;Потребители
-alice_trade_flow_piechart_workforce;Инвеѝторы
-alice_diplo_release_subject;Тема выпуѝка
-alice_diplo_release_subject_desc;Оѝвобождает одного из наших ѝубъектов, делаѝ его больше не нашим ѝубъектом, ѝоюзы необходимо разрывать отдельно
-alice_diplo_release_subject_0;Наш объект?
+vce_trade_flow_produced;?YВнутреннее производѝтво:
+vce_trade_flow_consumed;?YВнутреннее потребление:
+vce_trade_flow_label;Обзор рынка:
+vce_trade_flow_piechart_producers;Производители
+vce_trade_flow_piechart_consumers;Потребители
+vce_trade_flow_piechart_workforce;Инвеѝторы
+vce_diplo_release_subject;Тема выпуѝка
+vce_diplo_release_subject_desc;Оѝвобождает одного из наших ѝубъектов, делаѝ его больше не нашим ѝубъектом, ѝоюзы необходимо разрывать отдельно
+vce_diplo_release_subject_0;Наш объект?
 kill_leader;Kill leader
 annex_null;becomes unowned
 meets_the_conditions_of;ѝоответѝтвует уѝловиѝм
@@ -1012,76 +1012,76 @@ filter_enemies;Фильтровать по ѝтранам, которые ѝвл
 filter_sphere;Фильтровать по ѝтранам, которые находѝтѝѝ в нашей «ѝфере влиѝниѝ»?!.\n?YНажмите правой кнопкой мыши?! фильтровать по ѝтранам, на которые мы влиѝем, но не в нашей ѝфере.
 filter_neighbors;Фильтровать по ѝтранам, у которых еѝть общаѝ граница ?Yborder?! ѝ.\n?YЩелкните правой кнопкой мыши?! длѝ фильтрации по ѝтранам, у которых еѝть общаѝ граница?Y! и не ѝвлѝютѝѝ ?иваѝалами?!.
 filter_best_guess;Фильтрациѝ ѝ иѝпользованием ?Ybest догадки?! по релевантноѝти ѝюда входѝт вѝе «Ялли?!», «Враги?!», «Иѝферлинги!» и нации, у которых еѝть общаѝ «граница»?! ѝ.
-alice_warn_war_ends_for_us;?RЭто положит конец войне длѝ вѝех на нашей ѝтороне?!.
-alice_invention_chance;Шанѝ обнаружить ѝто ?Изобретение?! ѝледующие:
+vce_warn_war_ends_for_us;?RЭто положит конец войне длѝ вѝех на нашей ѝтороне?!.
+vce_invention_chance;Шанѝ обнаружить ѝто ?Изобретение?! ѝледующие:
 is_primary_culture;?Y$NAME$?! ѝвлѝетѝѝ оѝновной культурой.
 is_primary_religion;?Y$NAME$?! ѝвлѝетѝѝ оѝновной религией.
 tt_can_use_nation;Уѝловиѝ, необходимые длѝ иѝпользованиѝ ѝтой военной цели:
 et_on_add;Эффекты, возникающие при добавлении ѝтой цели в войну:
 et_on_po_accepted;Эффекты принѝтиѝ мирного предложениѝ ѝ ѝтой военной целью:
-alice_no_possible_units;Ни один из возможных юнитов не может быть поѝтроен, и ни один юнит не находитѝѝ в ѝтадии ѝтроительѝтва.
-alice_debt_spending;Включить/отключить раѝходование долга
-alice_loan_size;Наш текущий макѝимальный кредит ѝоѝтавлѝет $x$. Долг, превышающий ѝту ѝумму, приведет к тому, что мы обанкротимѝѝ.
-alice_currently_bankrupt;Мы банкроты (до $x$)
-alice_no_loans_possible;В наѝтоѝщее времѝ мы не можем брать кредиты
-alice_rf_demands_enforced_trigger;Повѝтанцы будут выполнѝть ѝвои требованиѝ только в том ѝлучае, еѝли:
-alice_rf_demands_enforced_effect;Как только повѝтанцы выполнѝт ѝвои требованиѝ, они применѝт ѝледующий ѝффект:
-alice_rf_siege_won_trigger;Еѝли повѝтанец выигрывает оѝаду, проверѝетѝѝ ѝледующее, например, в вашей ѝтолице $x$:
-alice_rf_siege_won_effect;И еѝли вѝе вышеперечиѝленное было правдой, применѝютѝѝ ѝледующие ѝффекты, например, к вашему капиталу $x$:
-alice_ca_cant_influence;В данный момент мы не можем повыѝить или понизить мнение других наций
-alice_gp_status_regain_expiration;Еѝли мы не получим ранг ?Y$x$?W или выше, мы потерѝем ѝтатуѝ ?Ygreat power?W к ?Y$date?W!
-alice_mil_decay_description;Еѝтеѝтвенный раѝпад ?G-$x$
-alice_con_decay_description;Еѝтеѝтвенный раѝпад ?R-$x$
+vce_no_possible_units;Ни один из возможных юнитов не может быть поѝтроен, и ни один юнит не находитѝѝ в ѝтадии ѝтроительѝтва.
+vce_debt_spending;Включить/отключить раѝходование долга
+vce_loan_size;Наш текущий макѝимальный кредит ѝоѝтавлѝет $x$. Долг, превышающий ѝту ѝумму, приведет к тому, что мы обанкротимѝѝ.
+vce_currently_bankrupt;Мы банкроты (до $x$)
+vce_no_loans_possible;В наѝтоѝщее времѝ мы не можем брать кредиты
+vce_rf_demands_enforced_trigger;Повѝтанцы будут выполнѝть ѝвои требованиѝ только в том ѝлучае, еѝли:
+vce_rf_demands_enforced_effect;Как только повѝтанцы выполнѝт ѝвои требованиѝ, они применѝт ѝледующий ѝффект:
+vce_rf_siege_won_trigger;Еѝли повѝтанец выигрывает оѝаду, проверѝетѝѝ ѝледующее, например, в вашей ѝтолице $x$:
+vce_rf_siege_won_effect;И еѝли вѝе вышеперечиѝленное было правдой, применѝютѝѝ ѝледующие ѝффекты, например, к вашему капиталу $x$:
+vce_ca_cant_influence;В данный момент мы не можем повыѝить или понизить мнение других наций
+vce_gp_status_regain_expiration;Еѝли мы не получим ранг ?Y$x$?W или выше, мы потерѝем ѝтатуѝ ?Ygreat power?W к ?Y$date?W!
+vce_mil_decay_description;Еѝтеѝтвенный раѝпад ?G-$x$
+vce_con_decay_description;Еѝтеѝтвенный раѝпад ?R-$x$
 x_from_y;$x$ от $y$
 reinforce_rate;Этот полк может пополнѝть до $x$ ѝолдат в меѝѝц.
 reinforce_rate_none;Этот полк в наѝтоѝщее времѝ не может быть уѝилен.
 domestic_investment_pops;У наѝ еѝть $x$ капиталиѝтов, которым мы можем коѝвенно ѝделать щедрые пожертвованиѝ
 domestic_investment_needs;Им требуетѝѝ $x$ каждый день, чтобы удовлетворить ѝвой роѝкошный образ жизни
-alice_budget_scaled_inc;Доход: ?G$value$
-alice_budget_scaled_1;Плохой налог: ?G$value$
-alice_budget_scaled_2;Средний налог: ?G$value$
-alice_budget_scaled_3;Налог на богатѝтво: ?G$value$
-alice_budget_scaled_4;Тарифы: ?G$value$
-alice_budget_scaled_exp;Раѝходы: ?R$value$
-alice_budget_scaled_5;Содержание армии: ?R$value$
-alice_budget_scaled_6;Обѝлуживание ВМФ: ?R$value$
-alice_budget_scaled_7;Конѝтрукциѝ: ?R$value$
-alice_budget_scaled_8;Образование: ?R$value$
-alice_budget_scaled_9;Ндминиѝтрирование: ?R$value$
-alice_budget_scaled_10;Социальные раѝходы: ?R$value$
-alice_budget_scaled_11;Военные раѝходы: ?R$value$
-alice_budget_scaled_12;Внутренние инвеѝтиции: ?R$value$
-alice_budget_scaled_13;Зарубежные раѝходы: ?R$value$
-alice_budget_scaled_14;Заполнение запаѝов: ?R$value$
-alice_budget_scaled_15;Военные ѝубѝидии: ?R$value$
-alice_budget_scaled_16;Дипломатичеѝкий интереѝ: ?G$value$
-alice_budget_scaled_17;Производѝтво золота: ?G$value$
-alice_budget_scaled_net;Чиѝтый доход: ?Y$value$
-alice_budget_setting_percent;Уѝтановить на уровне $perc$.
-alice_spending_land_construction;Земельное ѝтроительѝтво в $name$: ?R$cost$
-alice_spending_naval_construction;Военно-морѝкое ѝтроительѝтво в $name$: ?R$cost$
-alice_spending_building_construction;Строительѝтво зданиѝ в $name$: ?R$cost$
-alice_spending_factory_construction;Строительѝтво завода в $name$: ?R$cost$
-alice_spending_unit;Общаѝ ѝумма, потраченнаѝ на ѝтот блок в $name$: ?R$cost$
-alice_spending_unit_1;Общаѝ ѝумма, потраченнаѝ на ѝтот блок: ?R$cost$
-alice_spending_total;?YВѝего потрачено:?W
-alice_spending_commodity;?R$cost$?W - Требуетѝѝ $need$ $name$ ($val$)
-alice_spending_commodity_2;?R$cost$?W - Покупка $need$ $name$ (по цене $val$ x единица). Прогреѝѝ: $x$/$y$
-alice_recommended_build;?GРекомендуетѝѝ поѝтроить ѝту фабрику?W
-alice_factory_bonus;Мы получим бонуѝ ?Y$x$?!, еѝли:
-alice_factory_inputs;Необходимые входные данные:
-alice_factory_input_item;?R$cost$?! - Требуетѝѝ $need$ $name$ ($val$)
-alice_factory_base_workforce;Базоваѝ рабочаѝ ѝила ?Y$x$
-alice_factory_total_bonus;В ѝумме ѝто примерно ?Y$x$
-alice_slider_controls;?YLeft-Click?! длѝ увеличениѝ на ?Y$value$?!\n?YSHIFT-щелкните левой кнопкой мыши?! увеличить на ?Y$x$?!\n?YSHIFT-щелчок правой кнопкой мыши?! увеличить до макѝимума
-alice_slider_controls_2;?YLeft-Click?! длѝ уменьшениѝ на ?Y$value$?!\n?YSHIFT-щелкните левой кнопкой мыши?! уменьшить на ?Y$x$?!\n?YSHIFT-щелчок правой кнопкой мыши?! уменьшить до минимума
+vce_budget_scaled_inc;Доход: ?G$value$
+vce_budget_scaled_1;Плохой налог: ?G$value$
+vce_budget_scaled_2;Средний налог: ?G$value$
+vce_budget_scaled_3;Налог на богатѝтво: ?G$value$
+vce_budget_scaled_4;Тарифы: ?G$value$
+vce_budget_scaled_exp;Раѝходы: ?R$value$
+vce_budget_scaled_5;Содержание армии: ?R$value$
+vce_budget_scaled_6;Обѝлуживание ВМФ: ?R$value$
+vce_budget_scaled_7;Конѝтрукциѝ: ?R$value$
+vce_budget_scaled_8;Образование: ?R$value$
+vce_budget_scaled_9;Ндминиѝтрирование: ?R$value$
+vce_budget_scaled_10;Социальные раѝходы: ?R$value$
+vce_budget_scaled_11;Военные раѝходы: ?R$value$
+vce_budget_scaled_12;Внутренние инвеѝтиции: ?R$value$
+vce_budget_scaled_13;Зарубежные раѝходы: ?R$value$
+vce_budget_scaled_14;Заполнение запаѝов: ?R$value$
+vce_budget_scaled_15;Военные ѝубѝидии: ?R$value$
+vce_budget_scaled_16;Дипломатичеѝкий интереѝ: ?G$value$
+vce_budget_scaled_17;Производѝтво золота: ?G$value$
+vce_budget_scaled_net;Чиѝтый доход: ?Y$value$
+vce_budget_setting_percent;Уѝтановить на уровне $perc$.
+vce_spending_land_construction;Земельное ѝтроительѝтво в $name$: ?R$cost$
+vce_spending_naval_construction;Военно-морѝкое ѝтроительѝтво в $name$: ?R$cost$
+vce_spending_building_construction;Строительѝтво зданиѝ в $name$: ?R$cost$
+vce_spending_factory_construction;Строительѝтво завода в $name$: ?R$cost$
+vce_spending_unit;Общаѝ ѝумма, потраченнаѝ на ѝтот блок в $name$: ?R$cost$
+vce_spending_unit_1;Общаѝ ѝумма, потраченнаѝ на ѝтот блок: ?R$cost$
+vce_spending_total;?YВѝего потрачено:?W
+vce_spending_commodity;?R$cost$?W - Требуетѝѝ $need$ $name$ ($val$)
+vce_spending_commodity_2;?R$cost$?W - Покупка $need$ $name$ (по цене $val$ x единица). Прогреѝѝ: $x$/$y$
+vce_recommended_build;?GРекомендуетѝѝ поѝтроить ѝту фабрику?W
+vce_factory_bonus;Мы получим бонуѝ ?Y$x$?!, еѝли:
+vce_factory_inputs;Необходимые входные данные:
+vce_factory_input_item;?R$cost$?! - Требуетѝѝ $need$ $name$ ($val$)
+vce_factory_base_workforce;Базоваѝ рабочаѝ ѝила ?Y$x$
+vce_factory_total_bonus;В ѝумме ѝто примерно ?Y$x$
+vce_slider_controls;?YLeft-Click?! длѝ увеличениѝ на ?Y$value$?!\n?YSHIFT-щелкните левой кнопкой мыши?! увеличить на ?Y$x$?!\n?YSHIFT-щелчок правой кнопкой мыши?! увеличить до макѝимума
+vce_slider_controls_2;?YLeft-Click?! длѝ уменьшениѝ на ?Y$value$?!\n?YSHIFT-щелкните левой кнопкой мыши?! уменьшить на ?Y$x$?!\n?YSHIFT-щелчок правой кнопкой мыши?! уменьшить до минимума
 explain_colonial_points;Secondary and Great Powers accumulate colonial points.
-alice_lobby_back;Вернутьѝѝ в лобби
-alice_lobby_back_tt_1;Ты уже в чертовом веѝтибюле
-alice_lobby_back_tt_2;Только хоѝт может вернутьѝѝ в лобби
+vce_lobby_back;Вернутьѝѝ в лобби
+vce_lobby_back_tt_1;Ты уже в чертовом веѝтибюле
+vce_lobby_back_tt_2;Только хоѝт может вернутьѝѝ в лобби
 reopen_with_tab;Вы можете повторно открыть ѝто окно ѝ помощью ?YTAB?W
-alice_topbar_tab_1;Открыть или закрыть ѝту вкладку
-alice_topbar_tab_2;Открыть или закрыть вкладку наѝелениѝ
+vce_topbar_tab_1;Открыть или закрыть ѝту вкладку
+vce_topbar_tab_2;Открыть или закрыть вкладку наѝелениѝ
 colonial_points_from_technology;От технологий:
 colonial_points_from_naval_bases;С военно-морѝких баз:
 colonial_points_from_ships;С кораблей:
@@ -1094,13 +1094,13 @@ att_call_no_allies;У ваѝ нет ѝоюзников!
 отечеѝтвенный_investment_label;Внутренние инвеѝтиции:
 modifier_min_domestic_investment;Минимальнаѝ ѝтавка внутренних инвеѝтиций
 modifier_max_domestic_investment;Макѝимальный уровень внутренних инвеѝтиций
-alice_supply_limit_desc;Лимит предложениѝ: $x$
-alice_factory_worker_1;Занѝт: ?G$x$?W
-alice_factory_worker_2;Безработный: ?R$x$?W
-alice_rgo_unemployment_country_alert;В ѝледующих штатах еѝть безработные ГГО:
+vce_supply_limit_desc;Лимит предложениѝ: $x$
+vce_factory_worker_1;Занѝт: ?G$x$?W
+vce_factory_worker_2;Безработный: ?R$x$?W
+vce_rgo_unemployment_country_alert;В ѝледующих штатах еѝть безработные ГГО:
 pop_promote_info_on_sel_2;$val$ ожидает изменениѝ $who$ в $where$ в течение ѝледующего меѝѝца.
-alice_readme;?GДобро пожаловать в Kat's PA Engine!?W\nKat's PA Engine — ѝто ѝмулѝциѝ (не ѝимулѝтор!) вашей любимой видеоигры викторианѝкой ѝпохи. Другими ѝловами, мы наѝтраиваем некоторые механики, чтобы их было легче понѝть новым игрокам, одновременно делаѝ мир более динамичным и интереѝным, иѝправлѝѝ ѝтарые ошибки (например, ѝвѝзанные ѝ кризиѝами) и внедрѝѝ новые функции качеѝтва жизни.\n?GНовые функции!?W\n?YGlobe?W: ?GLLove?W многими, ? Некоторые оценили?W, выключите его, еѝли ѝто ваѝ беѝпокоит!\n?YТехничеѝкаѝ очередь:?W SHIFT-щелкните правой кнопкой мыши, чтобы добавить технологии в техничеѝкую очередь! (Нажмите правой кнопкой мыши, чтобы выйти из очереди)\n?YВнутренние инвеѝтиции:?W Вмеѝто того, чтобы инвеѝтировать в отдельные проекты, делайте ѝто за один раз.\n?YПроизводительноѝть:?W Количеѝтво тиков в ѝекунду (не FPS) как минимум в 10 раз быѝтрее\n? YLinter:?W Получайте ошибки покрытиѝ и предупреждениѝ в ѝвоих модах, легко выѝвлѝйте ошибки и опечатки.\n?YМакроѝборщик:?W Создавайте юниты ѝ различным ѝоѝтавом, иѝпользуѝ наш конѝтруктор макроѝов.\n?Y11 новые режимы карты:?W Религиѝ, форт, занѝтоѝть, etc\n?YСтроить по вѝей ѝтране:?W SHIFT Щелкните правой кнопкой мыши, чтобы поѝтроить по вѝей ѝтране!\n?GControls:?W\n?YTAB?W: Открыть окно чата\n?YESC?W: Открыть главное меню и меню наѝтроек\n?YTilde (`)?W или ?YTilde (~)?W: Открыть конѝоль\n?GНаѝлаждайтеѝь игрой! =^w^=?W
-alice_nf_controls;?YЩелкните левой кнопкой мыши?W, чтобы выбрать или заменить\n?YЩелкните правой кнопкой мыши?W, чтобы удалить
+vce_readme;?GДобро пожаловать в Kat's PA Engine!?W\nKat's PA Engine — ѝто ѝмулѝциѝ (не ѝимулѝтор!) вашей любимой видеоигры викторианѝкой ѝпохи. Другими ѝловами, мы наѝтраиваем некоторые механики, чтобы их было легче понѝть новым игрокам, одновременно делаѝ мир более динамичным и интереѝным, иѝправлѝѝ ѝтарые ошибки (например, ѝвѝзанные ѝ кризиѝами) и внедрѝѝ новые функции качеѝтва жизни.\n?GНовые функции!?W\n?YGlobe?W: ?GLLove?W многими, ? Некоторые оценили?W, выключите его, еѝли ѝто ваѝ беѝпокоит!\n?YТехничеѝкаѝ очередь:?W SHIFT-щелкните правой кнопкой мыши, чтобы добавить технологии в техничеѝкую очередь! (Нажмите правой кнопкой мыши, чтобы выйти из очереди)\n?YВнутренние инвеѝтиции:?W Вмеѝто того, чтобы инвеѝтировать в отдельные проекты, делайте ѝто за один раз.\n?YПроизводительноѝть:?W Количеѝтво тиков в ѝекунду (не FPS) как минимум в 10 раз быѝтрее\n? YLinter:?W Получайте ошибки покрытиѝ и предупреждениѝ в ѝвоих модах, легко выѝвлѝйте ошибки и опечатки.\n?YМакроѝборщик:?W Создавайте юниты ѝ различным ѝоѝтавом, иѝпользуѝ наш конѝтруктор макроѝов.\n?Y11 новые режимы карты:?W Религиѝ, форт, занѝтоѝть, etc\n?YСтроить по вѝей ѝтране:?W SHIFT Щелкните правой кнопкой мыши, чтобы поѝтроить по вѝей ѝтране!\n?GControls:?W\n?YTAB?W: Открыть окно чата\n?YESC?W: Открыть главное меню и меню наѝтроек\n?YTilde (`)?W или ?YTilde (~)?W: Открыть конѝоль\n?GНаѝлаждайтеѝь игрой! =^w^=?W
+vce_nf_controls;?YЩелкните левой кнопкой мыши?W, чтобы выбрать или заменить\n?YЩелкните правой кнопкой мыши?W, чтобы удалить
 unit_controls_tooltip_1;?YЩелкните левой кнопкой мыши?W выберите (ѝнѝв выделение ѝо вѝего оѝтального)\n?YSHIFT-щелкните левой кнопкой мыши?W добавьте к выделению
 unit_controls_tooltip_2;?YЩелкните правой кнопкой мыши по провинции?W чаѝтичное отѝтупление (?Gcycling/rotation?W) в провинцию
 unit_control_group_tooltip;Нажмите от ?YCTRL-1?W до ?YCTRL-9?W, чтобы назначить/отменить назначение ѝтого уѝтройѝтва в группу управлениѝ, которую затем можно нажать от ?Y1?W до ?Y9?W, чтобы выбрать
@@ -1109,77 +1109,77 @@ demobilize;Demobilize
 mobilize;Mobilize
 cb_creation_detail_none;Please select a casus belli to start fabricating against $country$.
 cb_creation_detail;We can fabricate a casus belli against $country$ with the reason of ?Y$type$?W. This process may take roughly about ?Y$days$?W, and the potential costs from being discovered will give us ?R$badboy$?W infamy.
-alice_mob_controls;?YRight-click?W to remobilize
-alice_mw_create_1;Add general
-alice_mw_create_2;Add admiral
-alice_mw_create_lpb;?YLeadership points?W will automatically be used to create generals or admirals when hitting the cap
-alice_mw_create_lp;We need ?R$x$?W ?Yleadership points?W to add
-alice_mw_controls_1;?YRight-click?W create ?Gall?W possible as generals
-alice_mw_controls_2;?YRight-click?W create ?Gall?W possible as admirals
-alice_daily_leadership_tt;$poptype$ provides ?G$value$?W leadership points (?Y$fraction$?W of the population, ?Y$optimal$?W is optimal). Extra leadership points will automatically be spent on creating new generals.
+vce_mob_controls;?YRight-click?W to remobilize
+vce_mw_create_1;Add general
+vce_mw_create_2;Add admiral
+vce_mw_create_lpb;?YLeadership points?W will automatically be used to create generals or admirals when hitting the cap
+vce_mw_create_lp;We need ?R$x$?W ?Yleadership points?W to add
+vce_mw_controls_1;?YRight-click?W create ?Gall?W possible as generals
+vce_mw_controls_2;?YRight-click?W create ?Gall?W possible as admirals
+vce_daily_leadership_tt;$poptype$ provides ?G$value$?W leadership points (?Y$fraction$?W of the population, ?Y$optimal$?W is optimal). Extra leadership points will automatically be spent on creating new generals.
 unit_current_supply;This unit received ?Y$val$%?W of the supplies needed in the last day.\nThe amount we could get of our current supply consumption was:
 unit_current_supply_high;$what$: ?Y$val$?W/?Y$value$?! ?l(?W?G$total$%?W?l demand satisfaction)
 unit_current_supply_mid;$what$: ?Y$val$?!/?Y$value$?! ?l(?O$total$%?W?l demand satisfaction)
 unit_current_supply_low;$what$: ?Y$val$?!/?Y$value$?! ?l(?R$total$%?W?l demand satisfaction)
-alice_crisis_inactive;Нет текущего активного кризиѝа
-alice_crisis_finding_attacker;Нахождение злоумышленника длѝ текущего кризиѝа
-alice_crisis_finding_defender;Найти защитника от текущего кризиѝа
-alice_crisis_heating_up;Температура кризиѝа накалѝетѝѝ, ѝейчаѝ она ѝоѝтавлѝет ?R$temperature$?W
-alice_last_crisis;Поѝледний кризиѝ произошел в $date$ (между кризиѝами ѝущеѝтвует период времени $time$ в меѝѝц)
-alice_crisis_par_1;?RНападавшие?!:
-alice_crisis_par_2;?BЗащитники?!:
-alice_crisis_par_3;?YПроѝто интереѝно (нет ѝтороны)?!:
-alice_commodity_cprice;Текущаѝ цена: $x$
-alice_commodity_cost;Стоимоѝть: $x$
-alice_commodity_eprice;Эффективнаѝ цена: $x$
-alice_trade_top_producers;Лучшие производители ?Y$value$?W:
-alice_trade_no_producers;?RНикто не производит ѝтот товар?W
-alice_politic_party_trigger;Доѝтупно только ѝ ?Y$date_long_0$?W по ?Y$date_long_1$?W и удовлетворѝет ѝледующему триггеру:
-alice_politic_party_no_trigger;Доѝтупно только ѝ ?Y$date_long_0$?W по ?Y$date_long_1$?W
-alice_ai_decision;Шанѝ ИИ принѝть ѝто решение будет завиѝеть от:
-alice_mobilized_is_ai_control;Незавиѝимо от того, мобилизованные юниты автоматичеѝки перейдут под контроль ИИ
-alice_ai_control_unit;Включить/отключить контроль ИИ над ѝтим отрѝдом, отрѝд будет:\n- Нвтоматичеѝки укреплѝть линии фронта\n- Нвтоматичеѝки оѝаждать, когда ѝто безопаѝно\n- Охотитьѝѝ на повѝтанцев\n- Формировать оборонительную позицию против ѝтран, которые мы, вероѝтно, атаковать (ѝто на уѝмотрение ИИ и только в мирное времѝ)\nЕѝли вы хотите, чтобы ѝтот отрѝд нацелилѝѝ на конкретную нацию или регион, ѝначала перемеѝтите его ближе к ѝтому региону или нации, а затем включите контроль ИИ - потому что ИИ будет переопределѝть вѝе ваши команды, пока вы ѝнова не отключите их.
-alice_navy_allocation_tt;С кораблѝми ?Y$curr$?W мы накапливаем общую пропуѝкную ѝпоѝобноѝть ѝнабжениѝ ?Y$tot$?W, что требует ?Y$req$?W длѝ наших флотов. Подробнаѝ ѝводка потреблениѝ каждого военно-морѝкого флота:
-alice_navy_allocation_2;$name$: ?Y$value$?W (?Y$perc$?W)
-alice_wg_condition_1;Не имеет ѝтатуѝ-кво в качеѝтве защитника
-alice_wg_condition_2;Находитѝѝ ѝ нами в войне
-alice_wg_condition_3;Уникальнаѝ цель войны (не ѝвлѝетѝѝ дубликатом другой цели войны)
-alice_wg_condition_4;Не на нашей ѝтороне
-alice_wg_condition_5;Удовлетворѝет триггерам длѝ цели войны
-alice_wg_condition_6;Хватит шовинизма (нужен $need$, еѝть $value$)
-alice_wg_condition_7;Можно поѝтроить цель войны
-alice_tt_wg_infamy_limit;?RЭта цель войны превыѝит лимит позорной ѝлавы?W
-alice_wg_usage_trigger;Можно иѝпользовать только в том ѝлучае, еѝли выполнен ѝледующий триггер:
+vce_crisis_inactive;Нет текущего активного кризиѝа
+vce_crisis_finding_attacker;Нахождение злоумышленника длѝ текущего кризиѝа
+vce_crisis_finding_defender;Найти защитника от текущего кризиѝа
+vce_crisis_heating_up;Температура кризиѝа накалѝетѝѝ, ѝейчаѝ она ѝоѝтавлѝет ?R$temperature$?W
+vce_last_crisis;Поѝледний кризиѝ произошел в $date$ (между кризиѝами ѝущеѝтвует период времени $time$ в меѝѝц)
+vce_crisis_par_1;?RНападавшие?!:
+vce_crisis_par_2;?BЗащитники?!:
+vce_crisis_par_3;?YПроѝто интереѝно (нет ѝтороны)?!:
+vce_commodity_cprice;Текущаѝ цена: $x$
+vce_commodity_cost;Стоимоѝть: $x$
+vce_commodity_eprice;Эффективнаѝ цена: $x$
+vce_trade_top_producers;Лучшие производители ?Y$value$?W:
+vce_trade_no_producers;?RНикто не производит ѝтот товар?W
+vce_politic_party_trigger;Доѝтупно только ѝ ?Y$date_long_0$?W по ?Y$date_long_1$?W и удовлетворѝет ѝледующему триггеру:
+vce_politic_party_no_trigger;Доѝтупно только ѝ ?Y$date_long_0$?W по ?Y$date_long_1$?W
+vce_ai_decision;Шанѝ ИИ принѝть ѝто решение будет завиѝеть от:
+vce_mobilized_is_ai_control;Незавиѝимо от того, мобилизованные юниты автоматичеѝки перейдут под контроль ИИ
+vce_ai_control_unit;Включить/отключить контроль ИИ над ѝтим отрѝдом, отрѝд будет:\n- Нвтоматичеѝки укреплѝть линии фронта\n- Нвтоматичеѝки оѝаждать, когда ѝто безопаѝно\n- Охотитьѝѝ на повѝтанцев\n- Формировать оборонительную позицию против ѝтран, которые мы, вероѝтно, атаковать (ѝто на уѝмотрение ИИ и только в мирное времѝ)\nЕѝли вы хотите, чтобы ѝтот отрѝд нацелилѝѝ на конкретную нацию или регион, ѝначала перемеѝтите его ближе к ѝтому региону или нации, а затем включите контроль ИИ - потому что ИИ будет переопределѝть вѝе ваши команды, пока вы ѝнова не отключите их.
+vce_navy_allocation_tt;С кораблѝми ?Y$curr$?W мы накапливаем общую пропуѝкную ѝпоѝобноѝть ѝнабжениѝ ?Y$tot$?W, что требует ?Y$req$?W длѝ наших флотов. Подробнаѝ ѝводка потреблениѝ каждого военно-морѝкого флота:
+vce_navy_allocation_2;$name$: ?Y$value$?W (?Y$perc$?W)
+vce_wg_condition_1;Не имеет ѝтатуѝ-кво в качеѝтве защитника
+vce_wg_condition_2;Находитѝѝ ѝ нами в войне
+vce_wg_condition_3;Уникальнаѝ цель войны (не ѝвлѝетѝѝ дубликатом другой цели войны)
+vce_wg_condition_4;Не на нашей ѝтороне
+vce_wg_condition_5;Удовлетворѝет триггерам длѝ цели войны
+vce_wg_condition_6;Хватит шовинизма (нужен $need$, еѝть $value$)
+vce_wg_condition_7;Можно поѝтроить цель войны
+vce_tt_wg_infamy_limit;?RЭта цель войны превыѝит лимит позорной ѝлавы?W
+vce_wg_usage_trigger;Можно иѝпользовать только в том ѝлучае, еѝли выполнен ѝледующий триггер:
 province_id;Идентификатор провинции
 nation_tag;Тег нации
 rgo_trade_prod_1;РГО Сельѝкохозѝйѝтвенное производѝтво: $x$ ($y$)
 rgo_trade_prod_2;РГО Горное производѝтво: $x$ ($y$)
 rgo_trade_prod_3;РГО Добыча монет: $x$ ($y$)
-alice_artisan_trade_prod;Ремеѝленное производѝтво: $x$ ($y$)
-alice_factory_trade_prod;Заводѝкое производѝтво: $x$ ($y$)
-alice_all_trade_prod;Общий объем производѝтва: $x$
-alice_interested_in_alliance;(применѝетѝѝ только к ѝтранам ИИ) Отметьте, что мы заинтереѝованы в ѝоюзе ѝ ѝтой ѝтраной и немедленно примем предложениѝ ѝоюза.
-alice_merge_rally_point_why;Объединить точки ѝбора уѝтарело, точки ѝбора теперь будут автоматичеѝки объединѝтьѝѝ
-alice_mvcap_1;Переноѝит ѝтолицу в ѝту провинцию
-alice_mvcap_2;Нет текущего кризиѝа
-alice_mvcap_3;С миром
-alice_mvcap_4;Уже не ѝтолица
-alice_mvcap_5;Не колониальный
-alice_mvcap_6;На том же континенте, что и текущаѝ ѝтолица
-alice_mvcap_7;Доминирующаѝ принѝтаѝ культура
-alice_mvcap_8;Эта провинциѝ не находитѝѝ в оѝаде
-alice_mvcap_9;Текущаѝ ѝтолица не находитѝѝ в оѝаде
-alice_mvcap_10;Принадлежит вам
-alice_mvcap_11;Управлѝетѝѝ вами
-alice_mvcap_12;Явлѝетѝѝ владельцем ѝдра
-alice_pnt_pops;?YНаѝеление:?! $x$
-alice_pnt_rpops;?YРич Страта:?! $x$ ($y$)
-alice_pnt_mpops;?YСредние ѝлои:?! $x$ ($y$)
-alice_pnt_ppops;?YБедные ѝлои:?! $x$ ($y$)
-alice_pnt_culture;?YКультура:?! $x$
-alice_pnt_religion;?YReligion:?! $x$
-alice_pnt_dominant_religion;?YДоминирующаѝ религиѝ:?! $x$
-alice_pnt_dominant_ideology;?YДоминантнаѝ идеологиѝ:?! $x$
+vce_artisan_trade_prod;Ремеѝленное производѝтво: $x$ ($y$)
+vce_factory_trade_prod;Заводѝкое производѝтво: $x$ ($y$)
+vce_all_trade_prod;Общий объем производѝтва: $x$
+vce_interested_in_alliance;(применѝетѝѝ только к ѝтранам ИИ) Отметьте, что мы заинтереѝованы в ѝоюзе ѝ ѝтой ѝтраной и немедленно примем предложениѝ ѝоюза.
+vce_merge_rally_point_why;Объединить точки ѝбора уѝтарело, точки ѝбора теперь будут автоматичеѝки объединѝтьѝѝ
+vce_mvcap_1;Переноѝит ѝтолицу в ѝту провинцию
+vce_mvcap_2;Нет текущего кризиѝа
+vce_mvcap_3;С миром
+vce_mvcap_4;Уже не ѝтолица
+vce_mvcap_5;Не колониальный
+vce_mvcap_6;На том же континенте, что и текущаѝ ѝтолица
+vce_mvcap_7;Доминирующаѝ принѝтаѝ культура
+vce_mvcap_8;Эта провинциѝ не находитѝѝ в оѝаде
+vce_mvcap_9;Текущаѝ ѝтолица не находитѝѝ в оѝаде
+vce_mvcap_10;Принадлежит вам
+vce_mvcap_11;Управлѝетѝѝ вами
+vce_mvcap_12;Явлѝетѝѝ владельцем ѝдра
+vce_pnt_pops;?YНаѝеление:?! $x$
+vce_pnt_rpops;?YРич Страта:?! $x$ ($y$)
+vce_pnt_mpops;?YСредние ѝлои:?! $x$ ($y$)
+vce_pnt_ppops;?YБедные ѝлои:?! $x$ ($y$)
+vce_pnt_culture;?YКультура:?! $x$
+vce_pnt_religion;?YReligion:?! $x$
+vce_pnt_dominant_religion;?YДоминирующаѝ религиѝ:?! $x$
+vce_pnt_dominant_ideology;?YДоминантнаѝ идеологиѝ:?! $x$
 ledger_ppp_gdp;ВВП(ППС)
 ledger_ppp_gdp_per_capita;ВВП(ППС) на 1 млн человек
 becomes_from;Scoped becomes from

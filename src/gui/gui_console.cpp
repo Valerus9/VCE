@@ -80,7 +80,7 @@ inline constexpr command_info possible_commands[] = {
 		command_info::argument_info{},
 		command_info::argument_info{}
 	}},
-	command_info{"reload", command_info::type::reload, "Reloads KatEngine", {
+	command_info{"reload", command_info::type::reload, "Reloads VicCEngine", {
 		command_info::argument_info{},
 		command_info::argument_info{},
 		command_info::argument_info{},
@@ -1613,7 +1613,7 @@ void ui::console_edit::edit_box_back_slash(sys::state& state) noexcept {
 
 void ui::console_window::show_toggle(sys::state& state) {
 	if(!state.ui_state.console_window) {
-		auto win = ui::make_element_by_type<ui::console_window>(state, "alice_console_window");
+		auto win = ui::make_element_by_type<ui::console_window>(state, "vce_console_window");
 		state.ui_state.console_window = win.get();
 		state.ui_state.root->add_child_to_front(std::move(win));
 	}

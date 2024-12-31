@@ -57,7 +57,7 @@ namespace ui {
 	class map_state_select_listbox : public listbox_element_base<map_state_select_entry, dcon::state_definition_id> {
 		protected:
 		std::string_view get_row_element_name() override {
-			return "alice_select_legend_entry";
+			return "vce_select_legend_entry";
 		}
 		public:
 		void on_update(sys::state& state) noexcept override {

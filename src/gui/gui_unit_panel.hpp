@@ -1149,7 +1149,7 @@ enum class unitpanel_action : uint8_t { close, reorg, split, disband, changelead
 			return tooltip_behavior::tooltip;
 		}
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
-			text::add_line(state, contents, "alice_unit_disable_rebel_hunt");
+			text::add_line(state, contents, "vce_unit_disable_rebel_hunt");
 		}
 		void button_action(sys::state& state) noexcept override {
 			command::toggle_rebel_hunting(state, state.local_player_nation, retrieve<dcon::army_id>(state, parent));
@@ -1168,7 +1168,7 @@ enum class unitpanel_action : uint8_t { close, reorg, split, disband, changelead
 			return tooltip_behavior::tooltip;
 		}
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
-			text::add_line(state, contents, "alice_ai_controlled_unit");
+			text::add_line(state, contents, "vce_ai_controlled_unit");
 		}
 		void button_action(sys::state& state) noexcept override {
 			auto a = retrieve<dcon::army_id>(state, parent);
@@ -1296,7 +1296,7 @@ enum class unitpanel_action : uint8_t { close, reorg, split, disband, changelead
 		void on_create(sys::state& state) noexcept override {
 			window_element_base::on_create(state);
 			if constexpr(std::is_same_v<T, dcon::army_id>) {
-				auto ptr = make_element_by_type<unit_details_ai_controlled>(state, "alice_enable_ai_controlled");
+				auto ptr = make_element_by_type<unit_details_ai_controlled>(state, "vce_enable_ai_controlled");
 				add_child_to_front(std::move(ptr));
 			}
 		}
@@ -2205,7 +2205,7 @@ enum class unitpanel_action : uint8_t { close, reorg, split, disband, changelead
 			return tooltip_behavior::tooltip;
 		}
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
-			text::add_line(state, contents, "alice_ai_controlled_unit");
+			text::add_line(state, contents, "vce_ai_controlled_unit");
 		}
 		void button_action(sys::state& state) noexcept override {
 			bool all_on = true;

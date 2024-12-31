@@ -763,7 +763,7 @@ namespace demographics {
 		national-war-exhaustion x (sum of support-for-each-issue x issues-war-exhaustion-effect) / 100.0
 		+ (for pops not in colonies) pops-social-issue-support x define:MIL_REQUIRE_REFORM
 		+ (for pops not in colonies) pops-political-issue-support x define:MIL_REQUIRE_REFORM
-		+ (for pops overseas) define:alice_overseas_mil x effective-overseas-spending-level - 0.5 
+		+ (for pops overseas) define:vce_overseas_mil x effective-overseas-spending-level - 0.5 
 		+ (Nation's war exhaustion x 0.005)
 		*/
 		auto const conservatism_key = pop_demographics::to_key(state, state.culture_definitions.conservative);
@@ -2145,7 +2145,7 @@ namespace demographics {
 	}
 
 	void apply_assimilation(sys::state& state, uint32_t offset, uint32_t divisions, assimilation_buffer& pbuf) {
-		if(bool(state.defines.alice_nurture_religion_assimilation)) {
+		if(bool(state.defines.vce_nurture_religion_assimilation)) {
 			auto exec_fn = [&](auto ids) {
 				auto locs = state.world.pop_get_province_from_pop_location(ids);
 				ve::apply([&](dcon::pop_id p, dcon::province_id l, dcon::culture_id dac) {

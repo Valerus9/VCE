@@ -431,7 +431,7 @@ namespace ui {
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
 			auto n = retrieve<dcon::nation_id>(state, parent);
 			auto box = text::open_layout_box(contents, 0);
-		text::localised_single_sub_box(state, contents, box, "alice_budget_setting_percent", text::variable_type::perc, text::int_percentage{ stored_value });
+		text::localised_single_sub_box(state, contents, box, "vce_budget_setting_percent", text::variable_type::perc, text::int_percentage{ stored_value });
 			text::close_layout_box(contents, box);
 
 			active_modifiers_description(state, contents, n, 0, sys::national_mod_offsets::tax_efficiency, true);
@@ -450,7 +450,7 @@ namespace ui {
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
 			auto n = retrieve<dcon::nation_id>(state, parent);
 			auto box = text::open_layout_box(contents, 0);
-		text::localised_single_sub_box(state, contents, box, "alice_budget_setting_percent", text::variable_type::perc, text::int_percentage{ stored_value });
+		text::localised_single_sub_box(state, contents, box, "vce_budget_setting_percent", text::variable_type::perc, text::int_percentage{ stored_value });
 			text::close_layout_box(contents, box);
 
 			active_modifiers_description(state, contents, n, 0, sys::national_mod_offsets::tax_efficiency, true);
@@ -469,7 +469,7 @@ namespace ui {
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
 			auto n = retrieve<dcon::nation_id>(state, parent);
 			auto box = text::open_layout_box(contents, 0);
-			text::localised_single_sub_box(state, contents, box, "alice_budget_setting_percent", text::variable_type::perc, text::int_percentage{ stored_value });
+			text::localised_single_sub_box(state, contents, box, "vce_budget_setting_percent", text::variable_type::perc, text::int_percentage{ stored_value });
 			text::close_layout_box(contents, box);
 
 			active_modifiers_description(state, contents, n, 0, sys::national_mod_offsets::tax_efficiency, true);
@@ -489,7 +489,7 @@ namespace ui {
 			auto n = retrieve<dcon::nation_id>(state, parent);
 			{
 				auto box = text::open_layout_box(contents, 0);
-				text::localised_single_sub_box(state, contents, box, "alice_budget_setting_percent", text::variable_type::perc, text::int_percentage{ stored_value });
+				text::localised_single_sub_box(state, contents, box, "vce_budget_setting_percent", text::variable_type::perc, text::int_percentage{ stored_value });
 				text::close_layout_box(contents, box);
 			}
 			uint32_t total_commodities = state.world.commodity_size();
@@ -504,7 +504,7 @@ namespace ui {
 					text::add_to_substitution_map(m, text::variable_type::need, text::fp_four_places{ amount });
 					text::add_to_substitution_map(m, text::variable_type::cost, text::fp_currency{ cost * amount });
 					auto box = text::open_layout_box(contents, 0);
-					text::localised_format_box(state, contents, box, "alice_spending_commodity", m);
+					text::localised_format_box(state, contents, box, "vce_spending_commodity", m);
 					text::close_layout_box(contents, box);
 				}
 			}
@@ -522,7 +522,7 @@ namespace ui {
 			auto n = retrieve<dcon::nation_id>(state, parent);
 			{
 				auto box = text::open_layout_box(contents, 0);
-				text::localised_single_sub_box(state, contents, box, "alice_budget_setting_percent", text::variable_type::perc, text::int_percentage{ stored_value });
+				text::localised_single_sub_box(state, contents, box, "vce_budget_setting_percent", text::variable_type::perc, text::int_percentage{ stored_value });
 				text::close_layout_box(contents, box);
 			}
 			uint32_t total_commodities = state.world.commodity_size();
@@ -537,7 +537,7 @@ namespace ui {
 					text::add_to_substitution_map(m, text::variable_type::need, text::fp_four_places{ amount });
 					text::add_to_substitution_map(m, text::variable_type::cost, text::fp_currency{ cost * amount });
 					auto box = text::open_layout_box(contents, 0);
-					text::localised_format_box(state, contents, box, "alice_spending_commodity", m);
+					text::localised_format_box(state, contents, box, "vce_spending_commodity", m);
 					text::close_layout_box(contents, box);
 				}
 			}
@@ -555,7 +555,7 @@ namespace ui {
 			auto n = retrieve<dcon::nation_id>(state, parent);
 			{
 				auto box = text::open_layout_box(contents, 0);
-				text::localised_single_sub_box(state, contents, box, "alice_budget_setting_percent", text::variable_type::perc, text::int_percentage{ stored_value });
+				text::localised_single_sub_box(state, contents, box, "vce_budget_setting_percent", text::variable_type::perc, text::int_percentage{ stored_value });
 				text::close_layout_box(contents, box);
 			}
 			uint32_t total_commodities = state.world.commodity_size();
@@ -570,7 +570,7 @@ namespace ui {
 					text::add_to_substitution_map(m, text::variable_type::need, text::fp_four_places{ amount });
 					text::add_to_substitution_map(m, text::variable_type::cost, text::fp_currency{ cost * amount });
 					auto box = text::open_layout_box(contents, 0);
-					text::localised_format_box(state, contents, box, "alice_spending_commodity", m);
+					text::localised_format_box(state, contents, box, "vce_spending_commodity", m);
 					text::close_layout_box(contents, box);
 				}
 			}
@@ -587,7 +587,7 @@ namespace ui {
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
 			auto n = retrieve<dcon::nation_id>(state, parent);
 			auto box = text::open_layout_box(contents, 0);
-		text::localised_single_sub_box(state, contents, box, "alice_budget_setting_percent", text::variable_type::perc, text::int_percentage{ stored_value });
+		text::localised_single_sub_box(state, contents, box, "vce_budget_setting_percent", text::variable_type::perc, text::int_percentage{ stored_value });
 			text::close_layout_box(contents, box);
 		}
 	};
@@ -602,7 +602,7 @@ namespace ui {
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
 			auto n = retrieve<dcon::nation_id>(state, parent);
 			auto box = text::open_layout_box(contents, 0);
-		text::localised_single_sub_box(state, contents, box, "alice_budget_setting_percent", text::variable_type::perc, text::int_percentage{ stored_value });
+		text::localised_single_sub_box(state, contents, box, "vce_budget_setting_percent", text::variable_type::perc, text::int_percentage{ stored_value });
 			text::close_layout_box(contents, box);
 		}
 	};
@@ -617,7 +617,7 @@ namespace ui {
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
 			auto n = retrieve<dcon::nation_id>(state, parent);
 			auto box = text::open_layout_box(contents, 0);
-		text::localised_single_sub_box(state, contents, box, "alice_budget_setting_percent", text::variable_type::perc, text::int_percentage{ stored_value });
+		text::localised_single_sub_box(state, contents, box, "vce_budget_setting_percent", text::variable_type::perc, text::int_percentage{ stored_value });
 			text::close_layout_box(contents, box);
 			active_modifiers_description(state, contents, n, 0, sys::national_mod_offsets::min_social_spending, true);
 			active_modifiers_description(state, contents, n, 0, sys::national_mod_offsets::max_social_spending, true);
@@ -634,7 +634,7 @@ namespace ui {
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
 			auto n = retrieve<dcon::nation_id>(state, parent);
 			auto box = text::open_layout_box(contents, 0);
-		text::localised_single_sub_box(state, contents, box, "alice_budget_setting_percent", text::variable_type::perc, text::int_percentage{ stored_value });
+		text::localised_single_sub_box(state, contents, box, "vce_budget_setting_percent", text::variable_type::perc, text::int_percentage{ stored_value });
 			text::close_layout_box(contents, box);
 			active_modifiers_description(state, contents, n, 0, sys::national_mod_offsets::min_military_spending, true);
 			active_modifiers_description(state, contents, n, 0, sys::national_mod_offsets::max_military_spending, true);
@@ -651,7 +651,7 @@ namespace ui {
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
 			auto n = retrieve<dcon::nation_id>(state, parent);
 			auto box = text::open_layout_box(contents, 0);
-		text::localised_single_sub_box(state, contents, box, "alice_budget_setting_percent", text::variable_type::perc, text::int_percentage{ stored_value });
+		text::localised_single_sub_box(state, contents, box, "vce_budget_setting_percent", text::variable_type::perc, text::int_percentage{ stored_value });
 			text::close_layout_box(contents, box);
 			active_modifiers_description(state, contents, n, 0, sys::national_mod_offsets::tariff_efficiency_modifier, true);
 			active_modifiers_description(state, contents, n, 0, sys::national_mod_offsets::min_tariff, true);
@@ -724,7 +724,7 @@ namespace ui {
 				total += v;
 			}
 			if(total_inc != 0.f) {
-			text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_inc", text::variable_type::value, text::fp_currency{ total_inc });
+			text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_inc", text::variable_type::value, text::fp_currency{ total_inc });
 				text::add_line_break_to_layout_box(state, contents, box);
 				for(uint8_t i = 0; i < uint8_t(budget_slider_target::target_count); ++i) {
 					float v = values[i] * multipliers[i];
@@ -733,22 +733,22 @@ namespace ui {
 					if(v > 0.f) {
 						switch(budget_slider_target(i)) {
 							case budget_slider_target::poor_tax:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_1", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_1", text::variable_type::value, text::fp_currency{ v });
 							break;
 							case budget_slider_target::middle_tax:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_2", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_2", text::variable_type::value, text::fp_currency{ v });
 							break;
 							case budget_slider_target::rich_tax:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_3", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_3", text::variable_type::value, text::fp_currency{ v });
 							break;
 							case budget_slider_target::tariffs:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_4", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_4", text::variable_type::value, text::fp_currency{ v });
 							break;
 							case budget_slider_target::gold_income:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_17", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_17", text::variable_type::value, text::fp_currency{ v });
 							break;
 							case budget_slider_target::diplomatic_interest:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_16", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_16", text::variable_type::value, text::fp_currency{ v });
 							break;
 							default:
 							break;
@@ -758,7 +758,7 @@ namespace ui {
 				}
 			}
 			if(total_exp != 0.f) {
-			text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_exp", text::variable_type::value, text::fp_currency{ total_exp });
+			text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_exp", text::variable_type::value, text::fp_currency{ total_exp });
 				text::add_line_break_to_layout_box(state, contents, box);
 				for(uint8_t i = 0; i < uint8_t(budget_slider_target::target_count); ++i) {
 					float v = values[i] * multipliers[i];
@@ -767,37 +767,37 @@ namespace ui {
 					if(v < 0.f) {
 						switch(budget_slider_target(i)) {
 							case budget_slider_target::army_stock:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_5", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_5", text::variable_type::value, text::fp_currency{ v });
 							break;
 							case budget_slider_target::navy_stock:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_6", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_6", text::variable_type::value, text::fp_currency{ v });
 							break;
 							case budget_slider_target::construction_stock:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_7", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_7", text::variable_type::value, text::fp_currency{ v });
 							break;
 							case budget_slider_target::education:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_8", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_8", text::variable_type::value, text::fp_currency{ v });
 							break;
 							case budget_slider_target::admin:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_9", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_9", text::variable_type::value, text::fp_currency{ v });
 							break;
 							case budget_slider_target::social:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_10", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_10", text::variable_type::value, text::fp_currency{ v });
 							break;
 							case budget_slider_target::military:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_11", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_11", text::variable_type::value, text::fp_currency{ v });
 							break;
 							case budget_slider_target::domestic_investment:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_12", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_12", text::variable_type::value, text::fp_currency{ v });
 							break;
 							case budget_slider_target::overseas:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_13", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_13", text::variable_type::value, text::fp_currency{ v });
 							break;
 							case budget_slider_target::stockpile_filling:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_14", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_14", text::variable_type::value, text::fp_currency{ v });
 							break;
 							case budget_slider_target::subsidies:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_15", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_15", text::variable_type::value, text::fp_currency{ v });
 							break;
 							default:
 							break;
@@ -807,7 +807,7 @@ namespace ui {
 				}
 			}
 			if(total != 0.f) {
-			text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_net", text::variable_type::value, text::fp_currency{ total });
+			text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_net", text::variable_type::value, text::fp_currency{ total });
 				text::add_line_break_to_layout_box(state, contents, box);
 			}
 			text::close_layout_box(contents, box);
@@ -1227,13 +1227,13 @@ namespace ui {
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
 			auto last_br = state.world.nation_get_bankrupt_until(state.local_player_nation);
 			if(last_br && state.current_date < last_br) {
-				text::add_line(state, contents, "alice_currently_bankrupt", text::variable_type::x, last_br);
+				text::add_line(state, contents, "vce_currently_bankrupt", text::variable_type::x, last_br);
 			} else if(economy::max_loan(state, state.local_player_nation) <= 0.0f) {
-				text::add_line(state, contents, "alice_no_loans_possible");
+				text::add_line(state, contents, "vce_no_loans_possible");
 			} else {
-				text::add_line(state, contents, "alice_debt_spending");
+				text::add_line(state, contents, "vce_debt_spending");
 				text::add_line_break_to_layout(state, contents);
-			text::add_line(state, contents, "alice_loan_size", text::variable_type::x, text::fp_currency{ economy::max_loan(state, state.local_player_nation) });
+			text::add_line(state, contents, "vce_loan_size", text::variable_type::x, text::fp_currency{ economy::max_loan(state, state.local_player_nation) });
 			}
 		}
 	};
@@ -1248,7 +1248,7 @@ namespace ui {
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
 			auto n = retrieve<dcon::nation_id>(state, parent);
 			auto box = text::open_layout_box(contents, 0);
-		text::localised_single_sub_box(state, contents, box, "alice_budget_setting_percent", text::variable_type::perc, text::int_percentage{ stored_value });
+		text::localised_single_sub_box(state, contents, box, "vce_budget_setting_percent", text::variable_type::perc, text::int_percentage{ stored_value });
 			text::add_line_break_to_layout_box(state, contents, box);
 			text::close_layout_box(contents, box);
 

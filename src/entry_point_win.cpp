@@ -31,7 +31,7 @@ void signal_abort_handler(int) {
 		ZeroMemory(&pi, sizeof(pi));
 		// Start the child process. 
 		if(CreateProcessW(
-			L"dbg_alice.exe",   // Module name
+			L"dbg_vce.exe",   // Module name
 			NULL, // Command line
 			NULL, // Process handle not inheritable
 			NULL, // Thread handle not inheritable

@@ -1,15 +1,15 @@
-alice_ledger_header_gdp_history;GDP(PPP) over time
-alice_countryalert_colonialgood_start;You can colonize $region$
-alice_overseas_mil_description;Overseas militancy
-alice_armygroup_go_to_selection;Add armies
-alice_battleplanner_travel_destination_order;Toggle ferry target
-alice_battleplanner_travel_origin_order;Toggle ferry origin
-alice_battleplanner_defend_order;Toggle defence status
-alice_exit_battleplanner_deselection;Exit deselection mode
-alice_exit_battleplanner_selection;Exit selection mode
-alice_exit_battleplanner;Exit battle planner
-alice_battleplanner_add_selected;Add selected
-alice_battleplanner_remove_selected;Remove selected
+vce_ledger_header_gdp_history;GDP(PPP) over time
+vce_countryalert_colonialgood_start;You can colonize $region$
+vce_overseas_mil_description;Overseas militancy
+vce_armygroup_go_to_selection;Add armies
+vce_battleplanner_travel_destination_order;Toggle ferry target
+vce_battleplanner_travel_origin_order;Toggle ferry origin
+vce_battleplanner_defend_order;Toggle defence status
+vce_exit_battleplanner_deselection;Exit deselection mode
+vce_exit_battleplanner_selection;Exit selection mode
+vce_exit_battleplanner;Exit battle planner
+vce_battleplanner_add_selected;Add selected
+vce_battleplanner_remove_selected;Remove selected
 fab_explain_8;Doesn't have a truce
 political_support_for_reform_header;Political support for this reform (a total of 50% or greater is required to choose the reform)
 no_political_support_for_reform;Currently there is no political support for this reform

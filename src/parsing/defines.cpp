@@ -15,7 +15,7 @@ void parsing::defines::assign_define(sys::state& state, int32_t line, std::strin
 	|| parsers::is_fixed_token_ci(text.data(), text.data() + text.length(), "military")
 	|| parsers::is_fixed_token_ci(text.data(), text.data() + text.length(), "diplomacy")
 	|| parsers::is_fixed_token_ci(text.data(), text.data() + text.length(), "defines")
-	|| parsers::is_fixed_token_ci(text.data(), text.data() + text.length(), "alice")
+	|| parsers::is_fixed_token_ci(text.data(), text.data() + text.length(), "vce")
 	|| parsers::is_fixed_token_ci(text.data(), text.data() + text.length(), "pops")
 	|| parsers::is_fixed_token_ci(text.data(), text.data() + text.length(), "country")
 	|| parsers::is_fixed_token_ci(text.data(), text.data() + text.length(), "graphics")

@@ -136,7 +136,7 @@ namespace ui {
 					add_child_to_back(std::move(ptr));
 				}
 				{
-					auto ptr = make_element_by_type<gp_investment_text>(state, "alice_investment_text");
+					auto ptr = make_element_by_type<gp_investment_text>(state, "vce_investment_text");
 					static_cast<gp_investment_text*>(ptr.get())->rank = uint16_t(i);
 					ptr->base_data.position.x = int16_t(134 * i + 460 + 25);
 					ptr->base_data.position.y = int16_t(15 + 55);
@@ -152,7 +152,7 @@ namespace ui {
 					add_child_to_back(std::move(ptr));
 				}
 				{
-					auto ptr = make_element_by_type<gp_investment_text>(state, "alice_investment_text");
+					auto ptr = make_element_by_type<gp_investment_text>(state, "vce_investment_text");
 					static_cast<gp_investment_text*>(ptr.get())->rank = uint16_t(i);
 					ptr->base_data.position.x = int16_t(134 * (i - 4) + 460 + 25);
 					ptr->base_data.position.y = int16_t(15 + 50 + 55);

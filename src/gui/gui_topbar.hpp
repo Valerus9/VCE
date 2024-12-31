@@ -309,7 +309,7 @@ namespace ui {
 			return tooltip_behavior::tooltip;
 		}
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
-			text::add_line(state, contents, "alice_topbar_tab_1");
+			text::add_line(state, contents, "vce_topbar_tab_1");
 		}
 		sound::audio_instance& get_click_sound(sys::state& state) noexcept override {
 			return sound::get_tab_budget_sound(state);
@@ -333,7 +333,7 @@ namespace ui {
 			return tooltip_behavior::tooltip;
 		}
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
-			text::add_line(state, contents, "alice_topbar_tab_1");
+			text::add_line(state, contents, "vce_topbar_tab_1");
 		}
 		sound::audio_instance& get_click_sound(sys::state& state) noexcept override {
 			return sound::get_tab_budget_sound(state); // for now we reuse the budget tab sound
@@ -357,7 +357,7 @@ namespace ui {
 			return tooltip_behavior::tooltip;
 		}
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
-			text::add_line(state, contents, "alice_topbar_tab_1");
+			text::add_line(state, contents, "vce_topbar_tab_1");
 		}
 		sound::audio_instance& get_click_sound(sys::state& state) noexcept override {
 			return sound::get_tab_politics_sound(state);
@@ -381,7 +381,7 @@ namespace ui {
 			return tooltip_behavior::tooltip;
 		}
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
-			text::add_line(state, contents, "alice_topbar_tab_1");
+			text::add_line(state, contents, "vce_topbar_tab_1");
 		}
 		sound::audio_instance& get_click_sound(sys::state& state) noexcept override {
 			return sound::get_tab_diplomacy_sound(state);
@@ -405,7 +405,7 @@ namespace ui {
 			return tooltip_behavior::tooltip;
 		}
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
-			text::add_line(state, contents, "alice_topbar_tab_1");
+			text::add_line(state, contents, "vce_topbar_tab_1");
 		}
 		sound::audio_instance& get_click_sound(sys::state& state) noexcept override {
 			return sound::get_tab_military_sound(state);
@@ -429,7 +429,7 @@ namespace ui {
 			return tooltip_behavior::tooltip;
 		}
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
-			text::add_line(state, contents, "alice_topbar_tab_1");
+			text::add_line(state, contents, "vce_topbar_tab_1");
 		}
 		sound::audio_instance& get_click_sound(sys::state& state) noexcept override {
 			return sound::get_tab_production_sound(state);
@@ -453,7 +453,7 @@ namespace ui {
 			return tooltip_behavior::tooltip;
 		}
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
-			text::add_line(state, contents, "alice_topbar_tab_1");
+			text::add_line(state, contents, "vce_topbar_tab_1");
 		}
 		sound::audio_instance& get_click_sound(sys::state& state) noexcept override {
 			return sound::get_tab_technology_sound(state);
@@ -481,7 +481,7 @@ namespace ui {
 			return tooltip_behavior::tooltip;
 		}
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
-			text::add_line(state, contents, "alice_topbar_tab_2");
+			text::add_line(state, contents, "vce_topbar_tab_2");
 		}
 	};
 
@@ -623,7 +623,7 @@ namespace ui {
 						break;
 					}
 				}
-				text::localised_format_box(state, contents, box, "alice_gp_status_regain_expiration", sub);
+				text::localised_format_box(state, contents, box, "vce_gp_status_regain_expiration", sub);
 				text::close_layout_box(contents, box);
 			} else if(state.world.nation_get_rank(state.local_player_nation) <= uint16_t(state.defines.great_nations_count)) {
 				text::add_line(state, contents, "countryalert_no_loosinggpstatus");

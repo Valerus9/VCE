@@ -131,16 +131,16 @@ namespace ui {
 		}
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
 			if(retrieve<bool>(state, parent)) {
-				text::add_line(state, contents, "alice_recommended_build");
+				text::add_line(state, contents, "vce_recommended_build");
 			}
 			//
 			auto content = retrieve<dcon::factory_type_id>(state, parent);
 			auto sid = retrieve<dcon::state_instance_id>(state, parent);
 			auto n = state.world.state_ownership_get_nation(state.world.state_instance_get_state_ownership(sid));
 			//
-			text::add_line(state, contents, "alice_factory_base_workforce", text::variable_type::x, state.world.factory_type_get_base_workforce(content));
+			text::add_line(state, contents, "vce_factory_base_workforce", text::variable_type::x, state.world.factory_type_get_base_workforce(content));
 			//
-			text::add_line(state, contents, "alice_factory_inputs");
+			text::add_line(state, contents, "vce_factory_inputs");
 			auto const& cset = state.world.factory_type_get_inputs(content);
 			for(uint32_t i = 0; i < economy::commodity_set::set_size; i++) {
 				if(cset.commodity_type[i] && cset.commodity_amounts[i] > 0.0f) {
@@ -154,7 +154,7 @@ namespace ui {
 					text::add_to_substitution_map(m, text::variable_type::need, text::fp_four_places{ amount });
 					text::add_to_substitution_map(m, text::variable_type::cost, text::fp_currency{ cost * amount });
 					auto box = text::open_layout_box(contents, 0);
-					text::localised_format_box(state, contents, box, "alice_factory_input_item", m);
+					text::localised_format_box(state, contents, box, "vce_factory_input_item", m);
 					text::close_layout_box(contents, box);
 				}
 			}

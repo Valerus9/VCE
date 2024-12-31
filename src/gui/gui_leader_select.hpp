@@ -428,7 +428,7 @@ namespace ui {
 	class leader_select_listbox : public listbox_element_base<leader_select_row, dcon::leader_id> {
 		protected:
 		std::string_view get_row_element_name() override {
-			return "alice_leader_entry";
+			return "vce_leader_entry";
 		}
 
 	public:

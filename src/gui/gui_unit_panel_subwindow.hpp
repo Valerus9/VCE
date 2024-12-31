@@ -81,7 +81,7 @@ namespace ui {
 					text::add_to_substitution_map(m, text::variable_type::need, text::fp_four_places{ amount });
 					text::add_to_substitution_map(m, text::variable_type::cost, text::fp_currency{ cost * amount });
 					auto box = text::open_layout_box(contents, 0);
-					text::localised_format_box(state, contents, box, "alice_spending_commodity", m);
+					text::localised_format_box(state, contents, box, "vce_spending_commodity", m);
 					text::close_layout_box(contents, box);
 					total_cost += cost * amount;
 				} else {
@@ -91,7 +91,7 @@ namespace ui {
 			text::substitution_map m;
 			text::add_to_substitution_map(m, text::variable_type::cost, text::fp_currency{ total_cost });
 			auto box = text::open_layout_box(contents, 0);
-			text::localised_format_box(state, contents, box, "alice_spending_unit_1", m);
+			text::localised_format_box(state, contents, box, "vce_spending_unit_1", m);
 			text::close_layout_box(contents, box);
 		}
 	};

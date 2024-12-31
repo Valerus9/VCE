@@ -1039,7 +1039,7 @@ namespace ui {
 //class diplomacy_action_release_subject_button : public button_element_base {
 //	public:
 	void diplomacy_action_release_subject_button::on_create(sys::state& state) noexcept {
-		base_data.data.button.txt = state.lookup_key("alice_diplo_release_subject");
+		base_data.data.button.txt = state.lookup_key("vce_diplo_release_subject");
 		button_element_base::on_create(state);
 	}
 
@@ -1056,7 +1056,7 @@ namespace ui {
 	void diplomacy_action_release_subject_button::update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept {
 		auto target = retrieve<dcon::nation_id>(state, parent);
 		auto source = state.local_player_nation;
-		text::add_line(state, contents, "alice_diplo_release_subject_desc");
+		text::add_line(state, contents, "vce_diplo_release_subject_desc");
 		if(auto k = state.national_definitions.static_game_rules[uint8_t(sys::static_game_rule::release_subject)].limit; k) {
 			text::add_line_break_to_layout(state, contents);
 			ui::trigger_description(state, contents, k, trigger::to_generic(source), trigger::to_generic(source), trigger::to_generic(target));

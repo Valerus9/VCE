@@ -4034,10 +4034,10 @@ namespace sys {
 			250, // speed 3 -- 0.25 seconds
 			125, // speed 4 -- 0.125 seconds
 		};
-		game_speed[1] = int32_t(defines.alice_speed_1);
-		game_speed[2] = int32_t(defines.alice_speed_2);
-		game_speed[3] = int32_t(defines.alice_speed_3);
-		game_speed[4] = int32_t(defines.alice_speed_4);
+		game_speed[1] = int32_t(defines.vce_speed_1);
+		game_speed[2] = int32_t(defines.vce_speed_2);
+		game_speed[3] = int32_t(defines.vce_speed_3);
+		game_speed[4] = int32_t(defines.vce_speed_4);
 
 		while(quit_signaled.load(std::memory_order::acquire) == false) {
 			/* An issue that arose in multiplayer is that the UI was loading the savefile

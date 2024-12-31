@@ -134,7 +134,7 @@ namespace ui {
 			text::add_to_substitution_map(sub, text::variable_type::curr, num_ships);
 			text::add_to_substitution_map(sub, text::variable_type::tot, text::pretty_integer{ military::naval_supply_points(state, n) });
 			text::add_to_substitution_map(sub, text::variable_type::req, text::pretty_integer{ military::naval_supply_points_used(state, n) });
-			text::localised_format_box(state, contents, box, std::string_view("alice_navy_allocation_tt"), sub);
+			text::localised_format_box(state, contents, box, std::string_view("vce_navy_allocation_tt"), sub);
 			text::close_layout_box(contents, box);
 		}
 		for(const auto nv : state.world.nation_get_navy_control_as_controller(n)) {
@@ -147,7 +147,7 @@ namespace ui {
 			text::add_to_substitution_map(sub, text::variable_type::name, state.to_string_view(nv.get_navy().get_name()));
 			text::add_to_substitution_map(sub, text::variable_type::value, total);
 			text::add_to_substitution_map(sub, text::variable_type::perc, text::fp_percentage{ float(total) / military::naval_supply_points(state, n) });
-			text::localised_format_box(state, contents, box, std::string_view("alice_navy_allocation_2"), sub);
+			text::localised_format_box(state, contents, box, std::string_view("vce_navy_allocation_2"), sub);
 			text::close_layout_box(contents, box);
 		}
 		active_modifiers_description(state, contents, n, 0, sys::national_mod_offsets::supply_range, true);
@@ -288,29 +288,29 @@ namespace ui {
 			total += v;
 		}
 		if(total_inc != 0.f) {
-			text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_inc", text::variable_type::value, text::fp_currency{ total_inc });
+			text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_inc", text::variable_type::value, text::fp_currency{ total_inc });
 			text::add_line_break_to_layout_box(state, contents, box);
 			for(uint8_t i = 0; i < uint8_t(budget_slider_target::target_count); ++i) {
 				float v = values[i] * multipliers[i];
 				if(v > 0.f) {
 					switch(budget_slider_target(i)) {
 					case budget_slider_target::poor_tax:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_1", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_1", text::variable_type::value, text::fp_currency{ v });
 						break;
 					case budget_slider_target::middle_tax:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_2", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_2", text::variable_type::value, text::fp_currency{ v });
 						break;
 					case budget_slider_target::rich_tax:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_3", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_3", text::variable_type::value, text::fp_currency{ v });
 						break;
 					case budget_slider_target::tariffs:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_4", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_4", text::variable_type::value, text::fp_currency{ v });
 						break;
 					case budget_slider_target::gold_income:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_17", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_17", text::variable_type::value, text::fp_currency{ v });
 						break;
 					case budget_slider_target::diplomatic_interest:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_16", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_16", text::variable_type::value, text::fp_currency{ v });
 						break;
 					default:
 						break;
@@ -320,44 +320,44 @@ namespace ui {
 			}
 		}
 		if(total_exp != 0.f) {
-			text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_exp", text::variable_type::value, text::fp_currency{ total_exp });
+			text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_exp", text::variable_type::value, text::fp_currency{ total_exp });
 			text::add_line_break_to_layout_box(state, contents, box);
 			for(uint8_t i = 0; i < uint8_t(budget_slider_target::target_count); ++i) {
 				float v = values[i] * multipliers[i];
 				if(v < 0.f) {
 					switch(budget_slider_target(i)) {
 					case budget_slider_target::army_stock:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_5", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_5", text::variable_type::value, text::fp_currency{ v });
 						break;
 					case budget_slider_target::navy_stock:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_6", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_6", text::variable_type::value, text::fp_currency{ v });
 						break;
 					case budget_slider_target::construction_stock:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_7", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_7", text::variable_type::value, text::fp_currency{ v });
 						break;
 					case budget_slider_target::education:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_8", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_8", text::variable_type::value, text::fp_currency{ v });
 						break;
 					case budget_slider_target::admin:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_9", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_9", text::variable_type::value, text::fp_currency{ v });
 						break;
 					case budget_slider_target::social:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_10", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_10", text::variable_type::value, text::fp_currency{ v });
 						break;
 					case budget_slider_target::military:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_11", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_11", text::variable_type::value, text::fp_currency{ v });
 						break;
 					case budget_slider_target::domestic_investment:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_12", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_12", text::variable_type::value, text::fp_currency{ v });
 						break;
 					case budget_slider_target::overseas:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_13", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_13", text::variable_type::value, text::fp_currency{ v });
 						break;
 					case budget_slider_target::stockpile_filling:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_14", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_14", text::variable_type::value, text::fp_currency{ v });
 						break;
 					case budget_slider_target::subsidies:
-						text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_15", text::variable_type::value, text::fp_currency{ v });
+						text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_15", text::variable_type::value, text::fp_currency{ v });
 						break;
 					default:
 						break;
@@ -367,7 +367,7 @@ namespace ui {
 			}
 		}
 		if(total != 0.f) {
-			text::localised_single_sub_box(state, contents, box, "alice_budget_scaled_net", text::variable_type::value, text::fp_currency{ total });
+			text::localised_single_sub_box(state, contents, box, "vce_budget_scaled_net", text::variable_type::value, text::fp_currency{ total });
 			text::add_line_break_to_layout_box(state, contents, box);
 		}
 		text::close_layout_box(contents, box);
@@ -488,7 +488,7 @@ namespace ui {
 			state.world.nation_get_demographics(n, demographics::total) });
 		text::add_to_substitution_map(sub, text::variable_type::optimal,
 		text::fp_two_places{(state.world.pop_type_get_research_optimum(state.culture_definitions.officers) * 100)});
-		text::localised_format_box(state, contents, box, std::string_view("alice_daily_leadership_tt"), sub);
+		text::localised_format_box(state, contents, box, std::string_view("vce_daily_leadership_tt"), sub);
 		text::close_layout_box(contents, box);
 
 		active_modifiers_description(state, contents, n, 0, sys::national_mod_offsets::leadership, true);
@@ -670,7 +670,7 @@ namespace ui {
 				text::close_layout_box(contents, box);
 			}
 		} else {
-			// TODO: remove alice_rgo_unemployment_country_alert
+			// TODO: remove vce_rgo_unemployment_country_alert
 			text::add_line(state, contents, "countryalert_no_hasunemployedworkers");
 		}
 	}
@@ -780,36 +780,36 @@ namespace ui {
 		text::add_to_substitution_map(sub, text::variable_type::time, int32_t(state.defines.crisis_cooldown_months));
 		if(state.current_crisis_mode == sys::crisis_mode::inactive) {
 			auto box = text::open_layout_box(contents);
-			text::localised_format_box(state, contents, box, std::string_view("alice_crisis_inactive"), sub);
+			text::localised_format_box(state, contents, box, std::string_view("vce_crisis_inactive"), sub);
 			text::close_layout_box(contents, box);
 		} else if(state.current_crisis_mode == sys::crisis_mode::finding_attacker) {
 			auto box = text::open_layout_box(contents);
-			text::localised_format_box(state, contents, box, std::string_view("alice_crisis_finding_attacker"), sub);
+			text::localised_format_box(state, contents, box, std::string_view("vce_crisis_finding_attacker"), sub);
 			text::close_layout_box(contents, box);
 		} else if(state.current_crisis_mode == sys::crisis_mode::finding_defender) {
 			auto box = text::open_layout_box(contents);
-			text::localised_format_box(state, contents, box, std::string_view("alice_crisis_finding_defender"), sub);
+			text::localised_format_box(state, contents, box, std::string_view("vce_crisis_finding_defender"), sub);
 			text::close_layout_box(contents, box);
 		} else if(state.current_crisis_mode == sys::crisis_mode::heating_up) {
 			auto box = text::open_layout_box(contents);
-			text::localised_format_box(state, contents, box, std::string_view("alice_crisis_heating_up"), sub);
+			text::localised_format_box(state, contents, box, std::string_view("vce_crisis_heating_up"), sub);
 			text::close_layout_box(contents, box);
 			//atackers
-			text::add_line(state, contents, std::string_view("alice_crisis_par_1"));
+			text::add_line(state, contents, std::string_view("vce_crisis_par_1"));
 			for(const auto par : state.crisis_participants) {
 				if(!par.merely_interested && par.supports_attacker) {
 					text::add_line(state, contents, text::get_name(state, par.id));
 				}
 			}
 			//defenders
-			text::add_line(state, contents, std::string_view("alice_crisis_par_2"));
+			text::add_line(state, contents, std::string_view("vce_crisis_par_2"));
 			for(const auto par : state.crisis_participants) {
 				if(!par.merely_interested && !par.supports_attacker) {
 					text::add_line(state, contents, text::get_name(state, par.id));
 				}
 			}
 			//merely interested
-			text::add_line(state, contents, std::string_view("alice_crisis_par_3"));
+			text::add_line(state, contents, std::string_view("vce_crisis_par_3"));
 			for(const auto par : state.crisis_participants) {
 				if(par.merely_interested) {
 					text::add_line(state, contents, text::get_name(state, par.id));
@@ -818,7 +818,7 @@ namespace ui {
 		}
 		if(state.last_crisis_end_date) {
 			auto box = text::open_layout_box(contents);
-			text::localised_format_box(state, contents, box, std::string_view("alice_last_crisis"), sub);
+			text::localised_format_box(state, contents, box, std::string_view("vce_last_crisis"), sub);
 			text::close_layout_box(contents, box);
 		}
 	}
@@ -917,7 +917,7 @@ namespace ui {
 			}
 
 			if(!added_increase_header && !added_reb_header)
-			text::add_line(state, contents, std::string_view("alice_ca_cant_influence"));
+			text::add_line(state, contents, std::string_view("vce_ca_cant_influence"));
 		}
 	}
 
@@ -930,7 +930,7 @@ namespace ui {
 		background_pic->base_data.position.y -= 1;
 		add_child_to_back(std::move(bg_pic));
 
-		auto dpi_win = make_element_by_type<ui::diplomatic_message_topbar_listbox>(state, "alice_diplomessageicons_window");
+		auto dpi_win = make_element_by_type<ui::diplomatic_message_topbar_listbox>(state, "vce_diplomessageicons_window");
 		state.ui_state.request_topbar_listbox = dpi_win.get();
 		add_child_to_front(std::move(dpi_win));
 
@@ -1337,7 +1337,7 @@ namespace ui {
 		}
 		state.world.for_each_state_definition([&](dcon::state_definition_id sdef) {
 			if(province::can_start_colony(state, nation_id, sdef)) {
-				text::add_line(state, contents, "alice_countryalert_colonialgood_start", text::variable_type::region, sdef);
+				text::add_line(state, contents, "vce_countryalert_colonialgood_start", text::variable_type::region, sdef);
 				is_empty = false;
 			}
 		});

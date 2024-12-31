@@ -38,7 +38,7 @@ namespace ui {
 			auto n = retrieve<dcon::nation_id>(state, parent);
 			active_modifiers_description(state, contents, n, 0, sys::national_mod_offsets::mobilization_impact, true);
 			active_modifiers_description(state, contents, n, 0, sys::national_mod_offsets::mobilization_size, true);
-			text::add_line(state, contents, "alice_mob_controls");
+			text::add_line(state, contents, "vce_mob_controls");
 		}
 	};
 
@@ -165,8 +165,8 @@ namespace ui {
 			return tooltip_behavior::tooltip;
 		}
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
-			text::add_line(state, contents, "alice_mobilized_is_ai_controlled");
-			text::add_line(state, contents, "alice_ai_controlled_unit");
+			text::add_line(state, contents, "vce_mobilized_is_ai_controlled");
+			text::add_line(state, contents, "vce_ai_controlled_unit");
 		}
 		void button_action(sys::state& state) noexcept override {
 			command::toggle_mobilized_is_ai_controlled(state, state.local_player_nation);
@@ -193,7 +193,7 @@ namespace ui {
 			state.ui_state.unit_window_navy = win2.get();
 			add_child_to_front(std::move(win2));
 
-			auto miac_btn = make_element_by_type<military_mobilized_is_ai_controlled>(state, state.ui_state.defs_by_name.find(state.lookup_key("alice_military_mobilized_is_ai_controlled"))->second.definition);
+			auto miac_btn = make_element_by_type<military_mobilized_is_ai_controlled>(state, state.ui_state.defs_by_name.find(state.lookup_key("vce_military_mobilized_is_ai_controlled"))->second.definition);
 			add_child_to_front(std::move(miac_btn));
 
 			auto build_units_window = make_element_by_type<build_unit_large_window>(state,

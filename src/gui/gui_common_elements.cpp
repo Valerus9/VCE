@@ -117,7 +117,7 @@ namespace ui {
 				text::add_to_layout_box(state, contents, max_workers_entry, text::int_wholenum{ int32_t(total_factory_capacity) });
 				score_box.x_position += 350;
 				text::add_to_layout_box(state, contents, score_box, text::fp_two_places{ per_state });
-				//text::localised_format_box(state, contents, box, std::string_view("alice_indscore_1"), sub);
+				//text::localised_format_box(state, contents, box, std::string_view("vce_indscore_1"), sub);
 				text::add_to_layout_box(state, contents, box, std::string(" "));
 				text::close_layout_box(contents, box);
 			}

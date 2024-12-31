@@ -31,7 +31,7 @@ namespace ui {
 
 		void update_tooltip(sys::state& state, int32_t x, int32_t y, text::columnar_layout& contents) noexcept override {
 			auto id = retrieve<dcon::decision_id>(state, parent);
-			text::add_line(state, contents, "alice_ai_decision");
+			text::add_line(state, contents, "vce_ai_decision");
 			if(auto mkey = state.world.decision_get_ai_will_do(id); mkey) {
 				multiplicative_value_modifier_description(state, contents, mkey, trigger::to_generic(state.local_player_nation), trigger::to_generic(state.local_player_nation), -1);
 			}

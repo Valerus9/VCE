@@ -51,7 +51,7 @@ namespace ui {
 	void create_in_game_windows(sys::state& state) {
 		state.ui_state.lazy_load_in_game = true;
 		//
-		state.ui_state.select_states_legend = ui::make_element_by_type<ui::map_state_select_window>(state, "alice_select_legend_window");
+		state.ui_state.select_states_legend = ui::make_element_by_type<ui::map_state_select_window>(state, "vce_select_legend_window");
 		state.ui_state.end_screen = std::make_unique<ui::container_base>();
 		{
 			auto ewin = ui::make_element_by_type<ui::end_window>(state, "back_end");
@@ -61,7 +61,7 @@ namespace ui {
 		/*
 		state.world.for_each_province([&](dcon::province_id id) {
 			if(state.world.province_get_port_to(id)) {
-				auto ptr = ui::make_element_by_type<ui::port_window>(state, "alice_port_icon");
+				auto ptr = ui::make_element_by_type<ui::port_window>(state, "vce_port_icon");
 				static_cast<ui::port_window*>(ptr.get())->set_province(state, id);
 				state.ui_state.units_root->add_child_to_front(std::move(ptr));
 			}
@@ -130,12 +130,12 @@ namespace ui {
 		});
 
 		province::for_each_land_province(state, [&](dcon::province_id id) {
-			auto ptr = ui::make_element_by_type<ui::rgo_icon>(state, "alice_rgo_mapicon");
+			auto ptr = ui::make_element_by_type<ui::rgo_icon>(state, "vce_rgo_mapicon");
 			static_cast<ui::rgo_icon*>(ptr.get())->content = id;
 			state.ui_state.rgos_root->add_child_to_front(std::move(ptr));
 		});
 		province::for_each_land_province(state, [&](dcon::province_id id) {
-			auto ptr = ui::make_element_by_type<ui::province_details_container>(state, "alice_province_values");
+			auto ptr = ui::make_element_by_type<ui::province_details_container>(state, "vce_province_values");
 			static_cast<ui::province_details_container*>(ptr.get())->prov = id;
 			state.ui_state.province_details_root->add_child_to_front(std::move(ptr));
 		});
@@ -187,7 +187,7 @@ namespace ui {
 			}
 		}
 		{
-			auto new_elm = ui::make_element_by_type<ui::minimap_container_window>(state, "alice_menubar");
+			auto new_elm = ui::make_element_by_type<ui::minimap_container_window>(state, "vce_menubar");
 			state.ui_state.menubar_window = new_elm.get();
 			state.ui_state.root->add_child_to_front(std::move(new_elm));
 		}
@@ -248,7 +248,7 @@ namespace ui {
 			state.ui_state.root->add_child_to_front(std::move(new_elm));
 		}
 		{
-			auto new_elm = ui::make_element_by_type<ui::leader_selection_window>(state, "alice_leader_selection_panel");
+			auto new_elm = ui::make_element_by_type<ui::leader_selection_window>(state, "vce_leader_selection_panel");
 			if(new_elm.get()) {
 				new_elm->set_visible(state, false);
 				state.ui_state.change_leader_window = new_elm.get();

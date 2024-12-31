@@ -148,7 +148,7 @@ namespace ui {
 		}
 
 		if(state.selected_armies.size() > 0) {
-			text::add_line(state, contents, "alice_supply_limit_desc", text::variable_type::x, text::int_wholenum{ military::supply_limit_in_province(state, state.local_player_nation, fat) });
+			text::add_line(state, contents, "vce_supply_limit_desc", text::variable_type::x, text::int_wholenum{ military::supply_limit_in_province(state, state.local_player_nation, fat) });
 			ui::active_modifiers_description(state, contents, fat, 0, sys::provincial_mod_offsets::supply_limit, true);
 
 			ui::unitamounts total_amounts;
@@ -171,7 +171,7 @@ namespace ui {
 			text::add_unparsed_text_to_layout_box(state, contents, box, resolved);
 			text::close_layout_box(contents, box);
 		} else if(state.selected_navies.size() > 0) {
-			text::add_line(state, contents, "alice_supply_limit_desc", text::variable_type::x, text::int_wholenum{ military::supply_limit_in_province(state, state.local_player_nation, fat) });
+			text::add_line(state, contents, "vce_supply_limit_desc", text::variable_type::x, text::int_wholenum{ military::supply_limit_in_province(state, state.local_player_nation, fat) });
 			ui::active_modifiers_description(state, contents, fat, 0, sys::provincial_mod_offsets::supply_limit, true);
 		}
 	}
@@ -1430,7 +1430,7 @@ namespace ui {
 				{
 					text::substitution_map sub;
 				text::add_to_substitution_map(sub, text::variable_type::x, text::pretty_integer{ int32_t(total) });
-					text::localised_format_box(state, contents, box, std::string_view("alice_pnt_pops"), sub);
+					text::localised_format_box(state, contents, box, std::string_view("vce_pnt_pops"), sub);
 					text::add_line_break_to_layout_box(state, contents, box);
 				}
 				{
@@ -1438,7 +1438,7 @@ namespace ui {
 					text::substitution_map sub;
 				text::add_to_substitution_map(sub, text::variable_type::x, text::pretty_integer{ int32_t(value) });
 				text::add_to_substitution_map(sub, text::variable_type::y, text::fp_percentage_one_place{ value / total });
-					text::localised_format_box(state, contents, box, std::string_view("alice_pnt_rpops"), sub);
+					text::localised_format_box(state, contents, box, std::string_view("vce_pnt_rpops"), sub);
 					text::add_line_break_to_layout_box(state, contents, box);
 				}
 				{
@@ -1446,7 +1446,7 @@ namespace ui {
 					text::substitution_map sub;
 				text::add_to_substitution_map(sub, text::variable_type::x, text::pretty_integer{ int32_t(value) });
 				text::add_to_substitution_map(sub, text::variable_type::y, text::fp_percentage_one_place{ value / total });
-					text::localised_format_box(state, contents, box, std::string_view("alice_pnt_mpops"), sub);
+					text::localised_format_box(state, contents, box, std::string_view("vce_pnt_mpops"), sub);
 					text::add_line_break_to_layout_box(state, contents, box);
 				}
 				{
@@ -1454,32 +1454,32 @@ namespace ui {
 					text::substitution_map sub;
 				text::add_to_substitution_map(sub, text::variable_type::x, text::pretty_integer{ int32_t(value) });
 				text::add_to_substitution_map(sub, text::variable_type::y, text::fp_percentage_one_place{ value / total });
-					text::localised_format_box(state, contents, box, std::string_view("alice_pnt_ppops"), sub);
+					text::localised_format_box(state, contents, box, std::string_view("vce_pnt_ppops"), sub);
 					text::add_line_break_to_layout_box(state, contents, box);
 				}
 			}
 			if(fat_id.get_primary_culture()) {
 				text::substitution_map sub;
 				text::add_to_substitution_map(sub, text::variable_type::x, fat_id.get_primary_culture().get_name());
-				text::localised_format_box(state, contents, box, std::string_view("alice_pnt_culture"), sub);
+				text::localised_format_box(state, contents, box, std::string_view("vce_pnt_culture"), sub);
 				text::add_line_break_to_layout_box(state, contents, box);
 			}
 			if(fat_id.get_religion()) {
 				text::substitution_map sub;
 				text::add_to_substitution_map(sub, text::variable_type::x, fat_id.get_religion().get_name());
-				text::localised_format_box(state, contents, box, std::string_view("alice_pnt_religion"), sub);
+				text::localised_format_box(state, contents, box, std::string_view("vce_pnt_religion"), sub);
 				text::add_line_break_to_layout_box(state, contents, box);
 			}
 			if(fat_id.get_dominant_religion()) {
 				text::substitution_map sub;
 				text::add_to_substitution_map(sub, text::variable_type::x, fat_id.get_dominant_religion().get_name());
-				text::localised_format_box(state, contents, box, std::string_view("alice_pnt_dominant_religion"), sub);
+				text::localised_format_box(state, contents, box, std::string_view("vce_pnt_dominant_religion"), sub);
 				text::add_line_break_to_layout_box(state, contents, box);
 			}
 			if(fat_id.get_dominant_ideology()) {
 				text::substitution_map sub;
 				text::add_to_substitution_map(sub, text::variable_type::x, fat_id.get_dominant_ideology().get_name());
-				text::localised_format_box(state, contents, box, std::string_view("alice_pnt_dominant_ideology"), sub);
+				text::localised_format_box(state, contents, box, std::string_view("vce_pnt_dominant_ideology"), sub);
 				text::add_line_break_to_layout_box(state, contents, box);
 			}
 			text::add_line_break_to_layout_box(state, contents, box);

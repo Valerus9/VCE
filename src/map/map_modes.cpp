@@ -2101,7 +2101,7 @@ namespace map_mode {
 		case map_mode::mode::life_rating:
 		case map_mode::mode::clerk_to_craftsmen_ratio:
 			if(!state.ui_state.map_gradient_legend) {
-				auto legend_win = ui::make_element_by_type<ui::map_legend_gradient>(state, "alice_map_legend_gradient_window");
+				auto legend_win = ui::make_element_by_type<ui::map_legend_gradient>(state, "vce_map_legend_gradient_window");
 				state.ui_state.map_gradient_legend = legend_win.get();
 				state.ui_state.root->add_child_to_front(std::move(legend_win));
 			}
@@ -2114,7 +2114,7 @@ namespace map_mode {
 		}
 		if(mode == mode::civilization_level) {
 			if(!state.ui_state.map_civ_level_legend) {
-				auto legend_win = ui::make_element_by_type<ui::map_legend_civ_level>(state, "alice_map_legend_civ_level");
+				auto legend_win = ui::make_element_by_type<ui::map_legend_civ_level>(state, "vce_map_legend_civ_level");
 				state.ui_state.map_civ_level_legend = legend_win.get();
 				state.ui_state.root->add_child_to_front(std::move(legend_win));
 			}
@@ -2125,7 +2125,7 @@ namespace map_mode {
 		}
 		if(mode == mode::colonial) {
 			if(!state.ui_state.map_col_legend) {
-				auto legend_win = ui::make_element_by_type<ui::map_legend_col>(state, "alice_map_legend_colonial");
+				auto legend_win = ui::make_element_by_type<ui::map_legend_col>(state, "vce_map_legend_colonial");
 				state.ui_state.map_col_legend = legend_win.get();
 				state.ui_state.root->add_child_to_front(std::move(legend_win));
 			}
@@ -2136,7 +2136,7 @@ namespace map_mode {
 		}
 		if(mode == mode::diplomatic) {
 			if(!state.ui_state.map_dip_legend) {
-				auto legend_win = ui::make_element_by_type<ui::map_legend_dip>(state, "alice_map_legend_diplomatic");
+				auto legend_win = ui::make_element_by_type<ui::map_legend_dip>(state, "vce_map_legend_diplomatic");
 				state.ui_state.map_dip_legend = legend_win.get();
 				state.ui_state.root->add_child_to_front(std::move(legend_win));
 			}
@@ -2147,7 +2147,7 @@ namespace map_mode {
 		}
 		if(mode == mode::infrastructure || mode == mode::fort) {
 			if(!state.ui_state.map_rr_legend) {
-				auto legend_win = ui::make_element_by_type<ui::map_legend_rr>(state, "alice_map_legend_infrastructure");
+				auto legend_win = ui::make_element_by_type<ui::map_legend_rr>(state, "vce_map_legend_infrastructure");
 				state.ui_state.map_rr_legend = legend_win.get();
 				state.ui_state.root->add_child_to_front(std::move(legend_win));
 			}
@@ -2158,7 +2158,7 @@ namespace map_mode {
 		}
 		if(mode == mode::naval) {
 			if(!state.ui_state.map_nav_legend) {
-				auto legend_win = ui::make_element_by_type<ui::map_legend_nav>(state, "alice_map_legend_naval");
+				auto legend_win = ui::make_element_by_type<ui::map_legend_nav>(state, "vce_map_legend_naval");
 				state.ui_state.map_nav_legend = legend_win.get();
 				state.ui_state.root->add_child_to_front(std::move(legend_win));
 			}
@@ -2169,7 +2169,7 @@ namespace map_mode {
 		}
 		if(mode == mode::rank) {
 			if(!state.ui_state.map_rank_legend) {
-				auto legend_win = ui::make_element_by_type<ui::map_legend_rank>(state, "alice_map_legend_rank");
+				auto legend_win = ui::make_element_by_type<ui::map_legend_rank>(state, "vce_map_legend_rank");
 				state.ui_state.map_rank_legend = legend_win.get();
 				state.ui_state.root->add_child_to_front(std::move(legend_win));
 			}
@@ -2180,7 +2180,7 @@ namespace map_mode {
 		}
 		if(mode == mode::recruitment) {
 			if(!state.ui_state.map_rec_legend) {
-				auto legend_win = ui::make_element_by_type<ui::map_legend_rec>(state, "alice_map_legend_rec");
+				auto legend_win = ui::make_element_by_type<ui::map_legend_rec>(state, "vce_map_legend_rec");
 				state.ui_state.map_rec_legend = legend_win.get();
 				state.ui_state.root->add_child_to_front(std::move(legend_win));
 			}

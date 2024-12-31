@@ -5559,7 +5559,7 @@ namespace military {
 			for(auto reg : ar.get_army_membership()) {
 				auto pop = reg.get_regiment().get_pop_from_regiment_source();
 				auto pop_size = pop.get_size();
-				auto limit_fraction = std::max(state.defines.alice_full_reinforce, std::min(1.0f, pop_size / state.defines.pop_size_per_regiment));
+				auto limit_fraction = std::max(state.defines.vce_full_reinforce, std::min(1.0f, pop_size / state.defines.pop_size_per_regiment));
 				auto new_str = std::min(reg.get_regiment().get_strength() + combined, limit_fraction);
 				auto old_str = reg.get_regiment().get_strength();
 				/* experience = old experience / (amount - reinforced / 3 + 1) */

@@ -916,13 +916,13 @@ chat_player_kick;$spelernaam$ is geschopt
 chat_player_switch;$playername$ heeft $country$ gekozen
 chat_player_oos;$playername$ heeft OOSed!
 save_progress;Bewaar voortgang $value$
-alice_play_pending_client;$playername$ is nog niet klaar
-alice_stockpile_button_0_0;Nationale voorraden fungeren als aanvulling op uw gebruikelijke economisch-zakelijke activiteiten, waar mensen 'Ggroene' W-lijnen omhoog zien gaan en 'Rred' W-lijnen omlaag gaan, zoals gewoonlijk ben ik 'Ynot'W een lijngrafiek, dus ik ben meestal onopgemerkt gaan :)
-alice_stockpile_button_1_0;Als je 10 keer op mij klikt, ontvang je niets terug, vertrouw me gewoon, klik niet op mij... ?ROR ANDERS?W
-alice_stockpile_button_1_1;Ik begrijp het, nu ga ik niets zeggen, omdat ik weet dat je zult blijven klikken totdat ik een 'andere' dialoog zeg en dat is gewoon saai
-alice_stockpile_button_1_2;Oké, ik kan je niet dwingen te stoppen. Misschien wel?
-alice_stockpile_button_2_0;Ik ben een zielloze knop, ga verder
-alice_stockpile_button_3_0;Spelen met vrienden, nietwaar? ?RWELL VEEL GELUK DAT HEB JE NODIG?W
+vce_play_pending_client;$playername$ is nog niet klaar
+vce_stockpile_button_0_0;Nationale voorraden fungeren als aanvulling op uw gebruikelijke economisch-zakelijke activiteiten, waar mensen 'Ggroene' W-lijnen omhoog zien gaan en 'Rred' W-lijnen omlaag gaan, zoals gewoonlijk ben ik 'Ynot'W een lijngrafiek, dus ik ben meestal onopgemerkt gaan :)
+vce_stockpile_button_1_0;Als je 10 keer op mij klikt, ontvang je niets terug, vertrouw me gewoon, klik niet op mij... ?ROR ANDERS?W
+vce_stockpile_button_1_1;Ik begrijp het, nu ga ik niets zeggen, omdat ik weet dat je zult blijven klikken totdat ik een 'andere' dialoog zeg en dat is gewoon saai
+vce_stockpile_button_1_2;Oké, ik kan je niet dwingen te stoppen. Misschien wel?
+vce_stockpile_button_2_0;Ik ben een zielloze knop, ga verder
+vce_stockpile_button_3_0;Spelen met vrienden, nietwaar? ?RWELL VEEL GELUK DAT HEB JE NODIG?W
 a_alert_reb;Een of meer van onze sfeerleden hebben actieve rebellen:
 event_auto;Kies deze optie automatisch voor de rest van de sessie.
 event_taken_auto;Deze optie wordt automatisch gebruikt op ?Y$date$?W.
@@ -978,23 +978,23 @@ close_and_del;Fabriek sluiten en verwijderen
 cb_conditions_header;Voorwaarden voor gebruik:
 as_a_vassal;als vazal
 change_state_name_to;verander de statusnaam in $text$
-alice_join_crisis_offer;$ACTOR$ zal ons het volgende geven als we ons in de huidige crisis bij hen aansluiten:
-alice_unit_disable_rebel_hunt;Stop met jagen op rebellen
-alice_regiment_battle_info;$naam$ ?Y$type$?!\nOrganisatie: ?Y$organisatie$?W\nKracht: ?Y$sterkte$?W
+vce_join_crisis_offer;$ACTOR$ zal ons het volgende geven als we ons in de huidige crisis bij hen aansluiten:
+vce_unit_disable_rebel_hunt;Stop met jagen op rebellen
+vce_regiment_battle_info;$naam$ ?Y$type$?!\nOrganisatie: ?Y$organisatie$?W\nKracht: ?Y$sterkte$?W
 understaffed_regiment;?RDit regiment is onderbezet en zal alleen maar $value$ soldaten hebben!?W
 tech_queue_explain;Druk op ?YSHIFT?W om aan de wachtrij toe te voegen, ?YKlik met de rechtermuisknop?W om te verwijderen
-alice_province_building_build;?YSHIFT?W om op het hele ?Gstate?W te bouwen.\n?YSHIFT-klik met de rechtermuisknop?W om op het hele ?Gcountry?W te bouwen.
+vce_province_building_build;?YSHIFT?W om op het hele ?Gstate?W te bouwen.\n?YSHIFT-klik met de rechtermuisknop?W om op het hele ?Gcountry?W te bouwen.
 commodity_shortage;?Er is een tekort aan dit product
 commodity_surplus;?Er is een overschot van dit product
-alice_trade_flow_produced;?Binnenlandse productie:
-alice_trade_flow_consumed;?Binnenlands verbruik:
-alice_trade_flow_label;Marktoverzicht:
-alice_trade_flow_piechart_producers;Producenten
-alice_trade_flow_piechart_consumers;Consumenten
-alice_trade_flow_piechart_workforce;Investeerders
-alice_diplo_release_subject;Onderwerp vrijgeven
-alice_diplo_release_subject_desc;Laat een van onze onderdanen vrij, waardoor ze niet langer ons onderwerp zijn, allianties moeten afzonderlijk worden verbroken
-alice_diplo_release_subject_0;Is ons onderwerp
+vce_trade_flow_produced;?Binnenlandse productie:
+vce_trade_flow_consumed;?Binnenlands verbruik:
+vce_trade_flow_label;Marktoverzicht:
+vce_trade_flow_piechart_producers;Producenten
+vce_trade_flow_piechart_consumers;Consumenten
+vce_trade_flow_piechart_workforce;Investeerders
+vce_diplo_release_subject;Onderwerp vrijgeven
+vce_diplo_release_subject_desc;Laat een van onze onderdanen vrij, waardoor ze niet langer ons onderwerp zijn, allianties moeten afzonderlijk worden verbroken
+vce_diplo_release_subject_0;Is ons onderwerp
 kill_leader;Dood leider
 annex_null;wordt oneigenlijk
 meets_the_conditions_of;voldoet aan de voorwaarden van
@@ -1019,77 +1019,77 @@ filter_enemies;Filter op landen die 'vijanden zijn of met ons in oorlog zijn?!'.
 filter_sphere;Filter op landen die binnen onze ?Invloedssfeer?!.\n?YRechtsklikken?! om te filteren op landen die we beïnvloeden, maar niet op onze sfeer.
 filter_neighbors;Filter op landen waar we een ?Yborder?! met.\n?YKlik met de rechtermuisknop?! om te filteren op landen delen we een ?Yborder?! en zijn geen ?Yvazallen?!.
 filter_best_guess;Filter met behulp van een ?Beste gok?! relevantie: dit omvat alle ?Yallies?!, ?Yenemies?!, ?Yspherelings?! en naties delen we een ?Ygrens?! met.
-alice_warn_war_ends_for_us;?RDit zal een einde maken aan de oorlog voor iedereen aan onze kant?!.
-alice_invention_chance;De kans om deze ?Yuitvinding?! zijn als volgt:
+vce_warn_war_ends_for_us;?RDit zal een einde maken aan de oorlog voor iedereen aan onze kant?!.
+vce_invention_chance;De kans om deze ?Yuitvinding?! zijn als volgt:
 is_primary_culture;?Y$NAAM$?! is de primaire cultuur.
 is_primary_religion;?Y$NAAM$?! is de voornaamste religie.
 tt_can_use_nation;De voorwaarden die nodig zijn om het gebruik van dit oorlogsdoel mogelijk te maken:
 et_on_add;De effecten die worden uitgevoerd door dit oorlogsdoel aan een oorlog toe te voegen:
 et_on_po_accepted;De gevolgen van het accepteren van een vredesaanbod met dit oorlogsdoel:
-alice_no_possible_units;Er kunnen geen mogelijke eenheden worden gebouwd en er zijn geen eenheden in aanbouw.
-alice_debt_spending;Schulduitgaven in-/uitschakelen
-alice_loan_size;Onze huidige maximale lening is $x$. Als de schulden groter zijn dan dat, zullen we failliet gaan
-alice_currently_bankrupt;Wij zijn failliet (tot $x$)
-alice_no_loans_possible;Momenteel kunnen wij geen leningen aangaan
-alice_rf_demands_enforced_trigger;De rebellen zullen hun eisen alleen afdwingen als:
-alice_rf_demands_enforced_effect;Zodra de rebellen hun eisen hebben afgedwongen, zullen ze het volgende effect toepassen:
-alice_rf_siege_won_trigger;Als een rebel een belegering wint, wordt het volgende gecontroleerd, bijvoorbeeld in uw hoofdletter $x$:
-alice_rf_siege_won_effect;En als al het bovenstaande waar is, zijn de volgende effecten van toepassing, bijvoorbeeld in uw hoofdletter $x$:
+vce_no_possible_units;Er kunnen geen mogelijke eenheden worden gebouwd en er zijn geen eenheden in aanbouw.
+vce_debt_spending;Schulduitgaven in-/uitschakelen
+vce_loan_size;Onze huidige maximale lening is $x$. Als de schulden groter zijn dan dat, zullen we failliet gaan
+vce_currently_bankrupt;Wij zijn failliet (tot $x$)
+vce_no_loans_possible;Momenteel kunnen wij geen leningen aangaan
+vce_rf_demands_enforced_trigger;De rebellen zullen hun eisen alleen afdwingen als:
+vce_rf_demands_enforced_effect;Zodra de rebellen hun eisen hebben afgedwongen, zullen ze het volgende effect toepassen:
+vce_rf_siege_won_trigger;Als een rebel een belegering wint, wordt het volgende gecontroleerd, bijvoorbeeld in uw hoofdletter $x$:
+vce_rf_siege_won_effect;En als al het bovenstaande waar is, zijn de volgende effecten van toepassing, bijvoorbeeld in uw hoofdletter $x$:
 may_month_name;Kunnen
-alice_ca_cant_influence;We zijn momenteel niet in staat de mening van andere landen te verhogen of te verlagen
-alice_gp_status_regain_expiration;Als we niet de rang ?Y$x$?W of hoger bereiken, verliezen we de status van ?Ygrote macht?W tegen ?Y$date?W!
-alice_mil_decay_description;Natuurlijk verval ?G-$x$
-alice_con_decay_description;Natuurlijk verval ?R-$x$
+vce_ca_cant_influence;We zijn momenteel niet in staat de mening van andere landen te verhogen of te verlagen
+vce_gp_status_regain_expiration;Als we niet de rang ?Y$x$?W of hoger bereiken, verliezen we de status van ?Ygrote macht?W tegen ?Y$date?W!
+vce_mil_decay_description;Natuurlijk verval ?G-$x$
+vce_con_decay_description;Natuurlijk verval ?R-$x$
 x_from_y;$x$ van $y$
 reinforce_rate;Dit regiment kan tot $x$ soldaten per maand versterken.
 reinforce_rate_none;Dit regiment kan momenteel niet worden versterkt.
 domestic_investment_pops;We hebben $x$ kapitalisten aan wie we indirect genereuze donaties kunnen geven
 domestic_investment_needs;Ze hebben elke dag $x$ nodig om aan hun luxueuze levensstijl te voldoen
-alice_budget_scaled_inc;Inkomen: ?G$waarde$
-alice_budget_scaled_1;Slechte belasting: ?G$value$
-alice_budget_scaled_2;Middenbelasting: ?G$waarde$
-alice_budget_scaled_3;Rijke belasting: ?G$waarde$
-alice_budget_scaled_4;Tarieven: ?G$waarde$
-alice_budget_scaled_exp;Kosten: ?R$waarde$
-alice_budget_scaled_5;Onderhoud leger: ?R$value$
-alice_budget_scaled_6;Marineonderhoud: ?R$value$
-alice_budget_scaled_7;Constructie: ?R$waarde$
-alice_budget_scaled_8;Opleiding: ?R$waarde$
-alice_budget_scaled_9;Administratie: ?R$waarde$
-alice_budget_scaled_10;Sociale uitgaven: ?R$waarde$
-alice_budget_scaled_11;Militaire uitgaven: ?R$waarde$
-alice_budget_scaled_12;Binnenlandse investeringen: ?R$value$
-alice_budget_scaled_13;Overzeese uitgaven: ?R$waarde$
-alice_budget_scaled_14;Voorraadvulling: ?R$value$
-alice_budget_scaled_15;Oorlogssubsidies: ?R$waarde$
-alice_budget_scaled_16;Diplomatiek belang: ?G$value$
-alice_budget_scaled_17;Goudproductie: ?G$value$
-alice_budget_scaled_net;Netto-omzet: ?Y$waarde$
-alice_budget_setting_percent;Ingesteld op $perc$.
-alice_spending_land_construction;Grondaanleg in $name$: ?R$cost$?W
-alice_spending_naval_construction;Scheepsbouw in $name$: ?R$cost$?W
-alice_spending_building_construction;Bouwconstructie in $naam$: ?R$kosten$?W
-alice_spending_factory_construction;Fabrieksbouw in $name$: ?R$cost$?W
-alice_spending_unit;Totaal uitgegeven aan dit apparaat in $name$: ?R$cost$?W
-alice_spending_unit_1;Totaal uitgegeven aan dit toestel: ?R$cost$?W
-alice_spending_total;?YTotaal uitgegeven:?W
-alice_spending_commodity;?R$cost$?W - Heeft $need$ nodig van $name$ ($val$)
-alice_spending_commodity_2;?R$cost$?W - Het kopen van $need$ van $name$ (tegen $val$ x eenheid). Voortgang: $x$/$y$
-alice_recommended_build;?GDeze fabriek wordt aanbevolen om te worden gebouwd?W
-alice_factory_bonus;We ontvangen een bonus van ?Y$x$?W als:
-alice_factory_inputs;Vereiste invoer:
-alice_factory_input_item;?R$cost$?W - Heeft $need$ nodig van $name$ ($val$)
-alice_factory_base_workforce;Basispersoneelsbestand ?Y$x$?W
-alice_factory_total_bonus;Dit komt neer op ongeveer ?Y$x$?W
-alice_slider_controls;?YLinks klikken?W om te verhogen met ?Y$value$?W\n?YSHIFT-Links klikken?W om te verhogen met ?Y$x$?W\n?YSHIFT-Rechts klikken?W om te verhogen naar het maximum
-alice_slider_controls_2;?YLinks klikken?W om te verlagen met ?Y$value$?W\n?YSHIFT-Links klikken?W om te verlagen met ?Y$x$?W\n?YSHIFT-Rechts klikken?W om te verlagen naar het minimum
+vce_budget_scaled_inc;Inkomen: ?G$waarde$
+vce_budget_scaled_1;Slechte belasting: ?G$value$
+vce_budget_scaled_2;Middenbelasting: ?G$waarde$
+vce_budget_scaled_3;Rijke belasting: ?G$waarde$
+vce_budget_scaled_4;Tarieven: ?G$waarde$
+vce_budget_scaled_exp;Kosten: ?R$waarde$
+vce_budget_scaled_5;Onderhoud leger: ?R$value$
+vce_budget_scaled_6;Marineonderhoud: ?R$value$
+vce_budget_scaled_7;Constructie: ?R$waarde$
+vce_budget_scaled_8;Opleiding: ?R$waarde$
+vce_budget_scaled_9;Administratie: ?R$waarde$
+vce_budget_scaled_10;Sociale uitgaven: ?R$waarde$
+vce_budget_scaled_11;Militaire uitgaven: ?R$waarde$
+vce_budget_scaled_12;Binnenlandse investeringen: ?R$value$
+vce_budget_scaled_13;Overzeese uitgaven: ?R$waarde$
+vce_budget_scaled_14;Voorraadvulling: ?R$value$
+vce_budget_scaled_15;Oorlogssubsidies: ?R$waarde$
+vce_budget_scaled_16;Diplomatiek belang: ?G$value$
+vce_budget_scaled_17;Goudproductie: ?G$value$
+vce_budget_scaled_net;Netto-omzet: ?Y$waarde$
+vce_budget_setting_percent;Ingesteld op $perc$.
+vce_spending_land_construction;Grondaanleg in $name$: ?R$cost$?W
+vce_spending_naval_construction;Scheepsbouw in $name$: ?R$cost$?W
+vce_spending_building_construction;Bouwconstructie in $naam$: ?R$kosten$?W
+vce_spending_factory_construction;Fabrieksbouw in $name$: ?R$cost$?W
+vce_spending_unit;Totaal uitgegeven aan dit apparaat in $name$: ?R$cost$?W
+vce_spending_unit_1;Totaal uitgegeven aan dit toestel: ?R$cost$?W
+vce_spending_total;?YTotaal uitgegeven:?W
+vce_spending_commodity;?R$cost$?W - Heeft $need$ nodig van $name$ ($val$)
+vce_spending_commodity_2;?R$cost$?W - Het kopen van $need$ van $name$ (tegen $val$ x eenheid). Voortgang: $x$/$y$
+vce_recommended_build;?GDeze fabriek wordt aanbevolen om te worden gebouwd?W
+vce_factory_bonus;We ontvangen een bonus van ?Y$x$?W als:
+vce_factory_inputs;Vereiste invoer:
+vce_factory_input_item;?R$cost$?W - Heeft $need$ nodig van $name$ ($val$)
+vce_factory_base_workforce;Basispersoneelsbestand ?Y$x$?W
+vce_factory_total_bonus;Dit komt neer op ongeveer ?Y$x$?W
+vce_slider_controls;?YLinks klikken?W om te verhogen met ?Y$value$?W\n?YSHIFT-Links klikken?W om te verhogen met ?Y$x$?W\n?YSHIFT-Rechts klikken?W om te verhogen naar het maximum
+vce_slider_controls_2;?YLinks klikken?W om te verlagen met ?Y$value$?W\n?YSHIFT-Links klikken?W om te verlagen met ?Y$x$?W\n?YSHIFT-Rechts klikken?W om te verlagen naar het minimum
 explain_colonial_points;Secundaire en grote mogendheden verzamelen koloniale punten.
-alice_lobby_back;Terug naar de lobby
-alice_lobby_back_tt_1;Je bent al in de verdomde lobby
-alice_lobby_back_tt_2;Alleen de gastheer mag teruggaan naar de lobby
+vce_lobby_back;Terug naar de lobby
+vce_lobby_back_tt_1;Je bent al in de verdomde lobby
+vce_lobby_back_tt_2;Alleen de gastheer mag teruggaan naar de lobby
 reopen_with_tab;U kunt dit venster opnieuw openen met ?YTAB?W
-alice_topbar_tab_1;Open of sluit dit tabblad
-alice_topbar_tab_2;Open of sluit het tabblad populatie
+vce_topbar_tab_1;Open of sluit dit tabblad
+vce_topbar_tab_2;Open of sluit het tabblad populatie
 colonial_points_from_technology;Van technologieën:
 colonial_points_from_naval_bases;Van marinebases:
 colonial_points_from_ships;Van schepen:
@@ -1103,13 +1103,13 @@ domestic_investment_label;Binnenlandse investeringen:
 modifier_min_domestic_investment;Min. binnenlandse investeringspercentage
 modifier_max_domestic_investment;Maximaal binnenlands investeringspercentage
 mouse_left_click_mode_label;Klik op loslaten
-alice_supply_limit_desc;Aanbodlimiet: $x$
-alice_factory_worker_1;Werkzaam: ?G$x$?W
-alice_factory_worker_2;Werklozen: ?R$x$?W
-alice_rgo_unemployment_country_alert;De volgende staten hebben werkloze RGO's:
+vce_supply_limit_desc;Aanbodlimiet: $x$
+vce_factory_worker_1;Werkzaam: ?G$x$?W
+vce_factory_worker_2;Werklozen: ?R$x$?W
+vce_rgo_unemployment_country_alert;De volgende staten hebben werkloze RGO's:
 pop_promote_info_on_sel_2;$val$ verwachte verandering van $who$ in $where$ in de komende maand.
-alice_readme;?GWelkom bij Kat's PA Engine!?W\nKat's PA Engine is een emulatie (geen simulator!) van je favoriete videogame uit het Victoriaanse tijdperk. Met andere woorden, we passen een aantal mechanismen aan om het begrijpelijker te maken voor nieuwere spelers, terwijl ook de wereld dynamischer en leuker maken, oude bugs oplossen (zoals bij crises) en nieuwe functies voor levenskwaliteit implementeren.\n?GNieuwe functies!?W\n?YGlobe?W: ?Geliefd?W door velen, ?Rhated? Voor sommigen: schakel het uit als je er last van hebt!\n?YTech-wachtrij:?W SHIFT-klik met de rechtermuisknop om technologieën aan de tech-wachtrij toe te voegen! (Klik met de rechtermuisknop om uit de wachtrij te halen)\n?YBinnenlandse investering:?W In plaats van te investeren in individuele projecten, doe je dit in één keer\n?YPrestaties:?W De ticks per seconde (niet FPS) zijn minstens x10 keer sneller\n? YLinter:?W Krijg dekkingsfouten en waarschuwingen in je mods, vang gemakkelijk bugs en typefouten op\n?YMacrobouwer:?W Bouw eenheden met verschillende samenstellingen met behulp van onze macrobouwer\n?Y11 nieuwe kaartmodi:?W Religie, fort, werkgelegenheid, etc\n?YBouw in het hele land:?W SHIFT Klik met de rechtermuisknop om in het hele land te bouwen!\n?GControls:?W\n?YTAB?W: Open het chatvenster\n?YESC?W: Open het hoofdmenu en instellingenmenu\n?YTilde (`)?W of ?YTilde (~)?W: Open de console\n?Geniet van het spel! =^w^=?W
-alice_nf_controls;?YKlik met de linkermuisknop?W om te selecteren of vervangen\n?YKlik met de rechtermuisknop?W om te verwijderen
+vce_readme;?GWelkom bij Kat's PA Engine!?W\nKat's PA Engine is een emulatie (geen simulator!) van je favoriete videogame uit het Victoriaanse tijdperk. Met andere woorden, we passen een aantal mechanismen aan om het begrijpelijker te maken voor nieuwere spelers, terwijl ook de wereld dynamischer en leuker maken, oude bugs oplossen (zoals bij crises) en nieuwe functies voor levenskwaliteit implementeren.\n?GNieuwe functies!?W\n?YGlobe?W: ?Geliefd?W door velen, ?Rhated? Voor sommigen: schakel het uit als je er last van hebt!\n?YTech-wachtrij:?W SHIFT-klik met de rechtermuisknop om technologieën aan de tech-wachtrij toe te voegen! (Klik met de rechtermuisknop om uit de wachtrij te halen)\n?YBinnenlandse investering:?W In plaats van te investeren in individuele projecten, doe je dit in één keer\n?YPrestaties:?W De ticks per seconde (niet FPS) zijn minstens x10 keer sneller\n? YLinter:?W Krijg dekkingsfouten en waarschuwingen in je mods, vang gemakkelijk bugs en typefouten op\n?YMacrobouwer:?W Bouw eenheden met verschillende samenstellingen met behulp van onze macrobouwer\n?Y11 nieuwe kaartmodi:?W Religie, fort, werkgelegenheid, etc\n?YBouw in het hele land:?W SHIFT Klik met de rechtermuisknop om in het hele land te bouwen!\n?GControls:?W\n?YTAB?W: Open het chatvenster\n?YESC?W: Open het hoofdmenu en instellingenmenu\n?YTilde (`)?W of ?YTilde (~)?W: Open de console\n?Geniet van het spel! =^w^=?W
+vce_nf_controls;?YKlik met de linkermuisknop?W om te selecteren of vervangen\n?YKlik met de rechtermuisknop?W om te verwijderen
 unit_controls_tooltip_1;?YLinks klikken?W selecteren (de selectie van al het andere ongedaan maken)\n?SHIFT-Links klikken?W toevoegen aan selectie
 unit_controls_tooltip_2;?YKlik met de rechtermuisknop op een provincie?W gedeeltelijke terugtrekking (?Gcycling/rotatie?W) naar provincie
 unit_control_group_tooltip;Druk op ?YCTRL-1?W tot en met ?YCTRL-9?W om dit apparaat aan een controlegroep toe te wijzen of de toewijzing ervan ongedaan te maken. Vervolgens kunt u op ?Y1?W tot en met ?Y9?W drukken om te selecteren
@@ -1118,77 +1118,77 @@ demobilize;Demobiliseren
 mobilize;Mobiliseren
 cb_creation_detail_none;Selecteer een casus belli om te beginnen met het fabriceren van $country$.
 cb_creation_detail;We kunnen een casus belli tegen $country$ verzinnen met als reden ?Y$type$?W. Dit proces kan ongeveer ?Y$days$?W duren, en de potentiële kosten van ontdekking zullen ons ?R$badboy$?W schande bezorgen.
-alice_mob_controls;?YKlik met de rechtermuisknop?W om opnieuw te mobiliseren
-alice_mw_create_1;Algemeen toevoegen
-alice_mw_create_2;Admiraal toevoegen
-alice_mw_create_lpb;?YLeiderschapspunten?W worden automatisch gebruikt om generaals of admiraals te creëren wanneer de limiet wordt bereikt
-alice_mw_create_lp;We hebben ?R$x$?W ?Yleiderschapspunten?W nodig om toe te voegen
-alice_mw_controls_1;?YKlik met de rechtermuisknop?W maak ?Gall?W mogelijk als generaals
-alice_mw_controls_2;?YKlik met de rechtermuisknop?W maak ?Gall?W mogelijk als admiraals
-alice_daily_leadership_tt;$poptype$ levert ?G$value$?W leiderschapspunten op (?Y$fraction$?W van de bevolking, ?Y$optimal$?W is optimaal). Extra leiderschapspunten worden automatisch besteed aan het creëren van nieuwe generaals.
+vce_mob_controls;?YKlik met de rechtermuisknop?W om opnieuw te mobiliseren
+vce_mw_create_1;Algemeen toevoegen
+vce_mw_create_2;Admiraal toevoegen
+vce_mw_create_lpb;?YLeiderschapspunten?W worden automatisch gebruikt om generaals of admiraals te creëren wanneer de limiet wordt bereikt
+vce_mw_create_lp;We hebben ?R$x$?W ?Yleiderschapspunten?W nodig om toe te voegen
+vce_mw_controls_1;?YKlik met de rechtermuisknop?W maak ?Gall?W mogelijk als generaals
+vce_mw_controls_2;?YKlik met de rechtermuisknop?W maak ?Gall?W mogelijk als admiraals
+vce_daily_leadership_tt;$poptype$ levert ?G$value$?W leiderschapspunten op (?Y$fraction$?W van de bevolking, ?Y$optimal$?W is optimaal). Extra leiderschapspunten worden automatisch besteed aan het creëren van nieuwe generaals.
 unit_current_supply;Deze eenheid heeft de afgelopen dag ?Y$val$%?W van de benodigde voorraden ontvangen.\nHet bedrag dat we konden krijgen van ons huidige voorradenverbruik was:
 unit_current_supply_high;$wat$: ?Y$val$?W/?Y$waarde$?! ?l(?W?G$totaal$%?W?l vraagtevredenheid)
 unit_current_supply_mid;$wat$: ?Y$val$?!/?Y$waarde$?! ?l(?O$totaal$%?W?l vraagtevredenheid)
 unit_current_supply_low;$wat$: ?Y$val$?!/?Y$waarde$?! ?l(?R$totaal$%?W?l vraagtevredenheid)
-alice_crisis_inactive;Geen huidige actieve crisis
-alice_crisis_finding_attacker;Een aanvaller vinden voor de huidige crisis
-alice_crisis_finding_defender;Een verdediger vinden voor de huidige crisis
-alice_crisis_heating_up;De temperatuur van de crisis loopt op, momenteel op ?R$temperatuur$?W
-alice_last_crisis;De laatste crisis vond plaats in $date$ (er is een afkoelingsperiode van $time$ maanden tussen crises)
-alice_crisis_par_1;?RAaanvallers?W:
-alice_crisis_par_2;?BVerdedigers?W:
-alice_crisis_par_3;?Alleen geïnteresseerd (geen partij)?W:
-alice_commodity_cprice;Huidige prijs: $x$
-alice_commodity_cost;Kosten: $x$
-alice_commodity_eprice;Effectieve prijs: $x$
-alice_trade_top_producers;Top ?Y$value$?W-producenten:
-alice_trade_no_producers;?RNiemand produceert dit product?W
-alice_political_party_trigger;Alleen beschikbaar van ?Y$date_long_0$?W tot ?Y$date_long_1$?W, en voldoet aan de volgende trigger:
-alice_political_party_no_trigger;Alleen beschikbaar van ?Y$date_long_0$?W tot ?Y$date_long_1$?W
-alice_ai_decision;De kans dat AI deze beslissing kiest, zal afhangen van:
-alice_mobilized_is_ai_controlled;Welke eenheden ook worden gemobiliseerd, ze worden automatisch door AI bestuurd
-alice_ai_controlled_unit;Schakel de AI-besturing van deze eenheid in/uit. De eenheid zal:\n- Automatisch frontlinies versterken\n- Automatisch belegeren wanneer het veilig is om dit te doen\n- Op rebellen jagen\n- Een defensieve positie vormen tegen landen die we waarschijnlijk zullen aanvallen (dit is ter beoordeling van de AI, en alleen in vredestijd)\nAls je wilt dat deze eenheid zich op een specifieke natie of regio richt, plaats hem dan eerst in de buurt van die regio of dat land en schakel vervolgens de AI-besturing in - omdat de AI deze zal overschrijven al uw opdrachten totdat u het weer uitschakelt
-alice_navy_allocation_tt;Met ?Y$curr$?W schepen hebben we een totale bevoorradingscapaciteit van ?Y$tot$?W, wat ?Y$req$?W nodig heeft voor onze vloten. Een gedetailleerd overzicht van het verbruik van elke marinevloot:
-alice_navy_allocation_2;$naam$: ?Y$waarde$?W (?Y$perc$?W)
-alice_wg_condition_1;Heeft geen status quo als verdediger
-alice_wg_condition_2;Is in oorlog met ons
-alice_wg_condition_3;Uniek oorlogsdoel (is geen duplicaat van een ander oorlogsdoel)
-alice_wg_condition_4;Niet aan dezelfde kant als wij
-alice_wg_condition_5;Voldoet aan triggers voor oorlogsdoelen
-alice_wg_condition_6;Genoeg chauvinisme (heeft $need$ nodig, heeft $waarde$)
-alice_wg_condition_7;Is een bouwbaar oorlogsdoel
-alice_tt_wg_infamy_limit;?RDit oorlogsdoel overschrijdt de schandelimiet?W
-alice_wg_usage_trigger;Kan alleen worden gebruikt als aan de volgende trigger is voldaan:
+vce_crisis_inactive;Geen huidige actieve crisis
+vce_crisis_finding_attacker;Een aanvaller vinden voor de huidige crisis
+vce_crisis_finding_defender;Een verdediger vinden voor de huidige crisis
+vce_crisis_heating_up;De temperatuur van de crisis loopt op, momenteel op ?R$temperatuur$?W
+vce_last_crisis;De laatste crisis vond plaats in $date$ (er is een afkoelingsperiode van $time$ maanden tussen crises)
+vce_crisis_par_1;?RAaanvallers?W:
+vce_crisis_par_2;?BVerdedigers?W:
+vce_crisis_par_3;?Alleen geïnteresseerd (geen partij)?W:
+vce_commodity_cprice;Huidige prijs: $x$
+vce_commodity_cost;Kosten: $x$
+vce_commodity_eprice;Effectieve prijs: $x$
+vce_trade_top_producers;Top ?Y$value$?W-producenten:
+vce_trade_no_producers;?RNiemand produceert dit product?W
+vce_political_party_trigger;Alleen beschikbaar van ?Y$date_long_0$?W tot ?Y$date_long_1$?W, en voldoet aan de volgende trigger:
+vce_political_party_no_trigger;Alleen beschikbaar van ?Y$date_long_0$?W tot ?Y$date_long_1$?W
+vce_ai_decision;De kans dat AI deze beslissing kiest, zal afhangen van:
+vce_mobilized_is_ai_controlled;Welke eenheden ook worden gemobiliseerd, ze worden automatisch door AI bestuurd
+vce_ai_controlled_unit;Schakel de AI-besturing van deze eenheid in/uit. De eenheid zal:\n- Automatisch frontlinies versterken\n- Automatisch belegeren wanneer het veilig is om dit te doen\n- Op rebellen jagen\n- Een defensieve positie vormen tegen landen die we waarschijnlijk zullen aanvallen (dit is ter beoordeling van de AI, en alleen in vredestijd)\nAls je wilt dat deze eenheid zich op een specifieke natie of regio richt, plaats hem dan eerst in de buurt van die regio of dat land en schakel vervolgens de AI-besturing in - omdat de AI deze zal overschrijven al uw opdrachten totdat u het weer uitschakelt
+vce_navy_allocation_tt;Met ?Y$curr$?W schepen hebben we een totale bevoorradingscapaciteit van ?Y$tot$?W, wat ?Y$req$?W nodig heeft voor onze vloten. Een gedetailleerd overzicht van het verbruik van elke marinevloot:
+vce_navy_allocation_2;$naam$: ?Y$waarde$?W (?Y$perc$?W)
+vce_wg_condition_1;Heeft geen status quo als verdediger
+vce_wg_condition_2;Is in oorlog met ons
+vce_wg_condition_3;Uniek oorlogsdoel (is geen duplicaat van een ander oorlogsdoel)
+vce_wg_condition_4;Niet aan dezelfde kant als wij
+vce_wg_condition_5;Voldoet aan triggers voor oorlogsdoelen
+vce_wg_condition_6;Genoeg chauvinisme (heeft $need$ nodig, heeft $waarde$)
+vce_wg_condition_7;Is een bouwbaar oorlogsdoel
+vce_tt_wg_infamy_limit;?RDit oorlogsdoel overschrijdt de schandelimiet?W
+vce_wg_usage_trigger;Kan alleen worden gebruikt als aan de volgende trigger is voldaan:
 province_id;Provincie-id
 nation_tag;Natie-tag
 rgo_trade_prod_1;RGO-landbouwproductie: $x$ ($y$)
 rgo_trade_prod_2;RGO-mijnbouwproductie: $x$ ($y$)
 rgo_trade_prod_3;RGO Minting-productie: $x$ ($y$)
-alice_artisan_trade_prod;Ambachtelijke productie: $x$ ($y$)
-alice_factory_trade_prod;Fabrieksproductie: $x$ ($y$)
-alice_all_trade_prod;Totale productie: $x$
-alice_interested_in_alliance;(Geldt alleen voor AI-landen) Geef aan dat we geïnteresseerd zijn in een alliantie met dit land en dat we onmiddellijk alliantieaanbiedingen zullen accepteren
-alice_merge_rally_point_why;"Het samenvoegen van verzamelpunten is niet meer mogelijk; verzamelpunten worden nu automatisch samengevoegd"
-alice_mvcap_1;Verplaatst de hoofdstad naar deze provincie
-alice_mvcap_2;Geen aanhoudende crisis
-alice_mvcap_3;In vrede
-alice_mvcap_4;Nog niet de hoofdstad
-alice_mvcap_5;Niet koloniaal
-alice_mvcap_6;Op hetzelfde continent als de huidige hoofdstad
-alice_mvcap_7;Dominante geaccepteerde cultuur
-alice_mvcap_8;Deze provincie wordt niet belegerd
-alice_mvcap_9;De huidige hoofdstad wordt niet belegerd
-alice_mvcap_10;Is uw eigendom
-alice_mvcap_11;Wordt door jou gecontroleerd
-alice_mvcap_12;Is de kern van de eigenaar
-alice_pnt_pops;?YBevolking:?! $x$
-alice_pnt_rpops;?YRijke lagen:?! $x$ ($y$)
-alice_pnt_mpops;?YMiddelste lagen:?! $x$ ($y$)
-alice_pnt_ppops;?YArme lagen:?! $x$ ($y$)
-alice_pnt_culture;?YCultuur:?! $x$
-alice_pnt_religion;?YReligie:?! $x$
-alice_pnt_dominant_religion;?YDominante religie:?! $x$
-alice_pnt_dominant_ideology;?Dominante ideologie:?! $x$
+vce_artisan_trade_prod;Ambachtelijke productie: $x$ ($y$)
+vce_factory_trade_prod;Fabrieksproductie: $x$ ($y$)
+vce_all_trade_prod;Totale productie: $x$
+vce_interested_in_alliance;(Geldt alleen voor AI-landen) Geef aan dat we geïnteresseerd zijn in een alliantie met dit land en dat we onmiddellijk alliantieaanbiedingen zullen accepteren
+vce_merge_rally_point_why;"Het samenvoegen van verzamelpunten is niet meer mogelijk; verzamelpunten worden nu automatisch samengevoegd"
+vce_mvcap_1;Verplaatst de hoofdstad naar deze provincie
+vce_mvcap_2;Geen aanhoudende crisis
+vce_mvcap_3;In vrede
+vce_mvcap_4;Nog niet de hoofdstad
+vce_mvcap_5;Niet koloniaal
+vce_mvcap_6;Op hetzelfde continent als de huidige hoofdstad
+vce_mvcap_7;Dominante geaccepteerde cultuur
+vce_mvcap_8;Deze provincie wordt niet belegerd
+vce_mvcap_9;De huidige hoofdstad wordt niet belegerd
+vce_mvcap_10;Is uw eigendom
+vce_mvcap_11;Wordt door jou gecontroleerd
+vce_mvcap_12;Is de kern van de eigenaar
+vce_pnt_pops;?YBevolking:?! $x$
+vce_pnt_rpops;?YRijke lagen:?! $x$ ($y$)
+vce_pnt_mpops;?YMiddelste lagen:?! $x$ ($y$)
+vce_pnt_ppops;?YArme lagen:?! $x$ ($y$)
+vce_pnt_culture;?YCultuur:?! $x$
+vce_pnt_religion;?YReligie:?! $x$
+vce_pnt_dominant_religion;?YDominante religie:?! $x$
+vce_pnt_dominant_ideology;?Dominante ideologie:?! $x$
 ledger_ppp_gdp;BBP(PPP)
 ledger_ppp_gdp_per_capita;BBP (PPP) per 1 miljoen inwoners
 becomes_from;Scoped wordt van
