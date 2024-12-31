@@ -35,13 +35,13 @@ jobs:
 
   #   - name: Build Kat's PA Engine
   #     run: |
-  #       cmake --build build --parallel -t KatEngine
+  #       cmake --build build --parallel -t VicCEngine
 
   #   - name: Archive results
   #     uses: actions/upload-artifact@v4
   #     with:
   #       name: katerina-engine-ubuntu-x86_64
-  #       path: build/KatEngine
+  #       path: build/VicCEngine
 
   windows-x64-build:
     strategy:
@@ -64,13 +64,13 @@ jobs:
     - name: Configure Build Files
       run: |
         cmake --preset=${{ matrix.config }} -DCMAKE_BUILD_TYPE=Release -DARCHITECTURE=x64 -G "Visual Studio 17 2022" -A x64 -B build
-        cmake --build build --parallel -t KatEngine --config Release
+        cmake --build build --parallel -t VicCEngine --config Release
 
     - name: Archive results
       uses: actions/upload-artifact@v4
       with:
         name: katerina-engine-windows-x64
-        path: build/Release/KatEngine.exe
+        path: build/Release/VicCEngine.exe
 
   windows-x86-build:
     strategy:
@@ -93,13 +93,13 @@ jobs:
     - name: Configure Build Files
       run: |
         cmake --preset=${{ matrix.config }} -DCMAKE_BUILD_TYPE=Release -DARCHITECTURE=x86 -G "Visual Studio 17 2022" -A Win32 -B build
-        cmake --build build --parallel -t KatEngine --config Release
+        cmake --build build --parallel -t VicCEngine --config Release
 
     - name: Archive results
       uses: actions/upload-artifact@v4
       with:
         name: katerina-engine-windows-x86
-        path: build/Release/KatEngine.exe
+        path: build/Release/VicCEngine.exe
 
   # macos-build:
   #   strategy:
@@ -122,13 +122,13 @@ jobs:
 
   #   - name: Build Kat's PA Engine
   #     run: |
-  #       cmake --build build --parallel -t KatEngine
+  #       cmake --build build --parallel -t VicCEngine
 
   #   - name: Archive results
   #     uses: actions/upload-artifact@v4
   #     with:
   #       name: katerina-engine-macos-aarch64
-  #       path: build/KatEngine
+  #       path: build/VicCEngine
 
   # build-check:
   #   needs: [windows-build, linux-build, macos-build]

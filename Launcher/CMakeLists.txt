@@ -1,10 +1,10 @@
-add_executable(KatEngine_Launcher WIN32
+add_executable(VicCEngine_Launcher WIN32
 	${ALICE_CORE_SOURCES_LIST}
 	"${PROJECT_SOURCE_DIR}/src/launcher/launcher_main.cpp"
-	"${PROJECT_SOURCE_DIR}/src/KatEngine.rc")
+	"${PROJECT_SOURCE_DIR}/src/VicCEngine.rc")
 
-target_compile_definitions(KatEngine_Launcher PUBLIC ALICE_NO_ENTRY_POINT)
+target_compile_definitions(VicCEngine_Launcher PUBLIC ALICE_NO_ENTRY_POINT)
 
-target_link_libraries(KatEngine_Launcher PRIVATE KatEngineCommon)
-target_link_libraries(KatEngine_Launcher PRIVATE dbghelp)
-target_precompile_headers(KatEngine_Launcher REUSE_FROM KatEngine)
+target_link_libraries(VicCEngine_Launcher PRIVATE VicCEngineCommon)
+target_link_libraries(VicCEngine_Launcher PRIVATE dbghelp)
+target_precompile_headers(VicCEngine_Launcher REUSE_FROM VicCEngine)

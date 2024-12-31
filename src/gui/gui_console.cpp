@@ -80,7 +80,7 @@ inline constexpr command_info possible_commands[] = {
 		command_info::argument_info{},
 		command_info::argument_info{}
 	}},
-	command_info{"reload", command_info::type::reload, "Reloads KatEngine", {
+	command_info{"reload", command_info::type::reload, "Reloads VicCEngine", {
 		command_info::argument_info{},
 		command_info::argument_info{},
 		command_info::argument_info{},

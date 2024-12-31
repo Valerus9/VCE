@@ -527,11 +527,11 @@ namespace simple_fs {
 	directory get_or_create_settings_directory() {
 		auto xdg_data_home = getenv("XDG_DATA_HOME");
 		if(xdg_data_home) {
-			native_string path = native_string(xdg_data_home) + "/KatEngine/settings/";
+			native_string path = native_string(xdg_data_home) + "/VicCEngine/settings/";
 			make_directories(path);
 			return directory(nullptr, path);
 		}
-		native_string path = native_string(getenv("HOME")) + "/.local/share/KatEngine/settings/";
+		native_string path = native_string(getenv("HOME")) + "/.local/share/VicCEngine/settings/";
 		make_directories(path);
 		return directory(nullptr, path);
 	}
@@ -539,11 +539,11 @@ namespace simple_fs {
 	directory get_or_create_save_game_directory() {
 		auto xdg_data_home = getenv("XDG_DATA_HOME");
 		if(xdg_data_home) {
-			native_string path = native_string(xdg_data_home) + "/KatEngine/saves/";
+			native_string path = native_string(xdg_data_home) + "/VicCEngine/saves/";
 			make_directories(path);
 			return directory(nullptr, path);
 		}
-		native_string path = native_string(getenv("HOME")) + "/.local/share/KatEngine/saves/";
+		native_string path = native_string(getenv("HOME")) + "/.local/share/VicCEngine/saves/";
 		make_directories(path);
 		return directory(nullptr, path);
 	}
@@ -551,11 +551,11 @@ namespace simple_fs {
 	directory get_or_create_templates_directory() {
 		auto xdg_data_home = getenv("XDG_DATA_HOME");
 		if(xdg_data_home) {
-			native_string path = native_string(xdg_data_home) + "/KatEngine/templates/";
+			native_string path = native_string(xdg_data_home) + "/VicCEngine/templates/";
 			make_directories(path);
 			return directory(nullptr, path);
 		}
-		native_string path = native_string(getenv("HOME")) + "/.local/share/KatEngine/templates/";
+		native_string path = native_string(getenv("HOME")) + "/.local/share/VicCEngine/templates/";
 		make_directories(path);
 		return directory(nullptr, path);
 	}
@@ -563,11 +563,11 @@ namespace simple_fs {
 	directory get_or_create_oos_directory() {
 		auto xdg_data_home = getenv("XDG_DATA_HOME");
 		if(xdg_data_home) {
-			native_string path = native_string(xdg_data_home) + "/KatEngine/oos/";
+			native_string path = native_string(xdg_data_home) + "/VicCEngine/oos/";
 			make_directories(path);
 			return directory(nullptr, path);
 		}
-		native_string path = native_string(getenv("HOME")) + "/.local/share/KatEngine/oos/";
+		native_string path = native_string(getenv("HOME")) + "/.local/share/VicCEngine/oos/";
 		make_directories(path);
 		return directory(nullptr, path);
 	}
@@ -575,11 +575,11 @@ namespace simple_fs {
 	directory get_or_create_data_dumps_directory() {
 		auto xdg_data_home = getenv("XDG_DATA_HOME");
 		if(xdg_data_home) {
-			native_string path = native_string(xdg_data_home) + "/KatEngine/data_dumps/";
+			native_string path = native_string(xdg_data_home) + "/VicCEngine/data_dumps/";
 			make_directories(path);
 			return directory(nullptr, path);
 		}
-		native_string path = native_string(getenv("HOME")) + "/.local/share/KatEngine/data_dumps/";
+		native_string path = native_string(getenv("HOME")) + "/.local/share/VicCEngine/data_dumps/";
 		make_directories(path);
 		return directory(nullptr, path);
 	}
@@ -587,11 +587,11 @@ namespace simple_fs {
 	directory get_or_create_scenario_directory() {
 		auto xdg_data_home = getenv("XDG_DATA_HOME");
 		if(xdg_data_home) {
-			native_string path = native_string(xdg_data_home) + "/KatEngine/scenarios/";
+			native_string path = native_string(xdg_data_home) + "/VicCEngine/scenarios/";
 			make_directories(path);
 			return directory(nullptr, path);
 		}
-		native_string path = native_string(getenv("HOME")) + "/.local/share/KatEngine/scenarios/";
+		native_string path = native_string(getenv("HOME")) + "/.local/share/VicCEngine/scenarios/";
 		make_directories(path);
 		return directory(nullptr, path);
 	}
