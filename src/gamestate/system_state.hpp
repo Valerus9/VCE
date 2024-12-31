@@ -373,7 +373,7 @@ namespace sys {
 		bool railroads_enabled = true;
 		bool rivers_enabled = true;
 		map_zoom_mode zoom_mode = map_zoom_mode::panning;
-		map_vassal_color_mode vassal_color = map_vassal_color_mode::inherit;
+		map_vassal_color_mode vassal_color = map_vassal_color_mode::none;
 		bool render_models = true;
 		bool mouse_edge_scrolling = true;
 		bool black_map_font = true;
