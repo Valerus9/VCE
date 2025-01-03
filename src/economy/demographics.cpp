@@ -1172,7 +1172,7 @@ namespace demographics {
 			// Promotion -- national focus early branch
 			auto const filter_b = ve::apply([&](dcon::pop_id p, dcon::pop_type_id pt, dcon::pop_type_id nf_pt, bool passed_filter) {
 				auto const pmod = state.world.pop_type_get_promotion(pt, pt);
-				if(passed_filter) {
+				if(pmod && passed_filter) {
 					auto const chance = trigger::evaluate_additive_modifier(state, pmod,
 						trigger::to_generic(p), trigger::to_generic(p), 0);
 					return chance > 0.f;
@@ -1182,7 +1182,7 @@ namespace demographics {
 			// Demotion -- national focus early branch
 			auto const filter_c = ve::apply([&](dcon::pop_id p, dcon::pop_type_id pt, dcon::pop_type_id nf_pt, bool passed_filter) {
 				auto const pmod = state.world.pop_type_get_promotion(pt, pt);
-				if(passed_filter) {
+				if(pmod && passed_filter) {
 					auto const chance = trigger::evaluate_additive_modifier(state, pmod,
 						trigger::to_generic(p), trigger::to_generic(p), 0);
 					return chance > 0.f;
