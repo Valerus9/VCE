@@ -614,8 +614,8 @@ namespace economy_factory {
 			* (0.75f + 0.25f * min_efficiency_input_available)
 			* throughput_multiplier
 			* output_multiplier
-			* min_input_available
-			* employment_percentage;
+			* min_input_available;
+			//* employment_percentage;
 	}
 	
 	void update_single_factory_consumption(sys::state& state, dcon::factory_id f, dcon::nation_id n, dcon::province_id p, dcon::state_instance_id si, float mobilization_impact, float expected_min_wage, bool occupied) {
