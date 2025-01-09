@@ -17,10 +17,6 @@
 #include "pdqsort.h"
 #include "ve.hpp"
 
-namespace command {
-	void execute_fabricate_cb(sys::state& state, dcon::nation_id source, dcon::nation_id target, dcon::cb_type_id type);
-}
-
 namespace ai {
 	/* Additional (counting allies) offensiv strenght of a country, except the country itself */
 	constexpr inline float additional_offensive_str_factor = 0.75f;

@@ -721,6 +721,7 @@ namespace command {
 
 	void fabricate_cb(sys::state& state, dcon::nation_id source, dcon::nation_id target, dcon::cb_type_id type);
 	bool can_fabricate_cb(sys::state& state, dcon::nation_id source, dcon::nation_id target, dcon::cb_type_id type);
+	void execute_fabricate_cb(sys::state& state, dcon::nation_id source, dcon::nation_id target, dcon::cb_type_id type);
 
 	void cancel_cb_fabrication(sys::state& state, dcon::nation_id source);
 	bool can_cancel_cb_fabrication(sys::state& state, dcon::nation_id source);
