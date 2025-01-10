@@ -214,8 +214,8 @@ namespace economy {
 		auto const csize = state.world.commodity_size();
 		float distribution_drift_speed = 0.01f;
 
-		std::vector<float, dcon::cache_aligned_allocator<float>> current_distribution;
-		std::vector<float, dcon::cache_aligned_allocator<float>> profits;
+		std::vector<float, common_types::cache_aligned_allocator<float>> current_distribution;
+		std::vector<float, common_types::cache_aligned_allocator<float>> profits;
 		profits.resize(csize + 1);
 
 		float multiplier = get_artisans_multiplier(state, n);
@@ -1248,7 +1248,7 @@ namespace economy {
 			float total_cost_added = 0.f;
 			if(n.get_private_investment() > total_cost
 			&& n.get_is_civilized()) {
-				static std::vector<dcon::state_instance_id, dcon::cache_aligned_allocator<dcon::state_instance_id>> states_in_order;
+				static std::vector<dcon::state_instance_id, common_types::cache_aligned_allocator<dcon::state_instance_id>> states_in_order;
 				states_in_order.clear();
 				for(auto si : n.get_state_ownership()) {
 					if(si.get_state().get_capital().get_is_colonial() == false) {

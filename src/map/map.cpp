@@ -706,7 +706,7 @@ namespace map {
 		if(zoom > animation_zoom_threshold) { // do animation logic only when close enough
 			auto const emfx_size = std::min(map::display_data::max_static_meshes, uint32_t(state.ui_defs.emfx.size()));
 			//
-			using model_matrix_array_list = std::vector<model_matrix_array, dcon::cache_aligned_allocator<model_matrix_array>>;
+			using model_matrix_array_list = std::vector<model_matrix_array, common_types::cache_aligned_allocator<model_matrix_array>>;
 			static model_matrix_array_list final_idle_matrices(emfx_size);
 			static model_matrix_array_list final_move_matrices(emfx_size);
 			static model_matrix_array_list final_attack_matrices(emfx_size);
@@ -2124,7 +2124,7 @@ namespace map {
 		}
 	}
 
-	using railroad_node_list = std::vector<glm::vec2, dcon::cache_aligned_allocator<glm::vec2>>;
+	using railroad_node_list = std::vector<glm::vec2, common_types::cache_aligned_allocator<glm::vec2>>;
 	void create_railroad_connection(sys::state& state, railroad_node_list& railroad, dcon::province_id p1, dcon::province_id p2) {
 		auto const m1 = state.world.province_get_mid_point(p1);
 		auto const m2 = state.world.province_get_mid_point(p2);

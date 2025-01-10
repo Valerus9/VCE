@@ -53,7 +53,7 @@
 
 #include "reports.hpp"
 
-namespace dcon {
+namespace common_types {
 	struct bitfield_type {
 		uint8_t v = 0;
 
@@ -276,7 +276,7 @@ namespace dcon {
 	template<typename T>
 	void for_each_record(std::byte const* input_buffer, std::byte const* end, T&& functor) {
 		while(input_buffer < end) {
-			dcon::record_header header;
+			common_types::record_header header;
 			header.deserialize(input_buffer, end);
 			if(input_buffer + header.record_size <= end) {
 				functor(header, input_buffer, input_buffer + header.record_size <= end ? input_buffer + header.record_size : end);
@@ -763,13 +763,13 @@ namespace dcon {
 			return get_range(storage, underlying_tag).second;
 		}
 		void push_back(object_type obj) {
-			dcon::push_back(storage, underlying_tag, obj);
+			common_types::push_back(storage, underlying_tag, obj);
 		}
 		void pop_back() {
-			dcon::pop_back(storage, underlying_tag);
+			common_types::pop_back(storage, underlying_tag);
 		}
 		void remove_at(uint32_t inner_index) {
-			dcon::remove_at(storage, underlying_tag, inner_index);
+			common_types::remove_at(storage, underlying_tag, inner_index);
 		}
 		bool contains(object_type obj) const {
 			return contains_item(storage, underlying_tag, obj);
@@ -790,13 +790,13 @@ namespace dcon {
 			replace_all_items(storage, underlying_tag, obj, new_val);
 		}
 		void load_range(object_type const* first, object_type const* last) {
-			dcon::load_range(storage, underlying_tag, first, last);
+			common_types::load_range(storage, underlying_tag, first, last);
 		}
 		void resize(uint32_t new_size) {
-			dcon::resize(storage, underlying_tag, new_size);
+			common_types::resize(storage, underlying_tag, new_size);
 		}
 		void clear() {
-			dcon::resize(storage, underlying_tag, 0);
+			common_types::resize(storage, underlying_tag, 0);
 		}
 		object_type& operator[](uint32_t inner_index) const {
 			return at(inner_index);

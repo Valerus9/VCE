@@ -293,14 +293,14 @@ namespace nations {
 
 	bool global_national_state::is_global_flag_variable_set(dcon::global_flag_id id) const {
 		if(id) {
-			return dcon::bit_vector_test(global_flag_variables.data(), id.index());
+			return common_types::bit_vector_test(global_flag_variables.data(), id.index());
 		}
 		return false;
 	}
 
 	void global_national_state::set_global_flag_variable(dcon::global_flag_id id, bool state) {
 		if(id) {
-			dcon::bit_vector_set(global_flag_variables.data(), id.index(), state);
+			common_types::bit_vector_set(global_flag_variables.data(), id.index(), state);
 		}
 	}
 

@@ -2559,7 +2559,7 @@ namespace sys {
 		// !!!! yes, I know
 		world.province_resize_flag_variables(uint32_t(province_definitions.num_allocated_provincial_flags));
 		world.nation_resize_flag_variables(uint32_t(national_definitions.num_allocated_national_flags));
-	national_definitions.global_flag_variables.resize((national_definitions.num_allocated_global_flags + 7) / 8, dcon::bitfield_type{ 0 });
+	national_definitions.global_flag_variables.resize((national_definitions.num_allocated_global_flags + 7) / 8, common_types::bitfield_type{ 0 });
 		world.nation_resize_accepted_cultures(world.culture_size());
 
 		std::vector<std::pair<dcon::nation_id, dcon::decision_id>> pending_decisions;
@@ -2659,7 +2659,7 @@ namespace sys {
 		world.nation_resize_stockpiles(world.commodity_size());
 		world.nation_resize_variables(uint32_t(national_definitions.num_allocated_national_variables));
 		world.pop_resize_demographics(pop_demographics::size(*this));
-	national_definitions.global_flag_variables.resize((national_definitions.num_allocated_global_flags + 7) / 8, dcon::bitfield_type{ 0 });
+	national_definitions.global_flag_variables.resize((national_definitions.num_allocated_global_flags + 7) / 8, common_types::bitfield_type{ 0 });
 
 		// add dummy nations for unheld tags
 		world.for_each_national_identity([&](dcon::national_identity_id id) {

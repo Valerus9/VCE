@@ -1054,18 +1054,18 @@ namespace ve {
 
 
 	template<typename T>
-	RELEASE_INLINE vbitfield_type load(contiguous_tags<T> e, dcon::bitfield_type const* source) {
+	RELEASE_INLINE vbitfield_type load(contiguous_tags<T> e, common_types::bitfield_type const* source) {
 		return vbitfield_type{ source[e.value / uint32_t(8)].v };
 	}
 	template<typename T>
-	RELEASE_INLINE vbitfield_type load(unaligned_contiguous_tags<T> e, dcon::bitfield_type const* source) {
+	RELEASE_INLINE vbitfield_type load(unaligned_contiguous_tags<T> e, common_types::bitfield_type const* source) {
 		return vbitfield_type{ uint8_t(0x0FF & (
 			((source[e.value / uint32_t(8)].v) >> (e.value & 0x07))
 			| (((e.value & 0x7) != 0 ? (source[1 + e.value / uint32_t(8)].v) : 0) << (8 - (e.value & 0x07))))
 		) };
 	}
 	template<typename T>
-	RELEASE_INLINE vbitfield_type load(partial_contiguous_tags<T> e, dcon::bitfield_type const* source) {
+	RELEASE_INLINE vbitfield_type load(partial_contiguous_tags<T> e, common_types::bitfield_type const* source) {
 		return vbitfield_type{ uint8_t((0x00FF >> (8 - e.subcount)) & (
 			((source[e.value / uint32_t(8)].v) >> (e.value & 0x07))
 			| (((e.value & 0x7) != 0 ? (source[1 + e.value / uint32_t(8)].v) : 0) << (8 - (e.value & 0x07))))
@@ -1219,7 +1219,7 @@ namespace ve {
 		return _mm256_cvtepu8_epi32(v);
 	}
 	template<typename T, typename U>
-	RELEASE_INLINE auto load(contiguous_tags<T> e, U const* source) -> std::enable_if_t<sizeof(U) == 1 && !std::is_same_v<U, dcon::bitfield_type>, tagged_vector<U>> {
+	RELEASE_INLINE auto load(contiguous_tags<T> e, U const* source) -> std::enable_if_t<sizeof(U) == 1 && !std::is_same_v<U, common_types::bitfield_type>, tagged_vector<U>> {
 		if constexpr(!detail::zero_is_null_wrapper<U>(0)) {
 			auto v = _mm_loadl_epi64((const __m128i *)(source + e.value));
 			return _mm256_cvtepi8_epi32(v);
@@ -1239,7 +1239,7 @@ namespace ve {
 		return _mm256_cvtepu8_epi32(v);
 	}
 	template<typename T, typename U>
-	RELEASE_INLINE auto load(unaligned_contiguous_tags<T> e, U const* source) -> std::enable_if_t<sizeof(U) == 1 && !std::is_same_v<U, dcon::bitfield_type>, tagged_vector<U>> {
+	RELEASE_INLINE auto load(unaligned_contiguous_tags<T> e, U const* source) -> std::enable_if_t<sizeof(U) == 1 && !std::is_same_v<U, common_types::bitfield_type>, tagged_vector<U>> {
 		if constexpr(!detail::zero_is_null_wrapper<U>(0)) {
 			auto v = _mm_loadl_epi64((const __m128i *)(source + e.value));
 			return _mm256_cvtepi8_epi32(v);
@@ -1262,7 +1262,7 @@ namespace ve {
 		return _mm256_blendv_epi8(_mm256_setzero_si256(), _mm256_cvtepu8_epi32(v), mask);
 	}
 	template<typename T, typename U>
-	RELEASE_INLINE auto load(partial_contiguous_tags<T> e, U const* source) -> std::enable_if_t<sizeof(U) == 1 && !std::is_same_v<U, dcon::bitfield_type>, tagged_vector<U>> {
+	RELEASE_INLINE auto load(partial_contiguous_tags<T> e, U const* source) -> std::enable_if_t<sizeof(U) == 1 && !std::is_same_v<U, common_types::bitfield_type>, tagged_vector<U>> {
 		if constexpr(!detail::zero_is_null_wrapper<U>(0)) {
 			auto mask = _mm256_loadu_si256((__m256i const*)(load_masks + uint32_t(8) - e.subcount));
 			auto v = _mm_loadl_epi64((const __m128i *)(source + e.value));
@@ -1276,7 +1276,7 @@ namespace ve {
 
 	// gather unmasked
 	template<typename T>
-	RELEASE_INLINE mask_vector load(tagged_vector<T> indices, dcon::bitfield_type const* source) {
+	RELEASE_INLINE mask_vector load(tagged_vector<T> indices, common_types::bitfield_type const* source) {
 		const auto byte_indices = _mm256_srai_epi32(indices.value, 3);
 		const auto bit_indices = _mm256_and_si256(indices.value, _mm256_set1_epi32(0x00000007));
 		auto const gathered = _mm256_i32gather_epi32((int32_t const*)(source), byte_indices, 1);
@@ -1340,7 +1340,7 @@ namespace ve {
 
 	// gather masked
 	template<typename T>
-	RELEASE_INLINE mask_vector load(tagged_vector<T> indices, mask_vector mask, dcon::bitfield_type const* source) {
+	RELEASE_INLINE mask_vector load(tagged_vector<T> indices, mask_vector mask, common_types::bitfield_type const* source) {
 		const auto byte_indices = _mm256_srai_epi32(indices.value, 3);
 		const auto bit_indices = _mm256_and_si256(indices.value, _mm256_set1_epi32(0x00000007));
 		auto const gathered = _mm256_mask_i32gather_epi32(_mm256_setzero_si256(), (int32_t const*)(source), byte_indices, _mm256_castps_si256(mask.value), 1);
@@ -1550,11 +1550,11 @@ namespace ve {
 	}
 
 	template<typename T>
-	RELEASE_INLINE void store(contiguous_tags<T> e, dcon::bitfield_type* dest, vbitfield_type values) {
+	RELEASE_INLINE void store(contiguous_tags<T> e, common_types::bitfield_type* dest, vbitfield_type values) {
 		dest[e.value / uint32_t(8)].v = values.v;
 	}
 	template<typename T>
-	RELEASE_INLINE void store(unaligned_contiguous_tags<T> e, dcon::bitfield_type* dest, vbitfield_type values) {
+	RELEASE_INLINE void store(unaligned_contiguous_tags<T> e, common_types::bitfield_type* dest, vbitfield_type values) {
 		{
 			auto old_value = dest[e.value / uint32_t(8)].v;
 			auto mask = 0x0FF << (e.value & 0x07);
@@ -1573,7 +1573,7 @@ namespace ve {
 		}
 	}
 	template<typename T>
-	RELEASE_INLINE void store(partial_contiguous_tags<T> e, dcon::bitfield_type* dest, vbitfield_type values) {
+	RELEASE_INLINE void store(partial_contiguous_tags<T> e, common_types::bitfield_type* dest, vbitfield_type values) {
 		{
 			auto old_value = dest[e.value / uint32_t(8)].v;
 			auto mask = (0x0FF >> (8 - e.subcount)) << (e.value & 0x07);
@@ -1591,15 +1591,15 @@ namespace ve {
 	}
 
 	template<typename T>
-	RELEASE_INLINE void store(contiguous_tags<T> e, dcon::bitfield_type* dest, mask_vector values) {
+	RELEASE_INLINE void store(contiguous_tags<T> e, common_types::bitfield_type* dest, mask_vector values) {
 		store(e, dest, compress_mask(values));
 	}
 	template<typename T>
-	RELEASE_INLINE void store(unaligned_contiguous_tags<T> e, dcon::bitfield_type* dest, mask_vector values) {
+	RELEASE_INLINE void store(unaligned_contiguous_tags<T> e, common_types::bitfield_type* dest, mask_vector values) {
 		store(e, dest, compress_mask(values));
 	}
 	template<typename T>
-	RELEASE_INLINE void store(partial_contiguous_tags<T> e, dcon::bitfield_type* dest, mask_vector values) {
+	RELEASE_INLINE void store(partial_contiguous_tags<T> e, common_types::bitfield_type* dest, mask_vector values) {
 		store(e, dest, compress_mask(values));
 	}
 
@@ -1632,21 +1632,21 @@ namespace ve {
 		}
 	}
 	template<typename U>
-	RELEASE_INLINE void store(tagged_vector<U> indices, dcon::bitfield_type* dest, vbitfield_type values) {
+	RELEASE_INLINE void store(tagged_vector<U> indices, common_types::bitfield_type* dest, vbitfield_type values) {
 		for (int32_t i = 0; i < vector_size; ++i) {
 #ifdef DCON_TRAP_INVALID_STORE
 			assert(indices[i].index() >= 0);
 #endif
-			dcon::bit_vector_set(dest, indices[i].index(), ((values.v >> i) & 1) != 0);
+			common_types::bit_vector_set(dest, indices[i].index(), ((values.v >> i) & 1) != 0);
 		}
 	}
 	template<typename U>
-	RELEASE_INLINE void store(tagged_vector<U> indices, dcon::bitfield_type* dest, mask_vector values) {
+	RELEASE_INLINE void store(tagged_vector<U> indices, common_types::bitfield_type* dest, mask_vector values) {
 		for (int32_t i = 0; i < vector_size; ++i) {
 #ifdef DCON_TRAP_INVALID_STORE
 			assert(indices[i].index() >= 0);
 #endif
-			dcon::bit_vector_set(dest, indices[i].index(), values[i]);
+			common_types::bit_vector_set(dest, indices[i].index(), values[i]);
 		}
 	}
 
@@ -1685,24 +1685,24 @@ namespace ve {
 		}
 	}
 	template<typename U>
-	RELEASE_INLINE void store(tagged_vector<U> indices, vbitfield_type mask, dcon::bitfield_type* dest, vbitfield_type values) {
+	RELEASE_INLINE void store(tagged_vector<U> indices, vbitfield_type mask, common_types::bitfield_type* dest, vbitfield_type values) {
 		for(int32_t i = 0; i < vector_size; ++i) {
 			if (((mask.v >> i) & 1) != 0) {
 #ifdef DCON_TRAP_INVALID_STORE
 				assert(indices[i].index() >= 0);
 #endif
-				dcon::bit_vector_set(dest, indices[i].index(), ((values.v >> i) & 1) != 0);
+				common_types::bit_vector_set(dest, indices[i].index(), ((values.v >> i) & 1) != 0);
 			}
 		}
 	}
 	template<typename U>
-	RELEASE_INLINE void store(tagged_vector<U> indices, vbitfield_type mask, dcon::bitfield_type* dest, mask_vector values) {
+	RELEASE_INLINE void store(tagged_vector<U> indices, vbitfield_type mask, common_types::bitfield_type* dest, mask_vector values) {
 		for(int32_t i = 0; i < vector_size; ++i) {
 			if (((mask.v >> i) & 1) != 0) {
 #ifdef DCON_TRAP_INVALID_STORE
 				assert(indices[i].index() >= 0);
 #endif
-				dcon::bit_vector_set(dest, indices[i].index(), values[i]);
+				common_types::bit_vector_set(dest, indices[i].index(), values[i]);
 			}
 		}
 	}
@@ -1742,24 +1742,24 @@ namespace ve {
 		}
 	}
 	template<typename U>
-	RELEASE_INLINE void store(tagged_vector<U> indices, mask_vector mask, dcon::bitfield_type* dest, vbitfield_type values) {
+	RELEASE_INLINE void store(tagged_vector<U> indices, mask_vector mask, common_types::bitfield_type* dest, vbitfield_type values) {
 		for(int32_t i = 0; i < vector_size; ++i) {
 			if (mask[i]) {
 #ifdef DCON_TRAP_INVALID_STORE
 				assert(indices[i].index() >= 0);
 #endif
-				dcon::bit_vector_set(dest, indices[i].index(), ((values.v >> i) & 1) != 0);
+				common_types::bit_vector_set(dest, indices[i].index(), ((values.v >> i) & 1) != 0);
 			}
 		}
 	}
 	template<typename U>
-	RELEASE_INLINE void store(tagged_vector<U> indices, mask_vector mask, dcon::bitfield_type* dest, mask_vector values) {
+	RELEASE_INLINE void store(tagged_vector<U> indices, mask_vector mask, common_types::bitfield_type* dest, mask_vector values) {
 		for(int32_t i = 0; i < vector_size; ++i) {
 			if (mask[i]) {
 #ifdef DCON_TRAP_INVALID_STORE
 				assert(indices[i].index() >= 0);
 #endif
-				dcon::bit_vector_set(dest, indices[i].index(), values[i]);
+				common_types::bit_vector_set(dest, indices[i].index(), values[i]);
 			}
 		}
 	}

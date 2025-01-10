@@ -497,7 +497,7 @@ namespace economy_factory {
 			auto const primary_pool = state.world.state_instance_get_demographics(sid, pw_key);
 			auto const secondary_pool = state.world.state_instance_get_demographics(sid, sw_key);
 
-			static std::vector<dcon::factory_id, dcon::cache_aligned_allocator<dcon::factory_id>> ordered_factories;
+			static std::vector<dcon::factory_id, common_types::cache_aligned_allocator<dcon::factory_id>> ordered_factories;
 			ordered_factories.clear();
 
 			province::for_each_province_in_state_instance(state, sid, [&](dcon::province_id p) {

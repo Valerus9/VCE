@@ -1080,18 +1080,18 @@ namespace ve {
 
 
 	template<typename T>
-	RELEASE_INLINE vbitfield_type load(contiguous_tags<T> e, dcon::bitfield_type const* source) {
+	RELEASE_INLINE vbitfield_type load(contiguous_tags<T> e, common_types::bitfield_type const* source) {
 		return vbitfield_type{ source[e.value / uint32_t(8)].v };
 	}
 	template<typename T>
-	RELEASE_INLINE vbitfield_type load(unaligned_contiguous_tags<T> e, dcon::bitfield_type const* source) {
+	RELEASE_INLINE vbitfield_type load(unaligned_contiguous_tags<T> e, common_types::bitfield_type const* source) {
 		return vbitfield_type{ uint8_t(0x0FF & (
 			((source[e.value / uint32_t(8)].v) >> (e.value & 0x07))
 			| (((e.value & 0x7) != 0 ? (source[1 + e.value / uint32_t(8)].v) : 0) << (8 - (e.value & 0x07))))
 		) };
 	}
 	template<typename T>
-	RELEASE_INLINE vbitfield_type load(partial_contiguous_tags<T> e, dcon::bitfield_type const* source) {
+	RELEASE_INLINE vbitfield_type load(partial_contiguous_tags<T> e, common_types::bitfield_type const* source) {
 		return vbitfield_type{ uint8_t((0x00FF >> (8 - e.subcount)) & (
 			((source[e.value / uint32_t(8)].v) >> (e.value & 0x07))
 			| (((e.value & 0x7) != 0 ? (source[1 + e.value / uint32_t(8)].v) : 0) << (8 - (e.value & 0x07))))
@@ -1317,7 +1317,7 @@ namespace ve {
 		return int_vector(cl, ch);
 	}
 	template<typename T, typename U>
-	RELEASE_INLINE auto load(contiguous_tags<T> e, U const* source) -> std::enable_if_t<sizeof(U) == 1 && !std::is_same_v<U, dcon::bitfield_type>, tagged_vector<U>> {
+	RELEASE_INLINE auto load(contiguous_tags<T> e, U const* source) -> std::enable_if_t<sizeof(U) == 1 && !std::is_same_v<U, common_types::bitfield_type>, tagged_vector<U>> {
 		if constexpr(!detail::zero_is_null_wrapper<U>(0)) {
 			auto const vl = _mm_loadu_si32(source + e.value);
 			auto const vh = _mm_loadu_si32(source + e.value + 4);
@@ -1357,7 +1357,7 @@ namespace ve {
 		return int_vector(cl, ch);
 	}
 	template<typename T, typename U>
-	RELEASE_INLINE auto load(unaligned_contiguous_tags<T> e, U const* source) -> std::enable_if_t<sizeof(U) == 1 && !std::is_same_v<U, dcon::bitfield_type>, tagged_vector<U>> {
+	RELEASE_INLINE auto load(unaligned_contiguous_tags<T> e, U const* source) -> std::enable_if_t<sizeof(U) == 1 && !std::is_same_v<U, common_types::bitfield_type>, tagged_vector<U>> {
 		if constexpr(!detail::zero_is_null_wrapper<U>(0)) {
 			auto const vl = _mm_loadu_si32(source + e.value);
 			auto const vh = _mm_loadu_si32(source + e.value + 4);
@@ -1405,7 +1405,7 @@ namespace ve {
 	}
 
 	template<typename T, typename U>
-	RELEASE_INLINE auto load(partial_contiguous_tags<T> e, U const* source) -> std::enable_if_t<sizeof(U) == 1 && !std::is_same_v<U, dcon::bitfield_type>, tagged_vector<U>> {
+	RELEASE_INLINE auto load(partial_contiguous_tags<T> e, U const* source) -> std::enable_if_t<sizeof(U) == 1 && !std::is_same_v<U, common_types::bitfield_type>, tagged_vector<U>> {
 		if constexpr(!detail::zero_is_null_wrapper<U>(0)) {
 			auto const vl = _mm_loadu_si32(source + e.value);
 			auto const vh = _mm_loadu_si32(source + e.value + 4);
@@ -1469,16 +1469,16 @@ namespace ve {
 			);
 	}
 	template<typename U>
-	RELEASE_INLINE vbitfield_type load(tagged_vector<U> indices, dcon::bitfield_type const* source) {
+	RELEASE_INLINE vbitfield_type load(tagged_vector<U> indices, common_types::bitfield_type const* source) {
 		return vbitfield_type{ uint8_t(
-			(int32_t(dcon::bit_vector_test(source, indices[0].index())) << 0) |
-			(int32_t(dcon::bit_vector_test(source, indices[1].index())) << 1) |
-			(int32_t(dcon::bit_vector_test(source, indices[2].index())) << 2) |
-			(int32_t(dcon::bit_vector_test(source, indices[3].index())) << 3) |
-			(int32_t(dcon::bit_vector_test(source, indices[4].index())) << 4) |
-			(int32_t(dcon::bit_vector_test(source, indices[5].index())) << 5) |
-			(int32_t(dcon::bit_vector_test(source, indices[6].index())) << 6) |
-			(int32_t(dcon::bit_vector_test(source, indices[7].index())) << 7)
+			(int32_t(common_types::bit_vector_test(source, indices[0].index())) << 0) |
+			(int32_t(common_types::bit_vector_test(source, indices[1].index())) << 1) |
+			(int32_t(common_types::bit_vector_test(source, indices[2].index())) << 2) |
+			(int32_t(common_types::bit_vector_test(source, indices[3].index())) << 3) |
+			(int32_t(common_types::bit_vector_test(source, indices[4].index())) << 4) |
+			(int32_t(common_types::bit_vector_test(source, indices[5].index())) << 5) |
+			(int32_t(common_types::bit_vector_test(source, indices[6].index())) << 6) |
+			(int32_t(common_types::bit_vector_test(source, indices[7].index())) << 7)
 		) };
 	}
 
@@ -1522,16 +1522,16 @@ namespace ve {
 			);
 	}
 	template<typename U>
-	RELEASE_INLINE vbitfield_type load(tagged_vector<U> indices, mask_vector mask, dcon::bitfield_type const* source) {
+	RELEASE_INLINE vbitfield_type load(tagged_vector<U> indices, mask_vector mask, common_types::bitfield_type const* source) {
 		return vbitfield_type{ uint8_t(
-			(int32_t((mask[0]) ? dcon::bit_vector_test(source, indices[0].index()) : false) << 0) |
-			(int32_t((mask[1]) ? dcon::bit_vector_test(source, indices[1].index()) : false) << 1) |
-			(int32_t((mask[2]) ? dcon::bit_vector_test(source, indices[2].index()) : false) << 2) |
-			(int32_t((mask[3]) ? dcon::bit_vector_test(source, indices[3].index()) : false) << 3) |
-			(int32_t((mask[4]) ? dcon::bit_vector_test(source, indices[4].index()) : false) << 4) |
-			(int32_t((mask[5]) ? dcon::bit_vector_test(source, indices[5].index()) : false) << 5) |
-			(int32_t((mask[6]) ? dcon::bit_vector_test(source, indices[6].index()) : false) << 6) |
-			(int32_t((mask[7]) ? dcon::bit_vector_test(source, indices[7].index()) : false) << 7)
+			(int32_t((mask[0]) ? common_types::bit_vector_test(source, indices[0].index()) : false) << 0) |
+			(int32_t((mask[1]) ? common_types::bit_vector_test(source, indices[1].index()) : false) << 1) |
+			(int32_t((mask[2]) ? common_types::bit_vector_test(source, indices[2].index()) : false) << 2) |
+			(int32_t((mask[3]) ? common_types::bit_vector_test(source, indices[3].index()) : false) << 3) |
+			(int32_t((mask[4]) ? common_types::bit_vector_test(source, indices[4].index()) : false) << 4) |
+			(int32_t((mask[5]) ? common_types::bit_vector_test(source, indices[5].index()) : false) << 5) |
+			(int32_t((mask[6]) ? common_types::bit_vector_test(source, indices[6].index()) : false) << 6) |
+			(int32_t((mask[7]) ? common_types::bit_vector_test(source, indices[7].index()) : false) << 7)
 		) };
 	}
 
@@ -1575,16 +1575,16 @@ namespace ve {
 			);
 	}
 	template<typename U>
-	RELEASE_INLINE vbitfield_type load(tagged_vector<U> indices, vbitfield_type mask, dcon::bitfield_type const* source) {
+	RELEASE_INLINE vbitfield_type load(tagged_vector<U> indices, vbitfield_type mask, common_types::bitfield_type const* source) {
 		return vbitfield_type{ uint8_t(
-			(int32_t((mask.v & 0x001) != 0 ? dcon::bit_vector_test(source, indices[0].index()) : false) << 0) |
-			(int32_t((mask.v & 0x002) != 0 ? dcon::bit_vector_test(source, indices[1].index()) : false) << 1) |
-			(int32_t((mask.v & 0x004) != 0 ? dcon::bit_vector_test(source, indices[2].index()) : false) << 2) |
-			(int32_t((mask.v & 0x008) != 0 ? dcon::bit_vector_test(source, indices[3].index()) : false) << 3) |
-			(int32_t((mask.v & 0x010) != 0 ? dcon::bit_vector_test(source, indices[4].index()) : false) << 4) |
-			(int32_t((mask.v & 0x020) != 0 ? dcon::bit_vector_test(source, indices[5].index()) : false) << 5) |
-			(int32_t((mask.v & 0x040) != 0 ? dcon::bit_vector_test(source, indices[6].index()) : false) << 6) |
-			(int32_t((mask.v & 0x080) != 0 ? dcon::bit_vector_test(source, indices[7].index()) : false) << 7)
+			(int32_t((mask.v & 0x001) != 0 ? common_types::bit_vector_test(source, indices[0].index()) : false) << 0) |
+			(int32_t((mask.v & 0x002) != 0 ? common_types::bit_vector_test(source, indices[1].index()) : false) << 1) |
+			(int32_t((mask.v & 0x004) != 0 ? common_types::bit_vector_test(source, indices[2].index()) : false) << 2) |
+			(int32_t((mask.v & 0x008) != 0 ? common_types::bit_vector_test(source, indices[3].index()) : false) << 3) |
+			(int32_t((mask.v & 0x010) != 0 ? common_types::bit_vector_test(source, indices[4].index()) : false) << 4) |
+			(int32_t((mask.v & 0x020) != 0 ? common_types::bit_vector_test(source, indices[5].index()) : false) << 5) |
+			(int32_t((mask.v & 0x040) != 0 ? common_types::bit_vector_test(source, indices[6].index()) : false) << 6) |
+			(int32_t((mask.v & 0x080) != 0 ? common_types::bit_vector_test(source, indices[7].index()) : false) << 7)
 		) };
 	}
 
@@ -1751,11 +1751,11 @@ namespace ve {
 	}
 
 	template<typename T>
-	RELEASE_INLINE void store(contiguous_tags<T> e, dcon::bitfield_type* dest, vbitfield_type values) {
+	RELEASE_INLINE void store(contiguous_tags<T> e, common_types::bitfield_type* dest, vbitfield_type values) {
 		dest[e.value / uint32_t(8)].v = values.v;
 	}
 	template<typename T>
-	RELEASE_INLINE void store(unaligned_contiguous_tags<T> e, dcon::bitfield_type* dest, vbitfield_type values) {
+	RELEASE_INLINE void store(unaligned_contiguous_tags<T> e, common_types::bitfield_type* dest, vbitfield_type values) {
 		{
 			auto old_value = dest[e.value / uint32_t(8)].v;
 			auto mask = 0x0FF << (e.value & 0x07);
@@ -1774,7 +1774,7 @@ namespace ve {
 		}
 	}
 	template<typename T>
-	RELEASE_INLINE void store(partial_contiguous_tags<T> e, dcon::bitfield_type* dest, vbitfield_type values) {
+	RELEASE_INLINE void store(partial_contiguous_tags<T> e, common_types::bitfield_type* dest, vbitfield_type values) {
 		{
 			auto old_value = dest[e.value / uint32_t(8)].v;
 			auto mask = (0x0FF >> (8 - e.subcount)) << (e.value & 0x07);
@@ -1792,15 +1792,15 @@ namespace ve {
 	}
 
 	template<typename T>
-	RELEASE_INLINE void store(contiguous_tags<T> e, dcon::bitfield_type* dest, mask_vector values) {
+	RELEASE_INLINE void store(contiguous_tags<T> e, common_types::bitfield_type* dest, mask_vector values) {
 		store(e, dest, compress_mask(values));
 	}
 	template<typename T>
-	RELEASE_INLINE void store(unaligned_contiguous_tags<T> e, dcon::bitfield_type* dest, mask_vector values) {
+	RELEASE_INLINE void store(unaligned_contiguous_tags<T> e, common_types::bitfield_type* dest, mask_vector values) {
 		store(e, dest, compress_mask(values));
 	}
 	template<typename T>
-	RELEASE_INLINE void store(partial_contiguous_tags<T> e, dcon::bitfield_type* dest, mask_vector values) {
+	RELEASE_INLINE void store(partial_contiguous_tags<T> e, common_types::bitfield_type* dest, mask_vector values) {
 		store(e, dest, compress_mask(values));
 	}
 
@@ -1833,21 +1833,21 @@ namespace ve {
 		}
 	}
 	template<typename U>
-	RELEASE_INLINE void store(tagged_vector<U> indices, dcon::bitfield_type* dest, vbitfield_type values) {
+	RELEASE_INLINE void store(tagged_vector<U> indices, common_types::bitfield_type* dest, vbitfield_type values) {
 		for (int32_t i = 0; i < vector_size; ++i) {
 #ifdef DCON_TRAP_INVALID_STORE
 			assert(indices[i].index() >= 0);
 #endif
-			dcon::bit_vector_set(dest, indices[i].index(), ((values.v >> i) & 1) != 0);
+			common_types::bit_vector_set(dest, indices[i].index(), ((values.v >> i) & 1) != 0);
 		}
 	}
 	template<typename U>
-	RELEASE_INLINE void store(tagged_vector<U> indices, dcon::bitfield_type* dest, mask_vector values) {
+	RELEASE_INLINE void store(tagged_vector<U> indices, common_types::bitfield_type* dest, mask_vector values) {
 		for (int32_t i = 0; i < vector_size; ++i) {
 #ifdef DCON_TRAP_INVALID_STORE
 			assert(indices[i].index() >= 0);
 #endif
-			dcon::bit_vector_set(dest, indices[i].index(), values[i]);
+			common_types::bit_vector_set(dest, indices[i].index(), values[i]);
 		}
 	}
 
@@ -1886,24 +1886,24 @@ namespace ve {
 		}
 	}
 	template<typename U>
-	RELEASE_INLINE void store(tagged_vector<U> indices, vbitfield_type mask, dcon::bitfield_type* dest, vbitfield_type values) {
+	RELEASE_INLINE void store(tagged_vector<U> indices, vbitfield_type mask, common_types::bitfield_type* dest, vbitfield_type values) {
 		for(int32_t i = 0; i < vector_size; ++i) {
 			if (((mask.v >> i) & 1) != 0) {
 #ifdef DCON_TRAP_INVALID_STORE
 				assert(indices[i].index() >= 0);
 #endif
-				dcon::bit_vector_set(dest, indices[i].index(), ((values.v >> i) & 1) != 0);
+				common_types::bit_vector_set(dest, indices[i].index(), ((values.v >> i) & 1) != 0);
 			}
 		}
 	}
 	template<typename U>
-	RELEASE_INLINE void store(tagged_vector<U> indices, vbitfield_type mask, dcon::bitfield_type* dest, mask_vector values) {
+	RELEASE_INLINE void store(tagged_vector<U> indices, vbitfield_type mask, common_types::bitfield_type* dest, mask_vector values) {
 		for(int32_t i = 0; i < vector_size; ++i) {
 			if (((mask.v >> i) & 1) != 0) {
 #ifdef DCON_TRAP_INVALID_STORE
 				assert(indices[i].index() >= 0);
 #endif
-				dcon::bit_vector_set(dest, indices[i].index(), values[i]);
+				common_types::bit_vector_set(dest, indices[i].index(), values[i]);
 			}
 		}
 	}
@@ -1943,24 +1943,24 @@ namespace ve {
 		}
 	}
 	template<typename U>
-	RELEASE_INLINE void store(tagged_vector<U> indices, mask_vector mask, dcon::bitfield_type* dest, vbitfield_type values) {
+	RELEASE_INLINE void store(tagged_vector<U> indices, mask_vector mask, common_types::bitfield_type* dest, vbitfield_type values) {
 		for(int32_t i = 0; i < vector_size; ++i) {
 			if (mask[i]) {
 #ifdef DCON_TRAP_INVALID_STORE
 				assert(indices[i].index() >= 0);
 #endif
-				dcon::bit_vector_set(dest, indices[i].index(), ((values.v >> i) & 1) != 0);
+				common_types::bit_vector_set(dest, indices[i].index(), ((values.v >> i) & 1) != 0);
 			}
 		}
 	}
 	template<typename U>
-	RELEASE_INLINE void store(tagged_vector<U> indices, mask_vector mask, dcon::bitfield_type* dest, mask_vector values) {
+	RELEASE_INLINE void store(tagged_vector<U> indices, mask_vector mask, common_types::bitfield_type* dest, mask_vector values) {
 		for(int32_t i = 0; i < vector_size; ++i) {
 			if (mask[i]) {
 #ifdef DCON_TRAP_INVALID_STORE
 				assert(indices[i].index() >= 0);
 #endif
-				dcon::bit_vector_set(dest, indices[i].index(), values[i]);
+				common_types::bit_vector_set(dest, indices[i].index(), values[i]);
 			}
 		}
 	}

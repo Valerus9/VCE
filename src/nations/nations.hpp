@@ -117,7 +117,7 @@ namespace nations {
 
 	struct global_national_state {
 		std::vector<triggered_modifier> triggered_modifiers;
-		std::vector<dcon::bitfield_type> global_flag_variables;
+		std::vector<common_types::bitfield_type> global_flag_variables;
 		std::vector<dcon::nation_id> nations_by_rank;
 
 		tagged_vector<dcon::text_key, dcon::national_flag_id> flag_variable_names;

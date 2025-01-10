@@ -441,8 +441,8 @@ namespace map {
 					continue;
 				}
 
-				std::vector<glm::vec2, dcon::cache_aligned_allocator<glm::vec2>> points;
-				std::vector<glm::vec2, dcon::cache_aligned_allocator<glm::vec2>> bad_points;
+				std::vector<glm::vec2, common_types::cache_aligned_allocator<glm::vec2>> points;
+				std::vector<glm::vec2, common_types::cache_aligned_allocator<glm::vec2>> bad_points;
 
 				rough_box_bottom = std::max(0.f, rough_box_bottom - step_y);
 				rough_box_top = std::min(float(map_data.size_y), rough_box_top + step_y);
@@ -536,13 +536,13 @@ namespace map {
 				if(points.size() < num_of_clusters) {
 					num_of_clusters = points.size();
 				}
-				std::vector<glm::vec2, dcon::cache_aligned_allocator<glm::vec2>> centroids;
+				std::vector<glm::vec2, common_types::cache_aligned_allocator<glm::vec2>> centroids;
 				for(size_t i = 0; i < num_of_clusters; i++) {
 					centroids.push_back(points[i]);
 				}
 				for(int step = 0; step < 100; step++) {
-					std::vector<glm::vec2, dcon::cache_aligned_allocator<glm::vec2>> new_centroids;
-					std::vector<int32_t, dcon::cache_aligned_allocator<int32_t>> counters;
+					std::vector<glm::vec2, common_types::cache_aligned_allocator<glm::vec2>> new_centroids;
+					std::vector<int32_t, common_types::cache_aligned_allocator<int32_t>> counters;
 					for(size_t i = 0; i < num_of_clusters; i++) {
 						new_centroids.push_back(glm::vec2(0, 0));
 						counters.push_back(0);
@@ -566,9 +566,9 @@ namespace map {
 					centroids = new_centroids;
 				}
 
-				std::vector<size_t, dcon::cache_aligned_allocator<size_t>> good_centroids;
+				std::vector<size_t, common_types::cache_aligned_allocator<size_t>> good_centroids;
 				float min_cross = 1.f;
-				std::vector<glm::vec2, dcon::cache_aligned_allocator<glm::vec2>> final_points;
+				std::vector<glm::vec2, common_types::cache_aligned_allocator<glm::vec2>> final_points;
 				for(size_t i = 0; i < num_of_clusters; i++) {
 					float locally_good_distance = std::numeric_limits<float>::max();
 					for(size_t j = 0; j < num_of_clusters; j++) {
@@ -599,7 +599,7 @@ namespace map {
 				}
 
 				//throwing away bad cluster
-				std::vector<glm::vec2, dcon::cache_aligned_allocator<glm::vec2>> good_points;
+				std::vector<glm::vec2, common_types::cache_aligned_allocator<glm::vec2>> good_points;
 				glm::vec2 sum_points = { 0.f, 0.f };
 				for(auto point : points) {
 					size_t closest = 0;
