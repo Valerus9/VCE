@@ -7,7 +7,14 @@
 //#include <fstream>
 
 #include "window.hpp"
-#include "constants.hpp"
+
+#include "system_constants.hpp"
+#include "culture_constants.hpp"
+#include "economy_constants.hpp"
+#include "gui_constants.hpp"
+#include "province_constants.hpp"
+#include "map_constants.hpp"
+
 #include "dcon.hpp"
 #include "gui_graphics.hpp"
 #include "game_scene.hpp"

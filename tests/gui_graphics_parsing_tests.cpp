@@ -1,7 +1,14 @@
 #include <catch2/catch_test_macros.hpp>
 #include <catch2/matchers/catch_matchers_floating_point.hpp>
 #include "system_state.hpp"
-#include "constants.hpp"
+
+#include "system_constants.hpp"
+#include "culture_constants.hpp"
+#include "economy_constants.hpp"
+#include "gui_constants.hpp"
+#include "province_constants.hpp"
+#include "map_constants.hpp"
+
 #include "simple_fs.hpp"
 #include "parsers_declarations.hpp"
 

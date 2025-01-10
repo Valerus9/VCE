@@ -1,7 +1,13 @@
 #pragma once
 #include "dcon.hpp"
 #include "date_interface.hpp"
-#include "constants.hpp"
+
+#include "system_constants.hpp"
+#include "culture_constants.hpp"
+#include "economy_constants.hpp"
+#include "gui_constants.hpp"
+#include "province_constants.hpp"
+#include "map_constants.hpp"
 
 namespace sys {
 	struct state;

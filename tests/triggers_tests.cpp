@@ -2,7 +2,14 @@
 #include <catch2/matchers/catch_matchers_floating_point.hpp>
 #include "parsers.hpp"
 #include "simple_fs.hpp"
-#include "constants.hpp"
+
+#include "system_constants.hpp"
+#include "culture_constants.hpp"
+#include "economy_constants.hpp"
+#include "gui_constants.hpp"
+#include "province_constants.hpp" 
+#include "map_constants.hpp"
+
 #include "dcon.hpp"
 #include "economy.hpp"
 #include "container_types.hpp"

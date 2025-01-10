@@ -2,11 +2,17 @@
 
 #include <vector>
 #include <array>
-#include "constants.hpp"
+
+#include "system_constants.hpp"
+#include "culture_constants.hpp" 
+#include "economy_constants.hpp" 
+#include "gui_constants.hpp" 
+#include "province_constants.hpp" 
+#include "map_constants.hpp"
+
 #include "dcon.hpp"
 #include "unordered_dense.h"
 #include "container_types.hpp"
-#include "constants.hpp"
 #include "parsers.hpp"
 #include "cyto_any.hpp"
 

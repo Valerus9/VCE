@@ -2,7 +2,14 @@
 #include <functional>
 #include <thread>
 #include "system_state.hpp"
-#include "constants.hpp"
+
+#include "system_constants.hpp"
+#include "culture_constants.hpp"
+#include "economy_constants.hpp"
+#include "gui_constants.hpp"
+#include "province_constants.hpp" 
+#include "map_constants.hpp"
+
 #include "dcon.hpp"
 #include "map_modes.hpp"
 #include "opengl_wrapper.hpp"

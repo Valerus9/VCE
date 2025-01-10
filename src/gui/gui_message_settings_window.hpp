@@ -1,6 +1,12 @@
 #pragma once
 
-#include "constants.hpp"
+#include "system_constants.hpp"
+#include "culture_constants.hpp"
+#include "economy_constants.hpp"
+#include "gui_constants.hpp"
+#include "province_constants.hpp"
+#include "map_constants.hpp"
+
 #include "gui_common_elements.hpp"
 #include "gui_element_types.hpp"
 

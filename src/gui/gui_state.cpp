@@ -4,7 +4,14 @@
 
 #include "system_state.hpp"
 #include "dcon.hpp"
-#include "constants.hpp"
+
+#include "system_constants.hpp"
+#include "culture_constants.hpp"
+#include "economy_constants.hpp"
+#include "gui_constants.hpp"
+#include "province_constants.hpp"
+#include "map_constants.hpp"
+
 #include "opengl_wrapper.hpp"
 #include "prng.hpp"
 #include "demographics.hpp"

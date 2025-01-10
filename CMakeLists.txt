@@ -336,7 +336,12 @@ target_precompile_headers(VicCEngine
 # VicCEngine provided headers
 target_precompile_headers(VicCEngine
 	PRIVATE [["simple_fs.hpp"]]
-	PRIVATE [["constants.hpp"]]
+	PRIVATE [["system_constants.hpp"]]
+	PRIVATE [["culture_constants.hpp"]]
+	PRIVATE [["economy_constants.hpp"]]
+	PRIVATE [["gui_constants.hpp"]]
+	PRIVATE [["province_constants.hpp"]]
+	PRIVATE [["map_constants.hpp"]]
 	PRIVATE [["unordered_dense.h"]]
 	PRIVATE [["dcon.hpp"]]
 	PRIVATE [["container_types.hpp"]]
