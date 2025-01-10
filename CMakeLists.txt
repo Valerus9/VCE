@@ -356,20 +356,6 @@ else()
 	)
 endif()
 
-# Sets a dependency on the generated file
-add_custom_target(GENERATE_PARSERS DEPENDS
-	${PROJECT_SOURCE_DIR}/src/parsing/parser_defs_generated.hpp
-	${PROJECT_SOURCE_DIR}/src/parsing/save_parser_defs_generated.hpp
-	${PROJECT_SOURCE_DIR}/src/parsing/tutorial_parser_defs_generated.hpp
-	${PROJECT_SOURCE_DIR}/src/parsing/gui_parser_defs_generated.hpp
-	${PROJECT_SOURCE_DIR}/src/parsing/news_parser_defs_generated.hpp
-	${PROJECT_SOURCE_DIR}/src/parsing/effect_parser_defs_generated.hpp
-	${PROJECT_SOURCE_DIR}/src/parsing/trigger_parser_defs_generated.hpp
-	${PROJECT_SOURCE_DIR}/src/parsing/game_rules_parser_defs_generated.hpp
-	${PROJECT_SOURCE_DIR}/src/text/bmfont_defs_generated.hpp
-	${PROJECT_SOURCE_DIR}/src/text/font_defs_generated.hpp)
-add_dependencies(VicCEngine GENERATE_PARSERS)
-
 if(ARCHITECTURE STREQUAL "x64" OR ARCHITECTURE STREQUAL "x86")
 	add_subdirectory(SaveEditor)
 	if(BUILD_TESTING)

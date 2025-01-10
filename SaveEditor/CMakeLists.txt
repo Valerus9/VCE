@@ -4,7 +4,4 @@ add_executable(save_editor
 
 target_link_libraries(save_editor PRIVATE VicCEngineCommon)
 
-add_dependencies(save_editor GENERATE_PARSERS)
-add_dependencies(save_editor GENERATE_CONTAINER ParserGenerator)
-
 target_precompile_headers(save_editor REUSE_FROM VicCEngine)
