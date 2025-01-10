@@ -115,7 +115,7 @@ namespace parsers {
 		}
 	};
 }
-#include "bmfont_defs_generated.hpp"
+#include "bmfont_defs.hpp"
 
 namespace text {
 
