@@ -135,9 +135,10 @@ namespace economy {
 
 	float commodity_set_effective_cost(sys::state& state, dcon::nation_id n, economy::commodity_set const& cset);
 	float commodity_set_effective_cost(sys::state& state, dcon::nation_id n, economy::small_commodity_set const& cset);
-
+	
 	float commodity_set_total_satisfaction(sys::state& state, dcon::nation_id n, economy::commodity_set const& cset);
 	float commodity_set_total_satisfaction(sys::state& state, dcon::nation_id n, economy::small_commodity_set const& cset);
 
 	float commodity_market_activity(sys::state& state, dcon::nation_id n, dcon::commodity_id c);
+	float full_private_investment_cost(sys::state const& state, dcon::nation_id n);
 } // namespace economy

@@ -3,10 +3,6 @@
 #include "economy.hpp"
 #include "economy_factory.hpp"
 
-namespace economy {
-	float full_private_investment_cost(sys::state const& state, dcon::nation_id n);
-}
-
 namespace economy_estimations {
 	float estimate_stockpile_filling_spending(sys::state& state, dcon::nation_id n) {
 		float total = 0.0f;
