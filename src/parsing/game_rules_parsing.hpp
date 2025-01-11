@@ -15,7 +15,11 @@
 #include "parsers.hpp"
 #include "script_constants.hpp"
 #include "nations.hpp"
-#include "container_types.hpp"
+
+#include "container_types.hpp" 
+#include "economy_container_types.hpp" 
+#include "culture_container_types.hpp" 
+#include "system_container_types.hpp"
 
 namespace parsers {
 	struct game_rules_action_context {

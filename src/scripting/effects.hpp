@@ -2,7 +2,11 @@
 
 #include "script_constants.hpp"
 #include "dcon.hpp"
+
 #include "container_types.hpp"
+#include "economy_container_types.hpp"
+#include "culture_container_types.hpp"
+#include "system_container_types.hpp"
 
 namespace effect {
 	void execute(sys::state& state, dcon::effect_key key, int32_t primary, int32_t this_slot, int32_t from_slot, uint32_t r_lo, uint32_t r_hi);

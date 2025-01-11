@@ -1,6 +1,11 @@
 #pragma once
 #include <vector>
-#include "container_types.hpp"
+
+#include "container_types.hpp" 
+#include "economy_container_types.hpp" 
+#include "culture_container_types.hpp" 
+#include "system_container_types.hpp"
+
 #include "unordered_dense.h"
 #include "text.hpp"
 #include "simple_fs.hpp"
