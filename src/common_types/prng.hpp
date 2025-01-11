@@ -1,9 +1,5 @@
 #pragma once
 
-namespace sys {
-	struct state;
-}
-
 namespace rng {
 
 	struct random_pair {
