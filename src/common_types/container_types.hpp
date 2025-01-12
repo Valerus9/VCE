@@ -3,6 +3,12 @@
 #include <vector>
 #include "dcon.hpp"
 
+//Due to forward declaration the following lines are needed (DO NOT REMOVE):
+namespace sys {		//Due to forward declaration this line is needed. (DO NOT REMOVE)
+	struct state;	//Due to forward declaration this line is needed. (DO NOT REMOVE)
+}					//Due to forward declaration this line is needed. (DO NOT REMOVE)
+//Due to forward declaration the previous lines are needed (DO NOT REMOVE).
+
 template<typename value_type, typename tag_type, typename allocator = std::allocator<value_type>>
 class tagged_vector {
 	private:
