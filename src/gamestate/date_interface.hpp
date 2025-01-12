@@ -5,7 +5,7 @@
 
 namespace sys {
 
-	struct state;
+	struct state;	//Due to forward declaration this line is needed. (DO NOT REMOVE)
 
 	struct year_month_day {
 		int32_t year;

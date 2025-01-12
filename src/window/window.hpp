@@ -45,9 +45,11 @@ namespace window {
 } // namespace window
 #endif
 
-namespace sys {
-	struct state;
-}
+//Due to forward declaration the following lines are needed (DO NOT REMOVE):
+namespace sys {		//Due to forward declaration this line is needed. (DO NOT REMOVE)
+	struct state;	//Due to forward declaration this line is needed. (DO NOT REMOVE)
+}					//Due to forward declaration this line is needed. (DO NOT REMOVE)
+//Due to forward declaration the previous lines are needed (DO NOT REMOVE).
 
 namespace window {
 	enum class window_state : uint8_t { normal, maximized, minimized };

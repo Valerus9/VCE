@@ -3,7 +3,7 @@
 #include "dcon.hpp"
 
 namespace sys {
-	struct state; // this is here simply to declare the state struct in a very general location
+	struct state;	//Due to forward declaration this line is needed. (DO NOT REMOVE)
 	
 	inline float red_from_int(uint32_t v) {
 		return float(v & 0xFF) / 255.0f;

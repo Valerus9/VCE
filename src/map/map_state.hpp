@@ -12,12 +12,14 @@
 #include "province_constants.hpp"
 #include "map_constants.hpp"
 
-namespace sys {
-	struct state;
-};
-namespace parsers {
-	struct scenario_building_context;
-};
+//Due to forward declaration the following lines are needed (DO NOT REMOVE):
+namespace sys {							//Due to forward declaration this line is needed. (DO NOT REMOVE)
+	struct state;						//Due to forward declaration this line is needed. (DO NOT REMOVE)
+}										//Due to forward declaration this line is needed. (DO NOT REMOVE)
+namespace parsers {						//Due to forward declaration this line is needed. (DO NOT REMOVE)
+	struct scenario_building_context;	//Due to forward declaration this line is needed. (DO NOT REMOVE)
+};										//Due to forward declaration this line is needed. (DO NOT REMOVE)
+//Due to forward declaration the previous lines are needed (DO NOT REMOVE).
 
 namespace map {
 	class map_state {
