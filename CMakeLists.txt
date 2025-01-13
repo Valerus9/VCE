@@ -38,7 +38,7 @@ add_compile_options("$<$<CXX_COMPILER_ID:MSVC>:/utf-8>")
 list(APPEND vce_CORE_SOURCES_LIST
 	"${PROJECT_SOURCE_DIR}/src/ai/ai.cpp"
 	"${PROJECT_SOURCE_DIR}/src/common_types/common_types.cpp"
-	"${PROJECT_SOURCE_DIR}/src/common_types/blake2.cpp"
+	"${PROJECT_SOURCE_DIR}/src/common_types/blake2/blake2.cpp"
 	"${PROJECT_SOURCE_DIR}/src/common_types/prng.cpp"
 	"${PROJECT_SOURCE_DIR}/src/common_types/reports.cpp"
 	"${PROJECT_SOURCE_DIR}/src/culture/culture.cpp"
@@ -56,7 +56,7 @@ list(APPEND vce_CORE_SOURCES_LIST
 	"${PROJECT_SOURCE_DIR}/src/gamestate/modifiers.cpp"
 	"${PROJECT_SOURCE_DIR}/src/gamestate/notifications.cpp"
 	"${PROJECT_SOURCE_DIR}/src/gamestate/serialization.cpp"
-	"${PROJECT_SOURCE_DIR}/src/gamestate/system_state.cpp"
+	"${PROJECT_SOURCE_DIR}/src/gamestate/system/system_state.cpp"
 	"${PROJECT_SOURCE_DIR}/src/graphics/opengl_wrapper.cpp"
 	"${PROJECT_SOURCE_DIR}/src/graphics/texture.cpp"
 	"${PROJECT_SOURCE_DIR}/src/graphics/xac.cpp"
