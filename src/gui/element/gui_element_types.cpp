@@ -12,8 +12,8 @@
 #include "dcon.hpp"
 #include "demographics.hpp"
 #include "parsers_declarations.hpp"
-#include "gui_element_base.hpp"
-#include "gui_element_types.hpp"
+#include "element/gui_element_base.hpp"
+#include "element/gui_element_types.hpp"
 #include "gui_unit_grid_box.hpp"
 #include "fonts.hpp"
 #include "gui_graphics.hpp"
@@ -21,12 +21,12 @@
 #include "opengl_wrapper.hpp"
 #include "text.hpp"
 #include "sound.hpp"
-#include "unit_tooltip.hpp"
+#include "tooltip/unit_tooltip.hpp"
 #include "triggers.hpp"
 #include "effects.hpp"
 #include "rebels.hpp"
 #include "pdqsort.h"
-#include "gui_element_templates.hpp"
+#include "element/gui_element_templates.hpp"
 
 namespace ui {
 	state::state() {

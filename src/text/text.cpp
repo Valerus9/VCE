@@ -7,7 +7,7 @@
 #include <unicode/utypes.h>
 #include <unicode/ubidi.h>
 
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "nations.hpp"
 #include "text.hpp"
 #include "parsers.hpp"

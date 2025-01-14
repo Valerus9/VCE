@@ -2,9 +2,9 @@
 
 #include "dcon.hpp"
 #include "gui_common_elements.hpp"
-#include "gui_element_types.hpp"
+#include "element/gui_element_types.hpp"
 #include "nations.hpp"
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "text.hpp"
 
 namespace ui {

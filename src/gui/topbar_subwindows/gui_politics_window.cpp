@@ -1,4 +1,4 @@
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "dcon.hpp"
 #include "nations.hpp"
 #include "common_types.hpp"

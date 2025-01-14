@@ -5,7 +5,7 @@
 #include "cyto_any.hpp"
 #include "dcon.hpp"
 #include "gui_common_elements.hpp"
-#include "gui_element_types.hpp"
+#include "element/gui_element_types.hpp"
 #include "gui_graphics.hpp"
 #include "gui_movements_window.hpp"
 #include "gui_decision_window.hpp"
@@ -14,7 +14,7 @@
 #include "gui_unciv_reforms_window.hpp"
 #include "nations.hpp"
 #include "politics.hpp"
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "text.hpp"
 #include <cstdint>
 #include <string_view>

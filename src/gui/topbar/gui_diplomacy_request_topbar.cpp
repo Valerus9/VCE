@@ -1,7 +1,7 @@
 #include "demographics.hpp"
-#include "gui_element_types.hpp"
-#include "gui_element_templates.hpp"
-#include "gui_diplomacy_request_topbar.hpp"
+#include "element/gui_element_types.hpp"
+#include "element/gui_element_templates.hpp"
+#include "topbar/gui_diplomacy_request_topbar.hpp"
 
 namespace ui {
 	void diplomatic_message_topbar_button::button_action(sys::state& state) noexcept {

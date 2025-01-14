@@ -1,7 +1,7 @@
 #pragma once
 
 #include "gui_common_elements.hpp"
-#include "gui_element_types.hpp"
+#include "element/gui_element_types.hpp"
 #include "province_templates.hpp"
 #include "economy_factory.hpp"
 #include "pdqsort.h"

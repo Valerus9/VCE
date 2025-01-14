@@ -2,7 +2,7 @@
 
 #include "date_interface.hpp"
 #include "dcon.hpp"
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include <string_view>
 
 namespace politics {

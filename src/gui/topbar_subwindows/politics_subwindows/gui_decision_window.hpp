@@ -2,7 +2,7 @@
 
 #include <vector>
 
-#include "gui_element_types.hpp"
+#include "element/gui_element_types.hpp"
 #include "triggers.hpp"
 #include "text.hpp"
 

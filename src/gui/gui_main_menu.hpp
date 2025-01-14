@@ -1,7 +1,7 @@
 #pragma once
 
-#include "gui_element_types.hpp"
-#include "gui_message_settings_window.hpp"
+#include "element/gui_element_types.hpp"
+#include "message/gui_message_settings_window.hpp"
 
 namespace ui {
 

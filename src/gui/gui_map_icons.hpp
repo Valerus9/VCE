@@ -1,11 +1,11 @@
  #pragma once
 
 #include "dcon.hpp"
-#include "gui_element_types.hpp"
+#include "element/gui_element_types.hpp"
 #include "gui_graphics.hpp"
 #include "province.hpp"
 #include "text.hpp"
-#include "unit_tooltip.hpp"
+#include "tooltip/unit_tooltip.hpp"
 #include "gui_land_combat.hpp"
 #include "gui_naval_combat.hpp"
 #include "gui_unit_grid_box.hpp"

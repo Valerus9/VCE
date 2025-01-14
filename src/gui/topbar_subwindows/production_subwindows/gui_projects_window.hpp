@@ -1,7 +1,7 @@
 #pragma once
 
 #include <variant>
-#include "gui_element_types.hpp"
+#include "element/gui_element_types.hpp"
 #include "gui_project_investment_window.hpp"
 #include "gui_production_enum.hpp"
 

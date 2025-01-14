@@ -1,12 +1,12 @@
 #include "dcon.hpp"
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "serialization.hpp"
 #include <ctime>
 
 #define ZSTD_STATIC_LINKING_ONLY
 #define XXH_NAMESPACE ZSTD_
 
-#include "blake2.h"
+#include "blake2/blake2.h"
 #include "zstd.h"
 
 namespace sys {

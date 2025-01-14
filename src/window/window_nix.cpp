@@ -1,4 +1,4 @@
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "opengl_wrapper.hpp"
 #include "window.hpp"
 #include "map.hpp"

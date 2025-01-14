@@ -1,6 +1,6 @@
 #include <algorithm>
 
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "commands.hpp"
 #include "demographics.hpp"
 #include "economy_factory_templates.hpp"

@@ -1,8 +1,8 @@
 #pragma once
 
 #include "demographics.hpp"
-#include "gui_element_types.hpp"
-#include "system_state.hpp"
+#include "element/gui_element_types.hpp"
+#include "system/system_state.hpp"
 #include "text.hpp"
 #include <vector>
 

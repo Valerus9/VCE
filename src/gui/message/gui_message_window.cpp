@@ -1,4 +1,4 @@
-#include "gui_message_window.hpp"
+#include "message/gui_message_window.hpp"
 
 namespace ui {
 	void message_body_text::populate_layout(sys::state& state, text::endless_layout& contents) noexcept {

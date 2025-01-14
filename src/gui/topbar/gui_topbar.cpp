@@ -1,7 +1,7 @@
-#include "system_state.hpp"
-#include "gui_element_types.hpp"
-#include "gui_element_templates.hpp"
-#include "gui_topbar.hpp"
+#include "system/system_state.hpp"
+#include "element/gui_element_types.hpp"
+#include "element/gui_element_templates.hpp"
+#include "topbar/gui_topbar.hpp"
 #include "economy_templates.hpp"
 
 namespace ui {

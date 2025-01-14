@@ -1,10 +1,10 @@
 #pragma once
 
-#include "gui_element_types.hpp"
+#include "element/gui_element_types.hpp"
 #include "gui_graphics.hpp"
 #include "gui_common_elements.hpp"
 #include "province_templates.hpp"
-#include "gui_element_templates.hpp"
+#include "element/gui_element_templates.hpp"
 #include "color.hpp"
 #include "triggers.hpp"
 #include "gui_province_window.hpp"

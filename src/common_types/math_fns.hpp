@@ -1,5 +1,5 @@
 #pragma once
-#include "ve.hpp"
+#include "vector/ve.hpp"
 #include <cmath>
 
 namespace math {

@@ -13,7 +13,7 @@
 #include <glm/gtx/quaternion.hpp>
 
 #include "stb_image.h"
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "parsers_declarations.hpp"
 #include "math_fns.hpp"
 #include "prng.hpp"
@@ -23,7 +23,7 @@
 #include "texture.hpp"
 #include "province.hpp"
 #include "province_templates.hpp"
-#include "gui_element_types.hpp"
+#include "element/gui_element_types.hpp"
 #include "pdqsort.h"
 #include "reports.hpp"
 

@@ -4,7 +4,7 @@
 #include <ctype.h>
 #include "defines.hpp"
 #include "parsers.hpp"
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 
 void parsing::defines::assign_define(sys::state& state, int32_t line, std::string_view text, float v,
 		parsers::error_handler& err) {

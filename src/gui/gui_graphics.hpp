@@ -3,7 +3,7 @@
 #include <vector>
 #include <array>
 
-#include "system_constants.hpp"
+#include "system/system_constants.hpp"
 #include "culture_constants.hpp" 
 #include "economy_constants.hpp" 
 #include "gui_constants.hpp" 
@@ -16,7 +16,7 @@
 #include "container_types.hpp" 
 #include "economy_container_types.hpp" 
 #include "culture_container_types.hpp" 
-#include "system_container_types.hpp"
+#include "system/system_container_types.hpp"
 
 #include "parsers.hpp"
 #include "cyto_any.hpp"

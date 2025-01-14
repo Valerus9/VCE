@@ -1,5 +1,5 @@
-#include "system_state.hpp"
-#include "gui_element_templates.hpp"
+#include "system/system_state.hpp"
+#include "element/gui_element_templates.hpp"
 #include "gui_budget_window.hpp"
 #include "economy_templates.hpp"
 

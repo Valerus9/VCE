@@ -1,6 +1,6 @@
 #pragma once
 
-#include "system_constants.hpp"
+#include "system/system_constants.hpp"
 #include "culture_constants.hpp"
 #include "economy_constants.hpp"
 #include "gui_constants.hpp"
@@ -8,7 +8,7 @@
 #include "map_constants.hpp"
 
 #include "gui_common_elements.hpp"
-#include "gui_element_types.hpp"
+#include "element/gui_element_types.hpp"
 
 namespace ui {
 

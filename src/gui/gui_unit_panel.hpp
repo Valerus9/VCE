@@ -1,11 +1,11 @@
 #pragma once
 
 #include "gui_common_elements.hpp"
-#include "gui_element_types.hpp"
+#include "element/gui_element_types.hpp"
 #include "gui_unit_panel_subwindow.hpp"
 #include "text.hpp"
 #include "prng.hpp"
-#include "gui_leader_tooltip.hpp"
+#include "tooltip/gui_leader_tooltip.hpp"
 #include "gui_leader_select.hpp"
 #include "gui_unit_grid_box.hpp"
 #include "pdqsort.h"

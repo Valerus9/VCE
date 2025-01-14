@@ -1,10 +1,10 @@
 #include "parsers_declarations.hpp"
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 
 #include "container_types.hpp" 
 #include "economy_container_types.hpp" 
 #include "culture_container_types.hpp" 
-#include "system_container_types.hpp"
+#include "system/system_container_types.hpp"
 
 #include "parsers.hpp"
 

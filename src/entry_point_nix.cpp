@@ -1,5 +1,5 @@
 #include "serialization.hpp"
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "reports.hpp"
 
 #include "entry_point.cpp"

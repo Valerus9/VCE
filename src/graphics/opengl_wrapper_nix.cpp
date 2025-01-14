@@ -1,5 +1,5 @@
 #include "glad.h"
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "opengl_wrapper.hpp"
 
 #include <GLFW/glfw3.h>

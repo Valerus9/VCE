@@ -1,5 +1,5 @@
 #include "diplomatic_messages.hpp"
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "commands.hpp"
 #include "nations.hpp"
 #include "ai.hpp"

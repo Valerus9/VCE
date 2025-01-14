@@ -1,11 +1,11 @@
 #pragma once
 
-#include "gui_element_types.hpp"
+#include "element/gui_element_types.hpp"
 #include "gui_graphics.hpp"
 #include "gui_ledger_window.hpp"
 #include "gui_search_window.hpp"
 #include "gui_main_menu.hpp"
-#include "gui_message_filters_window.hpp"
+#include "message/gui_message_filters_window.hpp"
 #include "opengl_wrapper.hpp"
 #include "map.hpp"
 #include "map_modes.hpp"

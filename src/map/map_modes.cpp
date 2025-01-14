@@ -1,6 +1,6 @@
 #include "color.hpp"
 #include "demographics.hpp"
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "dcon.hpp"
 #include "province.hpp"
 #include "nations.hpp"
@@ -2049,7 +2049,7 @@ std::vector<uint32_t> players_map_from(sys::state& state) {
 	return prov_color;
 }
 
-#include "gui_element_types.hpp"
+#include "element/gui_element_types.hpp"
 
 std::vector<uint32_t> select_states_map_from(sys::state& state) {
 	uint32_t province_size = state.world.province_size();

@@ -1,7 +1,7 @@
 #include "gui_common_elements.hpp"
 #include "ai.hpp"
 #include "pdqsort.h"
-#include "gui_element_templates.hpp"
+#include "element/gui_element_templates.hpp"
 #include "economy_templates.hpp"
 
 namespace ui {

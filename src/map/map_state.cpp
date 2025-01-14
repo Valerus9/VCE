@@ -5,7 +5,7 @@
 #include <glm/gtx/transform.hpp>
 #include <set>
 
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "province_templates.hpp"
 #include "math_fns.hpp"
 #include "map_modes.hpp"

@@ -1,8 +1,8 @@
 #pragma once
 
-#include "gui_element_types.hpp"
+#include "element/gui_element_types.hpp"
 #include "prng.hpp"
-#include "gui_leader_tooltip.hpp"
+#include "tooltip/gui_leader_tooltip.hpp"
 #include "gui_leader_select.hpp"
 #include "pdqsort.h"
 

@@ -1,5 +1,5 @@
-#include "system_state.hpp"
-#include "unit_tooltip.hpp"
+#include "system/system_state.hpp"
+#include "tooltip/unit_tooltip.hpp"
 #include "ai.hpp"
 #include "rebels.hpp"
 

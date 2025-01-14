@@ -1,6 +1,6 @@
 #pragma once
 
-#include "gui_element_types.hpp"
+#include "element/gui_element_types.hpp"
 namespace ui {
 	class fps_counter_text_box : public simple_text_element_base {
 	private:

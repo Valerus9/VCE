@@ -1,7 +1,7 @@
 #pragma once
 
 #include "dcon.hpp"
-#include "gui_element_types.hpp"
+#include "element/gui_element_types.hpp"
 #include "gui_graphics.hpp"
 #include "gui_province_window.hpp"
 #include "province.hpp"

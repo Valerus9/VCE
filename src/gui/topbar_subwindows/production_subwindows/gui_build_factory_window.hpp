@@ -1,6 +1,6 @@
 #pragma once
 
-#include "gui_element_types.hpp"
+#include "element/gui_element_types.hpp"
 #include "gui_production_enum.hpp"
 #include "ai.hpp"
 #include "triggers.hpp"

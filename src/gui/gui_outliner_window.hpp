@@ -2,8 +2,8 @@
 
 #include <variant>
 #include "gui_common_elements.hpp"
-#include "gui_element_types.hpp"
-#include "unit_tooltip.hpp"
+#include "element/gui_element_types.hpp"
+#include "tooltip/unit_tooltip.hpp"
 
 namespace ui {
 

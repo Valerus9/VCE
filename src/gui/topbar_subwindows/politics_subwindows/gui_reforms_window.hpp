@@ -2,7 +2,7 @@
 
 #include "dcon.hpp"
 #include "gui_common_elements.hpp"
-#include "gui_element_types.hpp"
+#include "element/gui_element_types.hpp"
 
 namespace ui {
 	class reforms_reform_button : public button_element_base {

@@ -1,13 +1,13 @@
 #pragma once
 
-#include "gui_element_types.hpp"
+#include "element/gui_element_types.hpp"
 #include "pdqsort.h"
 #include "dcon.hpp"
 #include "gui_graphics.hpp"
-#include "gui_element_base.hpp"
+#include "element/gui_element_base.hpp"
 #include "opengl_wrapper.hpp"
 #include "sound.hpp"
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "text.hpp"
 #include "texture.hpp"
 #include "demographics.hpp"

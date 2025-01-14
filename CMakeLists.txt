@@ -336,7 +336,7 @@ target_precompile_headers(VicCEngine
 # VicCEngine provided headers
 target_precompile_headers(VicCEngine
 	PRIVATE [["simple_fs.hpp"]]
-	PRIVATE [["system_constants.hpp"]]
+	PRIVATE [["system/system_constants.hpp"]]
 	PRIVATE [["culture_constants.hpp"]]
 	PRIVATE [["economy_constants.hpp"]]
 	PRIVATE [["gui_constants.hpp"]]
@@ -347,14 +347,14 @@ target_precompile_headers(VicCEngine
 	PRIVATE [["container_types.hpp"]]
 	PRIVATE [["economy_container_types.hpp"]]
 	PRIVATE [["culture_container_types.hpp"]]
-	PRIVATE [["system_container_types.hpp"]]
+	PRIVATE [["system/system_container_types.hpp"]]
 	PRIVATE [["parsers_declarations.hpp"]]
 	PRIVATE [["cyto_any.hpp"]]
 	PRIVATE [["date_interface.hpp"]]
 	PRIVATE [["stb_image.h"]]
 )
 target_precompile_headers(VicCEngine
-	PRIVATE [["system_state.hpp"]]
+	PRIVATE [["system/system_state.hpp"]]
 )
 
 if(WIN32)

@@ -1,9 +1,9 @@
 #include "dcon.hpp"
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "ai.hpp"
 #include "demographics.hpp"
 #include "effects.hpp"
-#include "gui_effect_tooltips.hpp"
+#include "tooltip/gui_effect_tooltips.hpp"
 #include "math_fns.hpp"
 #include "military.hpp"
 #include "politics.hpp"
@@ -15,7 +15,7 @@
 #include "economy_estimations.hpp"
 #include "ai_templates.hpp"
 #include "pdqsort.h"
-#include "ve.hpp"
+#include "vector/ve.hpp"
 
 namespace ai {
 	/* Additional (counting allies) offensiv strenght of a country, except the country itself */

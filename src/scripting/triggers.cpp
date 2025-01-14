@@ -1,4 +1,4 @@
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "triggers.hpp"
 #include "demographics.hpp"
 #include "military_templates.hpp"

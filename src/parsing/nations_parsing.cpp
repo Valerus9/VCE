@@ -1,4 +1,4 @@
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "nations.hpp"
 #include "parsers_declarations.hpp"
 #include "trigger_parsing.hpp"

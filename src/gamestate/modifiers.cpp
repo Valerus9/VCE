@@ -1,7 +1,7 @@
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "modifiers.hpp"
 
-#include "system_constants.hpp"
+#include "system/system_constants.hpp"
 #include "culture_constants.hpp"
 #include "economy_constants.hpp"
 #include "gui_constants.hpp"

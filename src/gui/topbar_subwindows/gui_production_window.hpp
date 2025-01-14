@@ -1,7 +1,7 @@
 #pragma once
 
 #include "economy_factory.hpp"
-#include "gui_element_types.hpp"
+#include "element/gui_element_types.hpp"
 #include "gui_common_elements.hpp"
 
 namespace ui {
@@ -181,7 +181,7 @@ namespace ui {
 #include "gui_project_investment_window.hpp"
 #include "gui_foreign_investment_window.hpp"
 #include "economy_factory_templates.hpp"
-#include "gui_trigger_tooltips.hpp"
+#include "tooltip/gui_trigger_tooltips.hpp"
 #include "province_templates.hpp"
 
 namespace ui {

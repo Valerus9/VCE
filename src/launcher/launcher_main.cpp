@@ -12,7 +12,7 @@
 #include "texture.hpp"
 #include "text.hpp"
 #include "prng.hpp"
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "serialization.hpp"
 #include "network.hpp"
 #include "simple_fs.hpp"

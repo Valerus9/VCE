@@ -1,10 +1,10 @@
 #include "culture.hpp"
 #include "dcon.hpp"
 #include "demographics.hpp"
-#include "gui_element_base.hpp"
+#include "element/gui_element_base.hpp"
 #include "prng.hpp"
 #include "province_templates.hpp"
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "triggers.hpp"
 #include "news.hpp"
 

@@ -4,7 +4,7 @@
 #include "demographics.hpp"
 #include "modifiers.hpp"
 #include "politics.hpp"
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "ve_scalar_extensions.hpp"
 #include "triggers.hpp"
 #include "politics.hpp"

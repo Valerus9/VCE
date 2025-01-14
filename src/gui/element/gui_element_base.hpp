@@ -1,6 +1,6 @@
 #pragma once
 
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "gui_graphics.hpp"
 #include "text.hpp"
 #include "reports.hpp"

@@ -1,10 +1,10 @@
-#include "gui_trigger_tooltips.hpp"
+#include "tooltip/gui_trigger_tooltips.hpp"
 #include "dcon.hpp"
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "text.hpp"
 #include "script_constants.hpp"
 #include "triggers.hpp"
-#include "gui_element_templates.hpp"
+#include "element/gui_element_templates.hpp"
 
 namespace ui {
 

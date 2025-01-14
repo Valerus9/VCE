@@ -2,7 +2,7 @@
 
 #include "ai.hpp"
 #include "demographics.hpp"
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 
 namespace ai {
 	template<typename vector_type, typename tag_type>

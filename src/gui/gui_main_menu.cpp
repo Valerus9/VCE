@@ -1,6 +1,6 @@
 #include "gui_main_menu.hpp"
 #include "sound.hpp"
-#include "gui_element_templates.hpp"
+#include "element/gui_element_templates.hpp"
 
 #include <cstdio>
 

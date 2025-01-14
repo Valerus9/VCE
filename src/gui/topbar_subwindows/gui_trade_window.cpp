@@ -1,5 +1,5 @@
 #include "gui_trade_window.hpp"
-#include "gui_element_templates.hpp"
+#include "element/gui_element_templates.hpp"
 
 namespace ui {
 	void commodity_stockpile_indicator::on_update(sys::state& state) noexcept {

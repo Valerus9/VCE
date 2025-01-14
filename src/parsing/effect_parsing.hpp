@@ -2,7 +2,7 @@
 #include "nations.hpp"
 #include "parsers.hpp"
 #include "script_constants.hpp"
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "trigger_parsing.hpp"
 #include "text.hpp"
 #include "triggers.hpp"

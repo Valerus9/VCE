@@ -1,5 +1,5 @@
 #include "gui_error_window.hpp"
-#include "gui_element_templates.hpp"
+#include "element/gui_element_templates.hpp"
 
 namespace ui {
 

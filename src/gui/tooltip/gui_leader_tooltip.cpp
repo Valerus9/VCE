@@ -1,5 +1,5 @@
-#include "system_state.hpp"
-#include "gui_leader_tooltip.hpp"
+#include "system/system_state.hpp"
+#include "tooltip/gui_leader_tooltip.hpp"
 
 namespace ui {
 	void display_leader_attributes(sys::state& state, dcon::leader_id lid, text::layout_base& contents, int32_t indent) {

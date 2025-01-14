@@ -1,5 +1,5 @@
 #include "rebels.hpp"
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "triggers.hpp"
 #include "ai.hpp"
 #include "effects.hpp"

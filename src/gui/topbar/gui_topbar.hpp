@@ -1,7 +1,7 @@
 #pragma once
 
 #include "demographics.hpp"
-#include "gui_element_types.hpp"
+#include "element/gui_element_types.hpp"
 #include "gui_production_window.hpp"
 #include "gui_diplomacy_window.hpp"
 #include "gui_technology_window.hpp"
@@ -12,11 +12,11 @@
 #include "gui_military_window.hpp"
 #include "gui_chat_window.hpp"
 #include "gui_common_elements.hpp"
-#include "gui_diplomacy_request_topbar.hpp"
+#include "topbar/gui_diplomacy_request_topbar.hpp"
 #include "nations.hpp"
 #include "politics.hpp"
 #include "rebels.hpp"
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include "text.hpp"
 #include "gui_event.hpp"
 #include "pdqsort.h"

@@ -1,7 +1,7 @@
 #pragma once
 
 #include "gui_common_elements.hpp"
-#include "gui_element_types.hpp"
+#include "element/gui_element_types.hpp"
 #include "triggers.hpp"
 
 namespace ui {

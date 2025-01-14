@@ -3,7 +3,7 @@
 #include "dcon.hpp"
 #include "demographics.hpp"
 #include "nations.hpp"
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include <vector>
 #include "rebels.hpp"
 #include "math_fns.hpp"

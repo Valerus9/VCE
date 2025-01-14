@@ -1,6 +1,6 @@
 #pragma once
 
-#include "gui_element_types.hpp"
+#include "element/gui_element_types.hpp"
 #include "military.hpp"
 #include "gui_land_combat.hpp"
 

@@ -3,7 +3,7 @@
 #include "dcon.hpp"
 #include "economy.hpp"
 #include "gui_common_elements.hpp"
-#include "gui_element_types.hpp"
+#include "element/gui_element_types.hpp"
 
 namespace ui {
 	class commodity_price_text : public simple_text_element_base {

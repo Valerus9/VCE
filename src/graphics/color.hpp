@@ -1,6 +1,6 @@
 #pragma once
 
-#include "system_state.hpp"
+#include "system/system_state.hpp"
 #include <cstdint>
 
 namespace ogl {

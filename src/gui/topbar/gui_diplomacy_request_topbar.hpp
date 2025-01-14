@@ -1,9 +1,9 @@
 #pragma once
 
 #include "gui_common_elements.hpp"
-#include "gui_element_types.hpp"
+#include "element/gui_element_types.hpp"
 #include "diplomatic_messages.hpp"
-#include "gui_diplomacy_request_window.hpp"
+#include "topbar/gui_diplomacy_request_window.hpp"
 
 namespace ui {
 	class diplomatic_message_topbar_button : public button_element_base {
