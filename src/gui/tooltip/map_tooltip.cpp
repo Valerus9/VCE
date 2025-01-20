@@ -8,17 +8,6 @@
 #include "ai_templates.hpp"
 #include "prng.hpp"
 
-namespace ai {
-	float estimate_strength(sys::state& state, dcon::nation_id n);
-	float province_supply_usage(sys::state& state, dcon::nation_id n, dcon::province_id p);
-	float estimate_enemy_defensive_force(sys::state& state, dcon::province_id target, dcon::nation_id by);
-	float war_weight_potential_target(sys::state& state, dcon::nation_id n, dcon::nation_id target, float base_strength);
-	float estimate_defensive_strength(sys::state& state, dcon::nation_id n);
-	dcon::cb_type_id pick_fabrication_type(sys::state& state, dcon::nation_id from, dcon::nation_id target);
-	bool can_go_war_with(sys::state& state, dcon::nation_id n, dcon::nation_id real_target, dcon::nation_id other);
-	bool valid_construction_target(sys::state& state, dcon::nation_id from, dcon::nation_id target);
-}
-
 namespace ui {
 	float selected_relative_attrition_amount(sys::state& state, dcon::nation_id n, std::vector<dcon::army_id>& list, dcon::province_id prov) {
 		float total_army_weight = 0.f;
@@ -61,7 +50,7 @@ namespace ui {
 		if(state.cheat_data.show_province_id_tooltip) {
 			auto const n = state.local_player_nation;
 
-			auto const base_strength = ai::estimate_strength(state, n);
+			auto const base_strength = ai::estimateStrength(state, n);
 			text::localised_format_box(state, contents, box, "province_id", text::substitution_map{});
 			text::add_to_layout_box(state, contents, box, std::string_view(":"));
 			text::add_space_to_layout_box(state, contents, box);
@@ -104,11 +93,11 @@ namespace ui {
 			text::localised_format_box(state, contents, box, "ai_strength_weights", text::substitution_map{});
 			text::add_to_layout_box(state, contents, box, std::string_view(":"));
 			text::add_space_to_layout_box(state, contents, box);
-			text::add_to_layout_box(state, contents, box, text::fp_four_places{ ai::estimate_strength(state, owner) }, text::text_color::green);
+			text::add_to_layout_box(state, contents, box, text::fp_four_places{ ai::estimateStrength(state, owner) }, text::text_color::green);
 			text::add_space_to_layout_box(state, contents, box);
 			text::add_to_layout_box(state, contents, box, text::fp_four_places{ ai::estimate_enemy_defensive_force(state, prov, n) }, text::text_color::red);
 			text::add_space_to_layout_box(state, contents, box);
-			text::add_to_layout_box(state, contents, box, text::fp_four_places{ ai::estimate_defensive_strength(state, owner) }, text::text_color::yellow);
+			text::add_to_layout_box(state, contents, box, text::fp_four_places{ ai::estimateDefensiveStrength(state, owner) }, text::text_color::yellow);
 			text::add_space_to_layout_box(state, contents, box);
 			text::add_to_layout_box(state, contents, box, text::fp_four_places{ ai::war_weight_potential_target(state, n, owner, base_strength) }, text::text_color::gold);
 			text::add_line_break_to_layout_box(state, contents, box);
